@@ -54,7 +54,7 @@ protocol is in [docs/EXPERIMENT_PROTOCOL.md](docs/EXPERIMENT_PROTOCOL.md).
 configs/         Selected experiment configurations
 docs/            Method, experiment, and result documentation
 results/         Paper tables and frozen per-question result artifacts
-scripts/         Graph, retrieval, evidence, QA, and analysis runners
+scripts/         Selected paper pipeline and artifact runners
 src/hytopomem/   Core implementation
 tests/           Unit and contract tests
 ```

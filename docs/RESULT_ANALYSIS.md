@@ -164,7 +164,112 @@ The improvement is therefore visible before answer generation and is not explain
 
 ---
 
-## 5. Component Ablation: Retrieval and Selection
+
+## 5. Dual-Direction × Dual-Geometry Ablation on LoCoMo
+
+| Retrieval Variant | Hit@20 | Recall@20 | FullCover@20 | QA Acc. |
+|---|---:|---:|---:|---:|
+| BU-E only | 81.64 | 74.24 | 67.45 | 83.68 |
+| BU-H only | 79.82 | 73.07 | 66.15 | 84.20 |
+| TD-E only | 76.43 | 68.95 | 61.65 | 82.45 |
+| TD-H only | 67.58 | 60.58 | 54.69 | 78.96 |
+| Euclidean only: BU-E + TD-E | 86.85 | 80.91 | 72.98 | 87.04 |
+| Hyperbolic only: BU-H + TD-H | 81.58 | 74.74 | 67.71 | 84.67 |
+| Bottom-up only: BU-E + BU-H | 87.04 | 80.55 | **73.76** | 85.83 |
+| Top-down only: TD-E + TD-H | 80.73 | 73.50 | 66.47 | 83.66 |
+| **Full: BU-E + BU-H + TD-E + TD-H** | **88.87** | **80.92** | 72.87 | **91.62** |
+
+This ablation separates two design axes in HyPathMem:
+
+- **Direction:** bottom-up (BU) versus top-down (TD);
+- **Geometry:** Euclidean (E) versus hyperbolic (H).
+
+The results do not support the claim that any single direction or geometry is uniformly superior. Instead, the strongest evidence is for **complementarity across routes**.
+
+### Single-route behavior
+
+Among the four individual routes, **BU-E** gives the strongest retrieval metrics:
+
+- Hit@20 = 81.64
+- Recall@20 = 74.24
+- FullCover@20 = 67.45
+
+However, **BU-H obtains slightly higher QA accuracy than BU-E** (84.20 vs 83.68) despite lower Hit, Recall, and FullCover. This is an important observation: aggregate retrieval coverage is not perfectly aligned with downstream answer quality. A route can retrieve fewer gold-support items overall while still surfacing evidence that is more useful for answering a subset of questions.
+
+The top-down routes are weaker when used alone. TD-E reaches 82.45 QA accuracy, while TD-H reaches 78.96. In particular, TD-H is the weakest isolated route in both retrieval and QA. Therefore, the current results should **not** be interpreted as showing that hyperbolic top-down routing is independently stronger than Euclidean retrieval.
+
+### Direction-level comparison
+
+Combining the two bottom-up routes produces:
+
+- Hit@20: 87.04
+- Recall@20: 80.55
+- FullCover@20: **73.76**
+- QA: 85.83
+
+This is substantially stronger in retrieval than the top-down-only combination:
+
+- Hit@20: 80.73
+- Recall@20: 73.50
+- FullCover@20: 66.47
+- QA: 83.66
+
+Thus, **bottom-up retrieval provides the stronger standalone retrieval backbone**. It is particularly effective at retrieving and covering directly relevant evidence.
+
+However, the full model improves QA from 85.83 to **91.62** over bottom-up only, a gain of **+5.79 pp**, even though FullCover@20 decreases slightly from 73.76 to 72.87. This indicates that the benefit of adding top-down routes is not simply "retrieving more gold evidence." Instead, top-down routes appear to provide **complementary structural signals or alternative access paths** that improve the usefulness of the final evidence set and/or its downstream selection.
+
+### Geometry-level comparison
+
+The Euclidean-only combination is clearly stronger than the hyperbolic-only combination when each geometry is used in isolation:
+
+| Setting | Hit@20 | Recall@20 | FullCover@20 | QA |
+|---|---:|---:|---:|---:|
+| Euclidean only | 86.85 | 80.91 | 72.98 | 87.04 |
+| Hyperbolic only | 81.58 | 74.74 | 67.71 | 84.67 |
+
+Euclidean-only therefore exceeds Hyperbolic-only by:
+
+- **+5.27 pp** Hit@20
+- **+6.17 pp** Recall@20
+- **+5.27 pp** FullCover@20
+- **+2.37 pp** QA accuracy
+
+This means that hyperbolic retrieval should not be framed as a replacement for Euclidean retrieval. The stronger interpretation is that hyperbolic routes contribute **non-redundant information** when combined with Euclidean routes.
+
+This is most visible when comparing the full model with Euclidean-only:
+
+- Hit@20: 86.85 → 88.87 (**+2.02 pp**)
+- Recall@20: 80.91 → 80.92 (**+0.01 pp**)
+- FullCover@20: 72.98 → 72.87 (**−0.11 pp**)
+- QA: 87.04 → 91.62 (**+4.58 pp**)
+
+The very large QA improvement occurs with almost no change in Recall@20 and a negligible decrease in FullCover@20. Therefore, the added hyperbolic routes are unlikely to help merely by increasing the quantity of retrieved gold evidence. A more plausible interpretation is that they improve the **composition, structural diversity, routing provenance, or ranking utility** of the candidate set in ways that are not captured by standard set-level retrieval metrics.
+
+### Why the full model is better
+
+The full four-route system achieves the best QA accuracy (**91.62%**) and the best Hit@20 (**88.87%**), but it does not achieve the best FullCover@20; bottom-up only is slightly higher (73.76 vs 72.87). This distinction is important.
+
+The ablation suggests that HyPathMem benefits from **route complementarity rather than metric-wise dominance**:
+
+1. **Bottom-up Euclidean retrieval** provides strong direct semantic access to relevant facts.
+2. **Bottom-up hyperbolic retrieval** contributes a different evidence ordering: although its aggregate retrieval scores are lower, its QA accuracy is slightly higher than BU-E alone.
+3. **Top-down routes** are weak in isolation but add useful hierarchical or structural access paths when combined with bottom-up retrieval.
+4. **Hyperbolic routes** are weaker than Euclidean routes as standalone retrievers, but their addition to Euclidean routes yields a large downstream QA gain.
+5. The final gain therefore cannot be explained by simply increasing Hit/Recall/FullCover. It is more consistent with **complementary evidence organization and route-aware selection**.
+
+### Main takeaway
+
+The key conclusion from this ablation is not that hyperbolic geometry outperforms Euclidean geometry, nor that top-down retrieval outperforms bottom-up retrieval. The evidence supports a more precise claim:
+
+> **Euclidean and bottom-up routes form the strongest standalone retrieval backbone, while hyperbolic and top-down routes provide complementary structural signals that substantially improve final QA when jointly integrated.**
+
+This interpretation is consistent with the full system achieving **+4.58 pp QA over Euclidean-only** and **+5.79 pp over bottom-up-only**, despite only small or even negative changes in some conventional retrieval metrics.
+
+Accordingly, the role of the dual-geometry, dual-direction design should be described as **complementary multi-route evidence access**, rather than as four independently strong retrievers.
+
+---
+
+## 6. Component Ablation: Retrieval and Selection
 
 | Variant | Hit@20 | Recall@20 | FullCover@20 | QA Acc. |
 |---|---:|---:|---:|---:|
@@ -192,7 +297,7 @@ The larger cumulative improvement in FullCover@20 than in Hit@20 suggests that t
 
 ---
 
-## 6. Evidence Grounding and Reconstruction on LongMemEval-S
+## 7. Evidence Grounding and Reconstruction on LongMemEval-S
 
 | Variant | Overall | User | Assistant | Update | Temporal | Multi-session | Preference |
 |---|---:|---:|---:|---:|---:|---:|---:|
@@ -253,7 +358,7 @@ The major positive effect is therefore on Assistant and Temporal questions, whil
 
 ---
 
-## 7. Cross-Benchmark Interpretation
+## 8. Cross-Benchmark Interpretation
 
 The two benchmarks expose different aspects of the method.
 
@@ -274,7 +379,7 @@ Taken together, the current results support a two-part interpretation:
 
 ---
 
-## 8. Remaining Weaknesses
+## 9. Remaining Weaknesses
 
 The current results also identify several limitations that should not be hidden by the overall score.
 
@@ -309,7 +414,7 @@ These categories should be treated as the main targets for further analysis rath
 
 ---
 
-## 9. Summary
+## 10. Summary
 
 The completed experiments currently support four main conclusions:
 

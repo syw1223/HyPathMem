@@ -116,7 +116,8 @@ python3 scripts/run_locomo_v3_9_mainline.py --help
 python3 scripts/run_longmemeval_v3_9_mainline.py --help
 python3 scripts/142_build_hypathmem_8_4time_v.py --help
 python3 scripts/144_run_hypathmem_8_5time_v_conversion.py --help
-python3 scripts/147_build_hypathmem_locomo_d2_packs.py --help
+python3 scripts/129_build_hypathmem_r_v0_1_packs.py --help
+python3 scripts/149_prepare_hypathmem_locomo_time_v8_5.py --help
 python3 scripts/152_compile_hypathmem_locomo_time_v8_5_v2.py --help
 ```
 
