@@ -23,10 +23,10 @@ venv/
 *.key
 
 # Generated artifacts and model weights
-outputs/
-data/
-models/
-checkpoints/
+/outputs/
+/data/
+/models/
+/checkpoints/
 *.safetensors
 *.pt
 *.pth
