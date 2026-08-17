@@ -1,0 +1,2800 @@
+{
+  "metadata": {
+    "version": "hypathmem_temporal_v0_2_q4_verifier",
+    "model": "qwen3-30b-a3b-instruct-2507",
+    "gold_evidence_or_answer_provided": false,
+    "elapsed_seconds": 97.72681988601107
+  },
+  "summary": {
+    "num_questions": 321,
+    "verifier_called": 37,
+    "safe_to_override_d0": 36
+  },
+  "rows": [
+    {
+      "question_id": "conv-26:q0001",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-26:q0002",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-26:q0006",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-26:q0007",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-26:q0009",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-26:q0010",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-26:q0011",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-26:q0013",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "Caroline's 18th birthday must be identified as a specific event",
+          "The time elapsed since that event must be calculated relative to the QUESTION_TIME (2023-10-22 09:55)",
+          "The answer must be expressed as a duration"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence explicitly states 'my 18th birthday ten years ago' with an anchor time of 2013-06-27, which is consistent with the QUESTION_TIME. The duration '10 years' is directly stated and correctly aligned with the query for elapsed time."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "10 years",
+      "usage": {
+        "prompt_tokens": 548,
+        "total_tokens": 759,
+        "completion_tokens": 211,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 2.638489154051058,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-26:q0017",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "Melanie signed up for a pottery class",
+          "the signing up occurred on a specific date"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence confirms Melanie signed up for a pottery class 'yesterday' relative to 2023-07-03, which resolves to 2023-07-02. The answer '2 July 2023' correctly reflects this date, and all semantic conditions are satisfied with no omissions or mismatches."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "2 July 2023",
+      "usage": {
+        "prompt_tokens": 529,
+        "total_tokens": 712,
+        "completion_tokens": 183,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 2.2721481019398198,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-26:q0018",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-26:q0021",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "Melanie went to the museum",
+          "the event of Melanie going to the museum occurred on a specific date"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence states 'Yesterday I took the kids to the museum' with a mentioned_at timestamp of 2023-07-06, so 'Yesterday' resolves to 2023-07-05. The role 'Melanie's museum visit' is directly supported by the evidence, and the date is correctly derived. No semantic condition is omitted, and the temporal anchor is correctly interpreted."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "5 July 2023",
+      "usage": {
+        "prompt_tokens": 540,
+        "total_tokens": 739,
+        "completion_tokens": 199,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 2.3317056110827252,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-26:q0022",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-26:q0026",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "Caroline went to the LGBTQ conference",
+          "the event occurred two days ago relative to 2023-07-12T16:33:00"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": false,
+        "reason": "The question asks for the date Caroline went to the LGBTQ conference, and the evidence states she went two days ago relative to 2023-07-12, which resolves to 2023-07-10. However, the question time is 2023-10-22, which is not consistent with the evidence's anchor time. The evidence is outdated and not aligned with the current question time, so overriding the answer is unsafe."
+      },
+      "safe_to_override_d0": false,
+      "candidate_answer": "10 July 2023",
+      "usage": {
+        "prompt_tokens": 541,
+        "total_tokens": 770,
+        "completion_tokens": 229,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 2.7787654660642147,
+      "attempts": 2
+    },
+    {
+      "question_id": "conv-26:q0027",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-26:q0029",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-26:q0030",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-26:q0032",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-26:q0034",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-26:q0036",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-26:q0037",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-26:q0042",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-26:q0045",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-26:q0046",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-26:q0050",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-26:q0054",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-26:q0055",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-26:q0058",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-26:q0059",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-26:q0063",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-26:q0064",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-26:q0068",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-26:q0069",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "Melanie has been practicing art",
+          "the duration of Melanie's art practice is being asked"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence explicitly states 'Seven years now' in the context of Melanie's art practice, directly answering the duration question with no ambiguity or missing conditions."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "7 years",
+      "usage": {
+        "prompt_tokens": 559,
+        "total_tokens": 699,
+        "completion_tokens": 140,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 1.7543968399986625,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-26:q0073",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-26:q0074",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-26:q0075",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-26:q0080",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-26:q0081",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "Melanie bought figurines",
+          "the event of Melanie buying figurines occurred on a specific date"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence states 'These figurines I bought yesterday' with a mention time of 2023-10-22, so 'yesterday' resolves to 2023-10-21. The role 'Melanie buying figurines' is fully supported by the evidence, and the date is correctly derived."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "21 October 2023",
+      "usage": {
+        "prompt_tokens": 532,
+        "total_tokens": 713,
+        "completion_tokens": 181,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 2.280576150980778,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-30:q0001",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-30:q0002",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-30:q0007",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-30:q0008",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-30:q0009",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "Jon was in Paris",
+          "the time when Jon was in Paris is being asked"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence confirms Jon was in Paris on 'yesterday' relative to '2023-01-29T14:32:00', which resolves to '28 January 2023'. This matches the required role 'Jon's visit to Paris' and the query type 'date'. All semantic conditions are satisfied, and the temporal reasoning is valid."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "28 January 2023",
+      "usage": {
+        "prompt_tokens": 533,
+        "total_tokens": 721,
+        "completion_tokens": 188,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 2.326644733082503,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-30:q0011",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-30:q0012",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-30:q0013",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "Jon started going to the gym",
+          "the start of the gym routine"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence confirms Jon started his gym routine 'last week' relative to March 16, 2023, which resolves to the week before March 16, 2023 (i.e., March 9–15, 2023). This matches the required role 'gym routine start' and the date query type. All semantic conditions are satisfied, and the temporal resolution is consistent."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "the week before 16 March 2023",
+      "usage": {
+        "prompt_tokens": 534,
+        "total_tokens": 728,
+        "completion_tokens": 194,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 2.4217205989407375,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-30:q0014",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-30:q0015",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-30:q0016",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-30:q0017",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "Jon went to a fair",
+          "the purpose of the fair was to get more exposure for his dance studio"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence confirms Jon went to a fair yesterday to show off his studio, which aligns with the purpose of gaining exposure. The date '24 April 2023' is correctly derived from 'Yesterday' relative to the mentioned_at timestamp of 2023-04-25, and all semantic conditions are satisfied."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "24 April 2023",
+      "usage": {
+        "prompt_tokens": 577,
+        "total_tokens": 760,
+        "completion_tokens": 183,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 2.2821277279872447,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-30:q0020",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "Gina conducted an interview",
+          "the interview was for a design internship",
+          "the event occurred on a specific date"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence confirms Gina had a design internship interview yesterday relative to May 11, 2023, which resolves to May 10, 2023. All semantic conditions are satisfied, and the date is correctly derived."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "10 May 2023",
+      "usage": {
+        "prompt_tokens": 539,
+        "total_tokens": 705,
+        "completion_tokens": 166,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 2.0704264430096373,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-30:q0021",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-30:q0022",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-30:q0023",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-30:q0027",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-30:q0029",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-30:q0031",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-30:q0033",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "Gina designed a limited collection of hoodies"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence confirms Gina designed a limited collection of hoodies, with the event occurring 'last week' relative to June 21, 2023, which resolves to the week of June 14, 2023. This matches the required role and is correctly anchored and normalized."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "the week before 21 June 2023",
+      "usage": {
+        "prompt_tokens": 569,
+        "total_tokens": 731,
+        "completion_tokens": 162,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 2.0458883669925854,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-30:q0034",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-30:q0035",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-30:q0036",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-30:q0037",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-30:q0038",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-30:q0039",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-41:q0001",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-41:q0002",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "Maria donated her car",
+          "the donation occurred at a specific time"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence confirms Maria donated her car to a homeless shelter, and the time expression 'yesterday' relative to the mentioned_at timestamp of 2022-12-22 resolves to 2022-12-21, which fully satisfies the question's requirement for a date of donation."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "21 December 2022",
+      "usage": {
+        "prompt_tokens": 534,
+        "total_tokens": 704,
+        "completion_tokens": 170,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 2.0445197970839217,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-41:q0005",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-41:q0006",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-41:q0011",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-41:q0014",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-41:q0017",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-41:q0021",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-41:q0023",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-41:q0025",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-41:q0028",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-41:q0032",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-41:q0035",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-41:q0039",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-41:q0044",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "John's old area was hit by a flood",
+          "the flood occurred at a specific time"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence confirms that John's old area was hit by a flood 'last week' relative to the mention time of 2023-07-07, which resolves to the week before 7 July 2023. This matches the required role 'flood occurrence' and the date query type. The temporal expression is correctly anchored and normalized to a date window with week precision, satisfying all semantic conditions."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "the week before 7 July 2023",
+      "usage": {
+        "prompt_tokens": 538,
+        "total_tokens": 735,
+        "completion_tokens": 197,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 2.4686595830135047,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-41:q0047",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-41:q0049",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-41:q0052",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-41:q0054",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-41:q0055",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-41:q0056",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-41:q0057",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-41:q0059",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-41:q0060",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-41:q0062",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-41:q0064",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-41:q0092",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0003",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "Joanna first watched \"Eternal Sunshine of the Spotless Mind\"",
+          "the event of Joanna first watching the movie"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence states Joanna first watched the movie around 3 years ago from January 21, 2022, which resolves to approximately 2019. The semantic condition is fully supported, and the temporal arithmetic is correct."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "around 2019",
+      "usage": {
+        "prompt_tokens": 574,
+        "total_tokens": 738,
+        "completion_tokens": 164,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 2.068712658016011,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-42:q0004",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0007",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0008",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0009",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0010",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0014",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "Joanna had an audition",
+          "the audition was for a writing gig"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence confirms Joanna had an audition yesterday for a writing gig, and 'yesterday' relative to the mentioned_at time of 2022-03-24 resolves to 2022-03-23, which matches the answer. All semantic conditions are satisfied, and the temporal reasoning is valid."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "23 March 2022",
+      "usage": {
+        "prompt_tokens": 529,
+        "total_tokens": 703,
+        "completion_tokens": 174,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 2.1648430939530954,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-42:q0016",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0017",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0018",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0019",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0021",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0022",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0023",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0025",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0026",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0027",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0029",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0030",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0032",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0033",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0034",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0036",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0037",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0038",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0039",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0040",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0041",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0042",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0044",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0045",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0046",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "Joanna finished up the writing for her book",
+          "the event of finishing the writing occurred at a specific time"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence confirms Joanna finished her book writing last week, anchored to October 6, 2022, and the answer 'the week before 6 October 2022' correctly resolves to 2022-09-29, matching the occurred_at time in the evidence. All semantic conditions are satisfied, and the temporal resolution is consistent."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "the week before 6 October 2022",
+      "usage": {
+        "prompt_tokens": 538,
+        "total_tokens": 728,
+        "completion_tokens": 190,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 2.352544576046057,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-42:q0049",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0055",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0058",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "Joanna planned to go over to Nate's",
+          "to share recipes"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence shows Joanna agreed to visit Nate's the next day after November 4, 2022, which is November 5, 2022, and the purpose was to share dessert recipes, fully satisfying the semantic conditions in the question."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "5 November 2022",
+      "usage": {
+        "prompt_tokens": 572,
+        "total_tokens": 731,
+        "completion_tokens": 159,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 2.001920043025166,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-42:q0065",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0066",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0073",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-42:q0078",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "Nate winning second tournament"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The semantic condition 'Nate winning second tournament' is fully supported by the evidence, with a resolved time expression 'Last week' anchored to '2022-05-02T11:54:00', correctly normalized to 'the week before 2 May 2022'. All required roles are present and the operation matches the date query type."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "the week before 2 May 2022",
+      "usage": {
+        "prompt_tokens": 531,
+        "total_tokens": 706,
+        "completion_tokens": 175,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 2.1882458550389856,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-42:q0087",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "Nate took his turtles to the beach",
+          "the event occurred on a specific date"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence confirms Nate took his turtles to the beach in Tampa yesterday, and 'yesterday' relative to the question time (2022-11-11) resolves to 2022-11-10, which is fully entailed by the temporal context and matches the required role."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "10 November 2022",
+      "usage": {
+        "prompt_tokens": 538,
+        "total_tokens": 712,
+        "completion_tokens": 174,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 2.2339789259713143,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-43:q0007",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-43:q0011",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-43:q0013",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-43:q0017",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-43:q0021",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-43:q0023",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-43:q0024",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-43:q0025",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-43:q0032",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-43:q0034",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-43:q0038",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-43:q0040",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-43:q0041",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-43:q0045",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-43:q0046",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-43:q0047",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-43:q0048",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-43:q0055",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-43:q0056",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-43:q0057",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-43:q0059",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-43:q0061",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-43:q0064",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-43:q0065",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-43:q0069",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-43:q0070",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-44:q0001",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-44:q0002",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "Andrew started his new job",
+          "the job was as a financial analyst"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence confirms Andrew started a new job as a Financial Analyst last week, which aligns with the semantic conditions in the question. The answer 'the week before 27 March 2023' correctly resolves 'last week' relative to the mentioned_at timestamp of 2023-03-27, and the role identity matches the required role. No semantic conditions are omitted, and the temporal resolution is valid."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "the week before 27 March 2023",
+      "usage": {
+        "prompt_tokens": 550,
+        "total_tokens": 745,
+        "completion_tokens": 195,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 2.4200546978972852,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-44:q0005",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-44:q0006",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "Audrey saw a hummingbird",
+          "the event occurred during a hike"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence confirms Audrey had an experience with a hummingbird on a hike, and the time expression 'Last week' relative to the mention date of 2023-05-03 resolves to the week before 3 May 2023, which fully satisfies the question's semantic conditions."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "the week before 3 May 2023",
+      "usage": {
+        "prompt_tokens": 547,
+        "total_tokens": 716,
+        "completion_tokens": 169,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 2.0849325209856033,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-44:q0007",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-44:q0008",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-44:q0009",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-44:q0011",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-44:q0012",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-44:q0014",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-44:q0017",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-44:q0023",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-44:q0026",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-44:q0031",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-44:q0035",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-44:q0038",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-44:q0039",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-44:q0046",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-44:q0047",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-44:q0048",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-44:q0056",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-44:q0058",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-44:q0059",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-44:q0060",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-47:q0002",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-47:q0005",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-47:q0011",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-47:q0012",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-47:q0014",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-47:q0015",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "James bought an adventure book",
+          "the purchase was self-directed (himself)",
+          "the book is an adventure book"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence confirms James bought an adventure book three days ago, which resolves to 26 April 2022. All semantic conditions in the question are satisfied, and the temporal arithmetic is correct."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "26 April 2022",
+      "usage": {
+        "prompt_tokens": 549,
+        "total_tokens": 706,
+        "completion_tokens": 157,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 1.9774824440246448,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-47:q0016",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-47:q0022",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-47:q0024",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-47:q0029",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-47:q0030",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "James departed for his trip to Canada",
+          "the departure occurred on a specific date"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence states 'I’m leaving the day after tomorrow evening' on 2022-07-09, which resolves to 2022-07-11. This matches the required role and the date point answer is fully entailed by the temporal logic."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "11 July 2022",
+      "usage": {
+        "prompt_tokens": 550,
+        "total_tokens": 718,
+        "completion_tokens": 168,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 2.1004523169249296,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-47:q0032",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-47:q0033",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-47:q0038",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-47:q0040",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-47:q0042",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-47:q0043",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-47:q0044",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-47:q0047",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "John and James met at McGee's bar",
+          "the meeting occurred on a specific date"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence confirms John and James meeting at McGee's Pub tomorrow relative to 2022-08-26, which resolves to 2022-08-27. The role 'meeting at McGee's bar' is fully supported, and the temporal reasoning is correct."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "27 August 2022",
+      "usage": {
+        "prompt_tokens": 544,
+        "total_tokens": 717,
+        "completion_tokens": 173,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 2.1651279689976946,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-47:q0048",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "James asked Samantha to be his girlfriend"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The event 'James asked Samantha to be his girlfriend' is explicitly mentioned in the evidence with a resolved time anchor 'Yesterday' relative to '2022-09-04T21:23:00', which resolves to '2022-09-03'. The answer '3 September 2022' correctly reflects this date, and all semantic conditions are fully satisfied."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "3 September 2022",
+      "usage": {
+        "prompt_tokens": 551,
+        "total_tokens": 736,
+        "completion_tokens": 185,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 2.2863302789628506,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-47:q0049",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-47:q0051",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-47:q0053",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-47:q0054",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-47:q0056",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-47:q0058",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "James' mother visited James",
+          "James' mother's friend visited James",
+          "The visit occurred at the same time as James' mother's visit"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence confirms that James' mother and her friend visited him two days before 2022-10-21, which resolves to 19 October 2022. All semantic conditions are satisfied, and the temporal arithmetic is correct."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "19 October 2022",
+      "usage": {
+        "prompt_tokens": 549,
+        "total_tokens": 724,
+        "completion_tokens": 175,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 2.2329841930186376,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-47:q0059",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "James tried Cyberpunk 2077"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence 'yesterday I tried Cyberpunk 2077' is anchored to '2022-10-21T19:36:00', so 'yesterday' resolves to '2022-10-20'. The role 'James tried Cyberpunk 2077' is fully supported by the evidence, and the date is correctly derived and matches the query type 'date'."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "20 October 2022",
+      "usage": {
+        "prompt_tokens": 552,
+        "total_tokens": 745,
+        "completion_tokens": 193,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 2.593284855945967,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-47:q0060",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-47:q0062",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-47:q0063",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-47:q0064",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "James started on a road trip",
+          "his family started on a road trip",
+          "his dogs started on a road trip",
+          "all started together"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence 'Yesterday, we started on a road trip' with mentioned_at on 2022-11-05 refers to 2022-11-04, and the role 'James, his family, and his dogs' is fully supported by the fact. All semantic conditions are satisfied, and the date is correctly resolved."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "4 November 2022",
+      "usage": {
+        "prompt_tokens": 544,
+        "total_tokens": 741,
+        "completion_tokens": 197,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 2.5451927229296416,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-47:q0065",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-47:q0066",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-47:q0067",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0001",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0003",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0004",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0005",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0008",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0010",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0011",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0013",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0018",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0022",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0023",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0027",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0028",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0030",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0031",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0032",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0033",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0035",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0036",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "Deborah went for a morning jog",
+          "it was her first time",
+          "the jog occurred in a nearby park",
+          "the jog occurred in the morning"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence confirms Deborah's first morning jog in a nearby park occurred yesterday, which resolved to 24 February 2023, matching all semantic conditions in the question."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "24 February 2023",
+      "usage": {
+        "prompt_tokens": 563,
+        "total_tokens": 724,
+        "completion_tokens": 161,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 2.096627500024624,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-48:q0038",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0039",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0044",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0045",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0046",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0047",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0048",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0051",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0052",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "Jolene is the buyer of the aquarium",
+          "the aquarium is new",
+          "the aquarium is for Seraphim",
+          "the event is a purchase of an aquarium"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence confirms Jolene bought a new aquarium on 24 June 2023, which aligns with the event and entity roles specified in the question. The anchor 'the day before yesterday' relative to 26 June 2023 correctly resolves to 24 June 2023. All semantic conditions are satisfied."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "24 June 2023",
+      "usage": {
+        "prompt_tokens": 535,
+        "total_tokens": 736,
+        "completion_tokens": 201,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 2.6068593279924244,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-48:q0053",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0054",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0055",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0056",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0057",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0058",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0061",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "Deborah went to a yoga retreat",
+          "the yoga retreat was near her mom's place"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence confirms Deborah attended a yoga retreat near her mom's place, and the time 'last week' relative to the mention on 2023-08-24 resolves to the week before 24 August 2023, which fully satisfies the question's semantic conditions and temporal constraints."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "the week before 24 August 2023",
+      "usage": {
+        "prompt_tokens": 550,
+        "total_tokens": 724,
+        "completion_tokens": 174,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 2.257426046067849,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-48:q0066",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0067",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "Jolene and her partner returned home",
+          "from Rio de Janeiro",
+          "after a trip to Rio de Janeiro"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence confirms Jolene and her partner returned from Rio de Janeiro yesterday, which resolves to 29 August 2023, matching the required roles and temporal context."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "29 August 2023",
+      "usage": {
+        "prompt_tokens": 545,
+        "total_tokens": 698,
+        "completion_tokens": 153,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 1.9424837740371004,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-48:q0069",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0072",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0077",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0079",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-48:q0082",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-49:q0005",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-49:q0010",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-49:q0013",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-49:q0014",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-49:q0018",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-49:q0023",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-49:q0024",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-49:q0025",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-49:q0026",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-49:q0031",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-49:q0036",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-49:q0040",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-49:q0041",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-49:q0042",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-49:q0046",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-49:q0048",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-49:q0053",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-49:q0054",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-49:q0059",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "Evan started lifting weights"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence 'I started lifting weights one year ago' mentioned on 2023-10-08 ties the event to 2022-10-08, which is a valid resolution of 'one year ago' relative to the mention time. The answer '2022' is a correct year-level resolution matching the question."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "2022",
+      "usage": {
+        "prompt_tokens": 525,
+        "total_tokens": 696,
+        "completion_tokens": 171,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 2.1299276860663667,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-49:q0060",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-49:q0061",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-49:q0062",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-49:q0064",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-49:q0067",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-49:q0068",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-49:q0069",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-49:q0071",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-49:q0074",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-49:q0075",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-49:q0076",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-49:q0077",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-49:q0080",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-49:q0081",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-50:q0001",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-50:q0003",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-50:q0009",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-50:q0010",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-50:q0011",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-50:q0013",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-50:q0015",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-50:q0017",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-50:q0018",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-50:q0026",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-50:q0027",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "Calvin recorded a podcast",
+          "the podcast was with his friends",
+          "the event occurred on a specific date"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence confirms Calvin and his friends recorded a podcast, with 'yesterday' anchored to 2023-08-21, which matches the required role 'podcast recording' and the date query. All semantic conditions are satisfied."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "21 August 2023",
+      "usage": {
+        "prompt_tokens": 549,
+        "total_tokens": 715,
+        "completion_tokens": 166,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 1.9785304350079969,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-50:q0028",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-50:q0032",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-50:q0035",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "Dave returning from San Francisco"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence states 'yesterday I came back from San Francisco' with a mentioned_at timestamp of 2023-09-02, so 'yesterday' resolves to 2023-09-01. The role 'Dave returning from San Francisco' is directly supported by the evidence, and the date is correctly derived as 1 September 2023."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "1 September 2023",
+      "usage": {
+        "prompt_tokens": 549,
+        "total_tokens": 727,
+        "completion_tokens": 178,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 2.2238899290096015,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-50:q0036",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "Calvin is the subject who performed the action of booking flight tickets",
+          "The flight tickets were booked to Boston",
+          "The action of booking occurred at a specific time that needs to be determined"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence confirms Calvin booked a flight to Boston 'last week' relative to the mention time of 2023-09-02, which resolves to 2023-08-26. The question asks for the time of booking, and the answer 'the week before 2 September 2023' correctly captures this date window with appropriate granularity. All semantic conditions are satisfied, and the temporal reasoning is sound."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "the week before 2 September 2023",
+      "usage": {
+        "prompt_tokens": 533,
+        "total_tokens": 757,
+        "completion_tokens": 224,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 2.786414882983081,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-50:q0037",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-50:q0039",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-50:q0044",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-50:q0045",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-50:q0049",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-50:q0051",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-50:q0052",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-50:q0053",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-50:q0056",
+      "verifier_called": true,
+      "verification": {
+        "question_constraints": [
+          "Calvin visited some sights in Boston",
+          "with a former high school friend",
+          "the visit occurred at a specific time"
+        ],
+        "unsupported_constraints": [],
+        "all_question_operands_present": true,
+        "identities_match_question": true,
+        "anchor_bindings_supported": true,
+        "operation_matches_question": true,
+        "arithmetic_or_ordering_correct": true,
+        "answer_fully_entailed": true,
+        "safe_to_override_d0": true,
+        "reason": "The evidence confirms Calvin visited Boston sights with a former high school friend, and 'yesterday' relative to the mention time of 2023-10-25 resolves to 2023-10-24, fully satisfying all semantic conditions in the question."
+      },
+      "safe_to_override_d0": true,
+      "candidate_answer": "24 October 2023",
+      "usage": {
+        "prompt_tokens": 569,
+        "total_tokens": 745,
+        "completion_tokens": 176,
+        "prompt_tokens_details": null
+      },
+      "elapsed_seconds": 2.1918317220406607,
+      "attempts": 1
+    },
+    {
+      "question_id": "conv-50:q0058",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-50:q0062",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-50:q0063",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-50:q0066",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-50:q0068",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-50:q0069",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-50:q0070",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    },
+    {
+      "question_id": "conv-50:q0071",
+      "verifier_called": false,
+      "safe_to_override_d0": false,
+      "reason": "pre_verifier_failed"
+    }
+  ]
+}

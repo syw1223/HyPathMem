@@ -1,0 +1,2529 @@
+{
+  "metadata": {
+    "version": "8.5time_v",
+    "mode": "enrich",
+    "source_8_4": "/home/sunyuwei/HyTopoMem/outputs/reconstruction/hypathmem_8.4time_v/longmemeval_temporal133_h1_h5_trial3.json",
+    "model": "qwen3-30b-a3b-instruct-2507",
+    "gold_provided_to_extractor_or_verifier": false,
+    "packet_reader_enabled": false,
+    "elapsed_seconds": 9.25514301797375
+  },
+  "summary": {
+    "num_questions": 35,
+    "structural_operand_coverage": 35,
+    "validated_operand_coverage": 2,
+    "repairable_by_time_enrichment": 12,
+    "failure_funnel": {
+      "event_identity_unreliable": 4,
+      "hypothesis_conflict": 3,
+      "occurred_time_missing": 12,
+      "operand_missing_or_outside_top50": 12,
+      "safety_gate_rejected": 1,
+      "solver_type_unsupported": 3
+    },
+    "new_raw_solver_success": 3,
+    "new_pre_verifier_eligible": 3,
+    "new_verifier_safe": 3
+  },
+  "rows": [
+    {
+      "question_id": "lme_0243_9a707b81:q0001",
+      "question": "How many days ago did I attend a baking class at a local culinary school when I made my friend's birthday cake?",
+      "question_date": "2022/04/15 (Fri) 18:46",
+      "conversion_audit": {
+        "question_id": "lme_0243_9a707b81:q0001",
+        "question_type": "recency",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": true,
+        "identity_grounded": true,
+        "raw_grounded": true,
+        "occurred_time_grounded": true,
+        "anchor_resolved": true,
+        "solver_supported": true,
+        "hypothesis_consistent": true,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": true,
+        "repairable_by_time_enrichment": false,
+        "failure_type": "safety_gate_rejected"
+      },
+      "extraction_called": false,
+      "validated_enrichments": [],
+      "rejected_enrichments": [],
+      "enriched_candidate": null,
+      "verifier": {
+        "called": false,
+        "safe_to_override_d0": false
+      }
+    },
+    {
+      "question_id": "lme_0265_gpt4_d6585ce8:q0001",
+      "question": "What is the order of the concerts and musical events I attended in the past two months, starting from the earliest?",
+      "question_date": "2023/04/22 (Sat) 19:31",
+      "conversion_audit": {
+        "question_id": "lme_0265_gpt4_d6585ce8:q0001",
+        "question_type": "ordering",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": false,
+        "identity_grounded": true,
+        "raw_grounded": true,
+        "occurred_time_grounded": true,
+        "anchor_resolved": true,
+        "solver_supported": true,
+        "hypothesis_consistent": true,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": false,
+        "repairable_by_time_enrichment": false,
+        "failure_type": "operand_missing_or_outside_top50"
+      },
+      "extraction_called": false,
+      "validated_enrichments": [],
+      "rejected_enrichments": [],
+      "enriched_candidate": null,
+      "verifier": {
+        "called": false,
+        "safe_to_override_d0": false
+      }
+    },
+    {
+      "question_id": "lme_0326_982b5123:q0001",
+      "question": "How many months ago did I book the Airbnb in San Francisco?",
+      "question_date": "2023/05/21 (Sun) 10:30",
+      "conversion_audit": {
+        "question_id": "lme_0326_982b5123:q0001",
+        "question_type": "recency",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": true,
+        "identity_grounded": false,
+        "raw_grounded": true,
+        "occurred_time_grounded": false,
+        "anchor_resolved": true,
+        "solver_supported": true,
+        "hypothesis_consistent": true,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": false,
+        "repairable_by_time_enrichment": false,
+        "failure_type": "event_identity_unreliable"
+      },
+      "extraction_called": false,
+      "validated_enrichments": [],
+      "rejected_enrichments": [],
+      "enriched_candidate": null,
+      "verifier": {
+        "called": false,
+        "safe_to_override_d0": false
+      }
+    },
+    {
+      "question_id": "lme_0362_gpt4_93159ced_abs:q0001",
+      "question": "How long have I been working before I started my current job at Google?",
+      "question_date": "2023/05/30 (Tue) 18:54",
+      "conversion_audit": {
+        "question_id": "lme_0362_gpt4_93159ced_abs:q0001",
+        "question_type": "elapsed",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": false,
+        "identity_grounded": true,
+        "raw_grounded": true,
+        "occurred_time_grounded": false,
+        "anchor_resolved": true,
+        "solver_supported": true,
+        "hypothesis_consistent": true,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": false,
+        "repairable_by_time_enrichment": false,
+        "failure_type": "operand_missing_or_outside_top50"
+      },
+      "extraction_called": false,
+      "validated_enrichments": [],
+      "rejected_enrichments": [],
+      "enriched_candidate": null,
+      "verifier": {
+        "called": false,
+        "safe_to_override_d0": false
+      }
+    },
+    {
+      "question_id": "lme_0253_gpt4_1916e0ea:q0001",
+      "question": "How many days passed between the day I cancelled my FarmFresh subscription and the day I did my online grocery shopping from Instacart?",
+      "question_date": "2023/03/18 (Sat) 00:06",
+      "conversion_audit": {
+        "question_id": "lme_0253_gpt4_1916e0ea:q0001",
+        "question_type": "elapsed",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": true,
+        "identity_grounded": true,
+        "raw_grounded": true,
+        "occurred_time_grounded": false,
+        "anchor_resolved": true,
+        "solver_supported": true,
+        "hypothesis_consistent": true,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": false,
+        "repairable_by_time_enrichment": true,
+        "failure_type": "occurred_time_missing"
+      },
+      "extraction_called": true,
+      "validated_enrichments": [],
+      "rejected_enrichments": [
+        {
+          "extraction": {
+            "event_id": "unit:lme_0253_gpt4_1916e0ea:fact_sent:s004:answer_447052a5_2:t006:s003",
+            "identity_supported": true,
+            "time_expression": "I'm glad I cancelled my monthly grocery delivery subscription from FarmFresh, which I wasn't using frequently enough, and saved $100 per month.",
+            "anchor_type": "mentioned_at",
+            "anchor_event_id": null,
+            "relation": "NONE",
+            "offset_value": 0,
+            "offset_unit": "day",
+            "confidence": 0.4,
+            "ambiguity": []
+          },
+          "reason": "confidence_below_0.90"
+        },
+        {
+          "extraction": {
+            "event_id": "unit:lme_0253_gpt4_1916e0ea:fact_sent:s017:answer_447052a5_1:t000:s003",
+            "identity_supported": true,
+            "time_expression": "I just did an online grocery order from Instacart and had it delivered to my doorstep, and spent around $60 today.",
+            "anchor_type": "event",
+            "anchor_event_id": "unit:lme_0253_gpt4_1916e0ea:fact_sent:s017:answer_447052a5_1:t000:s003",
+            "relation": "SAME_TIME",
+            "offset_value": 0,
+            "offset_unit": "day",
+            "confidence": 0.9,
+            "ambiguity": []
+          },
+          "reason": "not_unresolved_operand"
+        }
+      ],
+      "enriched_candidate": {
+        "version": "8.5time_v",
+        "question_id": "lme_0253_gpt4_1916e0ea:q0001",
+        "candidate_source": "8.5time_v_constraint_conversion",
+        "operands": [
+          {
+            "role": "FarmFresh subscription cancellation",
+            "identity": "FarmFresh subscription cancellation",
+            "fact_id": "unit:lme_0253_gpt4_1916e0ea:fact_sent:s004:answer_447052a5_2:t006:s003",
+            "raw_id": "lme_0253_gpt4_1916e0ea:raw:s004:answer_447052a5_2:t006",
+            "evidence_span": "user: I've been meaning to organize my pantry and kitchen cabinets for a while now, and your suggestions are super helpful. I'm excited to get started this weekend. By the way, I'm glad I cancelled my monthly grocery delivery subscription from FarmFresh, which I wasn't using frequently enough, and saved $100 per month. It's great to be more mindful of my spending and plan my meals more efficiently.",
+            "mentioned_at": "2023-01-05T18:23:00",
+            "occurred_at": null,
+            "normalization_status": "mentioned_only",
+            "confidence": 0.4
+          },
+          {
+            "role": "Instacart online grocery shopping",
+            "identity": "Instacart online grocery shopping",
+            "fact_id": "unit:lme_0253_gpt4_1916e0ea:fact_sent:s017:answer_447052a5_1:t000:s003",
+            "raw_id": "lme_0253_gpt4_1916e0ea:raw:s017:answer_447052a5_1:t000",
+            "evidence_span": "user: I'm planning to make some new recipes this week and I need some inspiration. Can you suggest some healthy dinner ideas that incorporate chicken breasts and ground beef? By the way, I just did an online grocery order from Instacart and had it delivered to my doorstep, and spent around $60 today.",
+            "mentioned_at": "2023-02-28T22:12:00",
+            "occurred_at": "2023-02-28T22:12:00",
+            "normalization_status": "exact",
+            "confidence": 0.9
+          }
+        ],
+        "constraints": [],
+        "propagation": {
+          "resolved_times": {
+            "unit:lme_0253_gpt4_1916e0ea:fact_sent:s017:answer_447052a5_1:t000:s003": "2023-02-28T22:12:00"
+          },
+          "conflicts": [],
+          "consistent": true
+        },
+        "solution": {
+          "success": false,
+          "answer": null,
+          "operation": "ELAPSED",
+          "failure_reason": "non_executable_constraints"
+        },
+        "reverse_verification": {
+          "passed": false,
+          "reason": "solver_failed"
+        },
+        "eligible_for_q4_verifier": false
+      },
+      "verifier": {
+        "called": false,
+        "safe_to_override_d0": false
+      },
+      "extraction_reused_from": "/home/sunyuwei/HyTopoMem/outputs/reconstruction/hypathmem_8.5time_v/non_executable35_conversion_qwen_gpu2.json",
+      "extraction": {
+        "extractions": [
+          {
+            "event_id": "unit:lme_0253_gpt4_1916e0ea:fact_sent:s004:answer_447052a5_2:t006:s003",
+            "identity_supported": true,
+            "time_expression": "I'm glad I cancelled my monthly grocery delivery subscription from FarmFresh, which I wasn't using frequently enough, and saved $100 per month.",
+            "anchor_type": "mentioned_at",
+            "anchor_event_id": null,
+            "relation": "NONE",
+            "offset_value": 0,
+            "offset_unit": "day",
+            "confidence": 0.4,
+            "ambiguity": []
+          },
+          {
+            "event_id": "unit:lme_0253_gpt4_1916e0ea:fact_sent:s017:answer_447052a5_1:t000:s003",
+            "identity_supported": true,
+            "time_expression": "I just did an online grocery order from Instacart and had it delivered to my doorstep, and spent around $60 today.",
+            "anchor_type": "event",
+            "anchor_event_id": "unit:lme_0253_gpt4_1916e0ea:fact_sent:s017:answer_447052a5_1:t000:s003",
+            "relation": "SAME_TIME",
+            "offset_value": 0,
+            "offset_unit": "day",
+            "confidence": 0.9,
+            "ambiguity": []
+          }
+        ]
+      },
+      "extraction_usage": {
+        "prompt_tokens": 1042,
+        "total_tokens": 1412,
+        "completion_tokens": 370,
+        "prompt_tokens_details": null
+      },
+      "extraction_elapsed_seconds": 0.0,
+      "extraction_attempts": 0
+    },
+    {
+      "question_id": "lme_0261_gpt4_45189cb4:q0001",
+      "question": "What is the order of the sports events I watched in January?",
+      "question_date": "2023/01/30 (Mon) 01:53",
+      "conversion_audit": {
+        "question_id": "lme_0261_gpt4_45189cb4:q0001",
+        "question_type": "ordering",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": false,
+        "identity_grounded": true,
+        "raw_grounded": true,
+        "occurred_time_grounded": false,
+        "anchor_resolved": true,
+        "solver_supported": true,
+        "hypothesis_consistent": true,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": false,
+        "repairable_by_time_enrichment": false,
+        "failure_type": "operand_missing_or_outside_top50"
+      },
+      "extraction_called": false,
+      "validated_enrichments": [],
+      "rejected_enrichments": [],
+      "enriched_candidate": null,
+      "verifier": {
+        "called": false,
+        "safe_to_override_d0": false
+      }
+    },
+    {
+      "question_id": "lme_0263_gpt4_e061b84f:q0001",
+      "question": "What is the order of the three sports events I participated in during the past month, from earliest to latest?",
+      "question_date": "2023/07/01 (Sat) 20:43",
+      "conversion_audit": {
+        "question_id": "lme_0263_gpt4_e061b84f:q0001",
+        "question_type": "ordering",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": false,
+        "identity_grounded": true,
+        "raw_grounded": true,
+        "occurred_time_grounded": true,
+        "anchor_resolved": true,
+        "solver_supported": true,
+        "hypothesis_consistent": true,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": false,
+        "repairable_by_time_enrichment": false,
+        "failure_type": "operand_missing_or_outside_top50"
+      },
+      "extraction_called": false,
+      "validated_enrichments": [],
+      "rejected_enrichments": [],
+      "enriched_candidate": null,
+      "verifier": {
+        "called": false,
+        "safe_to_override_d0": false
+      }
+    },
+    {
+      "question_id": "lme_0268_6e984301:q0001",
+      "question": "How many weeks have I been taking sculpting classes when I invested in my own set of sculpting tools?",
+      "question_date": "2023/04/01 (Sat) 18:55",
+      "conversion_audit": {
+        "question_id": "lme_0268_6e984301:q0001",
+        "question_type": "elapsed",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": false,
+        "identity_grounded": true,
+        "raw_grounded": true,
+        "occurred_time_grounded": true,
+        "anchor_resolved": true,
+        "solver_supported": true,
+        "hypothesis_consistent": true,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": false,
+        "repairable_by_time_enrichment": false,
+        "failure_type": "operand_missing_or_outside_top50"
+      },
+      "extraction_called": false,
+      "validated_enrichments": [],
+      "rejected_enrichments": [],
+      "enriched_candidate": null,
+      "verifier": {
+        "called": false,
+        "safe_to_override_d0": false
+      }
+    },
+    {
+      "question_id": "lme_0270_gpt4_f420262c:q0001",
+      "question": "What is the order of airlines I flew with from earliest to latest before today?",
+      "question_date": "2023/03/02 (Thu) 06:11",
+      "conversion_audit": {
+        "question_id": "lme_0270_gpt4_f420262c:q0001",
+        "question_type": "ordering",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": false,
+        "identity_grounded": true,
+        "raw_grounded": true,
+        "occurred_time_grounded": true,
+        "anchor_resolved": true,
+        "solver_supported": true,
+        "hypothesis_consistent": true,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": false,
+        "repairable_by_time_enrichment": false,
+        "failure_type": "operand_missing_or_outside_top50"
+      },
+      "extraction_called": false,
+      "validated_enrichments": [],
+      "rejected_enrichments": [],
+      "enriched_candidate": null,
+      "verifier": {
+        "called": false,
+        "safe_to_override_d0": false
+      }
+    },
+    {
+      "question_id": "lme_0276_gpt4_98f46fc6:q0001",
+      "question": "Which event did I participate in first, the charity gala or the charity bake sale?",
+      "question_date": "2023/05/01 (Mon) 12:15",
+      "conversion_audit": {
+        "question_id": "lme_0276_gpt4_98f46fc6:q0001",
+        "question_type": "ordering",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": true,
+        "identity_grounded": true,
+        "raw_grounded": true,
+        "occurred_time_grounded": false,
+        "anchor_resolved": false,
+        "solver_supported": true,
+        "hypothesis_consistent": true,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": false,
+        "repairable_by_time_enrichment": true,
+        "failure_type": "occurred_time_missing"
+      },
+      "extraction_called": true,
+      "validated_enrichments": [],
+      "rejected_enrichments": [
+        {
+          "extraction": {
+            "event_id": "unit:lme_0276_gpt4_98f46fc6:fact_sent:s006:answer_5850de18_2:t000:s001",
+            "identity_supported": true,
+            "time_expression": "today",
+            "anchor_type": "mentioned_at",
+            "anchor_event_id": null,
+            "relation": "ABSOLUTE",
+            "offset_value": 0,
+            "offset_unit": "day",
+            "confidence": 0.98,
+            "ambiguity": []
+          },
+          "reason": "not_unresolved_operand"
+        },
+        {
+          "extraction": {
+            "event_id": "unit:lme_0276_gpt4_98f46fc6:fact_sent:s013:answer_5850de18_1:t006:s002",
+            "identity_supported": true,
+            "time_expression": "no explicit temporal expression",
+            "anchor_type": "NONE",
+            "anchor_event_id": null,
+            "relation": "NONE",
+            "offset_value": 0,
+            "offset_unit": "day",
+            "confidence": 0.45,
+            "ambiguity": []
+          },
+          "reason": "time_expression_not_in_raw"
+        }
+      ],
+      "enriched_candidate": {
+        "version": "8.5time_v",
+        "question_id": "lme_0276_gpt4_98f46fc6:q0001",
+        "candidate_source": "8.5time_v_constraint_conversion",
+        "operands": [
+          {
+            "role": "charity gala",
+            "identity": "charity gala",
+            "fact_id": "unit:lme_0276_gpt4_98f46fc6:fact_sent:s013:answer_5850de18_1:t006:s002",
+            "raw_id": "lme_0276_gpt4_98f46fc6:raw:s013:answer_5850de18_1:t005",
+            "evidence_span": "assistant: That's great to hear! It's wonderful that you're continuing to support the local food bank, and I'm sure they appreciate your dedication. Raising $250 is an impressive achievement, and I'm sure you can beat that goal this time around. Here are some tips to help you increase your fundraising efforts: 1. **Start early**: The more time you have to fundraise, the better. Create a fundraising page and start sharing it with friends, family, and social networks as soon as possible. 2. **Set a specific goal**: Instead of just saying \"I want to raise more than $250,\" set a specific goal, like \"I want to raise $500 for the local food bank.\" This will give you a clear target to work towards. 3. **Tell your story**: Share why you're participating in the 5K and why the local food bank is important to you. This will help people connect with your cause and be more likely to donate. 4. **Use social media**: Share your fundraising page on social media platforms, and encourage your friends and family to share it with their networks. Use hashtags to reach a wider audience. 5. **Reach out to local businesses**: Consider reaching out to local businesses to see if they'd be willing to sponsor you or make a donation to your fundraising efforts. 6. **Offer incentives**: Consider offering incentives for different donation levels, such as \"If you donate $25, I'll send you a personalized thank-you note\" or \"If you donate $50, I'll wear a funny costume during the 5K.\" 7. **Follow up**: Don't be afraid to follow up with people who haven't donated yet. A gentle reminder can go a long way in encouraging people to support your cause. Remember, every dollar counts, and even if you don't reach your goal, you'll still be making a difference for the local food bank. Good luc [quote truncated]",
+            "mentioned_at": "2023-03-28T16:44:00",
+            "occurred_at": null,
+            "normalization_status": "symbolic",
+            "confidence": 0.45
+          },
+          {
+            "role": "charity bake sale",
+            "identity": "charity bake sale",
+            "fact_id": "unit:lme_0276_gpt4_98f46fc6:fact_sent:s006:answer_5850de18_2:t000:s001",
+            "raw_id": "lme_0276_gpt4_98f46fc6:raw:s006:answer_5850de18_2:t000",
+            "evidence_span": "user: I'm looking for some healthy snack ideas for my office. I help organize a charity bake sale at my office today, so I want to make sure I'm not bringing too many sweet treats. Do you have any suggestions for savory snacks that are easy to make and won't spoil easily?",
+            "mentioned_at": "2023-03-15T00:21:00",
+            "occurred_at": "2023-03-15T00:21:00",
+            "normalization_status": "resolved",
+            "confidence": 0.98
+          }
+        ],
+        "constraints": [],
+        "propagation": {
+          "resolved_times": {
+            "unit:lme_0276_gpt4_98f46fc6:fact_sent:s006:answer_5850de18_2:t000:s001": "2023-03-15T00:21:00"
+          },
+          "conflicts": [],
+          "consistent": true
+        },
+        "solution": {
+          "success": false,
+          "answer": null,
+          "operation": "ORDERING",
+          "failure_reason": "non_executable_constraints"
+        },
+        "reverse_verification": {
+          "passed": false,
+          "reason": "solver_failed"
+        },
+        "eligible_for_q4_verifier": false
+      },
+      "verifier": {
+        "called": false,
+        "safe_to_override_d0": false
+      },
+      "extraction_reused_from": "/home/sunyuwei/HyTopoMem/outputs/reconstruction/hypathmem_8.5time_v/non_executable35_conversion_qwen_gpu2.json",
+      "extraction": {
+        "extractions": [
+          {
+            "event_id": "unit:lme_0276_gpt4_98f46fc6:fact_sent:s006:answer_5850de18_2:t000:s001",
+            "identity_supported": true,
+            "time_expression": "today",
+            "anchor_type": "mentioned_at",
+            "anchor_event_id": null,
+            "relation": "ABSOLUTE",
+            "offset_value": 0,
+            "offset_unit": "day",
+            "confidence": 0.98,
+            "ambiguity": []
+          },
+          {
+            "event_id": "unit:lme_0276_gpt4_98f46fc6:fact_sent:s013:answer_5850de18_1:t006:s002",
+            "identity_supported": true,
+            "time_expression": "no explicit temporal expression",
+            "anchor_type": "NONE",
+            "anchor_event_id": null,
+            "relation": "NONE",
+            "offset_value": 0,
+            "offset_unit": "day",
+            "confidence": 0.45,
+            "ambiguity": []
+          }
+        ]
+      },
+      "extraction_usage": {
+        "prompt_tokens": 1668,
+        "total_tokens": 1940,
+        "completion_tokens": 272,
+        "prompt_tokens_details": null
+      },
+      "extraction_elapsed_seconds": 0.0,
+      "extraction_attempts": 0
+    },
+    {
+      "question_id": "lme_0278_eac54adc:q0001",
+      "question": "How many days ago did I launch my website when I signed a contract with my first client?",
+      "question_date": "2023/03/25 (Sat) 19:57",
+      "conversion_audit": {
+        "question_id": "lme_0278_eac54adc:q0001",
+        "question_type": "elapsed",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": true,
+        "identity_grounded": true,
+        "raw_grounded": true,
+        "occurred_time_grounded": false,
+        "anchor_resolved": true,
+        "solver_supported": true,
+        "hypothesis_consistent": false,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": false,
+        "repairable_by_time_enrichment": false,
+        "failure_type": "hypothesis_conflict"
+      },
+      "extraction_called": false,
+      "validated_enrichments": [],
+      "rejected_enrichments": [],
+      "enriched_candidate": null,
+      "verifier": {
+        "called": false,
+        "safe_to_override_d0": false
+      }
+    },
+    {
+      "question_id": "lme_0285_gpt4_7ca326fa:q0001",
+      "question": "Who graduated first, second and third among Emma, Rachel and Alex?",
+      "question_date": "2022/08/20 (Sat) 21:47",
+      "conversion_audit": {
+        "question_id": "lme_0285_gpt4_7ca326fa:q0001",
+        "question_type": "ordering",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": true,
+        "identity_grounded": true,
+        "raw_grounded": true,
+        "occurred_time_grounded": false,
+        "anchor_resolved": false,
+        "solver_supported": true,
+        "hypothesis_consistent": true,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": false,
+        "repairable_by_time_enrichment": true,
+        "failure_type": "occurred_time_missing"
+      },
+      "extraction_called": true,
+      "validated_enrichments": [],
+      "rejected_enrichments": [
+        {
+          "extraction": {
+            "event_id": "unit:lme_0285_gpt4_7ca326fa:fact_sent:s014:answer_cf021b36_1:t002:s004",
+            "identity_supported": true,
+            "time_expression": "2022-05-28T11:17:00",
+            "anchor_type": "mentioned_at",
+            "anchor_event_id": null,
+            "relation": "ABSOLUTE",
+            "offset_value": 0,
+            "offset_unit": "day",
+            "confidence": 0.45,
+            "ambiguity": []
+          },
+          "reason": "time_expression_not_in_raw"
+        },
+        {
+          "extraction": {
+            "event_id": "unit:lme_0285_gpt4_7ca326fa:fact_sent:s020:answer_cf021b36_2:t000:s004",
+            "identity_supported": true,
+            "time_expression": "yesterday",
+            "anchor_type": "mentioned_at",
+            "anchor_event_id": "unit:lme_0285_gpt4_7ca326fa:fact_sent:s020:answer_cf021b36_2:t000:s004",
+            "relation": "BEFORE_OFFSET",
+            "offset_value": 1,
+            "offset_unit": "day",
+            "confidence": 0.98,
+            "ambiguity": []
+          },
+          "reason": "not_unresolved_operand"
+        },
+        {
+          "extraction": {
+            "event_id": "unit:lme_0285_gpt4_7ca326fa:fact_sent:s052:answer_cf021b36_3:t000:s001",
+            "identity_supported": true,
+            "time_expression": "about two weeks ago",
+            "anchor_type": "mentioned_at",
+            "anchor_event_id": "unit:lme_0285_gpt4_7ca326fa:fact_sent:s052:answer_cf021b36_3:t000:s001",
+            "relation": "BEFORE_OFFSET",
+            "offset_value": 14,
+            "offset_unit": "day",
+            "confidence": 0.98,
+            "ambiguity": []
+          },
+          "reason": "not_unresolved_operand"
+        }
+      ],
+      "enriched_candidate": {
+        "version": "8.5time_v",
+        "question_id": "lme_0285_gpt4_7ca326fa:q0001",
+        "candidate_source": "8.5time_v_constraint_conversion",
+        "operands": [
+          {
+            "role": "first_graduate",
+            "identity": "first_graduate",
+            "fact_id": "unit:lme_0285_gpt4_7ca326fa:fact_sent:s014:answer_cf021b36_1:t002:s004",
+            "raw_id": "lme_0285_gpt4_7ca326fa:raw:s014:answer_cf021b36_1:t001",
+            "evidence_span": "assistant: Congratulations to Emma on her graduation! What a significant milestone! I'd be happy to help you find a thoughtful gift to celebrate her achievement. Here are some ideas to get you started: 1. **Personalized Items**: * Engraved necklace or bracelet with her name, initials, or graduation year. * Customized photo album or frame with pictures from her high school days. * Monogrammed tote bag, pillow, or blanket. 2. **Memories and Reflections**: * Create a heartfelt letter or video message expressing your pride and hopes for her future. * A beautifully designed journal or diary for her to reflect on her journey and set goals for the future. * A customized graduation plaque or shadow box to display her diploma and memories. 3. **Experiences and Adventures**: * Gift her an experience, like tickets to a concert, play, or sporting event. * Plan a fun outing or weekend getaway to a nearby city or attraction. * Consider contributing to a bigger trip or travel experience, like a gap year program or a summer volunteer opportunity. 4. **Practical and Functional**: * A new laptop or tablet for college or future endeavors. * A set of high-quality kitchen essentials for her first apartment or dorm room. * A cozy care package with items like a plush blanket, favorite snacks, and a gift card to her favorite coffee shop. 5. **Inspirational and Motivational**: * A motivational book or biography of a successful person in her desired field. * A beautiful piece of artwork or print with a quote that inspires her. * A subscription to a magazine or online platform focused on her interests or career goals. 6. **Cash and Gift Cards**: * A thoughtful cash gift to help with college expenses, a car, or other big purchases. * Gift cards to her favorite stores or online [quote truncated]",
+            "mentioned_at": "2022-05-28T11:17:00",
+            "occurred_at": null,
+            "normalization_status": "symbolic",
+            "confidence": 0.45
+          },
+          {
+            "role": "second_graduate",
+            "identity": "second_graduate",
+            "fact_id": "unit:lme_0285_gpt4_7ca326fa:fact_sent:s020:answer_cf021b36_2:t000:s004",
+            "raw_id": "lme_0285_gpt4_7ca326fa:raw:s020:answer_cf021b36_2:t000",
+            "evidence_span": "user: I'm planning a trip to visit my family soon and I need some help with gift ideas for my cousin John, who just graduated from college with a degree in engineering today. I was thinking of getting him something personalized, like an engraved accessory or a customized item for his new job. Do you have any suggestions? By the way, I just got back from my friend Rachel's master's degree graduation ceremony yesterday, which was amazing - she must be thrilled to finally have that behind her.",
+            "mentioned_at": "2022-06-22T11:46:00",
+            "occurred_at": "2022-06-21T11:46:00",
+            "normalization_status": "resolved",
+            "confidence": 0.98
+          },
+          {
+            "role": "third_graduate",
+            "identity": "third_graduate",
+            "fact_id": "unit:lme_0285_gpt4_7ca326fa:fact_sent:s052:answer_cf021b36_3:t000:s001",
+            "raw_id": "lme_0285_gpt4_7ca326fa:raw:s052:answer_cf021b36_3:t000",
+            "evidence_span": "user: I'm looking for some gift ideas for my cousin Alex, who graduated with a degree in engineering from college about two weeks ago. He's been job hunting, so maybe something that'll help him with that?",
+            "mentioned_at": "2022-07-15T10:48:00",
+            "occurred_at": "2022-07-01T10:48:00",
+            "normalization_status": "resolved",
+            "confidence": 0.98
+          }
+        ],
+        "constraints": [],
+        "propagation": {
+          "resolved_times": {
+            "unit:lme_0285_gpt4_7ca326fa:fact_sent:s020:answer_cf021b36_2:t000:s004": "2022-06-21T11:46:00",
+            "unit:lme_0285_gpt4_7ca326fa:fact_sent:s052:answer_cf021b36_3:t000:s001": "2022-07-01T10:48:00"
+          },
+          "conflicts": [],
+          "consistent": true
+        },
+        "solution": {
+          "success": false,
+          "answer": null,
+          "operation": "ORDERING",
+          "failure_reason": "non_executable_constraints"
+        },
+        "reverse_verification": {
+          "passed": false,
+          "reason": "solver_failed"
+        },
+        "eligible_for_q4_verifier": false
+      },
+      "verifier": {
+        "called": false,
+        "safe_to_override_d0": false
+      },
+      "extraction_reused_from": "/home/sunyuwei/HyTopoMem/outputs/reconstruction/hypathmem_8.5time_v/non_executable35_conversion_qwen_gpu2.json",
+      "extraction": {
+        "extractions": [
+          {
+            "event_id": "unit:lme_0285_gpt4_7ca326fa:fact_sent:s014:answer_cf021b36_1:t002:s004",
+            "identity_supported": true,
+            "time_expression": "2022-05-28T11:17:00",
+            "anchor_type": "mentioned_at",
+            "anchor_event_id": null,
+            "relation": "ABSOLUTE",
+            "offset_value": 0,
+            "offset_unit": "day",
+            "confidence": 0.45,
+            "ambiguity": []
+          },
+          {
+            "event_id": "unit:lme_0285_gpt4_7ca326fa:fact_sent:s020:answer_cf021b36_2:t000:s004",
+            "identity_supported": true,
+            "time_expression": "yesterday",
+            "anchor_type": "mentioned_at",
+            "anchor_event_id": "unit:lme_0285_gpt4_7ca326fa:fact_sent:s020:answer_cf021b36_2:t000:s004",
+            "relation": "BEFORE_OFFSET",
+            "offset_value": 1,
+            "offset_unit": "day",
+            "confidence": 0.98,
+            "ambiguity": []
+          },
+          {
+            "event_id": "unit:lme_0285_gpt4_7ca326fa:fact_sent:s052:answer_cf021b36_3:t000:s001",
+            "identity_supported": true,
+            "time_expression": "about two weeks ago",
+            "anchor_type": "mentioned_at",
+            "anchor_event_id": "unit:lme_0285_gpt4_7ca326fa:fact_sent:s052:answer_cf021b36_3:t000:s001",
+            "relation": "BEFORE_OFFSET",
+            "offset_value": 14,
+            "offset_unit": "day",
+            "confidence": 0.98,
+            "ambiguity": []
+          }
+        ]
+      },
+      "extraction_usage": {
+        "prompt_tokens": 1841,
+        "total_tokens": 2349,
+        "completion_tokens": 508,
+        "prompt_tokens_details": null
+      },
+      "extraction_elapsed_seconds": 0.0,
+      "extraction_attempts": 0
+    },
+    {
+      "question_id": "lme_0293_gpt4_f420262d:q0001",
+      "question": "What was the airline that I flied with on Valentine's day?",
+      "question_date": "2023/03/02 (Thu) 08:00",
+      "conversion_audit": {
+        "question_id": "lme_0293_gpt4_f420262d:q0001",
+        "question_type": "attribute_at_time",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": true,
+        "identity_grounded": true,
+        "raw_grounded": true,
+        "occurred_time_grounded": false,
+        "anchor_resolved": true,
+        "solver_supported": false,
+        "hypothesis_consistent": true,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": false,
+        "repairable_by_time_enrichment": false,
+        "failure_type": "solver_type_unsupported"
+      },
+      "extraction_called": false,
+      "validated_enrichments": [],
+      "rejected_enrichments": [],
+      "enriched_candidate": null,
+      "verifier": {
+        "called": false,
+        "safe_to_override_d0": false
+      }
+    },
+    {
+      "question_id": "lme_0299_9a707b82:q0001",
+      "question": "I mentioned cooking something for my friend a couple of days ago. What was it?",
+      "question_date": "2022/04/12 (Tue) 22:57",
+      "conversion_audit": {
+        "question_id": "lme_0299_9a707b82:q0001",
+        "question_type": "recency",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": true,
+        "identity_grounded": true,
+        "raw_grounded": true,
+        "occurred_time_grounded": false,
+        "anchor_resolved": false,
+        "solver_supported": true,
+        "hypothesis_consistent": true,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": false,
+        "repairable_by_time_enrichment": true,
+        "failure_type": "occurred_time_missing"
+      },
+      "extraction_called": true,
+      "validated_enrichments": [],
+      "rejected_enrichments": [
+        {
+          "extraction": {
+            "event_id": "unit:lme_0299_9a707b82:fact_sent:s012:answer_dba89488_1:t010:s003",
+            "identity_supported": true,
+            "time_expression": "a couple of days ago",
+            "anchor_type": "mentioned_at",
+            "anchor_event_id": null,
+            "relation": "NONE",
+            "offset_value": 0,
+            "offset_unit": "day",
+            "confidence": 0.45,
+            "ambiguity": []
+          },
+          "reason": "time_expression_not_in_raw"
+        }
+      ],
+      "enriched_candidate": {
+        "version": "8.5time_v",
+        "question_id": "lme_0299_9a707b82:q0001",
+        "candidate_source": "8.5time_v_constraint_conversion",
+        "operands": [
+          {
+            "role": "cooking for friend",
+            "identity": "cooking for friend",
+            "fact_id": "unit:lme_0299_9a707b82:fact_sent:s012:answer_dba89488_1:t010:s003",
+            "raw_id": "lme_0299_9a707b82:raw:s012:answer_dba89488_1:t009",
+            "evidence_span": "assistant: Croissants are a great addition to your dinner party! Making them from scratch can be a bit challenging, but with some tips and practice, you can achieve those flaky, buttery layers. Here are some tips to help you succeed: 1. **Use high-quality ingredients**: European-style butter with a high fat content (around 82-86%) is essential for creating flaky layers. Use unbleached, unbromated all-purpose flour, and make sure your yeast is fresh and active. 2. **Keep it cold**: Cold ingredients, especially the butter, are crucial for creating flaky layers. Keep your butter in the refrigerator until you're ready to roll it out, and make sure your dough is chilled throughout the process. 3. **Laminate correctly**: Laminating the dough is the key to creating flaky layers. Fold the dough in thirds, like a letter, to create the first layer. Then, rotate the dough 90 degrees, and roll it out to the desired thickness. Repeat this process 3-4 times to create multiple layers. 4. **Don't overwork the dough**: Mix the dough just until the ingredients come together in a shaggy mass. Avoid overmixing, as this will develop the gluten and lead to a dense, tough croissant. 5. **Let it rest**: Give the dough plenty of time to rest and relax. This will allow the gluten to relax, making it easier to roll out the dough and create flaky layers. 6. **Roll out evenly**: Roll out the dough to an even thickness, about 1/4 inch (6 mm). This will help the croissants bake evenly and prevent some from becoming too puffy or too flat. 7. **Cut correctly**: Cut the croissants using a sharp, straight-edged cutter or a pastry wheel. Cut in a gentle, sawing motion to avoid pressing down on the dough. 8. **Proofing is key**: Allow the croissants to proof in a warm, draft-free place [quote truncated]",
+            "mentioned_at": "2022-04-10T23:24:00",
+            "occurred_at": null,
+            "normalization_status": "ambiguous",
+            "confidence": 0.45
+          }
+        ],
+        "constraints": [],
+        "propagation": {
+          "resolved_times": {},
+          "conflicts": [],
+          "consistent": true
+        },
+        "solution": {
+          "success": false,
+          "answer": null,
+          "operation": "RECENCY",
+          "failure_reason": "non_executable_constraints"
+        },
+        "reverse_verification": {
+          "passed": false,
+          "reason": "solver_failed"
+        },
+        "eligible_for_q4_verifier": false
+      },
+      "verifier": {
+        "called": false,
+        "safe_to_override_d0": false
+      },
+      "extraction_reused_from": "/home/sunyuwei/HyTopoMem/outputs/reconstruction/hypathmem_8.5time_v/non_executable35_conversion_qwen_gpu2.json",
+      "extraction": {
+        "extractions": [
+          {
+            "event_id": "unit:lme_0299_9a707b82:fact_sent:s012:answer_dba89488_1:t010:s003",
+            "identity_supported": true,
+            "time_expression": "a couple of days ago",
+            "anchor_type": "mentioned_at",
+            "anchor_event_id": null,
+            "relation": "NONE",
+            "offset_value": 0,
+            "offset_unit": "day",
+            "confidence": 0.45,
+            "ambiguity": []
+          }
+        ]
+      },
+      "extraction_usage": {
+        "prompt_tokens": 1470,
+        "total_tokens": 1611,
+        "completion_tokens": 141,
+        "prompt_tokens_details": null
+      },
+      "extraction_elapsed_seconds": 0.0,
+      "extraction_attempts": 0
+    },
+    {
+      "question_id": "lme_0308_gpt4_2487a7cb:q0001",
+      "question": "Which event did I attend first, the 'Effective Time Management' workshop or the 'Data Analysis using Python' webinar?",
+      "question_date": "2023/05/24 (Wed) 08:02",
+      "conversion_audit": {
+        "question_id": "lme_0308_gpt4_2487a7cb:q0001",
+        "question_type": "ordering",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": true,
+        "identity_grounded": true,
+        "raw_grounded": true,
+        "occurred_time_grounded": false,
+        "anchor_resolved": false,
+        "solver_supported": true,
+        "hypothesis_consistent": false,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": false,
+        "repairable_by_time_enrichment": false,
+        "failure_type": "hypothesis_conflict"
+      },
+      "extraction_called": false,
+      "validated_enrichments": [],
+      "rejected_enrichments": [],
+      "enriched_candidate": null,
+      "verifier": {
+        "called": false,
+        "safe_to_override_d0": false
+      }
+    },
+    {
+      "question_id": "lme_0309_gpt4_76048e76:q0001",
+      "question": "Which vehicle did I take care of first in February, the bike or the car?",
+      "question_date": "2023/03/10 (Fri) 03:39",
+      "conversion_audit": {
+        "question_id": "lme_0309_gpt4_76048e76:q0001",
+        "question_type": "ordering",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": true,
+        "identity_grounded": true,
+        "raw_grounded": true,
+        "occurred_time_grounded": false,
+        "anchor_resolved": false,
+        "solver_supported": true,
+        "hypothesis_consistent": true,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": false,
+        "repairable_by_time_enrichment": true,
+        "failure_type": "occurred_time_missing"
+      },
+      "extraction_called": true,
+      "validated_enrichments": [
+        {
+          "event_id": "unit:lme_0309_gpt4_76048e76:fact_sent:s020:answer_b535969f_2:t000:s003",
+          "identity_supported": true,
+          "evidence_quote": "user: I'm thinking of getting a new bike rack for my car. Do you have any recommendations? By the way, I've been having some issues with my bike lately - in mid-February, I had to take it in for repairs because the gears were acting up and I couldn't shift properly.",
+          "time_expression": "in mid-February",
+          "anchor_type": "mentioned_at",
+          "anchor_event_id": null,
+          "relation": "INTERVAL",
+          "offset_value": 0,
+          "offset_unit": "day",
+          "confidence": 0.9,
+          "ambiguity": [],
+          "resolved_start": "2023-02-10T00:00:00",
+          "resolved_end": "2023-02-20T23:59:59.999999",
+          "normalization_status": "grounded_interval",
+          "normalization_trace": "mid_month_interval"
+        }
+      ],
+      "rejected_enrichments": [
+        {
+          "extraction": {
+            "event_id": "unit:lme_0309_gpt4_76048e76:fact_sent:s018:answer_b535969f_1:t000:s003",
+            "identity_supported": true,
+            "time_expression": "Monday, February 27th",
+            "anchor_type": "occurred_at",
+            "anchor_event_id": null,
+            "relation": "BEFORE_OFFSET",
+            "offset_value": 0,
+            "offset_unit": "day",
+            "confidence": 0.98,
+            "ambiguity": []
+          },
+          "reason": "not_unresolved_operand"
+        }
+      ],
+      "enriched_candidate": {
+        "version": "8.5time_v",
+        "question_id": "lme_0309_gpt4_76048e76:q0001",
+        "candidate_source": "8.5time_v_constraint_conversion",
+        "operands": [
+          {
+            "role": "bike repair",
+            "identity": "bike repair",
+            "fact_id": "unit:lme_0309_gpt4_76048e76:fact_sent:s020:answer_b535969f_2:t000:s003",
+            "raw_id": "lme_0309_gpt4_76048e76:raw:s020:answer_b535969f_2:t000",
+            "evidence_span": "user: I'm thinking of getting a new bike rack for my car. Do you have any recommendations? By the way, I've been having some issues with my bike lately - in mid-February, I had to take it in for repairs because the gears were acting up and I couldn't shift properly.",
+            "mentioned_at": "2023-03-10T07:55:00",
+            "occurred_at": null,
+            "normalization_status": "8.5_grounded_interval",
+            "confidence": 0.9,
+            "occurred_start": "2023-02-10T00:00:00",
+            "occurred_end": "2023-02-20T23:59:59.999999"
+          },
+          {
+            "role": "car maintenance",
+            "identity": "car maintenance",
+            "fact_id": "unit:lme_0309_gpt4_76048e76:fact_sent:s018:answer_b535969f_1:t000:s003",
+            "raw_id": "lme_0309_gpt4_76048e76:raw:s018:answer_b535969f_1:t000",
+            "evidence_span": "user: I'm thinking of getting a newer car and I'm researching the new hybrid model of my current Toyota Corolla. Do you have any info on its fuel efficiency and any promotions or discounts available? By the way, I just washed my current Corolla on Monday, February 27th, after not doing so for over a month - it was getting pretty dirty after that snowstorm we had a few weeks prior!",
+            "mentioned_at": "2023-03-10T23:04:00",
+            "occurred_at": "2023-02-27T23:04:00",
+            "normalization_status": "resolved",
+            "confidence": 0.98
+          }
+        ],
+        "constraints": [
+          {
+            "event_id": "unit:lme_0309_gpt4_76048e76:fact_sent:s020:answer_b535969f_2:t000:s003",
+            "identity_supported": true,
+            "evidence_quote": "user: I'm thinking of getting a new bike rack for my car. Do you have any recommendations? By the way, I've been having some issues with my bike lately - in mid-February, I had to take it in for repairs because the gears were acting up and I couldn't shift properly.",
+            "time_expression": "in mid-February",
+            "anchor_type": "mentioned_at",
+            "anchor_event_id": null,
+            "relation": "INTERVAL",
+            "offset_value": 0,
+            "offset_unit": "day",
+            "confidence": 0.9,
+            "ambiguity": [],
+            "resolved_start": "2023-02-10T00:00:00",
+            "resolved_end": "2023-02-20T23:59:59.999999",
+            "normalization_status": "grounded_interval",
+            "normalization_trace": "mid_month_interval"
+          }
+        ],
+        "propagation": {
+          "resolved_times": {
+            "unit:lme_0309_gpt4_76048e76:fact_sent:s018:answer_b535969f_1:t000:s003": "2023-02-27T23:04:00"
+          },
+          "conflicts": [],
+          "consistent": true
+        },
+        "solution": {
+          "success": true,
+          "answer": "bike repair was first",
+          "operation": "ORDERING",
+          "interval_ordering": true
+        },
+        "reverse_verification": {
+          "passed": true,
+          "reason": "ordering_recomputed"
+        },
+        "eligible_for_q4_verifier": true
+      },
+      "verifier": {
+        "called": true,
+        "safe_to_override_d0": true,
+        "verification": {
+          "question_constraints": [
+            "The question asks which vehicle was taken care of first in February, requiring a temporal ordering between two events: bike repair and car maintenance.",
+            "The bike repair occurred in mid-February, which is temporally bounded between February 10 and February 20, 2023.",
+            "The car maintenance (car wash) occurred on February 27, 2023, which is unambiguously after mid-February.",
+            "The comparison is based on the chronological order of events within February 2023.",
+            "The required roles 'bike repair' and 'car maintenance' are both present and correctly mapped to their respective events."
+          ],
+          "unsupported_constraints": [],
+          "all_question_operands_present": true,
+          "identities_match_question": true,
+          "anchor_bindings_supported": true,
+          "operation_matches_question": true,
+          "arithmetic_or_ordering_correct": true,
+          "answer_fully_entailed": true,
+          "safe_to_override_d0": true,
+          "reason": "The bike repair occurred in mid-February (between Feb 10–20, 2023), while the car maintenance occurred on Feb 27, 2023. Since Feb 27 is after mid-February, the bike repair happened first. All semantic conditions are satisfied, and the ordering is correctly resolved with no unresolved references or ambiguous anchors."
+        },
+        "usage": {
+          "prompt_tokens": 1092,
+          "total_tokens": 1398,
+          "completion_tokens": 306,
+          "prompt_tokens_details": null
+        },
+        "elapsed_seconds": 3.7970534780761227,
+        "attempts": 1
+      },
+      "extraction_reused_from": "/home/sunyuwei/HyTopoMem/outputs/reconstruction/hypathmem_8.5time_v/non_executable35_conversion_qwen_gpu2.json",
+      "extraction": {
+        "extractions": [
+          {
+            "event_id": "unit:lme_0309_gpt4_76048e76:fact_sent:s020:answer_b535969f_2:t000:s003",
+            "identity_supported": true,
+            "time_expression": "in mid-February",
+            "anchor_type": "mentioned_at",
+            "anchor_event_id": null,
+            "relation": "NONE",
+            "offset_value": 0,
+            "offset_unit": "day",
+            "confidence": 0.45,
+            "ambiguity": []
+          },
+          {
+            "event_id": "unit:lme_0309_gpt4_76048e76:fact_sent:s018:answer_b535969f_1:t000:s003",
+            "identity_supported": true,
+            "time_expression": "Monday, February 27th",
+            "anchor_type": "occurred_at",
+            "anchor_event_id": null,
+            "relation": "BEFORE_OFFSET",
+            "offset_value": 0,
+            "offset_unit": "day",
+            "confidence": 0.98,
+            "ambiguity": []
+          }
+        ]
+      },
+      "extraction_usage": {
+        "prompt_tokens": 994,
+        "total_tokens": 1277,
+        "completion_tokens": 283,
+        "prompt_tokens_details": null
+      },
+      "extraction_elapsed_seconds": 0.0,
+      "extraction_attempts": 0
+    },
+    {
+      "question_id": "lme_0317_gpt4_5dcc0aab:q0001",
+      "question": "Which pair of shoes did I clean last month?",
+      "question_date": "2023/05/24 (Wed) 09:14",
+      "conversion_audit": {
+        "question_id": "lme_0317_gpt4_5dcc0aab:q0001",
+        "question_type": "attribute_at_time",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": true,
+        "identity_grounded": true,
+        "raw_grounded": true,
+        "occurred_time_grounded": true,
+        "anchor_resolved": true,
+        "solver_supported": false,
+        "hypothesis_consistent": false,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": false,
+        "repairable_by_time_enrichment": false,
+        "failure_type": "solver_type_unsupported"
+      },
+      "extraction_called": false,
+      "validated_enrichments": [],
+      "rejected_enrichments": [],
+      "enriched_candidate": null,
+      "verifier": {
+        "called": false,
+        "safe_to_override_d0": false
+      }
+    },
+    {
+      "question_id": "lme_0322_a3838d2b:q0001",
+      "question": "How many charity events did I participate in before the 'Run for the Cure' event?",
+      "question_date": "2023/11/29 (Wed) 03:31",
+      "conversion_audit": {
+        "question_id": "lme_0322_a3838d2b:q0001",
+        "question_type": "ordering",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": false,
+        "identity_grounded": false,
+        "raw_grounded": true,
+        "occurred_time_grounded": true,
+        "anchor_resolved": true,
+        "solver_supported": true,
+        "hypothesis_consistent": true,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": false,
+        "repairable_by_time_enrichment": false,
+        "failure_type": "operand_missing_or_outside_top50"
+      },
+      "extraction_called": false,
+      "validated_enrichments": [],
+      "rejected_enrichments": [],
+      "enriched_candidate": null,
+      "verifier": {
+        "called": false,
+        "safe_to_override_d0": false
+      }
+    },
+    {
+      "question_id": "lme_0324_gpt4_2d58bcd6:q0001",
+      "question": "Which book did I finish reading first, 'The Hate U Give' or 'The Nightingale'?",
+      "question_date": "2023/05/30 (Tue) 22:18",
+      "conversion_audit": {
+        "question_id": "lme_0324_gpt4_2d58bcd6:q0001",
+        "question_type": "ordering",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": true,
+        "identity_grounded": true,
+        "raw_grounded": true,
+        "occurred_time_grounded": false,
+        "anchor_resolved": false,
+        "solver_supported": true,
+        "hypothesis_consistent": true,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": false,
+        "repairable_by_time_enrichment": true,
+        "failure_type": "occurred_time_missing"
+      },
+      "extraction_called": true,
+      "validated_enrichments": [
+        {
+          "event_id": "unit:lme_0324_gpt4_2d58bcd6:fact_sent:s043:answer_3e11e0ae_2:t000:s002",
+          "identity_supported": true,
+          "evidence_quote": "user: I'm looking for some book recommendations. I just finished reading three fiction novels - \"The Seven Husbands of Evelyn Hugo\" by Taylor Jenkins Reid, \"The Silent Patient\" by Alex Michaelides, and \"The Nightingale\" by Kristin Hannah, which I finished last weekend. Can you suggest some similar books or authors?",
+          "time_expression": "last weekend",
+          "anchor_type": "mentioned_at",
+          "anchor_event_id": null,
+          "relation": "INTERVAL",
+          "offset_value": 0,
+          "offset_unit": "day",
+          "confidence": 0.9,
+          "ambiguity": [],
+          "resolved_start": "2023-05-27T00:00:00",
+          "resolved_end": "2023-05-28T23:59:59.999999",
+          "normalization_status": "grounded_interval",
+          "normalization_trace": "last_completed_weekend@mentioned_at"
+        }
+      ],
+      "rejected_enrichments": [
+        {
+          "extraction": {
+            "event_id": "unit:lme_0324_gpt4_2d58bcd6:fact_sent:s004:answer_3e11e0ae_1:t000:s002",
+            "identity_supported": true,
+            "time_expression": "two weeks ago",
+            "anchor_type": "event",
+            "anchor_event_id": "unit:lme_0324_gpt4_2d58bcd6:fact_sent:s004:answer_3e11e0ae_1:t000:s002",
+            "relation": "BEFORE_OFFSET",
+            "offset_value": 2,
+            "offset_unit": "week",
+            "confidence": 0.98,
+            "ambiguity": []
+          },
+          "reason": "not_unresolved_operand"
+        }
+      ],
+      "enriched_candidate": {
+        "version": "8.5time_v",
+        "question_id": "lme_0324_gpt4_2d58bcd6:q0001",
+        "candidate_source": "8.5time_v_constraint_conversion",
+        "operands": [
+          {
+            "role": "The Nightingale",
+            "identity": "The Nightingale",
+            "fact_id": "unit:lme_0324_gpt4_2d58bcd6:fact_sent:s043:answer_3e11e0ae_2:t000:s002",
+            "raw_id": "lme_0324_gpt4_2d58bcd6:raw:s043:answer_3e11e0ae_2:t000",
+            "evidence_span": "user: I'm looking for some book recommendations. I just finished reading three fiction novels - \"The Seven Husbands of Evelyn Hugo\" by Taylor Jenkins Reid, \"The Silent Patient\" by Alex Michaelides, and \"The Nightingale\" by Kristin Hannah, which I finished last weekend. Can you suggest some similar books or authors?",
+            "mentioned_at": "2023-05-30T07:08:00",
+            "occurred_at": null,
+            "normalization_status": "8.5_grounded_interval",
+            "confidence": 0.9,
+            "occurred_start": "2023-05-27T00:00:00",
+            "occurred_end": "2023-05-28T23:59:59.999999"
+          },
+          {
+            "role": "The Hate U Give",
+            "identity": "The Hate U Give",
+            "fact_id": "unit:lme_0324_gpt4_2d58bcd6:fact_sent:s004:answer_3e11e0ae_1:t000:s002",
+            "raw_id": "lme_0324_gpt4_2d58bcd6:raw:s004:answer_3e11e0ae_1:t000",
+            "evidence_span": "user: I'm looking for some book recommendations. I've been trying to read more diversely and I just finished \"The Hate U Give\" by Angie Thomas, which I had to rush to finish for my book club meeting two weeks ago - I was the only one who hadn't finished it, but I managed to finish it a few days before. Do you have any suggestions for similar books or authors I might like?",
+            "mentioned_at": "2023-05-30T12:42:00",
+            "occurred_at": "2023-05-16T12:42:00",
+            "normalization_status": "resolved",
+            "confidence": 0.98
+          }
+        ],
+        "constraints": [
+          {
+            "event_id": "unit:lme_0324_gpt4_2d58bcd6:fact_sent:s043:answer_3e11e0ae_2:t000:s002",
+            "identity_supported": true,
+            "evidence_quote": "user: I'm looking for some book recommendations. I just finished reading three fiction novels - \"The Seven Husbands of Evelyn Hugo\" by Taylor Jenkins Reid, \"The Silent Patient\" by Alex Michaelides, and \"The Nightingale\" by Kristin Hannah, which I finished last weekend. Can you suggest some similar books or authors?",
+            "time_expression": "last weekend",
+            "anchor_type": "mentioned_at",
+            "anchor_event_id": null,
+            "relation": "INTERVAL",
+            "offset_value": 0,
+            "offset_unit": "day",
+            "confidence": 0.9,
+            "ambiguity": [],
+            "resolved_start": "2023-05-27T00:00:00",
+            "resolved_end": "2023-05-28T23:59:59.999999",
+            "normalization_status": "grounded_interval",
+            "normalization_trace": "last_completed_weekend@mentioned_at"
+          }
+        ],
+        "propagation": {
+          "resolved_times": {
+            "unit:lme_0324_gpt4_2d58bcd6:fact_sent:s004:answer_3e11e0ae_1:t000:s002": "2023-05-16T12:42:00"
+          },
+          "conflicts": [],
+          "consistent": true
+        },
+        "solution": {
+          "success": true,
+          "answer": "The Hate U Give was first",
+          "operation": "ORDERING",
+          "interval_ordering": true
+        },
+        "reverse_verification": {
+          "passed": true,
+          "reason": "ordering_recomputed"
+        },
+        "eligible_for_q4_verifier": true
+      },
+      "verifier": {
+        "called": true,
+        "safe_to_override_d0": true,
+        "verification": {
+          "question_constraints": [
+            "The user finished reading 'The Hate U Give' and 'The Nightingale'.",
+            "The user finished 'The Hate U Give' a few days before a book club meeting two weeks ago.",
+            "The user finished 'The Nightingale' last weekend.",
+            "The question asks which book was finished first."
+          ],
+          "unsupported_constraints": [],
+          "all_question_operands_present": true,
+          "identities_match_question": true,
+          "anchor_bindings_supported": true,
+          "operation_matches_question": true,
+          "arithmetic_or_ordering_correct": true,
+          "answer_fully_entailed": true,
+          "safe_to_override_d0": true,
+          "reason": "The evidence shows 'The Hate U Give' was finished around May 16, 2023, and 'The Nightingale' was finished between May 27 and May 28, 2023. Thus, 'The Hate U Give' was finished first, satisfying the ordering query."
+        },
+        "usage": {
+          "prompt_tokens": 978,
+          "total_tokens": 1200,
+          "completion_tokens": 222,
+          "prompt_tokens_details": null
+        },
+        "elapsed_seconds": 2.800867697922513,
+        "attempts": 1
+      },
+      "extraction_reused_from": "/home/sunyuwei/HyTopoMem/outputs/reconstruction/hypathmem_8.5time_v/non_executable35_conversion_qwen_gpu2.json",
+      "extraction": {
+        "extractions": [
+          {
+            "event_id": "unit:lme_0324_gpt4_2d58bcd6:fact_sent:s004:answer_3e11e0ae_1:t000:s002",
+            "identity_supported": true,
+            "time_expression": "two weeks ago",
+            "anchor_type": "event",
+            "anchor_event_id": "unit:lme_0324_gpt4_2d58bcd6:fact_sent:s004:answer_3e11e0ae_1:t000:s002",
+            "relation": "BEFORE_OFFSET",
+            "offset_value": 2,
+            "offset_unit": "week",
+            "confidence": 0.98,
+            "ambiguity": []
+          },
+          {
+            "event_id": "unit:lme_0324_gpt4_2d58bcd6:fact_sent:s043:answer_3e11e0ae_2:t000:s002",
+            "identity_supported": true,
+            "time_expression": "last weekend",
+            "anchor_type": "mentioned_at",
+            "anchor_event_id": "unit:lme_0324_gpt4_2d58bcd6:raw:s043:answer_3e11e0ae_2:t000",
+            "relation": "NONE",
+            "offset_value": 0,
+            "offset_unit": "day",
+            "confidence": 0.45,
+            "ambiguity": []
+          }
+        ]
+      },
+      "extraction_usage": {
+        "prompt_tokens": 1014,
+        "total_tokens": 1370,
+        "completion_tokens": 356,
+        "prompt_tokens_details": null
+      },
+      "extraction_elapsed_seconds": 0.0,
+      "extraction_attempts": 0
+    },
+    {
+      "question_id": "lme_0325_gpt4_65aabe59:q0001",
+      "question": "Which device did I set up first, the smart thermostat or the mesh network system?",
+      "question_date": "2023/05/25 (Thu) 11:29",
+      "conversion_audit": {
+        "question_id": "lme_0325_gpt4_65aabe59:q0001",
+        "question_type": "ordering",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": true,
+        "identity_grounded": true,
+        "raw_grounded": true,
+        "occurred_time_grounded": false,
+        "anchor_resolved": true,
+        "solver_supported": true,
+        "hypothesis_consistent": true,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": false,
+        "repairable_by_time_enrichment": true,
+        "failure_type": "occurred_time_missing"
+      },
+      "extraction_called": true,
+      "validated_enrichments": [],
+      "rejected_enrichments": [
+        {
+          "extraction": {
+            "event_id": "unit:lme_0325_gpt4_65aabe59:fact_sent:s019:answer_30dfe889_1:t000:s002",
+            "identity_supported": true,
+            "time_expression": "recently upgraded my home Wi-Fi router to a new mesh network system",
+            "anchor_type": "mentioned_at",
+            "anchor_event_id": null,
+            "relation": "BEFORE_OFFSET",
+            "offset_value": 0,
+            "offset_unit": "day",
+            "confidence": 0.98,
+            "ambiguity": []
+          },
+          "reason": "not_unresolved_operand"
+        },
+        {
+          "extraction": {
+            "event_id": "unit:lme_0325_gpt4_65aabe59:fact_sent:s036:answer_30dfe889_2:t000:s001",
+            "identity_supported": true,
+            "time_expression": "I've been trying to reduce my energy bills and set up a new smart thermostat",
+            "anchor_type": "mentioned_at",
+            "anchor_event_id": null,
+            "relation": "NONE",
+            "offset_value": 0,
+            "offset_unit": "day",
+            "confidence": 0.4,
+            "ambiguity": []
+          },
+          "reason": "confidence_below_0.90"
+        }
+      ],
+      "enriched_candidate": {
+        "version": "8.5time_v",
+        "question_id": "lme_0325_gpt4_65aabe59:q0001",
+        "candidate_source": "8.5time_v_constraint_conversion",
+        "operands": [
+          {
+            "role": "smart thermostat setup",
+            "identity": "smart thermostat setup",
+            "fact_id": "unit:lme_0325_gpt4_65aabe59:fact_sent:s036:answer_30dfe889_2:t000:s001",
+            "raw_id": "lme_0325_gpt4_65aabe59:raw:s036:answer_30dfe889_2:t000",
+            "evidence_span": "user: I'm having some issues with my desktop computer, it's been freezing up on me randomly and I'm thinking of upgrading it. Can you help me figure out what specs I need and what kind of budget I'm looking at? By the way, I've been trying to reduce my energy bills and set up a new smart thermostat, which has been helpful.",
+            "mentioned_at": "2023-05-25T19:02:00",
+            "occurred_at": null,
+            "normalization_status": "mentioned_only",
+            "confidence": 0.4
+          },
+          {
+            "role": "mesh network system setup",
+            "identity": "mesh network system setup",
+            "fact_id": "unit:lme_0325_gpt4_65aabe59:fact_sent:s019:answer_30dfe889_1:t000:s002",
+            "raw_id": "lme_0325_gpt4_65aabe59:raw:s019:answer_30dfe889_1:t000",
+            "evidence_span": "user: I'm having some issues with my desktop computer, it's been freezing up on me randomly and I think it might be due for an upgrade. Since I recently upgraded my home Wi-Fi router to a new mesh network system, which has significantly improved my internet connection, I'm thinking maybe it's time to upgrade my computer too.",
+            "mentioned_at": "2023-05-25T01:12:00",
+            "occurred_at": "2023-05-25T01:12:00",
+            "normalization_status": "resolved",
+            "confidence": 0.98
+          }
+        ],
+        "constraints": [],
+        "propagation": {
+          "resolved_times": {
+            "unit:lme_0325_gpt4_65aabe59:fact_sent:s019:answer_30dfe889_1:t000:s002": "2023-05-25T01:12:00"
+          },
+          "conflicts": [],
+          "consistent": true
+        },
+        "solution": {
+          "success": false,
+          "answer": null,
+          "operation": "ORDERING",
+          "failure_reason": "non_executable_constraints"
+        },
+        "reverse_verification": {
+          "passed": false,
+          "reason": "solver_failed"
+        },
+        "eligible_for_q4_verifier": false
+      },
+      "verifier": {
+        "called": false,
+        "safe_to_override_d0": false
+      },
+      "extraction_reused_from": "/home/sunyuwei/HyTopoMem/outputs/reconstruction/hypathmem_8.5time_v/non_executable35_conversion_qwen_gpu2.json",
+      "extraction": {
+        "extractions": [
+          {
+            "event_id": "unit:lme_0325_gpt4_65aabe59:fact_sent:s019:answer_30dfe889_1:t000:s002",
+            "identity_supported": true,
+            "time_expression": "recently upgraded my home Wi-Fi router to a new mesh network system",
+            "anchor_type": "mentioned_at",
+            "anchor_event_id": null,
+            "relation": "BEFORE_OFFSET",
+            "offset_value": 0,
+            "offset_unit": "day",
+            "confidence": 0.98,
+            "ambiguity": []
+          },
+          {
+            "event_id": "unit:lme_0325_gpt4_65aabe59:fact_sent:s036:answer_30dfe889_2:t000:s001",
+            "identity_supported": true,
+            "time_expression": "I've been trying to reduce my energy bills and set up a new smart thermostat",
+            "anchor_type": "mentioned_at",
+            "anchor_event_id": null,
+            "relation": "NONE",
+            "offset_value": 0,
+            "offset_unit": "day",
+            "confidence": 0.4,
+            "ambiguity": []
+          }
+        ]
+      },
+      "extraction_usage": {
+        "prompt_tokens": 993,
+        "total_tokens": 1289,
+        "completion_tokens": 296,
+        "prompt_tokens_details": null
+      },
+      "extraction_elapsed_seconds": 0.0,
+      "extraction_attempts": 0
+    },
+    {
+      "question_id": "lme_0327_b9cfe692:q0001",
+      "question": "How long did I take to finish 'The Seven Husbands of Evelyn Hugo' and 'The Nightingale' combined?",
+      "question_date": "2023/05/24 (Wed) 08:08",
+      "conversion_audit": {
+        "question_id": "lme_0327_b9cfe692:q0001",
+        "question_type": "duration",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": true,
+        "identity_grounded": true,
+        "raw_grounded": true,
+        "occurred_time_grounded": false,
+        "anchor_resolved": false,
+        "solver_supported": true,
+        "hypothesis_consistent": true,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": false,
+        "repairable_by_time_enrichment": true,
+        "failure_type": "occurred_time_missing"
+      },
+      "extraction_called": true,
+      "validated_enrichments": [],
+      "rejected_enrichments": [
+        {
+          "extraction": {
+            "event_id": "unit:lme_0327_b9cfe692:fact_sent:s011:answer_5e3bb940_2:t000:s002",
+            "identity_supported": true,
+            "time_expression": "two and a half weeks",
+            "anchor_type": "mentioned_at",
+            "anchor_event_id": "2023-05-24T08:41:00",
+            "relation": "SAME_TIME",
+            "offset_value": 0,
+            "offset_unit": "week",
+            "confidence": 0.45,
+            "ambiguity": []
+          },
+          "reason": "confidence_below_0.90"
+        },
+        {
+          "extraction": {
+            "event_id": "unit:lme_0327_b9cfe692:fact_sent:s009:answer_5e3bb940_3:t000:s002",
+            "identity_supported": true,
+            "time_expression": "three weeks",
+            "anchor_type": "occurred_at",
+            "anchor_event_id": "2023-05-03T11:25:00",
+            "relation": "BEFORE_OFFSET",
+            "offset_value": 21,
+            "offset_unit": "day",
+            "confidence": 0.98,
+            "ambiguity": []
+          },
+          "reason": "not_unresolved_operand"
+        }
+      ],
+      "enriched_candidate": {
+        "version": "8.5time_v",
+        "question_id": "lme_0327_b9cfe692:q0001",
+        "candidate_source": "8.5time_v_constraint_conversion",
+        "operands": [
+          {
+            "role": "The Seven Husbands of Evelyn Hugo",
+            "identity": "The Seven Husbands of Evelyn Hugo",
+            "fact_id": "unit:lme_0327_b9cfe692:fact_sent:s011:answer_5e3bb940_2:t000:s002",
+            "raw_id": "lme_0327_b9cfe692:raw:s011:answer_5e3bb940_2:t000",
+            "evidence_span": "user: I'm looking for some new audiobook recommendations. I've been enjoying listening to them during my daily commute and I just finished \"The Seven Husbands of Evelyn Hugo\", which took me two and a half weeks to finish. Do you have any suggestions for something similar?",
+            "mentioned_at": "2023-05-24T08:41:00",
+            "occurred_at": null,
+            "normalization_status": "symbolic",
+            "confidence": 0.45
+          },
+          {
+            "role": "The Nightingale",
+            "identity": "The Nightingale",
+            "fact_id": "unit:lme_0327_b9cfe692:fact_sent:s009:answer_5e3bb940_3:t000:s002",
+            "raw_id": "lme_0327_b9cfe692:raw:s009:answer_5e3bb940_3:t000",
+            "evidence_span": "user: I'm looking for some book recommendations. I recently finished \"The Nightingale\" by Kristin Hannah, which took me three weeks to finish - it was a really emotional and heavy read, but I loved it. Can you suggest some historical fiction books that have a similar tone and style?",
+            "mentioned_at": "2023-05-24T11:25:00",
+            "occurred_at": "2023-05-03T11:25:00",
+            "normalization_status": "resolved",
+            "confidence": 0.98
+          }
+        ],
+        "constraints": [],
+        "propagation": {
+          "resolved_times": {
+            "unit:lme_0327_b9cfe692:fact_sent:s009:answer_5e3bb940_3:t000:s002": "2023-05-03T11:25:00"
+          },
+          "conflicts": [],
+          "consistent": true
+        },
+        "solution": {
+          "success": false,
+          "answer": null,
+          "operation": "DURATION",
+          "failure_reason": "non_executable_constraints"
+        },
+        "reverse_verification": {
+          "passed": false,
+          "reason": "solver_failed"
+        },
+        "eligible_for_q4_verifier": false
+      },
+      "verifier": {
+        "called": false,
+        "safe_to_override_d0": false
+      },
+      "extraction_reused_from": "/home/sunyuwei/HyTopoMem/outputs/reconstruction/hypathmem_8.5time_v/non_executable35_conversion_qwen_gpu2.json",
+      "extraction": {
+        "extractions": [
+          {
+            "event_id": "unit:lme_0327_b9cfe692:fact_sent:s011:answer_5e3bb940_2:t000:s002",
+            "identity_supported": true,
+            "time_expression": "two and a half weeks",
+            "anchor_type": "mentioned_at",
+            "anchor_event_id": "2023-05-24T08:41:00",
+            "relation": "SAME_TIME",
+            "offset_value": 0,
+            "offset_unit": "week",
+            "confidence": 0.45,
+            "ambiguity": []
+          },
+          {
+            "event_id": "unit:lme_0327_b9cfe692:fact_sent:s009:answer_5e3bb940_3:t000:s002",
+            "identity_supported": true,
+            "time_expression": "three weeks",
+            "anchor_type": "occurred_at",
+            "anchor_event_id": "2023-05-03T11:25:00",
+            "relation": "BEFORE_OFFSET",
+            "offset_value": 21,
+            "offset_unit": "day",
+            "confidence": 0.98,
+            "ambiguity": []
+          }
+        ]
+      },
+      "extraction_usage": {
+        "prompt_tokens": 968,
+        "total_tokens": 1277,
+        "completion_tokens": 309,
+        "prompt_tokens_details": null
+      },
+      "extraction_elapsed_seconds": 0.0,
+      "extraction_attempts": 0
+    },
+    {
+      "question_id": "lme_0328_gpt4_4edbafa2:q0001",
+      "question": "What was the date on which I attended the first BBQ event in June?",
+      "question_date": "2023/07/01 (Sat) 02:36",
+      "conversion_audit": {
+        "question_id": "lme_0328_gpt4_4edbafa2:q0001",
+        "question_type": "date",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": true,
+        "identity_grounded": true,
+        "raw_grounded": true,
+        "occurred_time_grounded": true,
+        "anchor_resolved": true,
+        "solver_supported": false,
+        "hypothesis_consistent": true,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": true,
+        "repairable_by_time_enrichment": false,
+        "failure_type": "solver_type_unsupported"
+      },
+      "extraction_called": false,
+      "validated_enrichments": [],
+      "rejected_enrichments": [],
+      "enriched_candidate": null,
+      "verifier": {
+        "called": false,
+        "safe_to_override_d0": false
+      }
+    },
+    {
+      "question_id": "lme_0329_c8090214:q0001",
+      "question": "How many days before I bought the iPhone 13 Pro did I attend the Holiday Market?",
+      "question_date": "2023/12/10 (Sun) 17:17",
+      "conversion_audit": {
+        "question_id": "lme_0329_c8090214:q0001",
+        "question_type": "elapsed",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": true,
+        "identity_grounded": true,
+        "raw_grounded": true,
+        "occurred_time_grounded": false,
+        "anchor_resolved": false,
+        "solver_supported": true,
+        "hypothesis_consistent": false,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": false,
+        "repairable_by_time_enrichment": false,
+        "failure_type": "hypothesis_conflict"
+      },
+      "extraction_called": false,
+      "validated_enrichments": [],
+      "rejected_enrichments": [],
+      "enriched_candidate": null,
+      "verifier": {
+        "called": false,
+        "safe_to_override_d0": false
+      }
+    },
+    {
+      "question_id": "lme_0330_gpt4_483dd43c:q0001",
+      "question": "Which show did I start watching first, 'The Crown' or 'Game of Thrones'?",
+      "question_date": "2023/05/29 (Mon) 08:33",
+      "conversion_audit": {
+        "question_id": "lme_0330_gpt4_483dd43c:q0001",
+        "question_type": "ordering",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": true,
+        "identity_grounded": false,
+        "raw_grounded": true,
+        "occurred_time_grounded": false,
+        "anchor_resolved": true,
+        "solver_supported": true,
+        "hypothesis_consistent": true,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": false,
+        "repairable_by_time_enrichment": false,
+        "failure_type": "event_identity_unreliable"
+      },
+      "extraction_called": false,
+      "validated_enrichments": [],
+      "rejected_enrichments": [],
+      "enriched_candidate": null,
+      "verifier": {
+        "called": false,
+        "safe_to_override_d0": false
+      }
+    },
+    {
+      "question_id": "lme_0331_e4e14d04:q0001",
+      "question": "How long had I been a member of 'Book Lovers Unite' when I attended the meetup?",
+      "question_date": "2023/05/28 (Sun) 15:46",
+      "conversion_audit": {
+        "question_id": "lme_0331_e4e14d04:q0001",
+        "question_type": "elapsed",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": false,
+        "identity_grounded": true,
+        "raw_grounded": true,
+        "occurred_time_grounded": true,
+        "anchor_resolved": true,
+        "solver_supported": true,
+        "hypothesis_consistent": true,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": false,
+        "repairable_by_time_enrichment": false,
+        "failure_type": "operand_missing_or_outside_top50"
+      },
+      "extraction_called": false,
+      "validated_enrichments": [],
+      "rejected_enrichments": [],
+      "enriched_candidate": null,
+      "verifier": {
+        "called": false,
+        "safe_to_override_d0": false
+      }
+    },
+    {
+      "question_id": "lme_0332_c9f37c46:q0001",
+      "question": "How long had I been watching stand-up comedy specials regularly when I attended the open mic night at the local comedy club?",
+      "question_date": "2023/05/20 (Sat) 00:44",
+      "conversion_audit": {
+        "question_id": "lme_0332_c9f37c46:q0001",
+        "question_type": "elapsed",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": false,
+        "identity_grounded": true,
+        "raw_grounded": true,
+        "occurred_time_grounded": true,
+        "anchor_resolved": true,
+        "solver_supported": true,
+        "hypothesis_consistent": true,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": false,
+        "repairable_by_time_enrichment": false,
+        "failure_type": "operand_missing_or_outside_top50"
+      },
+      "extraction_called": false,
+      "validated_enrichments": [],
+      "rejected_enrichments": [],
+      "enriched_candidate": null,
+      "verifier": {
+        "called": false,
+        "safe_to_override_d0": false
+      }
+    },
+    {
+      "question_id": "lme_0333_gpt4_2c50253f:q0001",
+      "question": "What time do I wake up on Tuesdays and Thursdays?",
+      "question_date": "2023/05/27 (Sat) 19:21",
+      "conversion_audit": {
+        "question_id": "lme_0333_gpt4_2c50253f:q0001",
+        "question_type": "attribute_at_time",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": true,
+        "identity_grounded": false,
+        "raw_grounded": true,
+        "occurred_time_grounded": false,
+        "anchor_resolved": true,
+        "solver_supported": false,
+        "hypothesis_consistent": false,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": false,
+        "repairable_by_time_enrichment": false,
+        "failure_type": "event_identity_unreliable"
+      },
+      "extraction_called": false,
+      "validated_enrichments": [],
+      "rejected_enrichments": [],
+      "enriched_candidate": null,
+      "verifier": {
+        "called": false,
+        "safe_to_override_d0": false
+      }
+    },
+    {
+      "question_id": "lme_0335_gpt4_b4a80587:q0001",
+      "question": "Which event happened first, the road trip to the coast or the arrival of the new prime lens?",
+      "question_date": "2023/05/23 (Tue) 04:05",
+      "conversion_audit": {
+        "question_id": "lme_0335_gpt4_b4a80587:q0001",
+        "question_type": "ordering",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": true,
+        "identity_grounded": true,
+        "raw_grounded": true,
+        "occurred_time_grounded": false,
+        "anchor_resolved": true,
+        "solver_supported": true,
+        "hypothesis_consistent": true,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": false,
+        "repairable_by_time_enrichment": true,
+        "failure_type": "occurred_time_missing"
+      },
+      "extraction_called": true,
+      "validated_enrichments": [],
+      "rejected_enrichments": [
+        {
+          "extraction": {
+            "event_id": "unit:lme_0335_gpt4_b4a80587:fact_sent:s011:answer_b9d9150e_2:t004:s001",
+            "identity_supported": true,
+            "time_expression": "I took it with me on the coastal trip",
+            "anchor_type": "mentioned_at",
+            "anchor_event_id": "unit:lme_0335_gpt4_b4a80587:fact_sent:s025:answer_b9d9150e_1:t000:s002",
+            "relation": "AFTER_OFFSET",
+            "offset_value": 0,
+            "offset_unit": "day",
+            "confidence": 0.4,
+            "ambiguity": []
+          },
+          "reason": "confidence_below_0.90"
+        },
+        {
+          "extraction": {
+            "event_id": "unit:lme_0335_gpt4_b4a80587:fact_sent:s025:answer_b9d9150e_1:t000:s002",
+            "identity_supported": true,
+            "time_expression": "last week",
+            "anchor_type": "absolute",
+            "anchor_event_id": null,
+            "relation": "ABSOLUTE",
+            "offset_value": 0,
+            "offset_unit": "week",
+            "confidence": 0.98,
+            "ambiguity": []
+          },
+          "reason": "not_unresolved_operand"
+        }
+      ],
+      "enriched_candidate": {
+        "version": "8.5time_v",
+        "question_id": "lme_0335_gpt4_b4a80587:q0001",
+        "candidate_source": "8.5time_v_constraint_conversion",
+        "operands": [
+          {
+            "role": "arrival of the new prime lens",
+            "identity": "arrival of the new prime lens",
+            "fact_id": "unit:lme_0335_gpt4_b4a80587:fact_sent:s011:answer_b9d9150e_2:t004:s001",
+            "raw_id": "lme_0335_gpt4_b4a80587:raw:s011:answer_b9d9150e_2:t004",
+            "evidence_span": "user: I've been playing around with the lens, trying to get used to the manual focus ring. It's definitely taking some getting used to, but the image quality is so much better than my old kit lens. I took it with me on the coastal trip and got some great portraits of my friends.",
+            "mentioned_at": "2023-05-23T08:02:00",
+            "occurred_at": null,
+            "normalization_status": "mentioned_only",
+            "confidence": 0.4
+          },
+          {
+            "role": "road trip to the coast",
+            "identity": "road trip to the coast",
+            "fact_id": "unit:lme_0335_gpt4_b4a80587:fact_sent:s025:answer_b9d9150e_1:t000:s002",
+            "raw_id": "lme_0335_gpt4_b4a80587:raw:s025:answer_b9d9150e_1:t000",
+            "evidence_span": "user: I'm looking for some tips on editing photos of landscapes. I just got back from a road trip to the coast with friends last week and took some amazing shots of the cliffs and beaches.",
+            "mentioned_at": "2023-05-23T02:49:00",
+            "occurred_at": "2023-05-16T02:49:00",
+            "normalization_status": "resolved",
+            "confidence": 0.98
+          }
+        ],
+        "constraints": [],
+        "propagation": {
+          "resolved_times": {
+            "unit:lme_0335_gpt4_b4a80587:fact_sent:s025:answer_b9d9150e_1:t000:s002": "2023-05-16T02:49:00"
+          },
+          "conflicts": [],
+          "consistent": true
+        },
+        "solution": {
+          "success": false,
+          "answer": null,
+          "operation": "ORDERING",
+          "failure_reason": "non_executable_constraints"
+        },
+        "reverse_verification": {
+          "passed": false,
+          "reason": "solver_failed"
+        },
+        "eligible_for_q4_verifier": false
+      },
+      "verifier": {
+        "called": false,
+        "safe_to_override_d0": false
+      },
+      "extraction_reused_from": "/home/sunyuwei/HyTopoMem/outputs/reconstruction/hypathmem_8.5time_v/non_executable35_conversion_qwen_gpu2.json",
+      "extraction": {
+        "extractions": [
+          {
+            "event_id": "unit:lme_0335_gpt4_b4a80587:fact_sent:s011:answer_b9d9150e_2:t004:s001",
+            "identity_supported": true,
+            "time_expression": "I took it with me on the coastal trip",
+            "anchor_type": "mentioned_at",
+            "anchor_event_id": "unit:lme_0335_gpt4_b4a80587:fact_sent:s025:answer_b9d9150e_1:t000:s002",
+            "relation": "AFTER_OFFSET",
+            "offset_value": 0,
+            "offset_unit": "day",
+            "confidence": 0.4,
+            "ambiguity": []
+          },
+          {
+            "event_id": "unit:lme_0335_gpt4_b4a80587:fact_sent:s025:answer_b9d9150e_1:t000:s002",
+            "identity_supported": true,
+            "time_expression": "last week",
+            "anchor_type": "absolute",
+            "anchor_event_id": null,
+            "relation": "ABSOLUTE",
+            "offset_value": 0,
+            "offset_unit": "week",
+            "confidence": 0.98,
+            "ambiguity": []
+          }
+        ]
+      },
+      "extraction_usage": {
+        "prompt_tokens": 964,
+        "total_tokens": 1289,
+        "completion_tokens": 325,
+        "prompt_tokens_details": null
+      },
+      "extraction_elapsed_seconds": 0.0,
+      "extraction_attempts": 0
+    },
+    {
+      "question_id": "lme_0336_gpt4_9a159967:q0001",
+      "question": "Which airline did I fly with the most in March and April?",
+      "question_date": "2023/04/27 (Thu) 05:28",
+      "conversion_audit": {
+        "question_id": "lme_0336_gpt4_9a159967:q0001",
+        "question_type": "ordering",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": false,
+        "identity_grounded": true,
+        "raw_grounded": true,
+        "occurred_time_grounded": false,
+        "anchor_resolved": true,
+        "solver_supported": true,
+        "hypothesis_consistent": true,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": false,
+        "repairable_by_time_enrichment": false,
+        "failure_type": "operand_missing_or_outside_top50"
+      },
+      "extraction_called": false,
+      "validated_enrichments": [],
+      "rejected_enrichments": [],
+      "enriched_candidate": null,
+      "verifier": {
+        "called": false,
+        "safe_to_override_d0": false
+      }
+    },
+    {
+      "question_id": "lme_0338_gpt4_8c8961ae:q0001",
+      "question": "Which trip did I take first, the one to Europe with family or the solo trip to Thailand?",
+      "question_date": "2023/05/28 (Sun) 13:10",
+      "conversion_audit": {
+        "question_id": "lme_0338_gpt4_8c8961ae:q0001",
+        "question_type": "ordering",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": true,
+        "identity_grounded": true,
+        "raw_grounded": true,
+        "occurred_time_grounded": false,
+        "anchor_resolved": false,
+        "solver_supported": true,
+        "hypothesis_consistent": true,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": false,
+        "repairable_by_time_enrichment": true,
+        "failure_type": "occurred_time_missing"
+      },
+      "extraction_called": true,
+      "validated_enrichments": [
+        {
+          "event_id": "unit:lme_0338_gpt4_8c8961ae:fact_sent:s005:answer_72d9aa58_1:t000:s003",
+          "identity_supported": true,
+          "evidence_quote": "user: I'm considering planning a solo trip to South America and I'm wondering if you can help me with some research. I've been looking at different itineraries and trying to decide between going with a group tour or on my own. By the way, just last month, I went on a two-week trip to Europe with my parents and younger brother, and it was a really different experience from traveling solo.",
+          "time_expression": "just last month",
+          "anchor_type": "mentioned_at",
+          "anchor_event_id": null,
+          "relation": "INTERVAL",
+          "offset_value": 0,
+          "offset_unit": "month",
+          "confidence": 0.9,
+          "ambiguity": [],
+          "resolved_start": "2023-04-01T00:00:00",
+          "resolved_end": "2023-04-30T23:59:59.999999",
+          "normalization_status": "grounded_interval",
+          "normalization_trace": "previous_calendar_month@mentioned_at"
+        }
+      ],
+      "rejected_enrichments": [
+        {
+          "extraction": {
+            "event_id": "unit:lme_0338_gpt4_8c8961ae:fact_sent:s019:answer_72d9aa58_2:t000:s003",
+            "identity_supported": true,
+            "time_expression": "last year",
+            "anchor_type": "event",
+            "anchor_event_id": "unit:lme_0338_gpt4_8c8961ae:fact_sent:s005:answer_72d9aa58_1:t000:s003",
+            "relation": "BEFORE_OFFSET",
+            "offset_value": 1,
+            "offset_unit": "year",
+            "confidence": 0.9,
+            "ambiguity": []
+          },
+          "reason": "not_unresolved_operand"
+        }
+      ],
+      "enriched_candidate": {
+        "version": "8.5time_v",
+        "question_id": "lme_0338_gpt4_8c8961ae:q0001",
+        "candidate_source": "8.5time_v_constraint_conversion",
+        "operands": [
+          {
+            "role": "solo trip to Thailand",
+            "identity": "solo trip to Thailand",
+            "fact_id": "unit:lme_0338_gpt4_8c8961ae:fact_sent:s019:answer_72d9aa58_2:t000:s003",
+            "raw_id": "lme_0338_gpt4_8c8961ae:raw:s019:answer_72d9aa58_2:t000",
+            "evidence_span": "user: I'm planning a solo trip to South America and I'm considering going with a group tour or on my own. Do you have any recommendations for must-see places in South America that would be easy to get to solo? By the way, I've had experience traveling solo before, like when I went to Thailand last year and had complete freedom to do whatever I wanted.",
+            "mentioned_at": "2023-05-28T05:31:00",
+            "occurred_at": "2022-05-28T05:31:00",
+            "normalization_status": "exact",
+            "confidence": 0.9
+          },
+          {
+            "role": "trip to Europe with family",
+            "identity": "trip to Europe with family",
+            "fact_id": "unit:lme_0338_gpt4_8c8961ae:fact_sent:s005:answer_72d9aa58_1:t000:s003",
+            "raw_id": "lme_0338_gpt4_8c8961ae:raw:s005:answer_72d9aa58_1:t000",
+            "evidence_span": "user: I'm considering planning a solo trip to South America and I'm wondering if you can help me with some research. I've been looking at different itineraries and trying to decide between going with a group tour or on my own. By the way, just last month, I went on a two-week trip to Europe with my parents and younger brother, and it was a really different experience from traveling solo.",
+            "mentioned_at": "2023-05-28T20:06:00",
+            "occurred_at": null,
+            "normalization_status": "8.5_grounded_interval",
+            "confidence": 0.9,
+            "occurred_start": "2023-04-01T00:00:00",
+            "occurred_end": "2023-04-30T23:59:59.999999"
+          }
+        ],
+        "constraints": [
+          {
+            "event_id": "unit:lme_0338_gpt4_8c8961ae:fact_sent:s005:answer_72d9aa58_1:t000:s003",
+            "identity_supported": true,
+            "evidence_quote": "user: I'm considering planning a solo trip to South America and I'm wondering if you can help me with some research. I've been looking at different itineraries and trying to decide between going with a group tour or on my own. By the way, just last month, I went on a two-week trip to Europe with my parents and younger brother, and it was a really different experience from traveling solo.",
+            "time_expression": "just last month",
+            "anchor_type": "mentioned_at",
+            "anchor_event_id": null,
+            "relation": "INTERVAL",
+            "offset_value": 0,
+            "offset_unit": "month",
+            "confidence": 0.9,
+            "ambiguity": [],
+            "resolved_start": "2023-04-01T00:00:00",
+            "resolved_end": "2023-04-30T23:59:59.999999",
+            "normalization_status": "grounded_interval",
+            "normalization_trace": "previous_calendar_month@mentioned_at"
+          }
+        ],
+        "propagation": {
+          "resolved_times": {
+            "unit:lme_0338_gpt4_8c8961ae:fact_sent:s019:answer_72d9aa58_2:t000:s003": "2022-05-28T05:31:00"
+          },
+          "conflicts": [],
+          "consistent": true
+        },
+        "solution": {
+          "success": true,
+          "answer": "solo trip to Thailand was first",
+          "operation": "ORDERING",
+          "interval_ordering": true
+        },
+        "reverse_verification": {
+          "passed": true,
+          "reason": "ordering_recomputed"
+        },
+        "eligible_for_q4_verifier": true
+      },
+      "verifier": {
+        "called": true,
+        "safe_to_override_d0": true,
+        "verification": {
+          "question_constraints": [
+            "identify the first trip between the trip to Europe with family and the solo trip to Thailand",
+            "compare the chronological order of the two trips",
+            "use the trip to Europe with family as one of the two events to compare",
+            "use the solo trip to Thailand as the other event to compare"
+          ],
+          "unsupported_constraints": [],
+          "all_question_operands_present": true,
+          "identities_match_question": true,
+          "anchor_bindings_supported": true,
+          "operation_matches_question": true,
+          "arithmetic_or_ordering_correct": true,
+          "answer_fully_entailed": true,
+          "safe_to_override_d0": true,
+          "reason": "The solo trip to Thailand occurred in 2022, while the trip to Europe with family occurred in April 2023, confirming the solo trip was first. All semantic conditions are satisfied, and the ordering is correctly computed and reverse-verified."
+        },
+        "usage": {
+          "prompt_tokens": 991,
+          "total_tokens": 1196,
+          "completion_tokens": 205,
+          "prompt_tokens_details": null
+        },
+        "elapsed_seconds": 2.581790382042527,
+        "attempts": 1
+      },
+      "extraction_reused_from": "/home/sunyuwei/HyTopoMem/outputs/reconstruction/hypathmem_8.5time_v/non_executable35_conversion_qwen_gpu2.json",
+      "extraction": {
+        "extractions": [
+          {
+            "event_id": "unit:lme_0338_gpt4_8c8961ae:fact_sent:s019:answer_72d9aa58_2:t000:s003",
+            "identity_supported": true,
+            "time_expression": "last year",
+            "anchor_type": "event",
+            "anchor_event_id": "unit:lme_0338_gpt4_8c8961ae:fact_sent:s005:answer_72d9aa58_1:t000:s003",
+            "relation": "BEFORE_OFFSET",
+            "offset_value": 1,
+            "offset_unit": "year",
+            "confidence": 0.9,
+            "ambiguity": []
+          },
+          {
+            "event_id": "unit:lme_0338_gpt4_8c8961ae:fact_sent:s005:answer_72d9aa58_1:t000:s003",
+            "identity_supported": true,
+            "time_expression": "just last month",
+            "anchor_type": "mentioned_at",
+            "anchor_event_id": null,
+            "relation": "ABSOLUTE",
+            "offset_value": 0,
+            "offset_unit": "month",
+            "confidence": 0.45,
+            "ambiguity": []
+          }
+        ]
+      },
+      "extraction_usage": {
+        "prompt_tokens": 1042,
+        "total_tokens": 1361,
+        "completion_tokens": 319,
+        "prompt_tokens_details": null
+      },
+      "extraction_elapsed_seconds": 0.0,
+      "extraction_attempts": 0
+    },
+    {
+      "question_id": "lme_0346_gpt4_88806d6e:q0001",
+      "question": "Who did I meet first, Mark and Sarah or Tom?",
+      "question_date": "2023/05/28 (Sun) 21:23",
+      "conversion_audit": {
+        "question_id": "lme_0346_gpt4_88806d6e:q0001",
+        "question_type": "ordering",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": true,
+        "identity_grounded": true,
+        "raw_grounded": true,
+        "occurred_time_grounded": false,
+        "anchor_resolved": false,
+        "solver_supported": true,
+        "hypothesis_consistent": true,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": false,
+        "repairable_by_time_enrichment": true,
+        "failure_type": "occurred_time_missing"
+      },
+      "extraction_called": true,
+      "validated_enrichments": [],
+      "rejected_enrichments": [
+        {
+          "extraction": {
+            "event_id": "unit:lme_0346_gpt4_88806d6e:fact_sent:s009:answer_e60a93ff_1:t000:s001",
+            "identity_supported": true,
+            "time_expression": "about a month ago",
+            "anchor_type": "event",
+            "anchor_event_id": "unit:lme_0346_gpt4_88806d6e:fact_sent:s009:answer_e60a93ff_1:t000:s001",
+            "relation": "BEFORE_OFFSET",
+            "offset_value": 1,
+            "offset_unit": "month",
+            "confidence": 0.98,
+            "ambiguity": []
+          },
+          "reason": "not_unresolved_operand"
+        },
+        {
+          "extraction": {
+            "event_id": "unit:lme_0346_gpt4_88806d6e:fact_sent:s041:answer_e60a93ff_2:t000:s002",
+            "identity_supported": true,
+            "time_expression": "a few months ago",
+            "anchor_type": "event",
+            "anchor_event_id": "unit:lme_0346_gpt4_88806d6e:fact_sent:s041:answer_e60a93ff_2:t000:s002",
+            "relation": "BEFORE_OFFSET",
+            "offset_value": 3,
+            "offset_unit": "month",
+            "confidence": 0.45,
+            "ambiguity": []
+          },
+          "reason": "confidence_below_0.90"
+        }
+      ],
+      "enriched_candidate": {
+        "version": "8.5time_v",
+        "question_id": "lme_0346_gpt4_88806d6e:q0001",
+        "candidate_source": "8.5time_v_constraint_conversion",
+        "operands": [
+          {
+            "role": "meeting with Tom",
+            "identity": "meeting with Tom",
+            "fact_id": "unit:lme_0346_gpt4_88806d6e:fact_sent:s041:answer_e60a93ff_2:t000:s002",
+            "raw_id": "lme_0346_gpt4_88806d6e:raw:s041:answer_e60a93ff_2:t000",
+            "evidence_span": "user: I'm planning to volunteer at another charity event this weekend and I was wondering if you could help me come up with some conversation starters to break the ice with the other volunteers. I recall that a few months ago, I volunteered at a charity event and met a lot of like-minded people, including a guy named Tom who's involved with the organization.",
+            "mentioned_at": "2023-05-28T02:45:00",
+            "occurred_at": null,
+            "normalization_status": "symbolic",
+            "confidence": 0.45
+          },
+          {
+            "role": "meeting with Mark and Sarah",
+            "identity": "meeting with Mark and Sarah",
+            "fact_id": "unit:lme_0346_gpt4_88806d6e:fact_sent:s009:answer_e60a93ff_1:t000:s001",
+            "raw_id": "lme_0346_gpt4_88806d6e:raw:s009:answer_e60a93ff_1:t000",
+            "evidence_span": "user: I'm planning a trip to visit my friends Mark and Sarah, who I met on a beach trip about a month ago, and I was wondering if you could help me find some good restaurants in their hometown?",
+            "mentioned_at": "2023-05-28T18:40:00",
+            "occurred_at": "2023-04-28T18:40:00",
+            "normalization_status": "resolved",
+            "confidence": 0.98
+          }
+        ],
+        "constraints": [],
+        "propagation": {
+          "resolved_times": {
+            "unit:lme_0346_gpt4_88806d6e:fact_sent:s009:answer_e60a93ff_1:t000:s001": "2023-04-28T18:40:00"
+          },
+          "conflicts": [],
+          "consistent": true
+        },
+        "solution": {
+          "success": false,
+          "answer": null,
+          "operation": "ORDERING",
+          "failure_reason": "non_executable_constraints"
+        },
+        "reverse_verification": {
+          "passed": false,
+          "reason": "solver_failed"
+        },
+        "eligible_for_q4_verifier": false
+      },
+      "verifier": {
+        "called": false,
+        "safe_to_override_d0": false
+      },
+      "extraction_reused_from": "/home/sunyuwei/HyTopoMem/outputs/reconstruction/hypathmem_8.5time_v/non_executable35_conversion_qwen_gpu2.json",
+      "extraction": {
+        "extractions": [
+          {
+            "event_id": "unit:lme_0346_gpt4_88806d6e:fact_sent:s009:answer_e60a93ff_1:t000:s001",
+            "identity_supported": true,
+            "time_expression": "about a month ago",
+            "anchor_type": "event",
+            "anchor_event_id": "unit:lme_0346_gpt4_88806d6e:fact_sent:s009:answer_e60a93ff_1:t000:s001",
+            "relation": "BEFORE_OFFSET",
+            "offset_value": 1,
+            "offset_unit": "month",
+            "confidence": 0.98,
+            "ambiguity": []
+          },
+          {
+            "event_id": "unit:lme_0346_gpt4_88806d6e:fact_sent:s041:answer_e60a93ff_2:t000:s002",
+            "identity_supported": true,
+            "time_expression": "a few months ago",
+            "anchor_type": "event",
+            "anchor_event_id": "unit:lme_0346_gpt4_88806d6e:fact_sent:s041:answer_e60a93ff_2:t000:s002",
+            "relation": "BEFORE_OFFSET",
+            "offset_value": 3,
+            "offset_unit": "month",
+            "confidence": 0.45,
+            "ambiguity": []
+          }
+        ]
+      },
+      "extraction_usage": {
+        "prompt_tokens": 971,
+        "total_tokens": 1340,
+        "completion_tokens": 369,
+        "prompt_tokens_details": null
+      },
+      "extraction_elapsed_seconds": 0.0,
+      "extraction_attempts": 0
+    },
+    {
+      "question_id": "lme_0347_gpt4_4cd9eba1:q0001",
+      "question": "How many weeks have I been accepted into the exchange program when I started attending the pre-departure orientation sessions?",
+      "question_date": "2023/04/19 (Wed) 00:38",
+      "conversion_audit": {
+        "question_id": "lme_0347_gpt4_4cd9eba1:q0001",
+        "question_type": "elapsed",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": false,
+        "identity_grounded": true,
+        "raw_grounded": true,
+        "occurred_time_grounded": true,
+        "anchor_resolved": true,
+        "solver_supported": true,
+        "hypothesis_consistent": true,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": false,
+        "repairable_by_time_enrichment": false,
+        "failure_type": "operand_missing_or_outside_top50"
+      },
+      "extraction_called": false,
+      "validated_enrichments": [],
+      "rejected_enrichments": [],
+      "enriched_candidate": null,
+      "verifier": {
+        "called": false,
+        "safe_to_override_d0": false
+      }
+    },
+    {
+      "question_id": "lme_0350_gpt4_2f56ae70:q0001",
+      "question": "Which streaming service did I start using most recently?",
+      "question_date": "2023/05/26 (Fri) 00:18",
+      "conversion_audit": {
+        "question_id": "lme_0350_gpt4_2f56ae70:q0001",
+        "question_type": "recency",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": true,
+        "identity_grounded": true,
+        "raw_grounded": true,
+        "occurred_time_grounded": false,
+        "anchor_resolved": true,
+        "solver_supported": true,
+        "hypothesis_consistent": true,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": false,
+        "repairable_by_time_enrichment": true,
+        "failure_type": "occurred_time_missing"
+      },
+      "extraction_called": true,
+      "validated_enrichments": [],
+      "rejected_enrichments": [
+        {
+          "extraction": {
+            "event_id": "unit:lme_0350_gpt4_2f56ae70:fact_sent:s024:answer_7a36e820_2:t000:s003",
+            "identity_supported": true,
+            "time_expression": "a few months now",
+            "anchor_type": "mentioned_at",
+            "anchor_event_id": "unit:lme_0350_gpt4_2f56ae70:fact_sent:s024:answer_7a36e820_2:t000:s003",
+            "relation": "BEFORE_OFFSET",
+            "offset_value": 0,
+            "offset_unit": "day",
+            "confidence": 0.4,
+            "ambiguity": []
+          },
+          "reason": "confidence_below_0.90"
+        }
+      ],
+      "enriched_candidate": {
+        "version": "8.5time_v",
+        "question_id": "lme_0350_gpt4_2f56ae70:q0001",
+        "candidate_source": "8.5time_v_constraint_conversion",
+        "operands": [
+          {
+            "role": "streaming service",
+            "identity": "streaming service",
+            "fact_id": "unit:lme_0350_gpt4_2f56ae70:fact_sent:s024:answer_7a36e820_2:t000:s003",
+            "raw_id": "lme_0350_gpt4_2f56ae70:raw:s024:answer_7a36e820_2:t000",
+            "evidence_span": "user: I'm looking for some new TV shows to watch. Can you recommend something similar to \"The Handmaid's Tale\" on Hulu, which I'm really enjoying? By the way, I've also been using Apple TV+ for a few months now, and I just finished watching \"For All Mankind\", which was great.",
+            "mentioned_at": "2023-05-26T23:40:00",
+            "occurred_at": null,
+            "normalization_status": "mentioned_only",
+            "confidence": 0.4
+          }
+        ],
+        "constraints": [],
+        "propagation": {
+          "resolved_times": {},
+          "conflicts": [],
+          "consistent": true
+        },
+        "solution": {
+          "success": false,
+          "answer": null,
+          "operation": "RECENCY",
+          "failure_reason": "non_executable_constraints"
+        },
+        "reverse_verification": {
+          "passed": false,
+          "reason": "solver_failed"
+        },
+        "eligible_for_q4_verifier": false
+      },
+      "verifier": {
+        "called": false,
+        "safe_to_override_d0": false
+      },
+      "extraction_reused_from": "/home/sunyuwei/HyTopoMem/outputs/reconstruction/hypathmem_8.5time_v/non_executable35_conversion_qwen_gpu2.json",
+      "extraction": {
+        "extractions": [
+          {
+            "event_id": "unit:lme_0350_gpt4_2f56ae70:fact_sent:s024:answer_7a36e820_2:t000:s003",
+            "identity_supported": true,
+            "time_expression": "a few months now",
+            "anchor_type": "mentioned_at",
+            "anchor_event_id": "unit:lme_0350_gpt4_2f56ae70:fact_sent:s024:answer_7a36e820_2:t000:s003",
+            "relation": "BEFORE_OFFSET",
+            "offset_value": 0,
+            "offset_unit": "day",
+            "confidence": 0.4,
+            "ambiguity": []
+          }
+        ]
+      },
+      "extraction_usage": {
+        "prompt_tokens": 745,
+        "total_tokens": 937,
+        "completion_tokens": 192,
+        "prompt_tokens_details": null
+      },
+      "extraction_elapsed_seconds": 0.0,
+      "extraction_attempts": 0
+    },
+    {
+      "question_id": "lme_0351_6613b389:q0001",
+      "question": "How many months before my anniversary did Rachel get engaged?",
+      "question_date": "2023/07/07 (Fri) 13:04",
+      "conversion_audit": {
+        "question_id": "lme_0351_6613b389:q0001",
+        "question_type": "elapsed",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": false,
+        "identity_grounded": false,
+        "raw_grounded": true,
+        "occurred_time_grounded": false,
+        "anchor_resolved": true,
+        "solver_supported": true,
+        "hypothesis_consistent": true,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": false,
+        "repairable_by_time_enrichment": false,
+        "failure_type": "operand_missing_or_outside_top50"
+      },
+      "extraction_called": false,
+      "validated_enrichments": [],
+      "rejected_enrichments": [],
+      "enriched_candidate": null,
+      "verifier": {
+        "called": false,
+        "safe_to_override_d0": false
+      }
+    },
+    {
+      "question_id": "lme_0355_gpt4_2f584639:q0001",
+      "question": "Which gift did I buy first, the necklace for my sister or the photo album for my mom?",
+      "question_date": "2023/05/30 (Tue) 07:03",
+      "conversion_audit": {
+        "question_id": "lme_0355_gpt4_2f584639:q0001",
+        "question_type": "ordering",
+        "structural_roles_complete": true,
+        "pairwise_operands_complete": true,
+        "identity_grounded": false,
+        "raw_grounded": true,
+        "occurred_time_grounded": false,
+        "anchor_resolved": true,
+        "solver_supported": true,
+        "hypothesis_consistent": true,
+        "restrictive_clause_pass": true,
+        "validated_operand_coverage": false,
+        "repairable_by_time_enrichment": false,
+        "failure_type": "event_identity_unreliable"
+      },
+      "extraction_called": false,
+      "validated_enrichments": [],
+      "rejected_enrichments": [],
+      "enriched_candidate": null,
+      "verifier": {
+        "called": false,
+        "safe_to_override_d0": false
+      }
+    }
+  ]
+}

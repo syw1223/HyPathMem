@@ -1,0 +1,91 @@
+mainline:
+  name: v3_9_card_guided_expand120_light_quota
+  frozen_date: "2026-06-24"
+  description: Query-conditioned relation cards guide local evidence expansion from Base100 to expand120, then a light card quota plus 24-feature LightGBM selects evidence.
+
+data:
+  questions: 1986
+  base_candidate_file: outputs/v3_9_query_cards/qwen3_card_annotated_base100_paths_v3_clean.json
+  candidate_file: outputs/v3_9_query_cards/qwen3_card_guided_expand120.json
+  graph: outputs/graphs/locomo_graph_v3_6b_qwen_all.json
+  card_context_topn: 50
+  base_candidate_topn: 100
+  expansion_source_topn: 150
+  expansion_budget: 20
+  avg_expanded_candidates_per_question: 6.90
+  expands_candidate_pool: true
+  expansion_policy: high-confidence card facts -> same EVENT / same TOPIC candidates from existing Top150
+
+selector:
+  model: lightgbm_ranker
+  evaluation: conversation_level_10_fold_cv
+  final_topk: 20
+  selection_policy: light card quota + LightGBM fill
+  light_card_quota_top5: 2
+  light_card_quota_top20: 5
+  n_estimators: 80
+  learning_rate: 0.05
+  num_leaves: 31
+  min_child_samples: 10
+  random_state: 13
+
+feature_groups:
+  retrieval:
+    - ce_score
+    - base_score
+    - bm25_norm
+    - ce_rank
+    - ce_reciprocal_rank
+    - query_term_overlap
+    - text_token_count
+    - query_token_count
+  route:
+    - has_topdown_route
+    - has_bottom_up_route
+    - route_from_both
+    - is_eu_route
+    - is_hyp_route
+    - route_source_count
+    - route_overlap_score
+    - eu_hyp_agreement
+    - bottom_up_eu_agreement
+    - bottom_up_hyp_agreement
+    - route_consistency_entropy
+  card_membership:
+    - is_nary_completion
+  card_quality:
+    - nary_hyperedge_size
+    - nary_hyperedge_confidence
+    - nary_same_hyperedge_count_in_candidate_pool
+    - nary_role_coverage_potential
+
+excluded_from_mainline:
+  - hierarchy detail features
+  - route source event/topic one-hot features
+  - extractor indicators
+  - relation type one-hot features
+  - role one-hot features
+  - CardCE score
+  - set-aware has_* features
+  - card-level geometry features
+  - average or maximum hyperbolic distance
+
+result:
+  hit_at_5: 0.8077
+  recall_at_5: 0.7451
+  full_cover_at_5: 0.6903
+  hit_at_20: 0.8832
+  recall_at_20: 0.8310
+  full_cover_at_20: 0.7784
+  summary_top5: outputs/eval/cv/v3_9_base_feature_selection_top5/base_feature_selection_summary.json
+  summary_top20: outputs/eval/cv/v3_9_24_feature_card_guided_expand120/card_quota_24_feature_summary.json
+  expansion_summary: outputs/eval/V3_9_24_FEATURE_CARD_GUIDED_EXPANSION_SUMMARY.md
+
+ablations:
+  strict_base100_24_feature_lgbm:
+    hit_at_5: 0.8092
+    recall_at_5: 0.7462
+    full_cover_at_5: 0.6928
+    hit_at_20: 0.8771
+    recall_at_20: 0.8256
+    full_cover_at_20: 0.7714

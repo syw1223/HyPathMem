@@ -1,0 +1,392 @@
+{
+  "metadata": {
+    "version": "hypathmem_8.4time_v_e1_e2",
+    "mode": "e1",
+    "answer_model": null,
+    "verifier_model": "qwen3-30b-a3b-instruct-2507",
+    "judge_model": "gpt-4o-mini",
+    "judge_repetitions": 1,
+    "time_v_artifact": "/home/sunyuwei/HyTopoMem/outputs/reconstruction/hypathmem_8.4time_v/longmemeval_temporal133_h1_h5_trial3.json",
+    "uses_gold_for_packet": false,
+    "elapsed_seconds": 12.357729258015752
+  },
+  "summary": {
+    "num_questions": 2,
+    "packet_correct": 2,
+    "packet_accuracy": 1.0,
+    "frozen_d0_correct": 1,
+    "frozen_d0_accuracy": 0.5,
+    "delta_vs_frozen_d0": 0.5,
+    "fix": 1,
+    "break": 0,
+    "unchanged_correct": 1,
+    "unchanged_wrong": 0,
+    "reader_refusal": 0,
+    "by_failure_reason": {
+      "none": {
+        "n": 2,
+        "packet_correct": 2,
+        "packet_accuracy": 1.0,
+        "frozen_d0_correct": 1,
+        "frozen_d0_accuracy": 0.5,
+        "fix": 1,
+        "break": 0,
+        "reader_refusal": 0
+      }
+    }
+  },
+  "rows": [
+    {
+      "question_id": "lme_0234_gpt4_59149c77:q0001",
+      "question": "How many days passed between my visit to the Museum of Modern Art (MoMA) and the 'Ancient Civilizations' exhibit at the Metropolitan Museum of Art?",
+      "gold_answer": "7 days. 8 days (including the last day) is also acceptable.",
+      "prediction": "7 days",
+      "packet": {
+        "question_time": "2023/02/01 (Wed) 10:20",
+        "query_type": "elapsed",
+        "required_roles": [
+          "visit to the Museum of Modern Art (MoMA)",
+          "visit to the 'Ancient Civilizations' exhibit at the Metropolitan Museum of Art"
+        ],
+        "compiler_failure_reason": "none",
+        "selected_operands": [
+          {
+            "role": "visit to the Museum of Modern Art (MoMA)",
+            "identity": "visit to the Museum of Modern Art (MoMA)",
+            "fact_id": "unit:lme_0234_gpt4_59149c77:fact_sent:s004:answer_d00ba6d0_1:t000:s002",
+            "raw_id": "lme_0234_gpt4_59149c77:raw:s004:answer_d00ba6d0_1:t000",
+            "evidence_quote": "user: I'm looking for some information on modern art movements. I just got back from a guided tour at the Museum of Modern Art focused on 20th-century modern art movements, and it really sparked my interest. Can you tell me more about the key artists associated with Cubism?",
+            "mentioned_at": "2023-01-08T12:49:00",
+            "occurred_at": "2023-01-08T12:49:00",
+            "normalization_status": "inferred_day",
+            "confidence": 0.82
+          },
+          {
+            "role": "visit to the 'Ancient Civilizations' exhibit at the Metropolitan Museum of Art",
+            "identity": "visit to the 'Ancient Civilizations' exhibit at the Metropolitan Museum of Art",
+            "fact_id": "unit:lme_0234_gpt4_59149c77:fact_sent:s027:answer_d00ba6d0_2:t006:s003",
+            "raw_id": "lme_0234_gpt4_59149c77:raw:s027:answer_d00ba6d0_2:t006",
+            "evidence_quote": "user: That's fascinating! I had no idea that mummification was practiced in so many ancient cultures. I've always been interested in ancient civilizations, which is why I attended the \"Ancient Civilizations\" exhibit at the Metropolitan Museum of Art today. Speaking of which, I was wondering, are there any other exhibits or museums in New York City that you would recommend for someone interested in ancient cultures?",
+            "mentioned_at": "2023-01-15T00:27:00",
+            "occurred_at": "2023-01-15T00:27:00",
+            "normalization_status": "exact",
+            "confidence": 0.9
+          }
+        ],
+        "role_candidates": [
+          {
+            "role": "visit to the Museum of Modern Art (MoMA)",
+            "alternatives": [
+              {
+                "fact_id": "unit:lme_0234_gpt4_59149c77:fact_sent:s004:answer_d00ba6d0_1:t000:s002",
+                "claim": "user said: I just got back from a guided tour at the Museum of Modern Art focused on 20th-century modern art movements, and it really sparked my interest.",
+                "mentioned_at": "2023-01-08T12:49:00",
+                "occurred_at": "2023-01-08T12:49:00",
+                "normalization_status": "inferred_day",
+                "confidence": 0.82,
+                "role_score": 0.5386981471282589,
+                "trusted_q4_binding": true
+              },
+              {
+                "fact_id": "unit:lme_0234_gpt4_59149c77:fact_sent:s004:answer_d00ba6d0_1:t001:s002",
+                "claim": "assistant said: The Museum of Modern Art (MoMA) is an iconic institution, and exploring 20th-century modern art movements can be fascinating.",
+                "mentioned_at": "2023-01-08T12:49:00",
+                "occurred_at": null,
+                "normalization_status": "mentioned_only",
+                "confidence": 0.4,
+                "role_score": 0.18027383246281461,
+                "trusted_q4_binding": false
+              },
+              {
+                "fact_id": "unit:lme_0234_gpt4_59149c77:fact_sent:s027:answer_d00ba6d0_2:t006:s003",
+                "claim": "user said: I've always been interested in ancient civilizations, which is why I attended the \"Ancient Civilizations\" exhibit at the Metropolitan Museum of Art today.",
+                "mentioned_at": "2023-01-15T00:27:00",
+                "occurred_at": "2023-01-15T00:27:00",
+                "normalization_status": "exact",
+                "confidence": 0.9,
+                "role_score": 0.15925947190868617,
+                "trusted_q4_binding": false
+              }
+            ]
+          },
+          {
+            "role": "visit to the 'Ancient Civilizations' exhibit at the Metropolitan Museum of Art",
+            "alternatives": [
+              {
+                "fact_id": "unit:lme_0234_gpt4_59149c77:fact_sent:s027:answer_d00ba6d0_2:t006:s003",
+                "claim": "user said: I've always been interested in ancient civilizations, which is why I attended the \"Ancient Civilizations\" exhibit at the Metropolitan Museum of Art today.",
+                "mentioned_at": "2023-01-15T00:27:00",
+                "occurred_at": "2023-01-15T00:27:00",
+                "normalization_status": "exact",
+                "confidence": 0.9,
+                "role_score": 0.26622668502344027,
+                "trusted_q4_binding": false
+              },
+              {
+                "fact_id": "unit:lme_0234_gpt4_59149c77:fact_sent:s029:9e2c2a6c_2:t004:s001",
+                "claim": "user said: I'm interested in the \"Ephemeral Landscapes\" exhibit at the Environmental Art Museum.",
+                "mentioned_at": "2023-01-15T06:34:00",
+                "occurred_at": null,
+                "normalization_status": "mentioned_only",
+                "confidence": 0.4,
+                "role_score": 0.17145706545749256,
+                "trusted_q4_binding": false
+              },
+              {
+                "fact_id": "unit:lme_0234_gpt4_59149c77:fact_sent:s029:9e2c2a6c_2:t002:s001",
+                "claim": "user said: I'm particularly interested in the Environmental Art Museum and the Recycled Art Gallery.",
+                "mentioned_at": "2023-01-15T06:34:00",
+                "occurred_at": null,
+                "normalization_status": "mentioned_only",
+                "confidence": 0.4,
+                "role_score": 0.15568668396232888,
+                "trusted_q4_binding": false
+              }
+            ]
+          }
+        ],
+        "temporal_relations": [
+          {
+            "edge_id": "temp:event:unit:lme_0234_gpt4_59149c77:fact_sent:s004:answer_d00ba6d0_1:t000:s002->BEFORE->temp:event:unit:lme_0234_gpt4_59149c77:fact_sent:s027:answer_d00ba6d0_2:t006:s003",
+            "src": "temp:event:unit:lme_0234_gpt4_59149c77:fact_sent:s004:answer_d00ba6d0_1:t000:s002",
+            "dst": "temp:event:unit:lme_0234_gpt4_59149c77:fact_sent:s027:answer_d00ba6d0_2:t006:s003",
+            "relation": "BEFORE",
+            "confidence": 0.99,
+            "reason": "query_operand_pair"
+          },
+          {
+            "edge_id": "temp:event:unit:lme_0234_gpt4_59149c77:fact_sent:s027:answer_d00ba6d0_2:t006:s003->AFTER->temp:event:unit:lme_0234_gpt4_59149c77:fact_sent:s004:answer_d00ba6d0_1:t000:s002",
+            "src": "temp:event:unit:lme_0234_gpt4_59149c77:fact_sent:s027:answer_d00ba6d0_2:t006:s003",
+            "dst": "temp:event:unit:lme_0234_gpt4_59149c77:fact_sent:s004:answer_d00ba6d0_1:t000:s002",
+            "relation": "AFTER",
+            "confidence": 0.99,
+            "reason": "query_operand_pair"
+          },
+          {
+            "edge_id": "temp:state:unit:lme_0234_gpt4_59149c77:fact_sent:s027:answer_d00ba6d0_2:t006:s003->VALID_DURING->temp:event:unit:lme_0234_gpt4_59149c77:fact_sent:s027:answer_d00ba6d0_2:t006:s003",
+            "src": "temp:state:unit:lme_0234_gpt4_59149c77:fact_sent:s027:answer_d00ba6d0_2:t006:s003",
+            "dst": "temp:event:unit:lme_0234_gpt4_59149c77:fact_sent:s027:answer_d00ba6d0_2:t006:s003",
+            "relation": "VALID_DURING",
+            "confidence": 0.85,
+            "reason": "state_source_event"
+          },
+          {
+            "edge_id": "temp:state:unit:lme_0234_gpt4_59149c77:fact_sent:s004:answer_d00ba6d0_1:t000:s002->VALID_DURING->temp:event:unit:lme_0234_gpt4_59149c77:fact_sent:s004:answer_d00ba6d0_1:t000:s002",
+            "src": "temp:state:unit:lme_0234_gpt4_59149c77:fact_sent:s004:answer_d00ba6d0_1:t000:s002",
+            "dst": "temp:event:unit:lme_0234_gpt4_59149c77:fact_sent:s004:answer_d00ba6d0_1:t000:s002",
+            "relation": "VALID_DURING",
+            "confidence": 0.85,
+            "reason": "state_source_event"
+          }
+        ],
+        "reader_instruction": "Resolve only what the packet supports; otherwise refuse."
+      },
+      "failure_reason": "none",
+      "reader_refusal": false,
+      "frozen_d0_prediction": "You visited the Museum of Modern Art (MoMA) on 2023/01/08 (Sunday) as indicated by your statement \"I just got back from a guided tour at the Museum of Modern Art\" at 12:49 on 2023/01/08 [E4]. You attended the \"Ancient Civilizations\" exhibit at the Metropolitan Museum of Art on 2023/01/15 (Sunday) as you said \"I attended the 'Ancient Civilizations' exhibit at the Metropolitan Museum of Art today\" at 00:27 on 2023/01/15 [E1].\n\nThe number",
+      "frozen_d0_judge_correct": 1,
+      "comparison": "unchanged_correct",
+      "generation_usage": {},
+      "generation_elapsed_seconds": 0.0,
+      "verifier": {
+        "model": "qwen3-30b-a3b-instruct-2507",
+        "verification": {
+          "question_constraints": [
+            "a visit to the Museum of Modern Art (MoMA)",
+            "a visit to the 'Ancient Civilizations' exhibit at the Metropolitan Museum of Art",
+            "the time between the two visits"
+          ],
+          "unsupported_constraints": [],
+          "all_question_operands_present": true,
+          "identities_match_question": true,
+          "anchor_bindings_supported": true,
+          "operation_matches_question": true,
+          "arithmetic_or_ordering_correct": true,
+          "answer_fully_entailed": true,
+          "safe_to_override_d0": true,
+          "reason": "Both events are explicitly mentioned with confirmed dates: the MoMA visit occurred on 2023-01-08, and the 'Ancient Civilizations' exhibit visit occurred on 2023-01-15. The elapsed time between these two dates is exactly 7 days, which matches the query type 'elapsed' and the required roles. All semantic conditions are satisfied, and the arithmetic is correct."
+        },
+        "safe_to_override_d0": true,
+        "usage": {
+          "prompt_tokens": 921,
+          "total_tokens": 1141,
+          "completion_tokens": 220,
+          "prompt_tokens_details": null
+        },
+        "elapsed_seconds": 3.1983384779887274,
+        "attempts": 1
+      },
+      "candidate_prediction": "7 days",
+      "candidate_judge_correct": 1,
+      "candidate_judge": {
+        "judge_correct": 1,
+        "judge_label": "CORRECT",
+        "judge_reason": "The generated answer '7 days' matches the gold answer of '7 days' exactly.",
+        "judge_raw_response": "{\n  \"label\": \"CORRECT\",\n  \"reason\": \"The generated answer '7 days' matches the gold answer of '7 days' exactly.\"\n}",
+        "judge_usage": {
+          "prompt_tokens": 344,
+          "completion_tokens": 34,
+          "total_tokens": 378
+        },
+        "judge_elapsed_seconds": 2.3754659889964387
+      },
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "The generated answer '7 days' matches the gold answer of '7 days' exactly.",
+      "judge_raw_response": "{\n  \"label\": \"CORRECT\",\n  \"reason\": \"The generated answer '7 days' matches the gold answer of '7 days' exactly.\"\n}",
+      "judge_usage": {
+        "prompt_tokens": 344,
+        "completion_tokens": 34,
+        "total_tokens": 378
+      },
+      "judge_elapsed_seconds": 2.3754659889964387
+    },
+    {
+      "question_id": "lme_0247_gpt4_1d80365e:q0001",
+      "question": "How many days did I spend on my solo camping trip to Yosemite National Park?",
+      "gold_answer": "2 days. 3 days (including the last day) is also acceptable.",
+      "prediction": "3 days",
+      "packet": {
+        "question_time": "2023/06/01 (Thu) 17:17",
+        "query_type": "duration",
+        "required_roles": [
+          "solo camping trip to Yosemite National Park"
+        ],
+        "compiler_failure_reason": "none",
+        "selected_operands": [
+          {
+            "role": "solo camping trip to Yosemite National Park:start",
+            "identity": "solo camping trip to Yosemite National Park:start",
+            "fact_id": "unit:lme_0247_gpt4_1d80365e:fact_sent:s013:answer_661b711f_1:t000:s002",
+            "raw_id": "lme_0247_gpt4_1d80365e:raw:s013:answer_661b711f_1:t000",
+            "evidence_quote": "user: I'm planning a trip to the Eastern Sierra in July or August and was wondering if you could recommend some scenic hiking trails in the area. By the way, I just started my solo camping trip to Yosemite National Park today and I'm really excited to explore the park.",
+            "mentioned_at": "2023-05-15T04:28:00",
+            "occurred_at": "2023-05-15T04:28:00",
+            "normalization_status": "exact",
+            "confidence": 0.9
+          },
+          {
+            "role": "solo camping trip to Yosemite National Park:end",
+            "identity": "solo camping trip to Yosemite National Park:end",
+            "fact_id": "unit:lme_0247_gpt4_1d80365e:fact_sent:s032:answer_661b711f_2:t000:s002",
+            "raw_id": "lme_0247_gpt4_1d80365e:raw:s032:answer_661b711f_2:t000",
+            "evidence_quote": "user: I'm thinking of planning a trip to the Eastern Sierra in July or August and I was wondering if you could recommend some good camping spots and hiking trails in the area. By the way, I just got back from an amazing solo camping trip to Yosemite National Park today, and I'm already itching to get back out into the mountains.",
+            "mentioned_at": "2023-05-17T19:56:00",
+            "occurred_at": "2023-05-17T19:56:00",
+            "normalization_status": "exact",
+            "confidence": 0.9
+          }
+        ],
+        "role_candidates": [
+          {
+            "role": "solo camping trip to Yosemite National Park",
+            "alternatives": [
+              {
+                "fact_id": "unit:lme_0247_gpt4_1d80365e:fact_sent:s013:answer_661b711f_1:t000:s002",
+                "claim": "user said: By the way, I just started my solo camping trip to Yosemite National Park today and I'm really excited to explore the park.",
+                "mentioned_at": "2023-05-15T04:28:00",
+                "occurred_at": "2023-05-15T04:28:00",
+                "normalization_status": "exact",
+                "confidence": 0.9,
+                "role_score": 0.2787714374362261,
+                "trusted_q4_binding": false
+              },
+              {
+                "fact_id": "unit:lme_0247_gpt4_1d80365e:fact_sent:s032:answer_661b711f_2:t000:s002",
+                "claim": "user said: By the way, I just got back from an amazing solo camping trip to Yosemite National Park today, and I'm already itching to get back out into the mountains.",
+                "mentioned_at": "2023-05-17T19:56:00",
+                "occurred_at": "2023-05-17T19:56:00",
+                "normalization_status": "exact",
+                "confidence": 0.9,
+                "role_score": 0.24901842348247166,
+                "trusted_q4_binding": false
+              },
+              {
+                "fact_id": "unit:lme_0247_gpt4_1d80365e:fact_sent:s013:answer_661b711f_1:t000:s001",
+                "claim": "user said: I'm planning a trip to the Eastern Sierra in July or August and was wondering if you could recommend some scenic hiking trails in the area.",
+                "mentioned_at": "2023-05-15T04:28:00",
+                "occurred_at": null,
+                "normalization_status": "mentioned_only",
+                "confidence": 0.4,
+                "role_score": 0.21000304464612168,
+                "trusted_q4_binding": false
+              }
+            ]
+          }
+        ],
+        "temporal_relations": [
+          {
+            "edge_id": "temp:state:unit:lme_0247_gpt4_1d80365e:fact_sent:s013:answer_661b711f_1:t000:s002->VALID_DURING->temp:event:unit:lme_0247_gpt4_1d80365e:fact_sent:s013:answer_661b711f_1:t000:s002",
+            "src": "temp:state:unit:lme_0247_gpt4_1d80365e:fact_sent:s013:answer_661b711f_1:t000:s002",
+            "dst": "temp:event:unit:lme_0247_gpt4_1d80365e:fact_sent:s013:answer_661b711f_1:t000:s002",
+            "relation": "VALID_DURING",
+            "confidence": 0.85,
+            "reason": "state_source_event"
+          }
+        ],
+        "reader_instruction": "Resolve only what the packet supports; otherwise refuse."
+      },
+      "failure_reason": "none",
+      "reader_refusal": false,
+      "frozen_d0_prediction": "You started your solo camping trip to Yosemite National Park on 2023/05/15 (E1). You mentioned on 2023/05/17 that you just got back from the trip that day (E3). Therefore, you spent 3 days on your solo camping trip to Yosemite National Park.",
+      "frozen_d0_judge_correct": 0,
+      "comparison": "fix",
+      "generation_usage": {},
+      "generation_elapsed_seconds": 0.0,
+      "verifier": {
+        "model": "qwen3-30b-a3b-instruct-2507",
+        "verification": {
+          "question_constraints": [
+            "The event 'solo camping trip to Yosemite National Park' must be identified with a start and end date.",
+            "The start date of the trip is 2023-05-15T04:28:00, as stated in the evidence: 'I just started my solo camping trip to Yosemite National Park today' on 2023-05-15.",
+            "The end date of the trip is 2023-05-17T19:56:00, as stated in the evidence: 'I just got back from an amazing solo camping trip to Yosemite National Park today' on 2023-05-17.",
+            "The duration must be calculated as the number of days between the start and end dates, inclusive.",
+            "The question asks for the number of days spent on the trip, which is a duration query."
+          ],
+          "unsupported_constraints": [],
+          "all_question_operands_present": true,
+          "identities_match_question": true,
+          "anchor_bindings_supported": true,
+          "operation_matches_question": true,
+          "arithmetic_or_ordering_correct": true,
+          "answer_fully_entailed": true,
+          "safe_to_override_d0": true,
+          "reason": "The start and end dates of the solo camping trip to Yosemite National Park are explicitly provided in the evidence spans with exact timestamps. The duration from 2023-05-15 to 2023-05-17 inclusive is 3 days, which matches the answer. All semantic conditions in the question are satisfied, and the operation is correctly applied."
+        },
+        "safe_to_override_d0": true,
+        "usage": {
+          "prompt_tokens": 969,
+          "total_tokens": 1330,
+          "completion_tokens": 361,
+          "prompt_tokens_details": null
+        },
+        "elapsed_seconds": 4.6963521090801805,
+        "attempts": 1
+      },
+      "candidate_prediction": "3 days",
+      "candidate_judge_correct": 1,
+      "candidate_judge": {
+        "judge_correct": 1,
+        "judge_label": "CORRECT",
+        "judge_reason": "The generated answer of '3 days' is acceptable as it aligns with the gold answer, which states that '3 days (including the last day) is also acceptable.'",
+        "judge_raw_response": "{\n  \"label\": \"CORRECT\",\n  \"reason\": \"The generated answer of '3 days' is acceptable as it aligns with the gold answer, which states that '3 days (including the last day) is also acceptable.'\"\n}",
+        "judge_usage": {
+          "prompt_tokens": 327,
+          "completion_tokens": 51,
+          "total_tokens": 378
+        },
+        "judge_elapsed_seconds": 2.084249514969997
+      },
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "The generated answer of '3 days' is acceptable as it aligns with the gold answer, which states that '3 days (including the last day) is also acceptable.'",
+      "judge_raw_response": "{\n  \"label\": \"CORRECT\",\n  \"reason\": \"The generated answer of '3 days' is acceptable as it aligns with the gold answer, which states that '3 days (including the last day) is also acceptable.'\"\n}",
+      "judge_usage": {
+        "prompt_tokens": 327,
+        "completion_tokens": 51,
+        "total_tokens": 378
+      },
+      "judge_elapsed_seconds": 2.084249514969997
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "created_at": "2026-08-04T10:19:01.705140+00:00",
+  "archive": "HyPathMem LoCoMo final1540 D0+8.5time_locomo_v2",
+  "immutable_result_claim": "1411/1540 = 91.6234%",
+  "reporting_status": "final selected post-hoc development result",
+  "files": {
+    "README.md": {
+      "sha256": "c91f64900a95be678bc31bca61dc431a15b982bf1bd7509f840072dafabd41a6",
+      "bytes": 960
+    },
+    "hypathmem_locomo_final1540.json": {
+      "sha256": "753b7e387a20e16197cd49ea979ef3f155755d22572ccbbca82d71fdf98fc593",
+      "bytes": 4908981
+    },
+    "method_snapshot/152_compile_hypathmem_locomo_time_v8_5_v2.py": {
+      "sha256": "4f61d9fac15bf397440762b9b895b18ae4054f31bfb9a28c3bf48464c67f0554",
+      "bytes": 7604
+    },
+    "method_snapshot/153_eval_hypathmem_locomo_time_v8_5_v2.py": {
+      "sha256": "973cdf8151ab65b30e4d15a8313e5319bf568fc92bf98a1cb65ec258d91a64f1",
+      "bytes": 6886
+    },
+    "method_snapshot/154_archive_hypathmem_locomo_d0_time_v2_final.py": {
+      "sha256": "0b0c4981b8cc72ba626705833c2a5cc489c59dd5cb5ad157a7e56b71bec1730b",
+      "bytes": 15946
+    },
+    "method_snapshot/locomo_time_v8_5_v2.py": {
+      "sha256": "299df5518862292f587d14d24915acd49887161cc93d88488b00804db9baebb5",
+      "bytes": 8239
+    },
+    "method_snapshot/test_locomo_time_v8_5_v2.py": {
+      "sha256": "24dc47f55f33a34f86aaf5a4265ecada0d5c389cb6be42f6fcbea0759d5873a8",
+      "bytes": 3870
+    },
+    "source_artifacts/d2_paired60_negative_control.json": {
+      "sha256": "b6e79788c18787b57983d8864382e01f59e3295c00db3ba19de93c5522f223f5",
+      "bytes": 96396
+    },
+    "source_artifacts/frozen_d0_full1540.json": {
+      "sha256": "61fa1d76c30a811b99b538aae40bd68397758cf33e6cfa88dff6de2de6bab078",
+      "bytes": 4226255
+    },
+    "source_artifacts/time_v2_cat2_compiled.json": {
+      "sha256": "64ed0b11858532de7958a58f43262fe47c109b9749c6de6e8dc5479381fda900",
+      "bytes": 2113315
+    },
+    "source_artifacts/time_v2_cat2_judge.json": {
+      "sha256": "53e6108b0647fb4a9a661a03a7fd6e99966904b656907e92e63584cb4d4b4a7e",
+      "bytes": 273095
+    },
+    "source_artifacts/time_v2_cat2_q4_verified.json": {
+      "sha256": "8702fad6acea0d7bfc480079b7d8629270b6e93cd20df5b3a4677e22199c7522",
+      "bytes": 89277
+    },
+    "summary.json": {
+      "sha256": "a179699d72ae219d5addf08a483841abba93a66041e5991255fd0d9ac17da694",
+      "bytes": 1820
+    }
+  },
+  "large_external_artifacts": {
+    "graph": {
+      "path": "outputs/graphs/locomo_graph_v3_6b_qwen_all.json",
+      "sha256": "5352a47ec98869bfbbdcb2ccfaa647937acb708f7bef5f9f7ac516ee211ed7a6",
+      "bytes": 68109806
+    },
+    "paths": {
+      "path": "outputs/paths/full_v3_9_card_guided_expand120_light_quota_top20.json",
+      "sha256": "16c4df5832d0802ef6c7720231ecb7a589d0249fba58f97ca02c889d490064af",
+      "bytes": 74201712
+    }
+  },
+  "original_sources": {
+    "frozen_d0": "outputs/qa/full_v3_9_expand120_light_quota_top20_hybrid_v11_chatanywhere_gpt41mini_judge_gpt4omini.json",
+    "temporal_v2_judge": "outputs/qa/hypathmem_locomo_8.5time_v2/cat2_verified_solver_judge_gpt4omini.json",
+    "temporal_v2_q4": "outputs/reconstruction/hypathmem_locomo_8.5time_v2/cat2_q4_verified.json",
+    "temporal_v2_compiled": "outputs/reconstruction/hypathmem_locomo_8.5time_v2/cat2_compiled.json",
+    "d2_paired60_negative_control": "outputs/qa/hypathmem_locomo_d2_v1/d2_top20_paired60_gpt41mini_judge_gpt4omini.json"
+  }
+}

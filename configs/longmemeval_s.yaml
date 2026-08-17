@@ -1,0 +1,28 @@
+dataset:
+  name: longmemeval_s
+  official_eval: true
+
+data:
+  raw_path: data/longmemeval/raw/longmemeval_s_cleaned.json
+  processed_path: data/longmemeval/processed/longmemeval_s_mvp.json
+
+graph:
+  nodes_path: outputs/longmemeval_s/nodes.json
+  graph_path: outputs/longmemeval_s/graph_v3_9.json
+
+retrieval:
+  candidate_topn: 150
+  final_topk: 20
+  restrict_conversation: true
+
+selector:
+  mode: apply_only
+  pretrained_model: outputs/models/v3_9_locomo_lgbm.pkl
+  feature_names: outputs/models/v3_9_feature_names.json
+
+qa_eval:
+  dataset: longmemeval
+  k: 20
+  context_mode: raw_or_hybrid
+  output: outputs/longmemeval_s/qa_predictions.json
+  official_jsonl: outputs/longmemeval_s/hypotheses.jsonl

@@ -1,0 +1,354 @@
+from __future__ import annotations
+
+import os
+from dataclasses import dataclass
+from pathlib import Path
+from typing import Iterable
+
+import numpy as np
+
+from hytopomem.memory.schema import MemoryGraph, Node, NodeType
+from hytopomem.retrieval.cross_encoder_reranker import RerankCandidate
+
+
+DEFAULT_LOCAL_EMBEDDER = os.environ.get(
+    "HYPATHMEM_EMBEDDER",
+    "sentence-transformers/all-MiniLM-L6-v2",
+)
+
+
+@dataclass(frozen=True)
+class TopDownSemanticConfig:
+    event_topk: int = 20
+    topic_topk: int = 3
+    events_per_topic: int = 3
+    facts_per_event: int = 8
+    max_candidates: int = 100
+    mode: str = "both"
+    restrict_conversation: bool = True
+    hierarchy_version: str = "v2"
+
+
+class SentenceTransformerEncoder:
+    def __init__(
+        self,
+        model_name_or_path: str | None = None,
+        *,
+        device: str | None = None,
+        batch_size: int = 128,
+    ):
+        try:
+            from sentence_transformers import SentenceTransformer
+        except ImportError as exc:
+            raise RuntimeError("sentence-transformers is required for semantic top-down retrieval") from exc
+
+        model_path = model_name_or_path or default_embedder()
+        kwargs = {}
+        if device:
+            kwargs["device"] = device
+        self.model_name_or_path = model_path
+        self.model = SentenceTransformer(model_path, **kwargs)
+        self.batch_size = batch_size
+
+    def encode(self, texts: Iterable[str]) -> np.ndarray:
+        vectors = self.model.encode(
+            list(texts),
+            batch_size=self.batch_size,
+            show_progress_bar=False,
+            convert_to_numpy=True,
+            normalize_embeddings=True,
+        )
+        return np.asarray(vectors, dtype=np.float32)
+
+
+class TopDownSemanticRetriever:
+    def __init__(
+        self,
+        graph: MemoryGraph,
+        *,
+        encoder: SentenceTransformerEncoder,
+        config: TopDownSemanticConfig | None = None,
+        cache_path: Path | None = None,
+    ):
+        self.graph = graph
+        self.encoder = encoder
+        self.config = config or TopDownSemanticConfig()
+        if self.config.hierarchy_version not in {"v2", "v3", "v3_3"}:
+            raise ValueError(f"unsupported hierarchy version: {self.config.hierarchy_version}")
+        self.hierarchy_key = f"hierarchy_{self.config.hierarchy_version}"
+        self.fact_to_event = self._fact_to_event()
+        self.event_to_topic = self._event_to_topic()
+        self.event_to_facts = self._event_to_facts()
+        self.topic_to_events = self._topic_to_events()
+        self.events = sorted(
+            (
+                node
+                for node in graph.iter_nodes(NodeType.EVENT)
+                if not (self.config.hierarchy_version == "v3_3" and node.metadata.get("hierarchy_v3_3") == "episode")
+            ),
+            key=lambda node: node.node_id,
+        )
+        self.topics = sorted(graph.iter_nodes(NodeType.TOPIC), key=lambda node: node.node_id)
+        self.event_ids = [node.node_id for node in self.events]
+        self.topic_ids = [node.node_id for node in self.topics]
+        self.event_matrix, self.topic_matrix = self._load_or_encode(cache_path)
+        self.events_by_conversation = bucket_ids_by_conversation(self.event_ids)
+        self.topics_by_conversation = bucket_ids_by_conversation(self.topic_ids)
+        self.event_index = {node_id: idx for idx, node_id in enumerate(self.event_ids)}
+        self.topic_index = {node_id: idx for idx, node_id in enumerate(self.topic_ids)}
+
+    def candidates(self, question_id: str, query: str) -> list[RerankCandidate]:
+        query_vector = self.encoder.encode([query])[0]
+        return self.candidates_from_vector(question_id, query_vector)
+
+    def candidates_from_vector(self, question_id: str, query_vector: np.ndarray) -> list[RerankCandidate]:
+        candidates: dict[str, RerankCandidate] = {}
+        if self.config.mode in {"event", "both"}:
+            for rank, (event_id, score) in enumerate(self._top_events(question_id, query_vector), start=1):
+                self._add_event_facts(
+                    candidates,
+                    event_id=event_id,
+                    query_score=score,
+                    route_source="eu_event",
+                    route_rank=rank,
+                    path_prefix=[event_id],
+                )
+        if self.config.mode in {"topic", "both"}:
+            for topic_rank, (topic_id, topic_score) in enumerate(self._top_topics(question_id, query_vector), start=1):
+                events = self._rank_topic_events(topic_id, query_vector)
+                for event_rank, (event_id, event_score) in enumerate(events[: self.config.events_per_topic], start=1):
+                    combined = 0.55 * topic_score + 0.45 * event_score
+                    self._add_event_facts(
+                        candidates,
+                        event_id=event_id,
+                        query_score=combined,
+                        route_source="eu_topic",
+                        route_rank=topic_rank,
+                        path_prefix=[topic_id, event_id],
+                        event_rank=event_rank,
+                    )
+        ranked = sorted(candidates.values(), key=lambda item: item.base_score, reverse=True)
+        return ranked[: self.config.max_candidates]
+
+    def _top_events(self, question_id: str, query_vector: np.ndarray) -> list[tuple[str, float]]:
+        event_ids = self._candidate_event_ids(question_id)
+        return top_by_similarity(event_ids, self.event_index, self.event_matrix, query_vector, self.config.event_topk)
+
+    def _top_topics(self, question_id: str, query_vector: np.ndarray) -> list[tuple[str, float]]:
+        topic_ids = self._candidate_topic_ids(question_id)
+        return top_by_similarity(topic_ids, self.topic_index, self.topic_matrix, query_vector, self.config.topic_topk)
+
+    def _rank_topic_events(self, topic_id: str, query_vector: np.ndarray) -> list[tuple[str, float]]:
+        event_ids = self.topic_to_events.get(topic_id, [])
+        return top_by_similarity(event_ids, self.event_index, self.event_matrix, query_vector, len(event_ids))
+
+    def _add_event_facts(
+        self,
+        candidates: dict[str, RerankCandidate],
+        *,
+        event_id: str,
+        query_score: float,
+        route_source: str,
+        route_rank: int,
+        path_prefix: list[str],
+        event_rank: int = 0,
+    ) -> None:
+        topic_id = self.event_to_topic.get(event_id, "")
+        fact_ids = self.event_to_facts.get(event_id, [])[: self.config.facts_per_event]
+        for fact_offset, fact_id in enumerate(fact_ids):
+            node = self.graph.nodes.get(fact_id)
+            if node is None or node.type != NodeType.FACT:
+                continue
+            score = float(query_score) - 0.002 * fact_offset
+            metadata = {
+                "candidate_source": route_source,
+                "route_source": route_source,
+                "semantic_score": f"{float(query_score):.6f}",
+                "route_rank": str(route_rank),
+                "event_rank": str(event_rank),
+                "fact_offset": str(fact_offset),
+                "event_node_id": event_id,
+                "topic_node_id": topic_id,
+                "retriever": "topdown_semantic",
+            }
+            if route_source == "eu_event":
+                metadata["eu_event_score"] = f"{float(query_score):.6f}"
+                metadata["eu_event_rank"] = str(route_rank)
+            elif route_source == "eu_topic":
+                metadata["eu_topic_score"] = f"{float(query_score):.6f}"
+                metadata["eu_topic_rank"] = str(route_rank)
+                metadata["eu_topic_event_rank"] = str(event_rank)
+            path_node_ids = [*path_prefix, fact_id]
+            previous = candidates.get(fact_id)
+            if previous is not None:
+                merged_metadata = merge_route_metadata(previous.metadata or {}, metadata)
+                if score <= previous.base_score:
+                    previous.metadata = merged_metadata
+                    continue
+                metadata = merged_metadata
+            candidates[fact_id] = RerankCandidate(
+                node=node,
+                base_score=score,
+                path_node_ids=path_node_ids,
+                metadata=metadata,
+            )
+
+    def _candidate_event_ids(self, question_id: str) -> list[str]:
+        if not self.config.restrict_conversation:
+            return self.event_ids
+        conv_id = conversation_id_from_question(question_id)
+        return self.events_by_conversation.get(conv_id, [])
+
+    def _candidate_topic_ids(self, question_id: str) -> list[str]:
+        if not self.config.restrict_conversation:
+            return self.topic_ids
+        conv_id = conversation_id_from_question(question_id)
+        return self.topics_by_conversation.get(conv_id, [])
+
+    def _load_or_encode(self, cache_path: Path | None) -> tuple[np.ndarray, np.ndarray]:
+        if cache_path is not None and cache_path.exists():
+            payload = np.load(cache_path, allow_pickle=False)
+            event_ids = [str(item) for item in payload["event_ids"]]
+            topic_ids = [str(item) for item in payload["topic_ids"]]
+            cached_model = ""
+            if "model" in payload.files:
+                cached_model = str(payload["model"][0])
+            if event_ids == self.event_ids and topic_ids == self.topic_ids and cached_model == self.encoder.model_name_or_path:
+                return np.asarray(payload["event_embeddings"], dtype=np.float32), np.asarray(
+                    payload["topic_embeddings"],
+                    dtype=np.float32,
+                )
+        event_embeddings = self.encoder.encode([node.text for node in self.events])
+        topic_embeddings = self.encoder.encode([node.text for node in self.topics])
+        if cache_path is not None:
+            cache_path.parent.mkdir(parents=True, exist_ok=True)
+            np.savez_compressed(
+                cache_path,
+                event_ids=np.asarray(self.event_ids),
+                topic_ids=np.asarray(self.topic_ids),
+                event_embeddings=event_embeddings,
+                topic_embeddings=topic_embeddings,
+                model=np.asarray([self.encoder.model_name_or_path]),
+            )
+        return event_embeddings, topic_embeddings
+
+    def _fact_to_event(self) -> dict[str, str]:
+        mapping = {}
+        for edge in self.graph.edges:
+            if edge.metadata.get(self.hierarchy_key) != "fact_event":
+                continue
+            src = self.graph.nodes.get(edge.src)
+            dst = self.graph.nodes.get(edge.dst)
+            if src is not None and dst is not None and src.type == NodeType.FACT and dst.type == NodeType.EVENT:
+                mapping[edge.src] = edge.dst
+        return mapping
+
+    def _event_to_topic(self) -> dict[str, str]:
+        mapping = {}
+        if self.config.hierarchy_version == "v3_3":
+            event_to_episode: dict[str, str] = {}
+            episode_to_topic: dict[str, str] = {}
+            for edge in self.graph.edges:
+                role = edge.metadata.get(self.hierarchy_key)
+                src = self.graph.nodes.get(edge.src)
+                dst = self.graph.nodes.get(edge.dst)
+                if src is None or dst is None:
+                    continue
+                if role == "event_episode" and src.type == NodeType.EVENT and dst.type == NodeType.EVENT:
+                    event_to_episode[edge.src] = edge.dst
+                elif role == "episode_topic" and src.type == NodeType.EVENT and dst.type == NodeType.TOPIC:
+                    episode_to_topic[edge.src] = edge.dst
+            return {
+                event_id: episode_to_topic[episode_id]
+                for event_id, episode_id in event_to_episode.items()
+                if episode_id in episode_to_topic
+            }
+        for edge in self.graph.edges:
+            if edge.metadata.get(self.hierarchy_key) != "event_topic":
+                continue
+            src = self.graph.nodes.get(edge.src)
+            dst = self.graph.nodes.get(edge.dst)
+            if src is not None and dst is not None and src.type == NodeType.EVENT and dst.type == NodeType.TOPIC:
+                mapping[edge.src] = edge.dst
+        return mapping
+
+    def _event_to_facts(self) -> dict[str, list[str]]:
+        mapping: dict[str, list[str]] = {}
+        for fact_id, event_id in self.fact_to_event.items():
+            mapping.setdefault(event_id, []).append(fact_id)
+        return mapping
+
+    def _topic_to_events(self) -> dict[str, list[str]]:
+        mapping: dict[str, list[str]] = {}
+        for event_id, topic_id in self.event_to_topic.items():
+            mapping.setdefault(topic_id, []).append(event_id)
+        return mapping
+
+
+def default_embedder() -> str:
+    return DEFAULT_LOCAL_EMBEDDER if Path(DEFAULT_LOCAL_EMBEDDER).exists() else "sentence-transformers/all-MiniLM-L6-v2"
+
+
+def conversation_id_from_question(question_id: str) -> str:
+    return str(question_id).split(":q", 1)[0]
+
+
+def bucket_ids_by_conversation(node_ids: Iterable[str]) -> dict[str, list[str]]:
+    buckets: dict[str, list[str]] = {}
+    for node_id in node_ids:
+        conv_id = str(node_id).split(":", 1)[0]
+        buckets.setdefault(conv_id, []).append(node_id)
+    return buckets
+
+
+def top_by_similarity(
+    node_ids: list[str],
+    index: dict[str, int],
+    matrix: np.ndarray,
+    query_vector: np.ndarray,
+    top_k: int,
+) -> list[tuple[str, float]]:
+    if not node_ids or top_k <= 0:
+        return []
+    valid_node_ids = [node_id for node_id in node_ids if node_id in index]
+    indices = np.asarray([index[node_id] for node_id in valid_node_ids], dtype=np.int64)
+    if indices.size == 0:
+        return []
+    scores = matrix[indices] @ query_vector
+    limit = min(top_k, len(scores))
+    if limit >= len(scores):
+        local_order = np.argsort(-scores)
+    else:
+        local_order = np.argpartition(-scores, limit - 1)[:limit]
+        local_order = local_order[np.argsort(-scores[local_order])]
+    return [(valid_node_ids[int(pos)], float(scores[pos])) for pos in local_order]
+
+
+def merge_route_metadata(left: dict, right: dict) -> dict:
+    merged = dict(left)
+    for source_key in ["route_source", "candidate_source"]:
+        sources = set(str(left.get(source_key, "")).split("+"))
+        sources.update(str(right.get(source_key, "")).split("+"))
+        merged[source_key] = "+".join(sorted(item for item in sources if item))
+    for key, value in right.items():
+        if key in {"route_source", "candidate_source"}:
+            continue
+        if key.endswith("_score") or key == "semantic_score":
+            merged[key] = str(max(_float(merged.get(key)), _float(value)))
+        elif key.endswith("_rank") or key in {"route_rank", "event_rank", "fact_offset"}:
+            current = _float(merged.get(key), default=0.0)
+            incoming = _float(value, default=0.0)
+            if current <= 0.0 or (incoming > 0.0 and incoming < current):
+                merged[key] = str(int(incoming))
+        elif key not in merged or merged[key] in {"", None}:
+            merged[key] = value
+    return merged
+
+
+def _float(value: object, default: float = 0.0) -> float:
+    try:
+        if value is None or value == "":
+            return default
+        return float(value)
+    except (TypeError, ValueError):
+        return default

@@ -1,0 +1,17 @@
+data:
+  raw_path: data/locomo/raw/locomo10.json
+  processed_path: data/locomo/processed/locomo_mvp.json
+
+graph:
+  nodes_path: outputs/nodes/locomo_nodes.json
+  graph_path: outputs/graphs/locomo_graph.json
+
+hyperbolic:
+  curvature: 1.0
+  dim: 32
+
+retrieval:
+  top_anchor_k: 5
+  max_path_len: 4
+  max_paths: 20
+  top_paths: 5

@@ -1,0 +1,5 @@
+method,overall,user,assistant,update,temporal,multi_session,preference
+Selected Facts,76.59,93.58,73.21,80.05,72.18,68.42,90.00
++ RAW Support Closure,78.96,94.84,90.50,82.65,70.24,70.56,83.33
++ Context & Provenance,80.34,96.29,100.00,83.33,70.58,71.00,83.33
++ Temporal Grounding,82.41,96.29,100.00,83.33,77.44,71.92,83.33

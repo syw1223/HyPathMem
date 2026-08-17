@@ -1,0 +1,22 @@
+data:
+  raw_path: data/locomo/raw/locomo10.json
+  processed_path: data/locomo/processed/locomo_mvp.json
+
+graph:
+  nodes_path: outputs/nodes/locomo_nodes.json
+  graph_path: outputs/graphs/locomo_graph_hierarchy_v2.json
+
+llm:
+  api_key_env: E_MEM_API_KEY
+  base_url_env: E_MEM_BASE_URL
+  base_url: https://api.chatanywhere.tech/v1
+  generation_model: gpt-4o-mini
+  judge_model: gpt-4o-mini
+
+qa_eval:
+  paths: outputs/paths/full_graph_v2_event_topic_ce_top5.json
+  output: outputs/qa/graph_v2_gpt4omini_smoke.json
+  categories: [1, 2, 3, 4]
+  k: 5
+  max_context_chars: 12000
+  max_answer_tokens: 128

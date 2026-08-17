@@ -1,0 +1,19 @@
+version: 8.4time_v
+semantic_graph:
+  mutate: false
+  retrain_lorentz: false
+temporal_sidecar:
+  node_types: [EVENT, STATE, ANCHOR]
+  relations: [BEFORE, AFTER, OVERLAPS, SAME_TIME, ANCHOR_OF, UPDATED_BY, CONTRADICTS, VALID_DURING, SUPERSEDES]
+operand_closure:
+  candidate_scope: frozen_top50
+  role_top_k: 3
+  minimum_role_score: 0.12
+  hard_time_filter: false
+supplementary_retrieval:
+  enabled_by_default: false
+  interface: SupplementaryRetriever
+solver:
+  deterministic: true
+  q4_verifier_required: true
+  fallback: frozen_D0

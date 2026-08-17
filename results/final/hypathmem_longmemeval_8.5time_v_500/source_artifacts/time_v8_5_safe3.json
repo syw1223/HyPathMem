@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "version": "8.5time_v_candidate_eval",
+    "conversion": "/home/sunyuwei/HyTopoMem/outputs/reconstruction/hypathmem_8.5time_v/non_executable35_conversion_interval_v2_qwen_gpu2.json",
+    "judge_model": "gpt-4o-mini",
+    "judge_repetitions": 1,
+    "elapsed_seconds": 10.043588509084657
+  },
+  "summary": {
+    "num_new_verified_candidates": 3,
+    "candidate_correct": 3,
+    "candidate_accuracy": 1.0,
+    "frozen_d0_correct": 2,
+    "frozen_d0_accuracy": 0.6666666666666666,
+    "fix": 1,
+    "break": 0,
+    "unchanged_correct": 2,
+    "unchanged_wrong": 0
+  },
+  "rows": [
+    {
+      "question_id": "lme_0309_gpt4_76048e76:q0001",
+      "question": "Which vehicle did I take care of first in February, the bike or the car?",
+      "gold_answer": "bike",
+      "prediction": "bike repair was first",
+      "frozen_d0_prediction": "You took care of your bike first in February, as you had to take it in for repairs in mid-February due to gear issues. The car was washed later on Monday, February 27th.",
+      "frozen_d0_judge_correct": 1,
+      "comparison": "unchanged_correct",
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "The generated answer indicates that the bike was the first vehicle taken care of, which aligns with the gold answer.",
+      "judge_raw_response": "{\n  \"label\": \"CORRECT\",\n  \"reason\": \"The generated answer indicates that the bike was the first vehicle taken care of, which aligns with the gold answer.\"\n}",
+      "judge_usage": {
+        "prompt_tokens": 316,
+        "completion_tokens": 38,
+        "total_tokens": 354
+      },
+      "judge_elapsed_seconds": 4.455300951958634
+    },
+    {
+      "question_id": "lme_0324_gpt4_2d58bcd6:q0001",
+      "question": "Which book did I finish reading first, 'The Hate U Give' or 'The Nightingale'?",
+      "gold_answer": "'The Hate U Give'",
+      "prediction": "The Hate U Give was first",
+      "frozen_d0_prediction": "You finished reading \"The Nightingale\" first, last weekend (before 2023/05/30), and you finished reading \"The Hate U Give\" a few days before your book club meeting two weeks ago (which is earlier than last weekend). Therefore, \"The Hate U Give\" was finished before \"The Nightingale.\"",
+      "frozen_d0_judge_correct": 0,
+      "comparison": "fix",
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "The generated answer expresses the same fact as the gold answer, indicating that 'The Hate U Give' was read first.",
+      "judge_raw_response": "{\n  \"label\": \"CORRECT\",\n  \"reason\": \"The generated answer expresses the same fact as the gold answer, indicating that 'The Hate U Give' was read first.\"\n}",
+      "judge_usage": {
+        "prompt_tokens": 326,
+        "completion_tokens": 40,
+        "total_tokens": 366
+      },
+      "judge_elapsed_seconds": 2.5605607960605994
+    },
+    {
+      "question_id": "lme_0338_gpt4_8c8961ae:q0001",
+      "question": "Which trip did I take first, the one to Europe with family or the solo trip to Thailand?",
+      "gold_answer": "The solo trip to Thailand",
+      "prediction": "solo trip to Thailand was first",
+      "frozen_d0_prediction": "You took the solo trip to Thailand first (last year), and then the trip to Europe with your family more recently (just last month).",
+      "frozen_d0_judge_correct": 1,
+      "comparison": "unchanged_correct",
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "The generated answer expresses the same fact as the gold answer, indicating that the solo trip to Thailand was first.",
+      "judge_raw_response": "{\n  \"label\": \"CORRECT\",\n  \"reason\": \"The generated answer expresses the same fact as the gold answer, indicating that the solo trip to Thailand was first.\"\n}",
+      "judge_usage": {
+        "prompt_tokens": 325,
+        "completion_tokens": 38,
+        "total_tokens": 363
+      },
+      "judge_elapsed_seconds": 3.0272175180725753
+    }
+  ]
+}

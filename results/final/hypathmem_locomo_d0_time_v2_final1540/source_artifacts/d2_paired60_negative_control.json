@@ -1,0 +1,2451 @@
+{
+  "metadata": {
+    "version": "hypathmem_locomo_d2_v1",
+    "dataset": "LoCoMo",
+    "frozen_topk": 20,
+    "packs": "/home/sunyuwei/HyTopoMem/outputs/reconstruction/hypathmem_locomo_d2_v1/top20_structured_raw_packs.json",
+    "baseline": "/home/sunyuwei/HyTopoMem/outputs/qa/full_v3_9_expand120_light_quota_top20_hybrid_v11_chatanywhere_gpt41mini_judge_gpt4omini.json",
+    "generation_model": "gpt-4.1-mini",
+    "judge_model": "gpt-4o-mini",
+    "base_url": "https://api.chatanywhere.tech/v1",
+    "categories": [
+      1,
+      3,
+      4
+    ],
+    "per_category": 20,
+    "sample_seed": 20260804,
+    "retrieval_changed": false,
+    "elapsed_seconds": 414.8370919789886
+  },
+  "summary": {
+    "num_questions": 60,
+    "num_correct": 49,
+    "accuracy": 0.8166666666666667,
+    "baseline_num_correct": 51,
+    "baseline_accuracy": 0.85,
+    "fix": 1,
+    "break": 3,
+    "unchanged_correct": 48,
+    "unchanged_wrong": 8,
+    "by_category": {
+      "1": {
+        "n": 20,
+        "correct": 17,
+        "baseline_correct": 18
+      },
+      "3": {
+        "n": 20,
+        "correct": 13,
+        "baseline_correct": 14
+      },
+      "4": {
+        "n": 20,
+        "correct": 19,
+        "baseline_correct": 19
+      }
+    }
+  },
+  "per_question": [
+    {
+      "question_id": "conv-26:q0012",
+      "conversation_id": "conv-26",
+      "question": "Where did Caroline move from 4 years ago?",
+      "gold_answer": "Sweden",
+      "category": 1,
+      "question_type": "temporal",
+      "prediction": "Caroline moved from her home country, Sweden, 4 years ago.",
+      "context_chars": 18213,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Caroline moved from her home country, Sweden, 4 years ago.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 5160,
+        "completion_tokens": 16,
+        "total_tokens": 5176,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 3.776640343014151,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 395,
+        "completion_tokens": 7,
+        "total_tokens": 402
+      },
+      "judge_elapsed_seconds": 1.3328281580470502,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-26:q0033",
+      "conversation_id": "conv-26",
+      "question": "What LGBTQ+ events has Caroline participated in?",
+      "gold_answer": "Pride parade, school speech, support group",
+      "category": 1,
+      "question_type": "detail",
+      "prediction": "Caroline has participated in multiple LGBTQ+ events including attending several pride parades (last week before 20 July 2023, last week before 3 July 2023, last month before 17 July 2023, last Friday before 14 August 2023), an LGBTQ conference around 10 July 2023, a transgender conference planned for July 2023, an LGBTQ+ counseling workshop on 23 June 2023, volunteering at an LGBTQ+ youth center by 28 August 2023, joining the activist group \"Connected LGBTQ Activists\" in July 2023, organizing an LGBTQ art show planned for",
+      "context_chars": 19593,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Caroline has participated in the following LGBTQ+ events:\n- Attended multiple pride parades (early July 2023, a few weeks before 15 July 2023, last weekend before 20 July 2023, last Friday before 14 August 2023) [2][6][11][12][20]\n- Gave a talk at a school event about her transgender journey (early June 2023) [4]\n- Attended an LGBTQ conference (early July 2023) [5][13]\n- Attended an LGBTQ+ counseling workshop (late June 2023) [10]\n- Vol",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": false,
+      "generation_usage": {
+        "prompt_tokens": 5255,
+        "completion_tokens": 128,
+        "total_tokens": 5383,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 5.505237870034762,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 515,
+        "completion_tokens": 7,
+        "total_tokens": 522
+      },
+      "judge_elapsed_seconds": 1.5568399169715121,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-26:q0048",
+      "conversation_id": "conv-26",
+      "question": "Who supports Caroline when she has a negative experience?",
+      "gold_answer": "Her mentors, family, and friends",
+      "category": 1,
+      "question_type": "temporal",
+      "prediction": "Caroline is supported by her friends, family, and Melanie when she has a negative experience. \n\nEvidence: \n- Caroline: \"It's been so helpful to have people around me who accept and support me, so I know I'll be ok!\" (1:50 pm on 17 August, 2023)\n- Caroline: \"They've been there for me every step of the way giving me love, guidance, and acceptance.\" (8:18 pm on 6 July, 2023)\n- Melanie: \"I'm so proud of you for spreading awareness and getting others involved in the LGBTQ community.\" (7:55 pm on",
+      "context_chars": 18931,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Caroline is supported by her friends, family, and Melanie when she has a negative experience.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": false,
+      "generation_usage": {
+        "prompt_tokens": 5325,
+        "completion_tokens": 128,
+        "total_tokens": 5453,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 4.249211849994026,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 515,
+        "completion_tokens": 7,
+        "total_tokens": 522
+      },
+      "judge_elapsed_seconds": 1.9714299059705809,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-26:q0067",
+      "conversation_id": "conv-26",
+      "question": "What does Melanie do with her family on hikes?",
+      "gold_answer": "Roast marshmallows, tell stories",
+      "category": 1,
+      "question_type": "detail",
+      "prediction": "Melanie goes hiking with her family to explore nature, connect with each other, and enjoy special moments together, such as appreciating amazing views from the top of mountains.",
+      "context_chars": 16448,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "On hikes, Melanie and her family explore nature, enjoy the views, connect with each other, and bond over stories and campfires. They find it a special, peaceful time to be present together and refresh their souls.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": false,
+      "generation_usage": {
+        "prompt_tokens": 4673,
+        "completion_tokens": 34,
+        "total_tokens": 4707,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 15.719965207972564,
+      "judge_correct": 0,
+      "judge_label": "WRONG",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"WRONG\"}",
+      "judge_usage": {
+        "prompt_tokens": 419,
+        "completion_tokens": 7,
+        "total_tokens": 426
+      },
+      "judge_elapsed_seconds": 2.5006597120082006,
+      "comparison": "break"
+    },
+    {
+      "question_id": "conv-30:q0019",
+      "conversation_id": "conv-30",
+      "question": "Do Jon and Gina start businesses out of what they love?",
+      "gold_answer": "Yes",
+      "category": 1,
+      "question_type": "detail",
+      "prediction": "Yes, Jon and Gina start businesses out of what they love. Jon is turning his love of dance into a business, and Gina is passionate about fashion and dance, blending these interests in her online store.",
+      "context_chars": 16641,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Yes, Jon and Gina start businesses out of what they love. Jon is turning his love of dance into a business (D9:1, D9:3), and Gina blended her passion for fashion and dance in starting her online store (0053, D8:6).",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": false,
+      "generation_usage": {
+        "prompt_tokens": 4856,
+        "completion_tokens": 42,
+        "total_tokens": 4898,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 2.9338487070053816,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 424,
+        "completion_tokens": 7,
+        "total_tokens": 431
+      },
+      "judge_elapsed_seconds": 1.5467350160470232,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-41:q0012",
+      "conversation_id": "conv-41",
+      "question": "What people has Maria met and helped while volunteering?",
+      "gold_answer": "David, Jean, Cindy, Laura",
+      "category": 1,
+      "question_type": "detail",
+      "prediction": "Maria has met and helped an amazing woman named Jean, who showed her the importance of gratitude and connection, while volunteering at a homeless shelter. She has also helped people at the homeless shelter, including those receiving food or a bed, and has volunteered at a shelter during an event for kids. Additionally, Maria volunteers once a month at a local dog shelter.",
+      "context_chars": 17648,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Maria has met and helped Jean, an amazing woman who had been through a lot but stayed optimistic and resilient, while volunteering at a homeless shelter. She has also helped many people at the homeless shelter, including those receiving food or a bed, and has given talks to other volunteers there. Additionally, she has become friends with a fellow volunteer who shares her passion for helping others.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": false,
+      "generation_usage": {
+        "prompt_tokens": 4798,
+        "completion_tokens": 72,
+        "total_tokens": 4870,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 6.506958061014302,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 458,
+        "completion_tokens": 7,
+        "total_tokens": 465
+      },
+      "judge_elapsed_seconds": 3.6836160219972953,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-41:q0019",
+      "conversation_id": "conv-41",
+      "question": "Who did John go to yoga with?",
+      "gold_answer": "Rob",
+      "category": 1,
+      "question_type": "detail",
+      "prediction": "John went to yoga with a colleague named Rob.",
+      "context_chars": 15733,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "John went to yoga with his colleague Rob.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 4566,
+        "completion_tokens": 11,
+        "total_tokens": 4577,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 5.7954368920763955,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 389,
+        "completion_tokens": 7,
+        "total_tokens": 396
+      },
+      "judge_elapsed_seconds": 5.735217820038088,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-41:q0020",
+      "conversation_id": "conv-41",
+      "question": "What damages have happened to John's car?",
+      "gold_answer": "Broken windshield, Car broke down",
+      "category": 1,
+      "question_type": "detail",
+      "prediction": "John's car broke down last Friday on his way to work, likely due to damage caused by potholes on the roadways.",
+      "context_chars": 15872,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "John's car broke down last Friday on his way to work, likely due to damage caused by potholes and dangerous road conditions.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 4508,
+        "completion_tokens": 27,
+        "total_tokens": 4535,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 10.743625530041754,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 409,
+        "completion_tokens": 7,
+        "total_tokens": 416
+      },
+      "judge_elapsed_seconds": 1.4954712400212884,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-41:q0026",
+      "conversation_id": "conv-41",
+      "question": "What European countries has Maria been to?",
+      "gold_answer": "Spain, England",
+      "category": 1,
+      "question_type": "detail",
+      "prediction": "Maria has been to Spain and England.",
+      "context_chars": 15655,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Maria has been to Spain and England.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 4435,
+        "completion_tokens": 9,
+        "total_tokens": 4444,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 2.572574203950353,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 389,
+        "completion_tokens": 7,
+        "total_tokens": 396
+      },
+      "judge_elapsed_seconds": 1.6488918439717963,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-41:q0063",
+      "conversation_id": "conv-41",
+      "question": "How many dogs has Maria adopted from the dog shelter she volunteers at?",
+      "gold_answer": "two",
+      "category": 1,
+      "question_type": "count",
+      "prediction": "Maria has adopted 2 dogs from the dog shelter she volunteers at.",
+      "context_chars": 16007,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Maria has adopted 1 dog from the dog shelter she volunteers at.",
+      "baseline_judge_correct": 0,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 4498,
+        "completion_tokens": 15,
+        "total_tokens": 4513,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 4.307136663002893,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 399,
+        "completion_tokens": 7,
+        "total_tokens": 406
+      },
+      "judge_elapsed_seconds": 3.069102759938687,
+      "comparison": "fix"
+    },
+    {
+      "question_id": "conv-42:q0002",
+      "conversation_id": "conv-42",
+      "question": "What kind of interests do Joanna and Nate share?",
+      "gold_answer": "Watching movies, making desserts",
+      "category": 1,
+      "question_type": "detail",
+      "prediction": "Joanna and Nate share interests in movies, gaming, and dairy-free desserts.",
+      "context_chars": 16077,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Joanna and Nate share interests in movies, gaming, writing, and dairy-free desserts.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": false,
+      "generation_usage": {
+        "prompt_tokens": 4693,
+        "completion_tokens": 17,
+        "total_tokens": 4710,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 2.340930216945708,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 400,
+        "completion_tokens": 7,
+        "total_tokens": 407
+      },
+      "judge_elapsed_seconds": 2.3324351240880787,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-43:q0026",
+      "conversation_id": "conv-43",
+      "question": "What similar sports collectible do Tim and John own?",
+      "gold_answer": "signed basketball",
+      "category": 1,
+      "question_type": "detail",
+      "prediction": "Tim and John both own sports jerseys.",
+      "context_chars": 16189,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Tim and John both own sports collectibles related to basketball: Tim owns a basketball signed by his favorite player, LeBron, and John likes to collect jerseys.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": false,
+      "generation_usage": {
+        "prompt_tokens": 4588,
+        "completion_tokens": 9,
+        "total_tokens": 4597,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 4.924305423977785,
+      "judge_correct": 0,
+      "judge_label": "WRONG",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"WRONG\"}",
+      "judge_usage": {
+        "prompt_tokens": 390,
+        "completion_tokens": 7,
+        "total_tokens": 397
+      },
+      "judge_elapsed_seconds": 2.116030493983999,
+      "comparison": "break"
+    },
+    {
+      "question_id": "conv-44:q0061",
+      "conversation_id": "conv-44",
+      "question": "How many dogs does Andrew have?",
+      "gold_answer": "3",
+      "category": 1,
+      "question_type": "count",
+      "prediction": "Andrew has 3 dogs.",
+      "context_chars": 16557,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Andrew has 3 dogs.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": false,
+      "generation_usage": {
+        "prompt_tokens": 4798,
+        "completion_tokens": 7,
+        "total_tokens": 4805,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 1.5740999359404668,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 385,
+        "completion_tokens": 7,
+        "total_tokens": 392
+      },
+      "judge_elapsed_seconds": 1.6572261200053617,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-47:q0057",
+      "conversation_id": "conv-47",
+      "question": "Which of James's family members have visited him in the last year?",
+      "gold_answer": "mother, sister",
+      "category": 1,
+      "question_type": "temporal",
+      "prediction": "James's sister has visited him in the last year.",
+      "context_chars": 17315,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "James's family members who have visited him in the last year include his sister, as he spends time with her and has a close bond with her (E5, E10). Additionally, James and his family were on a road trip together as of November 2022 (E1), indicating family presence. No other specific family visits within the last year are mentioned.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": false,
+      "generation_usage": {
+        "prompt_tokens": 5043,
+        "completion_tokens": 12,
+        "total_tokens": 5055,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 4.799914552946575,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 398,
+        "completion_tokens": 7,
+        "total_tokens": 405
+      },
+      "judge_elapsed_seconds": 1.402830112958327,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-48:q0014",
+      "conversation_id": "conv-48",
+      "question": "What places give Deborah peace?",
+      "gold_answer": "sitting in a spot by the window in her Mom's house, sitting by the beach, Bali, forest trail in a nearby park",
+      "category": 1,
+      "question_type": "detail",
+      "prediction": "Bali, her old home by the window, the garden with roses and dahlias, her mom's house, the beach where she got married, doing yoga on the beach, and nature.",
+      "context_chars": 16708,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Places that give Deborah peace include Bali, her old home (especially the spot by the window), her garden with roses and dahlias, the beach where she got married and surfs, doing yoga on the beach, and nature in general.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": false,
+      "generation_usage": {
+        "prompt_tokens": 4818,
+        "completion_tokens": 40,
+        "total_tokens": 4858,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 4.882654844084755,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 440,
+        "completion_tokens": 7,
+        "total_tokens": 447
+      },
+      "judge_elapsed_seconds": 1.8869051090441644,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-48:q0078",
+      "conversation_id": "conv-48",
+      "question": "Where did Jolene and her partner find a cool diving spot?",
+      "gold_answer": "Phuket",
+      "category": 1,
+      "question_type": "detail",
+      "prediction": "Jolene and her partner found a cool diving spot during a scuba diving lesson they tried last Friday.",
+      "context_chars": 16678,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Jolene and her partner found a cool diving spot during a scuba diving lesson they tried last Friday.",
+      "baseline_judge_correct": 0,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 4826,
+        "completion_tokens": 22,
+        "total_tokens": 4848,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 3.522572659072466,
+      "judge_correct": 0,
+      "judge_label": "WRONG",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"WRONG\"}",
+      "judge_usage": {
+        "prompt_tokens": 404,
+        "completion_tokens": 7,
+        "total_tokens": 411
+      },
+      "judge_elapsed_seconds": 1.8146270320285112,
+      "comparison": "unchanged_wrong"
+    },
+    {
+      "question_id": "conv-48:q0080",
+      "conversation_id": "conv-48",
+      "question": "Has Deborah tried surfing?",
+      "gold_answer": "yes",
+      "category": 1,
+      "question_type": "detail",
+      "prediction": "Yes, Deborah has tried surfing. She said, \"That beach is super special to me. It's where I got married and discovered my love for surfing.\"",
+      "context_chars": 15177,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Yes, Deborah has tried surfing. She discovered her love for surfing at the beach where she got married.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 4464,
+        "completion_tokens": 32,
+        "total_tokens": 4496,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 42.63356765592471,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 407,
+        "completion_tokens": 7,
+        "total_tokens": 414
+      },
+      "judge_elapsed_seconds": 4.354973046923988,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-49:q0070",
+      "conversation_id": "conv-49",
+      "question": "Which two significant life events occur in Evan's life in December 2023 with his partner?",
+      "gold_answer": "his partner gets pregnant and they get married",
+      "category": 1,
+      "question_type": "detail",
+      "prediction": "In December 2023, Evan's partner is pregnant, and Evan got married.",
+      "context_chars": 16203,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "In December 2023, Evan's partner is pregnant, and they got married.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 4731,
+        "completion_tokens": 18,
+        "total_tokens": 4749,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 2.759753791964613,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 414,
+        "completion_tokens": 7,
+        "total_tokens": 421
+      },
+      "judge_elapsed_seconds": 2.930608610971831,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-49:q0073",
+      "conversation_id": "conv-49",
+      "question": "Which activity did Sam resume in December 2023 after a long time?",
+      "gold_answer": "hiking",
+      "category": 1,
+      "question_type": "temporal",
+      "prediction": "Sam resumed hiking in December 2023 after a long time.",
+      "context_chars": 15715,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Hiking",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": false,
+      "generation_usage": {
+        "prompt_tokens": 4686,
+        "completion_tokens": 14,
+        "total_tokens": 4700,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 3.740005859057419,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 399,
+        "completion_tokens": 7,
+        "total_tokens": 406
+      },
+      "judge_elapsed_seconds": 1.8544941550353542,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-49:q0079",
+      "conversation_id": "conv-49",
+      "question": "Who did Evan tell about his marriage?",
+      "gold_answer": "To Sam, to his friends from work, and to his and his wife's families.",
+      "category": 1,
+      "question_type": "detail",
+      "prediction": "Evan told his extended family and his work friends about his marriage.",
+      "context_chars": 15810,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Evan told his extended family and his work friends about his marriage.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 4639,
+        "completion_tokens": 15,
+        "total_tokens": 4654,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 1.9484177789418027,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 407,
+        "completion_tokens": 7,
+        "total_tokens": 414
+      },
+      "judge_elapsed_seconds": 3.3773552839411423,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-26:q0015",
+      "conversation_id": "conv-26",
+      "question": "Would Caroline still want to pursue counseling as a career if she hadn't received support growing up?",
+      "gold_answer": "Likely no",
+      "category": 3,
+      "question_type": "inference",
+      "prediction": "No, Caroline's motivation to pursue counseling comes from the support she received growing up; without that support, she likely would not have developed the same desire to help others. Evidence: \"My own journey and the support I got made a huge difference. Now I want to help people go through it too.\" and \"I struggled with mental health, and support I got was really helpful. It made me realize how important it is for others to have a support system. So, I started looking into counseling and mental health career options, so I could help other people on their own journeys like I was helped.\"",
+      "context_chars": 20529,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "No, Caroline's motivation to pursue counseling as a career comes from the support she received growing up and the positive impact counseling had on her life, so without that support, she likely would not have the same motivation. (Evidence: [1], [2], [9])",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 5577,
+        "completion_tokens": 122,
+        "total_tokens": 5699,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 5.967413777019829,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 512,
+        "completion_tokens": 7,
+        "total_tokens": 519
+      },
+      "judge_elapsed_seconds": 2.152600039029494,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-26:q0051",
+      "conversation_id": "conv-26",
+      "question": "What would Caroline's political leaning likely be?",
+      "gold_answer": "Liberal",
+      "category": 3,
+      "question_type": "inference",
+      "prediction": "Caroline's political leaning is likely progressive or left-leaning, as she is actively involved in LGBTQ+ advocacy, supports trans rights, promotes inclusivity and diversity, and participates in activist groups and events.",
+      "context_chars": 17385,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Caroline's political leaning would likely be progressive or left-leaning, as she is actively involved in LGBTQ+ advocacy, supports trans rights, values inclusivity and diversity, and opposes religious conservative views that upset her.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 4819,
+        "completion_tokens": 43,
+        "total_tokens": 4862,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 2.086458049947396,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 421,
+        "completion_tokens": 7,
+        "total_tokens": 428
+      },
+      "judge_elapsed_seconds": 1.475791634991765,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-41:q0015",
+      "conversation_id": "conv-41",
+      "question": "Would John be considered a patriotic person?",
+      "gold_answer": "Yes",
+      "category": 3,
+      "question_type": "inference",
+      "prediction": "Yes, John would be considered a patriotic person. He has shown great respect and support for the military, participated in veterans' rights events, advocated for the military with family and friends, joined a fire-fighting brigade to help his community, and expressed a strong urge to serve his country and community.",
+      "context_chars": 16591,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Yes, John would be considered a patriotic person. He has shown great respect and support for the military and veterans through participation in events, organizing parties for veterans, and advocating for the military (evidence 1, 2, 4, 5, 6, 16). He also has a strong urge to serve his country and community, as seen in his involvement in politics and joining the fire-fighting brigade to help his community (evidence 11, 17).",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": false,
+      "generation_usage": {
+        "prompt_tokens": 4695,
+        "completion_tokens": 61,
+        "total_tokens": 4756,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 5.449834387050942,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 439,
+        "completion_tokens": 7,
+        "total_tokens": 446
+      },
+      "judge_elapsed_seconds": 1.7533180869650096,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-41:q0018",
+      "conversation_id": "conv-41",
+      "question": "What might John's degree be in?",
+      "gold_answer": "Political science, Public administration, Public affairs",
+      "category": 3,
+      "question_type": "inference",
+      "prediction": "John's degree might be in a field related to mechanical skills or engineering, as he mentioned finding a job at a tech company that needs his mechanical skills for their hardware team.",
+      "context_chars": 15919,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "John's degree might be in mechanical engineering or a related field involving mechanical skills, as he found a job at a tech company that needs his mechanical skills for their hardware team.",
+      "baseline_judge_correct": 0,
+      "baseline_retrieval_hit": false,
+      "baseline_retrieval_full_cover": false,
+      "generation_usage": {
+        "prompt_tokens": 4403,
+        "completion_tokens": 36,
+        "total_tokens": 4439,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 2.514976294944063,
+      "judge_correct": 0,
+      "judge_label": "WRONG",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"WRONG\"}",
+      "judge_usage": {
+        "prompt_tokens": 419,
+        "completion_tokens": 7,
+        "total_tokens": 426
+      },
+      "judge_elapsed_seconds": 2.6886341440258548,
+      "comparison": "unchanged_wrong"
+    },
+    {
+      "question_id": "conv-41:q0065",
+      "conversation_id": "conv-41",
+      "question": "What job might Maria pursue in the future?",
+      "gold_answer": "Shelter coordinator, Counselor",
+      "category": 3,
+      "question_type": "inference",
+      "prediction": "Maria might pursue a job related to charity work, volunteering, or community service, as she finds these activities rewarding, fulfilling, and impactful.",
+      "context_chars": 15520,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Maria might pursue a job in charity work, community service, or volunteering at shelters, as she finds these activities rewarding, fulfilling, and impactful.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": false,
+      "generation_usage": {
+        "prompt_tokens": 4458,
+        "completion_tokens": 29,
+        "total_tokens": 4487,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 4.050513577996753,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 411,
+        "completion_tokens": 7,
+        "total_tokens": 418
+      },
+      "judge_elapsed_seconds": 1.5417049640091136,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-42:q0001",
+      "conversation_id": "conv-42",
+      "question": "Is it likely that Nate has friends besides Joanna?",
+      "gold_answer": "Yesteammates on hisvideo game team.",
+      "category": 3,
+      "question_type": "inference",
+      "prediction": "Yes, it is likely that Nate has friends besides Joanna. Evidence includes Nate mentioning meeting a nice couple for doggy playdates (unit:conv-42:fact:D13:1).",
+      "context_chars": 16446,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Yes, it is likely that Nate has friends besides Joanna. Evidence: Nate mentioned meeting a super nice couple with a dog during a walk with Max and arranging doggy playdates with them (evidence 13).",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": false,
+      "baseline_retrieval_full_cover": false,
+      "generation_usage": {
+        "prompt_tokens": 4836,
+        "completion_tokens": 39,
+        "total_tokens": 4875,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 2.948409126023762,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 427,
+        "completion_tokens": 7,
+        "total_tokens": 434
+      },
+      "judge_elapsed_seconds": 1.31708599999547,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-42:q0005",
+      "conversation_id": "conv-42",
+      "question": "What pets wouldn't cause any discomfort to Joanna?",
+      "gold_answer": "Hairless cats or pigs,since they don't have fur, which is one of the main causes of Joanna's allergy.",
+      "category": 3,
+      "question_type": "detail",
+      "prediction": "Pets that Joanna is not allergic to and thus wouldn't cause her discomfort are not explicitly identified, but she expressed interest in turtles if she were not allergic, implying turtles might be a potential pet without discomfort if allergies were not an issue.",
+      "context_chars": 14946,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Pets that Joanna wouldn't be allergic to and thus wouldn't cause discomfort are those that are not reptiles, animals with fur, or cockroaches. However, Joanna has not identified any specific alternative pets she is not allergic to and is too lazy to research them. Therefore, based on the context, there are no known pets that wouldn't cause discomfort to Joanna.",
+      "baseline_judge_correct": 0,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 4398,
+        "completion_tokens": 47,
+        "total_tokens": 4445,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 2.638617919990793,
+      "judge_correct": 0,
+      "judge_label": "WRONG",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"WRONG\"}",
+      "judge_usage": {
+        "prompt_tokens": 448,
+        "completion_tokens": 7,
+        "total_tokens": 455
+      },
+      "judge_elapsed_seconds": 1.9209327429998666,
+      "comparison": "unchanged_wrong"
+    },
+    {
+      "question_id": "conv-42:q0013",
+      "conversation_id": "conv-42",
+      "question": "What underlying condition might Joanna have based on her allergies?",
+      "gold_answer": "asthma",
+      "category": 3,
+      "question_type": "inference",
+      "prediction": "Joanna might have allergic rhinitis based on her allergies to most reptiles, animals with fur, and cockroaches causing her face to get puffy and itchy.",
+      "context_chars": 15942,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Joanna might have an underlying condition of animal allergies, specifically allergic reactions to most reptiles, animals with fur, and cockroaches, causing symptoms like a puffy and itchy face.",
+      "baseline_judge_correct": 0,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 4629,
+        "completion_tokens": 34,
+        "total_tokens": 4663,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 2.958161049988121,
+      "judge_correct": 0,
+      "judge_label": "WRONG",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"WRONG\"}",
+      "judge_usage": {
+        "prompt_tokens": 414,
+        "completion_tokens": 7,
+        "total_tokens": 421
+      },
+      "judge_elapsed_seconds": 1.8183641190407798,
+      "comparison": "unchanged_wrong"
+    },
+    {
+      "question_id": "conv-42:q0067",
+      "conversation_id": "conv-42",
+      "question": "What alternative career might Nate consider after gaming?",
+      "gold_answer": "an animalkeeper at a localzoo and workingwith turtles; as heknows a great dealabout turtles andhow to care for them,and he enjoys it.",
+      "category": 3,
+      "question_type": "temporal",
+      "prediction": "Nate might consider creating gaming content for YouTube as an alternative career after gaming.",
+      "context_chars": 16657,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Nate might consider creating gaming content for YouTube as an alternative career after gaming.",
+      "baseline_judge_correct": 0,
+      "baseline_retrieval_hit": false,
+      "baseline_retrieval_full_cover": false,
+      "generation_usage": {
+        "prompt_tokens": 4878,
+        "completion_tokens": 18,
+        "total_tokens": 4896,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 1.5990625800332054,
+      "judge_correct": 0,
+      "judge_label": "WRONG",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"WRONG\"}",
+      "judge_usage": {
+        "prompt_tokens": 427,
+        "completion_tokens": 7,
+        "total_tokens": 434
+      },
+      "judge_elapsed_seconds": 4.802249558037147,
+      "comparison": "unchanged_wrong"
+    },
+    {
+      "question_id": "conv-43:q0016",
+      "conversation_id": "conv-43",
+      "question": "Who is Anthony?",
+      "gold_answer": "likely John's friend, colleague or family",
+      "category": 3,
+      "question_type": "detail",
+      "prediction": "Anthony is someone who participated with John in an intense Harry Potter trivia contest at a charity event.",
+      "context_chars": 16065,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Anthony is someone who participated with John in an intense Harry Potter trivia contest at a charity event.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 4531,
+        "completion_tokens": 20,
+        "total_tokens": 4551,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 2.207359787891619,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 400,
+        "completion_tokens": 7,
+        "total_tokens": 407
+      },
+      "judge_elapsed_seconds": 2.0804682630114257,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-43:q0028",
+      "conversation_id": "conv-43",
+      "question": "Which popular time management technique does Tim use to prepare for exams?",
+      "gold_answer": "Pomodoro technique",
+      "category": 3,
+      "question_type": "detail",
+      "prediction": "Tim uses the Pomodoro Technique, breaking up his studying into 25 minutes of study followed by 5 minutes of fun activities.",
+      "context_chars": 15198,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Tim uses the Pomodoro Technique—studying for 25 minutes followed by a 5-minute break—to prepare for exams.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 4374,
+        "completion_tokens": 27,
+        "total_tokens": 4401,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 2.0270789560163394,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\": \"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 412,
+        "completion_tokens": 8,
+        "total_tokens": 420
+      },
+      "judge_elapsed_seconds": 1.760103762964718,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-43:q0033",
+      "conversation_id": "conv-43",
+      "question": "Which US states might Tim be in during September 2023 based on his plans of visiting Universal Studios?",
+      "gold_answer": "California or Florida",
+      "category": 3,
+      "question_type": "inference",
+      "prediction": "Tim might be in Florida or California during September 2023, as these are the US states where Universal Studios theme parks are located.",
+      "context_chars": 15153,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Tim might be in California or Florida during September 2023, as Universal Studios has major parks in Universal City, California, and Orlando, Florida.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 4403,
+        "completion_tokens": 28,
+        "total_tokens": 4431,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 2.2106275859987363,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 421,
+        "completion_tokens": 7,
+        "total_tokens": 428
+      },
+      "judge_elapsed_seconds": 2.2747389799915254,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-47:q0007",
+      "conversation_id": "conv-47",
+      "question": "Does James live in Connecticut?",
+      "gold_answer": "Likely yes",
+      "category": 3,
+      "question_type": "detail",
+      "prediction": "The context does not provide explicit information that James lives in Connecticut.",
+      "context_chars": 15773,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "The context does not explicitly state that James lives in Connecticut, but he adopted a pup from a shelter in Stamford (which is in Connecticut) and moved into an apartment near McGee's bar. This suggests he likely lives in or near Stamford, Connecticut.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 4613,
+        "completion_tokens": 14,
+        "total_tokens": 4627,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 2.815307045006193,
+      "judge_correct": 0,
+      "judge_label": "WRONG",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"WRONG\"}",
+      "judge_usage": {
+        "prompt_tokens": 392,
+        "completion_tokens": 7,
+        "total_tokens": 399
+      },
+      "judge_elapsed_seconds": 1.5460506581002846,
+      "comparison": "break"
+    },
+    {
+      "question_id": "conv-47:q0018",
+      "conversation_id": "conv-47",
+      "question": "What is the board game where you have to find the imposter that John mentions to James?",
+      "gold_answer": "Mafia",
+      "category": 3,
+      "question_type": "detail",
+      "prediction": "The board game where you have to find the imposter that John mentions to James is Among Us.",
+      "context_chars": 15904,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "The board game where you have to find the imposter that John mentions to James is Among Us.",
+      "baseline_judge_correct": 0,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 4587,
+        "completion_tokens": 21,
+        "total_tokens": 4608,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 3.525996056967415,
+      "judge_correct": 0,
+      "judge_label": "WRONG",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"WRONG\"}",
+      "judge_usage": {
+        "prompt_tokens": 410,
+        "completion_tokens": 7,
+        "total_tokens": 417
+      },
+      "judge_elapsed_seconds": 1.2699474620167166,
+      "comparison": "unchanged_wrong"
+    },
+    {
+      "question_id": "conv-47:q0036",
+      "conversation_id": "conv-47",
+      "question": "What additional country did James visit during his trip to Canada?",
+      "gold_answer": "Greenland",
+      "category": 3,
+      "question_type": "detail",
+      "prediction": "James visited the United States during his trip to Canada.",
+      "context_chars": 14824,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "James visited Vancouver in addition to Toronto during his trip to Canada.",
+      "baseline_judge_correct": 0,
+      "baseline_retrieval_hit": false,
+      "baseline_retrieval_full_cover": false,
+      "generation_usage": {
+        "prompt_tokens": 4256,
+        "completion_tokens": 12,
+        "total_tokens": 4268,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 1.592018174007535,
+      "judge_correct": 0,
+      "judge_label": "WRONG",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"WRONG\"}",
+      "judge_usage": {
+        "prompt_tokens": 394,
+        "completion_tokens": 7,
+        "total_tokens": 401
+      },
+      "judge_elapsed_seconds": 2.400161197059788,
+      "comparison": "unchanged_wrong"
+    },
+    {
+      "question_id": "conv-47:q0037",
+      "conversation_id": "conv-47",
+      "question": "Who is Jill?",
+      "gold_answer": "Most likely John's partner.",
+      "category": 3,
+      "question_type": "detail",
+      "prediction": "Jill is a person known to John and James, as James brought souvenirs for both John and Jill, and John said Jill will be delighted.",
+      "context_chars": 15424,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Jill is someone associated with John, likely a close person to him, as James brought souvenirs for both John and Jill, and John said Jill will be delighted.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 4464,
+        "completion_tokens": 30,
+        "total_tokens": 4494,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 3.0453501059673727,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 406,
+        "completion_tokens": 7,
+        "total_tokens": 413
+      },
+      "judge_elapsed_seconds": 1.5273399139987305,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-48:q0076",
+      "conversation_id": "conv-48",
+      "question": "What card game is Deborah talking about?",
+      "gold_answer": "Exploding Kittens",
+      "category": 3,
+      "question_type": "detail",
+      "prediction": "Deborah is talking about a card game about cats where you take cards one by one from a deck and then can attack your opponent with them.",
+      "context_chars": 15282,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Deborah is talking about a card game about cats where you take cards one by one from a deck and can attack your opponent with them.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 4450,
+        "completion_tokens": 30,
+        "total_tokens": 4480,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 2.171112369047478,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 410,
+        "completion_tokens": 7,
+        "total_tokens": 417
+      },
+      "judge_elapsed_seconds": 1.9008407789515331,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-49:q0006",
+      "conversation_id": "conv-49",
+      "question": "Which country was Evan visiting in May 2023?",
+      "gold_answer": "Canada",
+      "category": 3,
+      "question_type": "detail",
+      "prediction": "Evan was visiting the Rockies in Canada in May 2023.",
+      "context_chars": 15695,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Evan was visiting the Rockies in May 2023.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": false,
+      "baseline_retrieval_full_cover": false,
+      "generation_usage": {
+        "prompt_tokens": 4542,
+        "completion_tokens": 15,
+        "total_tokens": 4557,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 1.874993406003341,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 395,
+        "completion_tokens": 7,
+        "total_tokens": 402
+      },
+      "judge_elapsed_seconds": 1.5644592109601945,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-49:q0028",
+      "conversation_id": "conv-49",
+      "question": "What electronic device could Evan gift Sam to help him keep up with his fitness goals?",
+      "gold_answer": "fitness tracker",
+      "category": 3,
+      "question_type": "inference",
+      "prediction": "Evan could gift Sam a fitness tracker that tracks progress and serves as a constant reminder to keep going.",
+      "context_chars": 16767,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Evan could gift Sam a fitness tracker, as Evan uses a tool that tracks his progress well and serves as a constant reminder to keep going.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": false,
+      "baseline_retrieval_full_cover": false,
+      "generation_usage": {
+        "prompt_tokens": 4753,
+        "completion_tokens": 22,
+        "total_tokens": 4775,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 2.0685709270182997,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 409,
+        "completion_tokens": 7,
+        "total_tokens": 416
+      },
+      "judge_elapsed_seconds": 3.6259598549222574,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-49:q0039",
+      "conversation_id": "conv-49",
+      "question": "What role does nature and the outdoors play in Evan and Sam's mental well-being?",
+      "gold_answer": "Nature and outdoor activities seem to be significant stress relievers and sources of joy for both Evan and Sam. These activities likely contribute positively to their mental well-being.",
+      "category": 3,
+      "question_type": "detail",
+      "prediction": "Nature and the outdoors play a significant role in Evan and Sam's mental well-being by providing relaxation, calmness, and a sense of peace. Sam finds being in nature relaxing, enjoys fresh air away from the city, and loves the tranquility and refreshment it offers. Evan captures the peacefulness of being outdoors in his paintings, finds nature calming and soul-reviving, and values small outdoor moments to uplift his mood during tough times. Both see activities like hiking and kayaking as ways to bond with nature, de-stress, and create positive memories.",
+      "context_chars": 15767,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Nature and the outdoors play a significant role in Evan and Sam's mental well-being by providing relaxation, calmness, and a sense of freedom. Sam finds being in nature relaxing, tranquil, and refreshing, enjoying fresh air away from the city and small joyful moments outdoors. Evan believes nature calms and revives the soul, finds peace watching sunsets, and uses nature as inspiration in his paintings to convey peacefulness. Both see outdoor activities like hiking and kayaking as ways to de-stress, bond, and push themselves, with small moments outdoors making a big impact during tough times.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": false,
+      "baseline_retrieval_full_cover": false,
+      "generation_usage": {
+        "prompt_tokens": 4535,
+        "completion_tokens": 112,
+        "total_tokens": 4647,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 6.015545391011983,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 529,
+        "completion_tokens": 7,
+        "total_tokens": 536
+      },
+      "judge_elapsed_seconds": 2.2394695630064234,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-26:q0138",
+      "conversation_id": "conv-26",
+      "question": "What painting did Melanie show to Caroline on October 13, 2023?",
+      "gold_answer": "A painting inspired by sunsets with a pink sky.",
+      "category": 4,
+      "question_type": "detail",
+      "prediction": "Melanie showed Caroline a painting that Caroline made to show her path as a trans woman, with red and blue representing the binary gender system and a mix of colors symbolizing smashing that rigid thinking.",
+      "context_chars": 17089,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Melanie showed Caroline the painting that Caroline made to show her path as a trans woman, with red and blue representing the binary gender system and the mix of colors symbolizing smashing that rigid thinking.",
+      "baseline_judge_correct": 0,
+      "baseline_retrieval_hit": false,
+      "baseline_retrieval_full_cover": false,
+      "generation_usage": {
+        "prompt_tokens": 4843,
+        "completion_tokens": 40,
+        "total_tokens": 4883,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 6.283620008965954,
+      "judge_correct": 0,
+      "judge_label": "WRONG",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"WRONG\"}",
+      "judge_usage": {
+        "prompt_tokens": 433,
+        "completion_tokens": 7,
+        "total_tokens": 440
+      },
+      "judge_elapsed_seconds": 3.2548625799827278,
+      "comparison": "unchanged_wrong"
+    },
+    {
+      "question_id": "conv-26:q0151",
+      "conversation_id": "conv-26",
+      "question": "How did Melanie feel about her family supporting her?",
+      "gold_answer": "She appreciated them a lot",
+      "category": 4,
+      "question_type": "inference",
+      "prediction": "Melanie felt very positive and appreciative about her family's support, describing it as loving, helpful during tough times, and something that brings her peace and happiness.",
+      "context_chars": 16087,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Melanie felt very positive about her family supporting her; she appreciated their love and support, which helped her through tough times and made her feel alive, happy, at peace, and lucky.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": false,
+      "baseline_retrieval_full_cover": false,
+      "generation_usage": {
+        "prompt_tokens": 4676,
+        "completion_tokens": 32,
+        "total_tokens": 4708,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 2.8625582109671086,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\": \"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 415,
+        "completion_tokens": 8,
+        "total_tokens": 423
+      },
+      "judge_elapsed_seconds": 1.2651901179924607,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-30:q0065",
+      "conversation_id": "conv-30",
+      "question": "Where is Gina's fashion internship?",
+      "gold_answer": "fashion department of an international company",
+      "category": 4,
+      "question_type": "detail",
+      "prediction": "Gina's fashion internship is a part-time position in the fashion department of an international company.",
+      "context_chars": 16447,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Gina's fashion internship is in the fashion department of an international company.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 4751,
+        "completion_tokens": 20,
+        "total_tokens": 4771,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 2.091707495972514,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 401,
+        "completion_tokens": 7,
+        "total_tokens": 408
+      },
+      "judge_elapsed_seconds": 6.111116670072079,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-30:q0066",
+      "conversation_id": "conv-30",
+      "question": "What book is Jon currently reading?",
+      "gold_answer": "The Lean Startup",
+      "category": 4,
+      "question_type": "detail",
+      "prediction": "Jon is currently reading \"The Lean Startup.\"",
+      "context_chars": 16340,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Jon was reading \"The Lean Startup\" as of 27 May, 2023. There is no later information about Jon reading a different book.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 4690,
+        "completion_tokens": 10,
+        "total_tokens": 4700,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 2.421786404098384,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 389,
+        "completion_tokens": 7,
+        "total_tokens": 396
+      },
+      "judge_elapsed_seconds": 1.6952650919556618,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-41:q0140",
+      "conversation_id": "conv-41",
+      "question": "What did John do to help his community last year in his hometown?",
+      "gold_answer": "Helped renovate a rundown community center.",
+      "category": 4,
+      "question_type": "temporal",
+      "prediction": "Last year in his hometown, John helped his community by initiating a community food drive to support those affected by unemployment, organizing a basketball camp for kids to create opportunities for young athletes, helping renovate a rundown community center, joining a firefighting brigade and participating in call-outs to assist those in need, volunteering at a career fair to support local kids, and running for office again to make a difference in his community.",
+      "context_chars": 17425,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Last year in his hometown, John helped his community by initiating a community food drive for people who lost their jobs, organizing a basketball camp for kids last summer, and helping renovate a rundown community center.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 4911,
+        "completion_tokens": 83,
+        "total_tokens": 4994,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 3.7007943969219923,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 473,
+        "completion_tokens": 7,
+        "total_tokens": 480
+      },
+      "judge_elapsed_seconds": 1.9186740850564092,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-42:q0143",
+      "conversation_id": "conv-42",
+      "question": "What does Nate do that he loves and can make money from?",
+      "gold_answer": "Competing in video game tournaments",
+      "category": 4,
+      "question_type": "detail",
+      "prediction": "Nate loves playing video games and makes money from winning video game tournaments.",
+      "context_chars": 15808,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Nate plays video games competitively, winning video game tournaments online, which he loves and can make money from.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 4646,
+        "completion_tokens": 16,
+        "total_tokens": 4662,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 1.8324201649520546,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 403,
+        "completion_tokens": 7,
+        "total_tokens": 410
+      },
+      "judge_elapsed_seconds": 1.6423991080373526,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-42:q0177",
+      "conversation_id": "conv-42",
+      "question": "What did Joanna contribute to that was shown on the big screen on the Sunday before October 25, 2022?",
+      "gold_answer": "movie script",
+      "category": 4,
+      "question_type": "temporal",
+      "prediction": "Joanna contributed to a movie script that was shown on the big screen for the first time on the Sunday before October 25, 2022.",
+      "context_chars": 18830,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Joanna contributed to a movie script that was shown on the big screen for the first time on the Sunday before October 25, 2022.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 5397,
+        "completion_tokens": 31,
+        "total_tokens": 5428,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 2.2337395049398765,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 425,
+        "completion_tokens": 7,
+        "total_tokens": 432
+      },
+      "judge_elapsed_seconds": 2.485524635994807,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-43:q0123",
+      "conversation_id": "conv-43",
+      "question": "What has John been able to help the younger players achieve?",
+      "gold_answer": "reach their goals",
+      "category": 4,
+      "question_type": "detail",
+      "prediction": "John has been able to help the younger players achieve growth, improvement, confidence, and reaching their goals.",
+      "context_chars": 18510,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "John has been able to help the younger players achieve growth, improvement, increased confidence, development, and reaching their goals.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 4953,
+        "completion_tokens": 22,
+        "total_tokens": 4975,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 3.6430226310621947,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 406,
+        "completion_tokens": 7,
+        "total_tokens": 413
+      },
+      "judge_elapsed_seconds": 2.826307162991725,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-43:q0136",
+      "conversation_id": "conv-43",
+      "question": "How does Tim stay motivated during difficult study sessions?",
+      "gold_answer": "Visualizing goals and success",
+      "category": 4,
+      "question_type": "inference",
+      "prediction": "Tim stays motivated during difficult study sessions by remembering why he loves what he does, specifically writing and reading, which helps him push himself to improve. He also breaks up his studying into smaller parts, studying for 25 minutes followed by 5 minutes of fun activities to make it less overwhelming and keep on track. Additionally, he views challenges as opportunities for personal growth and resilience, turning tough experiences into learning moments.",
+      "context_chars": 15722,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Tim stays motivated during difficult study sessions by remembering his love for writing and reading, which helps him push himself to improve. He also breaks up his studying into smaller parts, studying for 25 minutes followed by 5 minutes of fun activities to keep from feeling overwhelmed and stay on track. Additionally, he views challenges as opportunities for personal growth and resilience. (Evidence: [1], [2], [5])",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 4418,
+        "completion_tokens": 83,
+        "total_tokens": 4501,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 5.172493509948254,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 467,
+        "completion_tokens": 7,
+        "total_tokens": 474
+      },
+      "judge_elapsed_seconds": 2.919424643041566,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-44:q0093",
+      "conversation_id": "conv-44",
+      "question": "How does Audrey describe the new beds for her dogs?",
+      "gold_answer": "Super cozy and comfy",
+      "category": 4,
+      "question_type": "inference",
+      "prediction": "Audrey describes the new beds for her dogs as cozy and comfortable, saying they curl up and snuggle like they're in a cloud.",
+      "context_chars": 15971,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Audrey describes the new beds for her dogs as cozy and comfortable, saying they curl up and snuggle like they're in a cloud.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": false,
+      "baseline_retrieval_full_cover": false,
+      "generation_usage": {
+        "prompt_tokens": 4650,
+        "completion_tokens": 28,
+        "total_tokens": 4678,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 10.113080034963787,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 411,
+        "completion_tokens": 7,
+        "total_tokens": 418
+      },
+      "judge_elapsed_seconds": 3.041670633945614,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-47:q0106",
+      "conversation_id": "conv-47",
+      "question": "When did James plan to return from his trip to Toronto and Vancouver?",
+      "gold_answer": "July 20",
+      "category": 4,
+      "question_type": "temporal",
+      "prediction": "James planned to return from his trip on July 20.",
+      "context_chars": 16306,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "James planned to return from his trip on July 20, 2022.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 4814,
+        "completion_tokens": 13,
+        "total_tokens": 4827,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 3.183017655974254,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 399,
+        "completion_tokens": 7,
+        "total_tokens": 406
+      },
+      "judge_elapsed_seconds": 4.9646369479596615,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-47:q0145",
+      "conversation_id": "conv-47",
+      "question": "Where did James and Samantha decide to live together on 31 October, 2022?",
+      "gold_answer": "In an apartment not far from McGee's bar",
+      "category": 4,
+      "question_type": "detail",
+      "prediction": "James and Samantha decided to live together in an apartment not far from McGee's bar.",
+      "context_chars": 15650,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "James and Samantha decided to live together in an apartment not far from McGee's bar.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 4560,
+        "completion_tokens": 19,
+        "total_tokens": 4579,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 4.052558040944859,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 416,
+        "completion_tokens": 7,
+        "total_tokens": 423
+      },
+      "judge_elapsed_seconds": 5.211960849934258,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-48:q0091",
+      "conversation_id": "conv-48",
+      "question": "What are Jolene's favorite books?",
+      "gold_answer": "Sapiens, Avalanche by Neal Stephenson",
+      "category": 4,
+      "question_type": "detail",
+      "prediction": "Jolene's favorite books are \"Sapiens\" and \"Avalanche\" by Neal Stephenson.",
+      "context_chars": 17558,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Jolene's favorite books are \"Sapiens\" and \"Avalanche\" by Neal Stephenson.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 5178,
+        "completion_tokens": 23,
+        "total_tokens": 5201,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 2.7026203740388155,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 408,
+        "completion_tokens": 7,
+        "total_tokens": 415
+      },
+      "judge_elapsed_seconds": 2.4114706920227036,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-48:q0115",
+      "conversation_id": "conv-48",
+      "question": "How did Jolene and her partner initially meet?",
+      "gold_answer": "In an engineering class in college",
+      "category": 4,
+      "question_type": "inference",
+      "prediction": "Jolene and her partner initially met in an engineering class in college and quickly became friends.",
+      "context_chars": 15326,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Jolene and her partner initially met in an engineering class in college and quickly became friends.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 4493,
+        "completion_tokens": 20,
+        "total_tokens": 4513,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 2.681711348006502,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 404,
+        "completion_tokens": 7,
+        "total_tokens": 411
+      },
+      "judge_elapsed_seconds": 3.805243249051273,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-48:q0122",
+      "conversation_id": "conv-48",
+      "question": "What did Jolene ask Deb to help with on 13 March, 2023?",
+      "gold_answer": "time management",
+      "category": 4,
+      "question_type": "detail",
+      "prediction": "Jolene asked Deb to help with time management to deal with her Engineering assignments on 13 March, 2023.",
+      "context_chars": 15003,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Jolene asked Deb to help with time management to handle her workload on 13 March, 2023.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 4528,
+        "completion_tokens": 26,
+        "total_tokens": 4554,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 1.8949149070540443,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 414,
+        "completion_tokens": 7,
+        "total_tokens": 421
+      },
+      "judge_elapsed_seconds": 6.033593798056245,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-49:q0086",
+      "conversation_id": "conv-49",
+      "question": "What did Evan start doing a few years back as a stress-buster?",
+      "gold_answer": "watercolor painting",
+      "category": 4,
+      "question_type": "detail",
+      "prediction": "Evan started painting a few years back as a stress-buster.",
+      "context_chars": 16478,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Evan started painting, specifically watercolor painting, a few years back as a stress-buster.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 4827,
+        "completion_tokens": 15,
+        "total_tokens": 4842,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 2.7323807030916214,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\": \"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 400,
+        "completion_tokens": 8,
+        "total_tokens": 408
+      },
+      "judge_elapsed_seconds": 2.069886044948362,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-49:q0101",
+      "conversation_id": "conv-49",
+      "question": "What did Evan mention he had been searching for fruitlessly for half an hour?",
+      "gold_answer": "his keys",
+      "category": 4,
+      "question_type": "detail",
+      "prediction": "Evan mentioned he had been searching fruitlessly for his keys for the last half hour.",
+      "context_chars": 15945,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Evan mentioned he had been searching fruitlessly for his keys for the last half hour.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 4705,
+        "completion_tokens": 19,
+        "total_tokens": 4724,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 4.431602219934575,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 405,
+        "completion_tokens": 7,
+        "total_tokens": 412
+      },
+      "judge_elapsed_seconds": 1.7446568519808352,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-49:q0115",
+      "conversation_id": "conv-49",
+      "question": "What did Evan recommend Sam acquire to get started with painting?",
+      "gold_answer": "Acrylic paints, brushes, canvas/paper, palette",
+      "category": 4,
+      "question_type": "detail",
+      "prediction": "Evan recommended Sam acquire acrylic paints, brushes, a canvas or paper, and a palette to mix colors.",
+      "context_chars": 16820,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Evan recommended Sam acquire acrylic paints, brushes, a canvas or paper, and a palette to mix colors.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 4842,
+        "completion_tokens": 23,
+        "total_tokens": 4865,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 4.779729334986769,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 413,
+        "completion_tokens": 7,
+        "total_tokens": 420
+      },
+      "judge_elapsed_seconds": 1.380687058903277,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-49:q0135",
+      "conversation_id": "conv-49",
+      "question": "What family event is Evan planning for next summer?",
+      "gold_answer": "big family reunion",
+      "category": 4,
+      "question_type": "detail",
+      "prediction": "Evan is planning a big family reunion next summer.",
+      "context_chars": 16028,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Evan is planning a big family reunion next summer.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 4617,
+        "completion_tokens": 12,
+        "total_tokens": 4629,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 1.6448073630454019,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 393,
+        "completion_tokens": 7,
+        "total_tokens": 400
+      },
+      "judge_elapsed_seconds": 1.2008651240030304,
+      "comparison": "unchanged_correct"
+    },
+    {
+      "question_id": "conv-49:q0141",
+      "conversation_id": "conv-49",
+      "question": "How did Evan feel when he painted the piece with the bird flying over it?",
+      "gold_answer": "a sense of joy and freedom",
+      "category": 4,
+      "question_type": "temporal",
+      "prediction": "Evan felt a massive rush of joy, a mix of emotions—sad, mad, and hopeful—while painting the piece with the bird flying over it, experiencing a sense of joy and freedom with playful and liberated mood.",
+      "context_chars": 17306,
+      "pack_answerability": "SUPPORTED",
+      "baseline_prediction": "Evan felt a massive rush of joy when he painted the piece with the bird flying over it, expressing a sense of joy and freedom through spontaneous strokes and bold colors that reflected a playful and liberated mood.",
+      "baseline_judge_correct": 1,
+      "baseline_retrieval_hit": true,
+      "baseline_retrieval_full_cover": true,
+      "generation_usage": {
+        "prompt_tokens": 5106,
+        "completion_tokens": 46,
+        "total_tokens": 5152,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "generation_elapsed_seconds": 3.323265651008114,
+      "judge_correct": 1,
+      "judge_label": "CORRECT",
+      "judge_reason": "",
+      "judge_raw_response": "{\"label\":\"CORRECT\"}",
+      "judge_usage": {
+        "prompt_tokens": 436,
+        "completion_tokens": 7,
+        "total_tokens": 443
+      },
+      "judge_elapsed_seconds": 1.8940630350261927,
+      "comparison": "unchanged_correct"
+    }
+  ]
+}

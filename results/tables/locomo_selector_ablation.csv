@@ -1,0 +1,6 @@
+variant,hit_at_20,recall_at_20,full_cover_at_20,qa_accuracy
+CE Reranking,88.87,80.92,72.87,87.94
++ Semantic LGBM,89.03,81.79,73.50,88.61
++ Route Features,89.68,82.44,75.15,90.22
++ Card Expansion,90.42,83.59,76.24,90.87
++ Relation Selection,90.56,84.15,77.60,91.62
