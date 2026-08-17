@@ -1,5 +1,10 @@
 # HyPathMem 8.5time_v
 
+> Reporting note: this document records the bundled 8.5 development snapshot
+> (`408/500 = 81.60%`). The consolidated single-judge result used in the paper
+> table is `412/500 = 82.40%`; its four additional correct judgments are not
+> reconstructed from this older snapshot.
+
 `8.5time_v` is an independent post-hoc development branch over the frozen
 `8.4time_v` artifact. It converts a small subset of non-executable temporal
 questions into executable constraints. It never sends a non-executable packet

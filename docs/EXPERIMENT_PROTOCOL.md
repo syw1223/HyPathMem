@@ -15,7 +15,13 @@
 - Types: single-session user, single-session assistant, knowledge update,
   temporal, multi-session, and preference.
 - Memory isolation: one graph per unique haystack history.
-- Retrieval pool: Top50 candidates before evidence compilation.
+- Retrieval budgets are stage-specific: **150 initial candidates -> Top-50
+  selector/reconstruction pool -> token-budgeted QA context from up to 50
+  evidence/path units**. The first value bounds the fused multi-route
+  candidate set. Top-50 is frozen for evidence reconstruction and temporal
+  grounding; the compiler drops low-ranked whole units only when its context
+  budget is exceeded. Top-20 is reported as a common retrieval metric cutoff
+  and must not be interpreted as the final 8.5 reader truncation.
 
 ## Unified Model Setting
 

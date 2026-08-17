@@ -39,8 +39,8 @@ The answer judge is GPT-4o-mini.
 | --- | --- | ---: |
 | LoCoMo (1,540 Cat1-4 questions) | GPT-4.1-mini | **91.62** |
 | LoCoMo (1,540 Cat1-4 questions) | Qwen3-30B | **87.84** |
-| LongMemEval-S (500 questions) | GPT-4.1-mini | **82.41** |
-| LongMemEval-S (500 questions) | Qwen3-30B | **79.69** |
+| LongMemEval-S (500 questions) | GPT-4.1-mini | **82.40** |
+| LongMemEval-S (500 questions) | Qwen3-30B | **79.60** |
 
 Detailed baseline, category, retrieval, and ablation results are in
 [docs/RESULTS.md](docs/RESULTS.md). Interpretation of the main findings,
@@ -97,6 +97,16 @@ The selected paper protocol uses Qwen3-30B for process-time LLM operations,
 Qwen3-Embedding-0.6B for dense embeddings, and the recorded local reranking
 configuration. Answer-generation tables report GPT-4.1-mini and Qwen3-30B
 separately, with GPT-4o-mini as judge.
+
+For LongMemEval-S, Top-K values refer to distinct pipeline stages: 150 initial
+candidates are retained after multi-route retrieval, the selector exposes a
+Top-50 pool to evidence reconstruction, and the QA compiler consumes up to 50
+whole evidence/path units subject to its token/character budget. Top-20 is the
+common retrieval-metric cutoff, not the final 8.5 reader truncation.
+
+The installable distribution and Python import path remain `hytopomem` for
+backward compatibility with the original research code. The paper method and
+repository are named **HyPathMem**.
 
 ## Data and Checkpoints
 

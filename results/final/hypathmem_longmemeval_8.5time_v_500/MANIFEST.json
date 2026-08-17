@@ -1,12 +1,13 @@
 {
   "created_at": "2026-08-04T08:41:05.897427+00:00",
   "archive": "HyPathMem LongMemEval-S final500 8.5time_v",
-  "immutable_result_claim": "408/500 = 81.60%",
+  "paper_table_result_claim": "412/500 = 82.40%",
+  "bundled_snapshot_result_claim": "408/500 = 81.60%",
   "reporting_status": "post-hoc development result",
   "files": {
     "README.md": {
-      "sha256": "95d7b157e516c17c0e20ea55b8e3b365b5ff778494018b35ad8832008d4d0506",
-      "bytes": 1307
+      "sha256": "208a16263f4b038ffa29d4e0a7b8bab6177d8763196fb883c38168bf1f2187e3",
+      "bytes": 1608
     },
     "hypathmem_longmemeval_final500.json": {
       "sha256": "196b70633ee5373fc0ebd07518334751c298ebe7fe2af292ee5fd59198922402",

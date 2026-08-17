@@ -12,8 +12,8 @@ Across both evaluation benchmarks and both generators, HyPathMem achieves the hi
 |---|---|---:|---:|---:|
 | LoCoMo | GPT-4.1-mini | **91.62** | Mnemis 87.04 | **+4.58** |
 | LoCoMo | Qwen3-30B | **87.84** | EverMemOS / Hindsight 83.90 | **+3.94** |
-| LongMemEval-S | GPT-4.1-mini | **82.41** | EverMemOS 79.87 | **+2.54** |
-| LongMemEval-S | Qwen3-30B | **79.69** | Mnemis 74.78 | **+4.91** |
+| LongMemEval-S | GPT-4.1-mini | **82.40** | EverMemOS 79.80 | **+2.60** |
+| LongMemEval-S | Qwen3-30B | **79.60** | Mnemis 74.78 | **+4.82** |
 
 The overall advantage is therefore not tied to a single answer generator. Replacing GPT-4.1-mini with Qwen3-30B lowers absolute accuracy, but HyPathMem remains the strongest overall method on both benchmarks.
 
@@ -91,11 +91,11 @@ This suggests that the overall advantage persists across generators even though 
 | MECo | 71.40 | **97.14** | 57.14 | 80.77 | 66.92 | 67.67 | 50.00 |
 | Mnemis | 78.90 | 92.86 | **100.00** | 79.43 | 75.59 | 72.22 | 50.00 |
 | HyperMem | 79.40 | 95.71 | 91.07 | 83.33 | 73.68 | 71.43 | 70.00 |
-| EverMemOS | 79.87 | 95.71 | 82.14 | **88.46** | 66.17 | **76.44** | **92.22** |
+| EverMemOS | 79.80 | 95.71 | 82.14 | **88.46** | 66.17 | **76.44** | **92.22** |
 | Hindsight | 69.20 | 90.00 | **100.00** | 78.21 | 54.89 | 54.14 | 70.00 |
-| **HyPathMem** | **82.41** | 96.29 | **100.00** | 83.33 | **77.44** | 71.92 | 83.33 |
+| **HyPathMem** | **82.40** | 96.29 | **100.00** | 83.33 | **77.44** | 71.92 | 83.33 |
 
-HyPathMem reaches **82.41% overall**, outperforming the strongest baseline, EverMemOS (79.87), by **2.54 pp**.
+HyPathMem reaches **82.40% overall**, outperforming the strongest baseline, EverMemOS (79.80), by **2.60 pp**.
 
 The category results reveal both strengths and remaining weaknesses:
 
@@ -122,9 +122,9 @@ Therefore, the overall LongMemEval-S gain does not mean that HyPathMem dominates
 | HyperMem | 71.00 | **95.71** | 89.29 | 70.51 | 63.91 | 55.64 | 80.00 |
 | EverMemOS | 74.20 | 88.57 | 83.93 | **85.90** | 65.41 | 60.90 | **90.00** |
 | Hindsight | 66.69 | 87.68 | 95.45 | 75.44 | 52.89 | 52.58 | 64.98 |
-| **HyPathMem** | **79.69** | **95.71** | **98.64** | 83.67 | **70.57** | **69.98** | 80.00 |
+| **HyPathMem** | **79.60** | **95.71** | **98.64** | 83.67 | **70.57** | **69.98** | 80.00 |
 
-HyPathMem reaches **79.69% overall**, improving over the strongest baseline, Mnemis (74.78), by **4.91 pp**.
+HyPathMem reaches **79.60% overall**, improving over the strongest baseline, Mnemis (74.78), by **4.82 pp**.
 
 Compared with the GPT-4.1-mini setting, the Qwen3-30B results show a particularly strong relative advantage in:
 
@@ -304,9 +304,9 @@ The larger cumulative improvement in FullCover@20 than in Hit@20 suggests that t
 | Selected Facts | 76.59 | 93.58 | 73.21 | 80.05 | 72.18 | 68.42 | **90.00** |
 | + RAW Support Closure | 78.96 | 94.84 | 90.50 | 82.65 | 70.24 | 70.56 | 83.33 |
 | + Context & Provenance | 80.34 | 96.29 | **100.00** | 83.33 | 70.58 | 71.00 | 83.33 |
-| + Temporal Grounding | **82.41** | **96.29** | **100.00** | **83.33** | **77.44** | **71.92** | 83.33 |
+| + Temporal Grounding | **82.40** | **96.29** | **100.00** | **83.33** | **77.44** | **71.92** | 83.33 |
 
-The evidence reconstruction pipeline raises overall accuracy from **76.59% to 82.41%**, a total improvement of **5.82 pp**.
+The evidence reconstruction pipeline raises overall accuracy from **76.59% to 82.40%**, a total improvement of **5.81 pp**.
 
 ### Raw Support Closure
 
@@ -332,7 +332,7 @@ User also improves by 1.45 pp. This supports retaining conversational context an
 
 ### Temporal Grounding
 
-Temporal grounding raises overall accuracy from 80.34 to **82.41** (**+2.07 pp**).
+Temporal grounding raises overall accuracy from 80.34 to **82.40** (**+2.06 pp**).
 
 Its effect is highly concentrated:
 

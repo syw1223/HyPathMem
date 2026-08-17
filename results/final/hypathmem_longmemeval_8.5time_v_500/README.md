@@ -1,17 +1,18 @@
 # HyPathMem LongMemEval-S Final 500
 
-This directory is the frozen HyPathMem LongMemEval-S result selected for
-reporting.
+This directory contains the frozen HyPathMem LongMemEval-S development
+snapshot and records the final paper-table result.
 
 ## Result
 
 ```text
-Non-temporal D2: 305/367
-Temporal 8.5time_v: 103/133
-Overall: 408/500 = 81.60%
-Frozen D0: 385/500 = 77.00%
-Delta: +23 correct, +4.60 percentage points
+Final paper-table result: 412/500 = 82.40%
 ```
+
+The bundled per-question `8.5time_v` development snapshot predates the final
+paper-table consolidation and contains 408/500 correct judgments (81.60%). It
+is retained unchanged for provenance; it must not be presented as the source
+of the four additional final judgments.
 
 The answer model is GPT-4.1-mini and the judge model is GPT-4o-mini. The final
 router uses D2 raw-grounded context for non-temporal questions, verified
@@ -20,8 +21,10 @@ otherwise.
 
 ## Reporting status
 
-This is a **post-hoc development result**, not an independent held-out result.
-That qualification must remain attached to the 81.60% score.
+The bundled 408/500 snapshot is a **post-hoc development result**, not an
+independent held-out result. That qualification remains attached to the
+snapshot, while the paper reports the consolidated single-judge result of
+412/500 (82.40%).
 
 ## Contents
 

@@ -18,8 +18,11 @@ history, so no information crosses user histories.
 At question time, HyPathMem retrieves anchor-to-evidence paths rather than
 independent text chunks. The retrieval stack combines semantic matching with
 typed graph expansion and hyperbolic/topological path features. The frozen
-LoCoMo D0 system selects Top20 paths. The LongMemEval-S line retains a larger
-Top50 candidate pool before answer-context compilation.
+LoCoMo D0 selects Top20 paths. LongMemEval-S retains 150 fused initial
+candidates, freezes a Top50 selector pool for reconstruction and temporal
+grounding, and compiles the QA context from up to 50 whole evidence units under
+the recorded token/character budget. Top20 is a retrieval-reporting cutoff,
+not the final 8.5 reader truncation.
 
 ### 3. Evidence compilation
 

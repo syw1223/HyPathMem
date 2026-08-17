@@ -11,8 +11,12 @@ graph:
   graph_path: outputs/longmemeval_s/graph_v3_9.json
 
 retrieval:
+  # Stage 1: fused candidates produced by the retrieval routes.
   candidate_topn: 150
-  final_topk: 20
+  # Stage 2: frozen pool exposed to reconstruction and temporal grounding.
+  retrieval_pool_topk: 50
+  # Stage 3: maximum whole evidence/path units passed to reconstruction/QA.
+  final_topk: 50
   restrict_conversation: true
 
 selector:
@@ -22,7 +26,10 @@ selector:
 
 qa_eval:
   dataset: longmemeval
-  k: 20
+  # Matches the frozen Top-50 reconstruction protocol. Retrieval is also
+  # evaluated at K=20, but that reporting cutoff does not truncate QA context.
+  k: 50
+  max_context_chars: 80000
   context_mode: raw_or_hybrid
   output: outputs/longmemeval_s/qa_predictions.json
   official_jsonl: outputs/longmemeval_s/hypotheses.jsonl
