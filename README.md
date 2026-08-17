@@ -43,15 +43,17 @@ The answer judge is GPT-4o-mini.
 | LongMemEval-S (500 questions) | Qwen3-30B | **79.69** |
 
 Detailed baseline, category, retrieval, and ablation results are in
-[docs/RESULTS.md](docs/RESULTS.md). The exact experiment protocol is in
-[docs/EXPERIMENTS.md](docs/EXPERIMENTS.md).
+[docs/RESULTS.md](docs/RESULTS.md). Interpretation of the main findings,
+component gains, and remaining weaknesses is available in
+[docs/RESULT_ANALYSIS.md](docs/RESULT_ANALYSIS.md). The exact experiment
+protocol is in [docs/EXPERIMENT_PROTOCOL.md](docs/EXPERIMENT_PROTOCOL.md).
 
 ## Repository Layout
 
 ```text
 configs/         Selected experiment configurations
 docs/            Method, experiment, and result documentation
-results/final/   Frozen per-question predictions and source artifacts
+results/         Paper tables and frozen per-question result artifacts
 scripts/         Graph, retrieval, evidence, QA, and analysis runners
 src/hytopomem/   Core implementation
 tests/           Unit and contract tests
