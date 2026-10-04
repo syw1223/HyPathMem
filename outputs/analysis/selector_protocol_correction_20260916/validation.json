@@ -1,0 +1,14 @@
+{
+  "locomo": {
+    "questions": 1540,
+    "status": "completed",
+    "same_qids_all_rows": true,
+    "cat5_excluded_and_conversation_disjoint": true
+  },
+  "longmemeval": {
+    "questions": 500,
+    "status": "grouped_cv_blocked",
+    "same_qids_all_rows": true,
+    "no_invalid_grouped_training": true
+  }
+}

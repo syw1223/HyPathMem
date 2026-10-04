@@ -1,0 +1,3037 @@
+[
+  {
+    "question_id": "conv-30:q0010",
+    "question": "Which city have both Jean and John visited?",
+    "category": 1,
+    "fact_id": "conv-30:fact:obs:0128",
+    "rank": 2,
+    "source_route_rank": 2,
+    "text": "Jon recently took a short trip to Rome to clear his mind.",
+    "evidence_ids": [
+      "D15:1"
+    ],
+    "novel_raw_turns": [
+      "D15:1"
+    ],
+    "additional_gold": [
+      "D15:1"
+    ],
+    "ce_score": -9.441904067993164,
+    "lexical_query_coverage": 0.0,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-30:topicv3:0005",
+      "conv-30:eventv3:0037",
+      "conv-30:fact:obs:0128"
+    ],
+    "path_labels": [
+      "Jon's Recent Travels: Jon recently visited Paris and Rome, exploring these cities during his travels.",
+      "Jon's Short Trip to Rome: Jon recently traveled to Rome for a short trip to clear his mind.",
+      "Jon recently took a short trip to Rome to clear his mind."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-44:q0027",
+    "question": "What is the biggest stressor in Andrew's life besides not being able to hike frequently?",
+    "category": 1,
+    "fact_id": "conv-44:fact:obs:0154",
+    "rank": 7,
+    "source_route_rank": 7,
+    "text": "Andrew enjoys hiking in the great outdoors.",
+    "evidence_ids": [
+      "D16:1"
+    ],
+    "novel_raw_turns": [
+      "D16:1"
+    ],
+    "additional_gold": [
+      "D16:1"
+    ],
+    "ce_score": -4.128199577331543,
+    "lexical_query_coverage": 0.09090909090909091,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-44:fact:obs:0154"
+    ],
+    "path_labels": [
+      "Andrew enjoys hiking in the great outdoors."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-50:q0059",
+    "question": "Which events in Dave's life inspired him to take up auto engineering?",
+    "category": 1,
+    "fact_id": "conv-50:fact:obs:0093",
+    "rank": 19,
+    "source_route_rank": 19,
+    "text": "Dave has fond memories of restoring an old car with his dad during one summer, finding it hard work but satisfying.",
+    "evidence_ids": [
+      "D12:4"
+    ],
+    "novel_raw_turns": [
+      "D12:4"
+    ],
+    "additional_gold": [
+      "D12:4"
+    ],
+    "ce_score": -1.6305456161499023,
+    "lexical_query_coverage": 0.1,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-50:fact:obs:0093"
+    ],
+    "path_labels": [
+      "Dave has fond memories of restoring an old car with his dad during one summer, finding it hard work but satisfying."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-41:q0108",
+    "question": "What new activity did Maria start recently, as mentioned on 3 June, 2023?",
+    "category": 4,
+    "fact_id": "conv-41:fact:obs:0172",
+    "rank": 6,
+    "source_route_rank": 5,
+    "text": "Maria started volunteering at a local dog shelter once a month, showing her compassion towards animals and her willingness to help.",
+    "evidence_ids": [
+      "D17:12"
+    ],
+    "novel_raw_turns": [
+      "D17:12"
+    ],
+    "additional_gold": [
+      "D17:12"
+    ],
+    "ce_score": -3.0577635765075684,
+    "lexical_query_coverage": 0.1111111111111111,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-41:fact:obs:0140",
+      "conv-41:eventv3:0046",
+      "conv-41:topicv3:0010",
+      "conv-41:eventv3:0053",
+      "conv-41:fact:obs:0172"
+    ],
+    "path_labels": [
+      "Maria has been doing charity work recently, which she finds rewarding and fulfilling.",
+      "Maria Reflects and Builds Community: Maria has been engaging in charity work, joined a church for community and faith, and is reflecting on life to find balance.",
+      "Maria's Journey of Community and Growth: Maria is actively engaging in charity work, personal reflection, and community-building activities while finding balance and peace through meaningful experiences and relationships.",
+      "Maria Volunteers at Dog Shelter: Maria began volunteering monthly at a local dog shelter, reflecting her compassion for animals and willingness to help.",
+      "Maria started volunteering at a local dog shelter once a month, showing her compassion towards animals and her willingness to help."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-41:q0115",
+    "question": "How does John describe the support he received during his journey to becoming assistant manager?",
+    "category": 4,
+    "fact_id": "conv-41:fact:obs:0195",
+    "rank": 17,
+    "source_route_rank": 17,
+    "text": "John shares about facing various challenges including tech issues, workplace hurdles, and self-doubt on his path to promotion.",
+    "evidence_ids": [
+      "D19:12"
+    ],
+    "novel_raw_turns": [
+      "D19:12"
+    ],
+    "additional_gold": [
+      "D19:12"
+    ],
+    "ce_score": -4.13259744644165,
+    "lexical_query_coverage": 0.1111111111111111,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-41:fact:obs:0195"
+    ],
+    "path_labels": [
+      "John shares about facing various challenges including tech issues, workplace hurdles, and self-doubt on his path to promotion."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-41:q0063",
+    "question": "How many dogs has Maria adopted from the dog shelter she volunteers at?",
+    "category": 1,
+    "fact_id": "conv-41:fact:obs:0294",
+    "rank": 19,
+    "source_route_rank": 19,
+    "text": "Maria got a puppy named Coco two weeks ago, bringing joy to her life.",
+    "evidence_ids": [
+      "D30:1"
+    ],
+    "novel_raw_turns": [
+      "D30:1"
+    ],
+    "additional_gold": [
+      "D30:1"
+    ],
+    "ce_score": -2.9400949478149414,
+    "lexical_query_coverage": 0.14285714285714285,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-41:fact:obs:0294"
+    ],
+    "path_labels": [
+      "Maria got a puppy named Coco two weeks ago, bringing joy to her life."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-42:q0077",
+    "question": "How has Nate tried to disburse his vegan ice-cream recipes?",
+    "category": 1,
+    "fact_id": "conv-42:fact:obs:0152",
+    "rank": 18,
+    "source_route_rank": 18,
+    "text": "Nate started teaching people how to make dairy-free desserts and finds it fun and rewarding.",
+    "evidence_ids": [
+      "D18:8"
+    ],
+    "novel_raw_turns": [
+      "D18:8"
+    ],
+    "additional_gold": [
+      "D18:8"
+    ],
+    "ce_score": -6.871941566467285,
+    "lexical_query_coverage": 0.14285714285714285,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-42:fact:obs:0136",
+      "conv-42:eventv3:0042",
+      "conv-42:topicv3:0009",
+      "conv-42:eventv3:0046",
+      "conv-42:fact:obs:0152"
+    ],
+    "path_labels": [
+      "Nate made vegan ice cream last Friday and shared it with his vegan diet group.",
+      "Joanna and Nate Discuss Vegan Ice Cream: Joanna showed interest in Nate's vegan ice cream recipe, which he offered to share the next day, and appreciated his support for her ice cream making.",
+      "Joanna and Nate's Creative Bond: Joanna and Nate share a supportive and collaborative relationship, exchanging ideas and recipes, particularly around vegan and dairy-free desserts, while encouraging each other's creative pursuits.",
+      "Nate Shares Dairy-Free Dessert Recipe: Nate enjoys teaching dairy-free dessert making, shares a new recipe with Joanna, and encourages her to surprise her family with it.",
+      "Nate started teaching people how to make dairy-free desserts and finds it fun and rewarding."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-43:q0054",
+    "question": "What other exercises can help John with his basketball performance?",
+    "category": 3,
+    "fact_id": "conv-43:fact:rule_sem:D8:5",
+    "rank": 17,
+    "source_route_rank": 17,
+    "text": "Listening to John's body and giving it enough rest made it easier to push myself during practice but also look after John.",
+    "evidence_ids": [
+      "D8:5"
+    ],
+    "novel_raw_turns": [
+      "D8:5"
+    ],
+    "additional_gold": [
+      "D8:5"
+    ],
+    "ce_score": -1.7116053104400635,
+    "lexical_query_coverage": 0.14285714285714285,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-43:fact:rule_sem:D8:5"
+    ],
+    "path_labels": [
+      "Listening to John's body and giving it enough rest made it easier to push myself during practice but also look after John."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-48:q0178",
+    "question": "How did Jolene feel about her progress in practicing mindfulness and gratitude?",
+    "category": 4,
+    "fact_id": "conv-48:fact:obs:0255",
+    "rank": 18,
+    "source_route_rank": 17,
+    "text": "Jolene is experiencing a new level of joy and happiness.",
+    "evidence_ids": [
+      "D27:9"
+    ],
+    "novel_raw_turns": [
+      "D27:9"
+    ],
+    "additional_gold": [
+      "D27:9"
+    ],
+    "ce_score": 0.6800158023834229,
+    "lexical_query_coverage": 0.14285714285714285,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-48:fact:obs:0255"
+    ],
+    "path_labels": [
+      "Jolene is experiencing a new level of joy and happiness."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-49:q0071",
+    "question": "How long did Evan and his partner date before getting married?",
+    "category": 2,
+    "fact_id": "conv-49:fact:obs:0033",
+    "rank": 13,
+    "source_route_rank": 13,
+    "text": "Evan recently went on a trip to Canada where he met an awesome Canadian woman and feels alive when he's with her.",
+    "evidence_ids": [
+      "D5:1"
+    ],
+    "novel_raw_turns": [
+      "D5:1"
+    ],
+    "additional_gold": [
+      "D5:1"
+    ],
+    "ce_score": -4.602277755737305,
+    "lexical_query_coverage": 0.14285714285714285,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-49:fact:obs:0042",
+      "conv-49:eventv3:0015",
+      "conv-49:topicv3:0002",
+      "conv-49:eventv3:0013",
+      "conv-49:fact:obs:0033"
+    ],
+    "path_labels": [
+      "Evan went on a vacation in Canada with their new significant other where they did activities like hiking and biking.",
+      "Evan's Vacation in Canada: Evan went on a vacation in Canada with their new significant other, engaging in activities like hiking and biking.",
+      "Evan's Personal Growth Journey: Evan's recent experiences highlight a focus on personal growth, health, meaningful relationships, and enjoying nature and literature. These events reflect his evolving priorities and values.",
+      "Evan's Journey of Health and Motivation: Evan, inspired by family, adventure, and a recent trip to Canada, has been prioritizing his health for two years using a progress-tracking tool and a symbol of resilience.",
+      "Evan recently went on a trip to Canada where he met an awesome Canadian woman and feels alive when he's with her."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-41:q0008",
+    "question": "What items des John mention having as a child?",
+    "category": 1,
+    "fact_id": "conv-41:fact:obs:0022",
+    "rank": 3,
+    "source_route_rank": 2,
+    "text": "John used to have a film camera as a kid and took plenty of beach pictures.",
+    "evidence_ids": [
+      "D3:15"
+    ],
+    "novel_raw_turns": [
+      "D3:15"
+    ],
+    "additional_gold": [
+      "D3:15"
+    ],
+    "ce_score": -2.1310644149780273,
+    "lexical_query_coverage": 0.16666666666666666,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-41:eventv3:0008",
+      "conv-41:fact:obs:0022"
+    ],
+    "path_labels": [
+      "John's Service Group Activities: John joined a service-focused online group last week, finding it emotionally rewarding, and has participated in activities like food distribution, toy drives, and brainstorming community support projects.",
+      "John used to have a film camera as a kid and took plenty of beach pictures."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-41:q0029",
+    "question": "What causes does John feel passionate about supporting?",
+    "category": 1,
+    "fact_id": "conv-41:fact:obs:0005",
+    "rank": 17,
+    "source_route_rank": 17,
+    "text": "John's passion in politics revolves around improving education and infrastructure in the community.",
+    "evidence_ids": [
+      "D1:8"
+    ],
+    "novel_raw_turns": [
+      "D1:8"
+    ],
+    "additional_gold": [
+      "D1:8"
+    ],
+    "ce_score": -0.5468013286590576,
+    "lexical_query_coverage": 0.16666666666666666,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-41:fact:obs:0005"
+    ],
+    "path_labels": [
+      "John's passion in politics revolves around improving education and infrastructure in the community."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-41:q0095",
+    "question": "What kind of food did Maria have on her dinner spread iwth her mother?",
+    "category": 4,
+    "fact_id": "conv-41:fact:obs:0128",
+    "rank": 1,
+    "source_route_rank": 1,
+    "text": "Maria enjoys a variety of foods like salads, sandwiches, and homemade desserts.",
+    "evidence_ids": [
+      "D13:18"
+    ],
+    "novel_raw_turns": [
+      "D13:18"
+    ],
+    "additional_gold": [
+      "D13:18"
+    ],
+    "ce_score": 3.1370770931243896,
+    "lexical_query_coverage": 0.16666666666666666,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-41:fact:obs:0133",
+      "conv-41:eventv3:0042",
+      "conv-41:fact:obs:0128"
+    ],
+    "path_labels": [
+      "Maria believes in pushing boundaries for growth and self-exploration.",
+      "Maria's Solo Trip to Spain: Maria took a solo trip to Spain last year, where she tried surfing for the first time and gained a deeper appreciation for life.",
+      "Maria enjoys a variety of foods like salads, sandwiches, and homemade desserts."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-41:q0095",
+    "question": "What kind of food did Maria have on her dinner spread iwth her mother?",
+    "category": 4,
+    "fact_id": "conv-41:fact:obs:0129",
+    "rank": 3,
+    "source_route_rank": 3,
+    "text": "Maria's favorite is the banana split sundae, which she enjoys after a day of volunteering.",
+    "evidence_ids": [
+      "D13:18"
+    ],
+    "novel_raw_turns": [
+      "D13:18"
+    ],
+    "additional_gold": [
+      "D13:18"
+    ],
+    "ce_score": -1.9845877885818481,
+    "lexical_query_coverage": 0.16666666666666666,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-41:fact:obs:0133",
+      "conv-41:eventv3:0042",
+      "conv-41:fact:obs:0129"
+    ],
+    "path_labels": [
+      "Maria believes in pushing boundaries for growth and self-exploration.",
+      "Maria's Solo Trip to Spain: Maria took a solo trip to Spain last year, where she tried surfing for the first time and gained a deeper appreciation for life.",
+      "Maria's favorite is the banana split sundae, which she enjoys after a day of volunteering."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-42:q0079",
+    "question": "How many video game tournaments has Nate participated in?",
+    "category": 1,
+    "fact_id": "conv-42:fact:obs:0240",
+    "rank": 18,
+    "source_route_rank": 18,
+    "text": "Nate won a big Valorant tournament making him the champion.",
+    "evidence_ids": [
+      "D27:1"
+    ],
+    "novel_raw_turns": [
+      "D27:1"
+    ],
+    "additional_gold": [
+      "D27:1"
+    ],
+    "ce_score": -0.12857718765735626,
+    "lexical_query_coverage": 0.16666666666666666,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-42:fact:obs:0208",
+      "conv-42:eventv3:0060",
+      "conv-42:topicv3:0010",
+      "conv-42:eventv3:0068",
+      "conv-42:fact:obs:0240"
+    ],
+    "path_labels": [
+      "Nate practices for video game tournaments.",
+      "Nate Walks and Cares for His Turtles: Nate, feeling stressed from tough tournament competition, took his turtles for a walk today, and they are now relaxing in their tank.",
+      "Nate's Passions and Activities: Nate balances his love for gaming, turtles, and creative hobbies while finding joy and calm in his daily life. His interests span competitive gaming, caring for his turtles, and experimenting with new activities like making coconut ice cream.",
+      "Nate's Gaming Achievements and Support: Nate, a passionate gamer and Valorant tournament champion, helps friends reset high scores at international tournaments while preparing for future competitions and finding joy in his work.",
+      "Nate won a big Valorant tournament making him the champion."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-42:q0084",
+    "question": "What are the skills that Nate has helped others learn?",
+    "category": 1,
+    "fact_id": "conv-42:fact:obs:0152",
+    "rank": 6,
+    "source_route_rank": 5,
+    "text": "Nate started teaching people how to make dairy-free desserts and finds it fun and rewarding.",
+    "evidence_ids": [
+      "D18:8"
+    ],
+    "novel_raw_turns": [
+      "D18:8"
+    ],
+    "additional_gold": [
+      "D18:8"
+    ],
+    "ce_score": 2.126009464263916,
+    "lexical_query_coverage": 0.16666666666666666,
+    "shares_hierarchy_ancestor_with_eu": false,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-42:fact:obs:0182",
+      "conv-42:eventv3:0054",
+      "conv-42:topicv3:0009",
+      "conv-42:eventv3:0046",
+      "conv-42:fact:obs:0152"
+    ],
+    "path_labels": [
+      "Nate recently taught vegan ice cream recipes on his cooking show and learned some new recipes.",
+      "Nate Discusses Vegan Desserts: Nate shared his love for vegan desserts, including coconut milk ice cream and dairy-free chocolate mousse, while expressing interest in Joanna's dairy-free recipes like chocolate cake and blueberry dessert.",
+      "Joanna and Nate's Creative Bond: Joanna and Nate share a supportive and collaborative relationship, exchanging ideas and recipes, particularly around vegan and dairy-free desserts, while encouraging each other's creative pursuits.",
+      "Nate Shares Dairy-Free Dessert Recipe: Nate enjoys teaching dairy-free dessert making, shares a new recipe with Joanna, and encourages her to surprise her family with it.",
+      "Nate started teaching people how to make dairy-free desserts and finds it fun and rewarding."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-43:q0025",
+    "question": "Where was John between August 11 and August 15 2023?",
+    "category": 2,
+    "fact_id": "conv-43:fact:obs:0038",
+    "rank": 3,
+    "source_route_rank": 1,
+    "text": "John recently took a trip to Chicago and found the locals to be friendly.",
+    "evidence_ids": [
+      "D6:3"
+    ],
+    "novel_raw_turns": [
+      "D6:3"
+    ],
+    "additional_gold": [
+      "D6:3"
+    ],
+    "ce_score": -5.02256965637207,
+    "lexical_query_coverage": 0.16666666666666666,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-43:topicv3:0001",
+      "conv-43:eventv3:0014",
+      "conv-43:fact:obs:0038"
+    ],
+    "path_labels": [
+      "John's Basketball and Personal Growth: The events highlight John's basketball career, personal achievements, and passions, including his professional milestones, endorsements, hobbies, and aspirations for personal and community impact.",
+      "John's Life and Basketball Journey: John, who enjoys connecting with people and experiencing cultures, has had a lifelong passion for basketball, starting from childhood NBA games with his dad to earning a scholarship and being drafted by a team, with his lucky basketball shoes symbolizing his journey.",
+      "John recently took a trip to Chicago and found the locals to be friendly."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-43:q0039",
+    "question": "which country has Tim visited most frequently in his travels?",
+    "category": 1,
+    "fact_id": "conv-43:fact:obs:0103",
+    "rank": 13,
+    "source_route_rank": 12,
+    "text": "Tim attended a Harry Potter conference in the UK last week and felt inspired and rejuvenated by the experience.",
+    "evidence_ids": [
+      "D13:1"
+    ],
+    "novel_raw_turns": [
+      "D13:1"
+    ],
+    "additional_gold": [
+      "D13:1"
+    ],
+    "ce_score": -0.9862687587738037,
+    "lexical_query_coverage": 0.16666666666666666,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-43:fact:obs:0064",
+      "conv-43:eventv3:0020",
+      "conv-43:topicv3:0004",
+      "conv-43:eventv3:0040",
+      "conv-43:fact:obs:0103"
+    ],
+    "path_labels": [
+      "Tim loves traveling to new places to experience different kinds of magic.",
+      "Tim's Busy Week with Hobbies: Tim is managing assignments and exams while enjoying fantasy novels and dreaming of magical travels.",
+      "Tim's Interests and Travel Plans: The conversation revolves around Tim's hobbies, inspirations, and travel aspirations, including his love for fantasy novels, Harry Potter, and basketball, as well as his plans to visit NYC and Universal Studios.",
+      "Tim Attends Harry Potter Conference: Tim attended a Harry Potter conference in the UK last week and felt inspired and rejuvenated by the experience.",
+      "Tim attended a Harry Potter conference in the UK last week and felt inspired and rejuvenated by the experience."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-44:q0057",
+    "question": "Has Andrew moved into a new apartment for his dogs?",
+    "category": 1,
+    "fact_id": "conv-44:fact:obs:0046",
+    "rank": 18,
+    "source_route_rank": 16,
+    "text": "Andrew is contacting landlords and checking out neighborhoods to find a pet-friendly place to live.",
+    "evidence_ids": [
+      "D5:5"
+    ],
+    "novel_raw_turns": [
+      "D5:5"
+    ],
+    "additional_gold": [
+      "D5:5"
+    ],
+    "ce_score": 0.3135325312614441,
+    "lexical_query_coverage": 0.16666666666666666,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-44:fact:obs:0046"
+    ],
+    "path_labels": [
+      "Andrew is contacting landlords and checking out neighborhoods to find a pet-friendly place to live."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-48:q0055",
+    "question": "Which pet did Jolene adopt first - Susie or Seraphim?",
+    "category": 2,
+    "fact_id": "conv-48:fact:rule_sem:D2:28",
+    "rank": 19,
+    "source_route_rank": 18,
+    "text": "Even as a child Jolene learned to play on Jolene's own.",
+    "evidence_ids": [
+      "D2:28"
+    ],
+    "novel_raw_turns": [
+      "D2:28"
+    ],
+    "additional_gold": [
+      "D2:28"
+    ],
+    "ce_score": -6.27307653427124,
+    "lexical_query_coverage": 0.16666666666666666,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-48:fact:obs:0010",
+      "conv-48:eventv3:0003",
+      "conv-48:topicv3:0003",
+      "conv-48:eventv3:0007",
+      "conv-48:fact:rule_sem:D2:28"
+    ],
+    "path_labels": [
+      "Jolene has a room in her mother's house where she has many memories.",
+      "Jolene Shares Memories and Pet Story: Jolene reminisced about her late mother, her meaningful pendant, and shared a funny story about her pet snake coiling up next to her while playing video games.",
+      "Jolene's Personal and Professional Journey: Jolene reflects on her personal life, including relationships, hobbies, and memories, while actively pursuing her passion for engineering through projects, sustainable initiatives, and community engagement.",
+      "Jolene Plans Gaming with Partner: Jolene plans to play console games with her partner, appreciating connections with shared interests.",
+      "Even as a child Jolene learned to play on Jolene's own."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-49:q0098",
+    "question": "Why did Evan decide to get the bonsai tree?",
+    "category": 4,
+    "fact_id": "conv-49:fact:obs:0038",
+    "rank": 4,
+    "source_route_rank": 3,
+    "text": "Evan got a symbol that represents strength and resilience to motivate him through tough times.",
+    "evidence_ids": [
+      "D5:17"
+    ],
+    "novel_raw_turns": [
+      "D5:17"
+    ],
+    "additional_gold": [
+      "D5:17"
+    ],
+    "ce_score": -5.899469375610352,
+    "lexical_query_coverage": 0.16666666666666666,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-49:fact:obs:0044",
+      "conv-49:eventv3:0016",
+      "conv-49:topicv3:0002",
+      "conv-49:eventv3:0013",
+      "conv-49:fact:obs:0038"
+    ],
+    "path_labels": [
+      "Evan acknowledges the importance of surrounding oneself with caring people.",
+      "Evan Shares Personal Values: Evan emphasizes progress over perfection and the value of caring relationships.",
+      "Evan's Personal Growth Journey: Evan's recent experiences highlight a focus on personal growth, health, meaningful relationships, and enjoying nature and literature. These events reflect his evolving priorities and values.",
+      "Evan's Journey of Health and Motivation: Evan, inspired by family, adventure, and a recent trip to Canada, has been prioritizing his health for two years using a progress-tracking tool and a symbol of resilience.",
+      "Evan got a symbol that represents strength and resilience to motivate him through tough times."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-50:q0032",
+    "question": "Where was Dave in the last two weeks of August 2023?",
+    "category": 2,
+    "fact_id": "conv-50:fact:obs:0128",
+    "rank": 5,
+    "source_route_rank": 5,
+    "text": "Dave recently came back from San Francisco with insights and knowledge on car modification.",
+    "evidence_ids": [
+      "D17:1"
+    ],
+    "novel_raw_turns": [
+      "D17:1"
+    ],
+    "additional_gold": [
+      "D17:1"
+    ],
+    "ce_score": -3.165560245513916,
+    "lexical_query_coverage": 0.16666666666666666,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-50:fact:obs:0142",
+      "conv-50:eventv3:0041",
+      "conv-50:topicv3:0004",
+      "conv-50:eventv3:0038",
+      "conv-50:fact:obs:0128"
+    ],
+    "path_labels": [
+      "Dave attended a rock concert in Boston recently and enjoyed the atmosphere.",
+      "Dave's Band Jam Session: Dave had a fun jamming session with his band but forgot to record it as they were too immersed.",
+      "Dave's Creative Pursuits: Dave is deeply engaged in creative and fulfilling activities, including car restoration, music, and socializing with friends, which reflect his passions and hobbies.",
+      "Dave's Passion for Car Fixing: Dave recently returned from San Francisco with car modification insights and finds fixing cars rewarding and purposeful, enjoying the impact it has on others.",
+      "Dave recently came back from San Francisco with insights and knowledge on car modification."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-50:q0032",
+    "question": "Where was Dave in the last two weeks of August 2023?",
+    "category": 2,
+    "fact_id": "conv-50:fact:obs:0105",
+    "rank": 6,
+    "source_route_rank": 6,
+    "text": "Dave recently attended a car restoration workshop in San Francisco and found it truly inspiring.",
+    "evidence_ids": [
+      "D14:1"
+    ],
+    "novel_raw_turns": [
+      "D14:1"
+    ],
+    "additional_gold": [
+      "D14:1"
+    ],
+    "ce_score": -3.263474941253662,
+    "lexical_query_coverage": 0.16666666666666666,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-50:fact:obs:0107",
+      "conv-50:eventv3:0030",
+      "conv-50:fact:obs:0105"
+    ],
+    "path_labels": [
+      "Dave aims to have the car fully restored by the end of next month.",
+      "Dave's Car Restoration Journey: Dave, inspired by a recent workshop in San Francisco, is restoring a car with plans to complete it by next month, fulfilling his dream of learning auto engineering and building a custom car.",
+      "Dave recently attended a car restoration workshop in San Francisco and found it truly inspiring."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-26:q0012",
+    "question": "Where did Caroline move from 4 years ago?",
+    "category": 1,
+    "fact_id": "conv-26:fact:obs:0029",
+    "rank": 4,
+    "source_route_rank": 4,
+    "text": "Caroline received a special necklace as a gift from her grandmother in Sweden, symbolizing love, faith, and strength.",
+    "evidence_ids": [
+      "D4:3"
+    ],
+    "novel_raw_turns": [
+      "D4:3"
+    ],
+    "additional_gold": [
+      "D4:3"
+    ],
+    "ce_score": -2.3475842475891113,
+    "lexical_query_coverage": 0.2,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-26:fact:obs:0022",
+      "conv-26:eventv3:0006",
+      "conv-26:fact:obs:0029"
+    ],
+    "path_labels": [
+      "Caroline has known her friends for 4 years, since moving from her home country, and values their love and help, especially after a tough breakup.",
+      "Caroline's Support System and Career Aspirations: Caroline values her supportive friends, family, and mentors, treasures meaningful gifts, and is inspired by an LGBTQ+ counseling workshop to pursue a career in mental health counseling for trans individuals.",
+      "Caroline received a special necklace as a gift from her grandmother in Sweden, symbolizing love, faith, and strength."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-41:q0015",
+    "question": "Would John be considered a patriotic person?",
+    "category": 3,
+    "fact_id": "conv-41:fact:obs:0076",
+    "rank": 18,
+    "source_route_rank": 16,
+    "text": "John is considering volunteering to serve his country.",
+    "evidence_ids": [
+      "D8:18"
+    ],
+    "novel_raw_turns": [
+      "D8:18"
+    ],
+    "additional_gold": [
+      "D8:18"
+    ],
+    "ce_score": -3.9387454986572266,
+    "lexical_query_coverage": 0.2,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-41:fact:obs:0076"
+    ],
+    "path_labels": [
+      "John is considering volunteering to serve his country."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-41:q0065",
+    "question": "What job might Maria pursue in the future?",
+    "category": 3,
+    "fact_id": "conv-41:fact:obs:0270",
+    "rank": 15,
+    "source_route_rank": 13,
+    "text": "Maria finds volunteering at the homeless shelter really fulfilling and impactful.",
+    "evidence_ids": [
+      "D27:4"
+    ],
+    "novel_raw_turns": [
+      "D27:4"
+    ],
+    "additional_gold": [
+      "D27:4"
+    ],
+    "ce_score": 0.4432864487171173,
+    "lexical_query_coverage": 0.2,
+    "shares_hierarchy_ancestor_with_eu": false,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-41:fact:obs:0279",
+      "conv-41:eventv3:0084",
+      "conv-41:topicv3:0017",
+      "conv-41:eventv3:0080",
+      "conv-41:fact:obs:0270"
+    ],
+    "path_labels": [
+      "Maria engaged in community work with friends from church yesterday.",
+      "Maria's Community Engagement Activities: Maria participated in community work with friends from church, supported John during tough times, and expressed admiration for his charity efforts, emphasizing shared values of kindness and community support.",
+      "Maria's Acts of Kindness: Maria's activities reflect her dedication to community service, fostering connections, and finding joy in both volunteering and caring for her pets.",
+      "Maria's Volunteer Work at Shelter: Maria has been volunteering at a homeless shelter for a year, finding it fulfilling and inspiring John, with residents like Cindy expressing gratitude.",
+      "Maria finds volunteering at the homeless shelter really fulfilling and impactful."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-41:q0125",
+    "question": "What kind of activities did Maria do at the picnic with her church friends?",
+    "category": 4,
+    "fact_id": "conv-41:fact:D24:8",
+    "rank": 8,
+    "source_route_rank": 7,
+    "text": "Maria said: Some fun ones like charades and a scavenger hunt. We all had a good laugh!",
+    "evidence_ids": [
+      "D24:8"
+    ],
+    "novel_raw_turns": [
+      "D24:8"
+    ],
+    "additional_gold": [
+      "D24:8"
+    ],
+    "ce_score": 0.604077935218811,
+    "lexical_query_coverage": 0.2,
+    "shares_hierarchy_ancestor_with_eu": false,
+    "has_hierarchy_parent": false,
+    "path_node_ids": [
+      "conv-41:fact:D24:8"
+    ],
+    "path_labels": [
+      "Maria said: Some fun ones like charades and a scavenger hunt. We all had a good laugh!"
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-43:q0004",
+    "question": "Would Tim enjoy reading books by C. S. Lewis or John Greene?",
+    "category": 3,
+    "fact_id": "conv-43:fact:D1:14",
+    "rank": 18,
+    "source_route_rank": 13,
+    "text": "Tim said: It's been going well! Last week I talked to my friend who is a fan of Harry Potter and we're figuring out ideas, so it's been great to get lost in that magical world!",
+    "evidence_ids": [
+      "D1:14"
+    ],
+    "novel_raw_turns": [
+      "D1:14"
+    ],
+    "additional_gold": [
+      "D1:14"
+    ],
+    "ce_score": -8.552359580993652,
+    "lexical_query_coverage": 0.2,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-43:fact:D1:14"
+    ],
+    "path_labels": [
+      "Tim said: It's been going well! Last week I talked to my friend who is a fan of Harry Potter and we're figuring out ideas, so it's been great to get lost in that magical world!"
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-43:q0018",
+    "question": "How many games has John mentioned winning?",
+    "category": 1,
+    "fact_id": "conv-43:fact:D3:3",
+    "rank": 19,
+    "source_route_rank": 18,
+    "text": "John said: Thank you! Scoring those points was an incredible experience. The atmosphere was electric, and my teammates and I were thrilled. We pulled off a tough win!",
+    "evidence_ids": [
+      "D3:3"
+    ],
+    "novel_raw_turns": [
+      "D3:3"
+    ],
+    "additional_gold": [
+      "D3:3"
+    ],
+    "ce_score": -3.5642800331115723,
+    "lexical_query_coverage": 0.2,
+    "shares_hierarchy_ancestor_with_eu": false,
+    "has_hierarchy_parent": false,
+    "path_node_ids": [
+      "conv-43:fact:D3:3"
+    ],
+    "path_labels": [
+      "John said: Thank you! Scoring those points was an incredible experience. The atmosphere was electric, and my teammates and I were thrilled. We pulled off a tough win!"
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-43:q0071",
+    "question": "Which Star Wars-related locations would Tim enjoy during his visit to Ireland?",
+    "category": 3,
+    "fact_id": "conv-43:fact:obs:0006",
+    "rank": 2,
+    "source_route_rank": 2,
+    "text": "Tim went to a Harry Potter-related place in London a few years ago and went on a tour.",
+    "evidence_ids": [
+      "D1:18"
+    ],
+    "novel_raw_turns": [
+      "D1:18"
+    ],
+    "additional_gold": [
+      "D1:18"
+    ],
+    "ce_score": 0.45107579231262207,
+    "lexical_query_coverage": 0.2,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-43:fact:obs:0006"
+    ],
+    "path_labels": [
+      "Tim went to a Harry Potter-related place in London a few years ago and went on a tour."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-49:q0008",
+    "question": "What new hobbies did Sam consider trying?",
+    "category": 1,
+    "fact_id": "conv-49:fact:rule_sem:D13:8",
+    "rank": 17,
+    "source_route_rank": 17,
+    "text": "Sam stated that haven't tried it yet, but it looks like a fun way to get in some exercise and enjoy nature.",
+    "evidence_ids": [
+      "D13:8"
+    ],
+    "novel_raw_turns": [
+      "D13:8"
+    ],
+    "additional_gold": [
+      "D13:8"
+    ],
+    "ce_score": -2.676300525665283,
+    "lexical_query_coverage": 0.2,
+    "shares_hierarchy_ancestor_with_eu": false,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-49:fact:obs:0229",
+      "conv-49:eventv3:0073",
+      "conv-49:topicv3:0013",
+      "conv-49:eventv3:0082",
+      "conv-49:fact:rule_sem:D13:8"
+    ],
+    "path_labels": [
+      "Sam expressed hope for positive changes with a healthier diet and yoga.",
+      "Sam Plans for Health Improvement: Sam created a meal plan and workout schedule, planned to consult a doctor for advice on diet and exercises, and expressed hope for positive changes through a healthier lifestyle despite dealing with health challenges.",
+      "Sam's Health Journey: Sam is actively working towards improving their health through structured plans, professional consultations, and exploring enjoyable activities.",
+      "Sam Comments on Outdoor Activity: Sam mentioned they have not tried it yet but think it looks like a fun way to exercise and enjoy nature.",
+      "Sam stated that haven't tried it yet, but it looks like a fun way to get in some exercise and enjoy nature."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-50:q0131",
+    "question": "How does Calvin balance his job and personal life?",
+    "category": 4,
+    "fact_id": "conv-50:fact:obs:0208",
+    "rank": 6,
+    "source_route_rank": 6,
+    "text": "Calvin finds joy in what he does even though it can be overwhelming due to the demands.",
+    "evidence_ids": [
+      "D25:4"
+    ],
+    "novel_raw_turns": [
+      "D25:4"
+    ],
+    "additional_gold": [
+      "D25:4"
+    ],
+    "ce_score": 0.001620689406991005,
+    "lexical_query_coverage": 0.2,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-50:fact:obs:0209",
+      "conv-50:eventv3:0055",
+      "conv-50:fact:obs:0208"
+    ],
+    "path_labels": [
+      "Calvin finds having a strong support system including friends and team helpful in managing everything.",
+      "Calvin Discusses Tour and Music Inspiration: Calvin shared his tour experience with Frank Ocean, his connection with the crowd, the challenges of fame, and how listening to others' struggles inspires his music, while Dave reflected on fame's impact on relationships.",
+      "Calvin finds joy in what he does even though it can be overwhelming due to the demands."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-50:q0140",
+    "question": "What realization did the nightclub experience bring to Calvin?",
+    "category": 4,
+    "fact_id": "conv-50:fact:obs:0216",
+    "rank": 13,
+    "source_route_rank": 13,
+    "text": "Calvin is passionate about music and performing, finding it like his purpose and passion.",
+    "evidence_ids": [
+      "D26:9"
+    ],
+    "novel_raw_turns": [
+      "D26:9"
+    ],
+    "additional_gold": [
+      "D26:9"
+    ],
+    "ce_score": -3.675302028656006,
+    "lexical_query_coverage": 0.2,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-50:fact:obs:0211",
+      "conv-50:eventv3:0058",
+      "conv-50:fact:obs:0216"
+    ],
+    "path_labels": [
+      "Calvin expresses himself through music, viewing it as a form of therapy and self-expression.",
+      "Calvin and Dave's Creative Collaboration: Calvin and Dave share a mutual passion for music and inspire each other through support and creativity.",
+      "Calvin is passionate about music and performing, finding it like his purpose and passion."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-26:q0015",
+    "question": "Would Caroline still want to pursue counseling as a career if she hadn't received support growing up?",
+    "category": 3,
+    "fact_id": "conv-26:fact:obs:0020",
+    "rank": 16,
+    "source_route_rank": 16,
+    "text": "Caroline aims to pass on the love and support she has received by sharing stories to build a strong and supportive community of hope.",
+    "evidence_ids": [
+      "D3:5"
+    ],
+    "novel_raw_turns": [
+      "D3:5"
+    ],
+    "additional_gold": [
+      "D3:5"
+    ],
+    "ce_score": -1.6922839879989624,
+    "lexical_query_coverage": 0.21428571428571427,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-26:fact:obs:0037",
+      "conv-26:eventv3:0009",
+      "conv-26:topicv3:0001",
+      "conv-26:eventv3:0005",
+      "conv-26:fact:obs:0020"
+    ],
+    "path_labels": [
+      "Caroline is considering a career in counseling and mental health to help others.",
+      "Caroline's Career and Creative Pursuits: Caroline is motivated by her personal journey to pursue a career in counseling and mental health while also learning piano for creativity.",
+      "Caroline's LGBTQ Advocacy and Growth: Caroline's journey highlights her personal growth, advocacy for the LGBTQ community, and aspirations to support others through a career in mental health counseling. She is inspired by her experiences, supportive relationships, and a commitment to fostering understanding and compassion.",
+      "Caroline Shares Transgender Journey: Caroline gave a talk at a school event about her transgender journey, emphasizing the importance of sharing experiences, promoting understanding, and building a supportive LGBTQ community.",
+      "Caroline aims to pass on the love and support she has received by sharing stories to build a strong and supportive community of hope."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-42:q0148",
+    "question": "What type of ice cream does Joanna mention that Nate makes and is delicious?",
+    "category": 4,
+    "fact_id": "conv-42:fact:D18:9",
+    "rank": 4,
+    "source_route_rank": 4,
+    "text": "Joanna said: Yum, Nate! I love it when you make coconut milk icecream, it's so good!",
+    "evidence_ids": [
+      "D18:9"
+    ],
+    "novel_raw_turns": [
+      "D18:9"
+    ],
+    "additional_gold": [
+      "D18:9"
+    ],
+    "ce_score": 4.681751728057861,
+    "lexical_query_coverage": 0.2222222222222222,
+    "shares_hierarchy_ancestor_with_eu": false,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-42:fact:D18:9"
+    ],
+    "path_labels": [
+      "Joanna said: Yum, Nate! I love it when you make coconut milk icecream, it's so good!"
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-49:q0012",
+    "question": "What health issue did Sam face that motivated him to change his lifestyle?",
+    "category": 1,
+    "fact_id": "conv-49:fact:obs:0134",
+    "rank": 6,
+    "source_route_rank": 5,
+    "text": "Sam is trying to keep up with a new health routine, pushed by family and feeling pressured.",
+    "evidence_ids": [
+      "D15:1"
+    ],
+    "novel_raw_turns": [
+      "D15:1"
+    ],
+    "additional_gold": [
+      "D15:1"
+    ],
+    "ce_score": 1.8207727670669556,
+    "lexical_query_coverage": 0.2222222222222222,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-49:fact:obs:0134"
+    ],
+    "path_labels": [
+      "Sam is trying to keep up with a new health routine, pushed by family and feeling pressured."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-41:q0058",
+    "question": "What causes has John done events for?",
+    "category": 1,
+    "fact_id": "conv-41:fact:obs:0057",
+    "rank": 14,
+    "source_route_rank": 14,
+    "text": "John initiated a community food drive due to the impact of unemployment in the community.",
+    "evidence_ids": [
+      "D6:12"
+    ],
+    "novel_raw_turns": [
+      "D6:12"
+    ],
+    "additional_gold": [
+      "D6:12"
+    ],
+    "ce_score": -1.9802478551864624,
+    "lexical_query_coverage": 0.25,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-41:fact:obs:0057"
+    ],
+    "path_labels": [
+      "John initiated a community food drive due to the impact of unemployment in the community."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-42:q0076",
+    "question": "What are Nate's favorite desserts?",
+    "category": 1,
+    "fact_id": "conv-42:fact:rule_sem:D3:4",
+    "rank": 19,
+    "source_route_rank": 19,
+    "text": "Not much has changed for Nate, but Nate just discovered that Nate can make coconut milk icecream and gave it a try.",
+    "evidence_ids": [
+      "D3:4"
+    ],
+    "novel_raw_turns": [
+      "D3:4"
+    ],
+    "additional_gold": [
+      "D3:4"
+    ],
+    "ce_score": 0.07790841162204742,
+    "lexical_query_coverage": 0.25,
+    "shares_hierarchy_ancestor_with_eu": false,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-42:fact:obs:0058",
+      "conv-42:eventv3:0017",
+      "conv-42:topicv3:0001",
+      "conv-42:eventv3:0005",
+      "conv-42:fact:rule_sem:D3:4"
+    ],
+    "path_labels": [
+      "Nate enjoys engaging in hobbies that revolve around spending time with his pets.",
+      "Nate's Bond with His Turtles: Nate finds peace and joy in spending time with his pet turtles, which he loves watching and engaging with as part of his hobbies.",
+      "Nate's Personal Growth and Interests: Nate's journey highlights his achievements in gaming, his connection with pets, and his exploration of creativity and self-expression, showcasing his multifaceted personality and evolving interests.",
+      "Nate Discusses Stress Relief and Turtles: Nate shared how his turtles have helped him stay calm during stressful times and recommended having similar companions for stress relief.",
+      "Not much has changed for Nate, but Nate just discovered that Nate can make coconut milk icecream and gave it a try."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-43:q0036",
+    "question": "What outdoor activities does John enjoy?",
+    "category": 1,
+    "fact_id": "conv-43:fact:obs:0098",
+    "rank": 6,
+    "source_route_rank": 6,
+    "text": "John is a member of a hiking club, even though he just joined.",
+    "evidence_ids": [
+      "D12:6"
+    ],
+    "novel_raw_turns": [
+      "D12:6"
+    ],
+    "additional_gold": [
+      "D12:6"
+    ],
+    "ce_score": 2.2356185913085938,
+    "lexical_query_coverage": 0.25,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-43:fact:obs:0098"
+    ],
+    "path_labels": [
+      "John is a member of a hiking club, even though he just joined."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-43:q0166",
+    "question": "What book did Tim get in Italy that inspired him to cook?",
+    "category": 4,
+    "fact_id": "conv-43:fact:D27:4",
+    "rank": 1,
+    "source_route_rank": 1,
+    "text": "John said: Italy was awesome! Everything from the food to the history and architecture was amazing. I even got this awesome book while I was there and it's been giving me some cooking inspiration.",
+    "evidence_ids": [
+      "D27:4"
+    ],
+    "novel_raw_turns": [
+      "D27:4"
+    ],
+    "additional_gold": [
+      "D27:4"
+    ],
+    "ce_score": 0.17148305475711823,
+    "lexical_query_coverage": 0.25,
+    "shares_hierarchy_ancestor_with_eu": false,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-43:fact:D27:4"
+    ],
+    "path_labels": [
+      "John said: Italy was awesome! Everything from the food to the history and architecture was amazing. I even got this awesome book while I was there and it's been giving me some cooking inspiration."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-44:q0088",
+    "question": "How long did the trail hike that Audrey went on with her pups take?",
+    "category": 4,
+    "fact_id": "conv-44:fact:D14:8",
+    "rank": 1,
+    "source_route_rank": 1,
+    "text": "Audrey said: The hike took us two hours and it was stunning! We saw lots of amazing views and it was great to explore nature.",
+    "evidence_ids": [
+      "D14:8"
+    ],
+    "novel_raw_turns": [
+      "D14:8"
+    ],
+    "additional_gold": [
+      "D14:8"
+    ],
+    "ce_score": 5.234561920166016,
+    "lexical_query_coverage": 0.25,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-44:fact:D14:8"
+    ],
+    "path_labels": [
+      "Audrey said: The hike took us two hours and it was stunning! We saw lots of amazing views and it was great to explore nature."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-47:q0018",
+    "question": "What is the board game where you have to find the imposter that John mentions to James?",
+    "category": 3,
+    "fact_id": "conv-47:fact:obs:0066",
+    "rank": 1,
+    "source_route_rank": 1,
+    "text": "John has been playing Among Us, a game where players figure out who the impostors are.",
+    "evidence_ids": [
+      "D8:36"
+    ],
+    "novel_raw_turns": [
+      "D8:36"
+    ],
+    "additional_gold": [
+      "D8:36"
+    ],
+    "ce_score": 1.984873652458191,
+    "lexical_query_coverage": 0.25,
+    "shares_hierarchy_ancestor_with_eu": false,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-47:eventv3:0027",
+      "conv-47:fact:obs:0066"
+    ],
+    "path_labels": [
+      "John's gaming experiences and reflections: John has been playing AC Valhalla and Among Us, reflecting on the challenges and excitement of gaming, including a recent session with friends.",
+      "John has been playing Among Us, a game where players figure out who the impostors are."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-49:q0023",
+    "question": "When Evan did meet his future wife?",
+    "category": 2,
+    "fact_id": "conv-49:fact:obs:0033",
+    "rank": 1,
+    "source_route_rank": 1,
+    "text": "Evan recently went on a trip to Canada where he met an awesome Canadian woman and feels alive when he's with her.",
+    "evidence_ids": [
+      "D5:1"
+    ],
+    "novel_raw_turns": [
+      "D5:1"
+    ],
+    "additional_gold": [
+      "D5:1"
+    ],
+    "ce_score": 1.7558541297912598,
+    "lexical_query_coverage": 0.25,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-49:fact:obs:0037",
+      "conv-49:eventv3:0013",
+      "conv-49:fact:obs:0033"
+    ],
+    "path_labels": [
+      "Evan is motivated by a thirst for adventure and interesting hikes.",
+      "Evan's Journey of Health and Motivation: Evan, inspired by family, adventure, and a recent trip to Canada, has been prioritizing his health for two years using a progress-tracking tool and a symbol of resilience.",
+      "Evan recently went on a trip to Canada where he met an awesome Canadian woman and feels alive when he's with her."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-50:q0047",
+    "question": "What is Dave's favorite activity?",
+    "category": 1,
+    "fact_id": "conv-50:fact:obs:0143",
+    "rank": 14,
+    "source_route_rank": 13,
+    "text": "Dave is restoring a vintage car as a hobby.",
+    "evidence_ids": [
+      "D19:7"
+    ],
+    "novel_raw_turns": [
+      "D19:7"
+    ],
+    "additional_gold": [
+      "D19:7"
+    ],
+    "ce_score": -0.6486705541610718,
+    "lexical_query_coverage": 0.25,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-50:fact:obs:0144",
+      "conv-50:eventv3:0042",
+      "conv-50:fact:obs:0143"
+    ],
+    "path_labels": [
+      "Dave finds it satisfying to see his hard work pay off in restoring the car.",
+      "Dave Restores Vintage Mustang: Dave is restoring a vintage Mustang as a hobby, finding satisfaction in overcoming challenges like engine troubles and seeing his hard work pay off.",
+      "Dave is restoring a vintage car as a hobby."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-50:q0054",
+    "question": "Who supports Calvin in tough times?",
+    "category": 1,
+    "fact_id": "conv-50:fact:obs:0209",
+    "rank": 3,
+    "source_route_rank": 3,
+    "text": "Calvin finds having a strong support system including friends and team helpful in managing everything.",
+    "evidence_ids": [
+      "D25:6"
+    ],
+    "novel_raw_turns": [
+      "D25:6"
+    ],
+    "additional_gold": [
+      "D25:6"
+    ],
+    "ce_score": 3.0355772972106934,
+    "lexical_query_coverage": 0.25,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-50:fact:obs:0209"
+    ],
+    "path_labels": [
+      "Calvin finds having a strong support system including friends and team helpful in managing everything."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-50:q0054",
+    "question": "Who supports Calvin in tough times?",
+    "category": 1,
+    "fact_id": "conv-50:fact:D25:6",
+    "rank": 12,
+    "source_route_rank": 12,
+    "text": "Calvin said: Yeah, having a strong support system is really helpful. My friends and team keep me on track.",
+    "evidence_ids": [
+      "D25:6"
+    ],
+    "novel_raw_turns": [
+      "D25:6"
+    ],
+    "additional_gold": [
+      "D25:6"
+    ],
+    "ce_score": 0.5668383836746216,
+    "lexical_query_coverage": 0.25,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-50:fact:D25:6"
+    ],
+    "path_labels": [
+      "Calvin said: Yeah, having a strong support system is really helpful. My friends and team keep me on track."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-50:q0054",
+    "question": "Who supports Calvin in tough times?",
+    "category": 1,
+    "fact_id": "conv-50:fact:rule_sem:D29:7",
+    "rank": 19,
+    "source_route_rank": 19,
+    "text": "Having supportive people is key for Calvin to grow as an artist.",
+    "evidence_ids": [
+      "D29:7"
+    ],
+    "novel_raw_turns": [
+      "D29:7"
+    ],
+    "additional_gold": [
+      "D29:7"
+    ],
+    "ce_score": -3.240157127380371,
+    "lexical_query_coverage": 0.25,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-50:fact:obs:0209",
+      "conv-50:eventv3:0055",
+      "conv-50:topicv3:0008",
+      "conv-50:eventv3:0063",
+      "conv-50:fact:rule_sem:D29:7"
+    ],
+    "path_labels": [
+      "Calvin finds having a strong support system including friends and team helpful in managing everything.",
+      "Calvin Discusses Tour and Music Inspiration: Calvin shared his tour experience with Frank Ocean, his connection with the crowd, the challenges of fame, and how listening to others' struggles inspires his music, while Dave reflected on fame's impact on relationships.",
+      "Calvin's Musical Journey: Calvin's experiences highlight his evolving musical journey, from touring with Frank Ocean and performing in Boston to fostering creativity, supporting young musicians, and celebrating his artistic milestones with friends and family.",
+      "Dave and Calvin Discuss Artistic Support: Dave appreciates Calvin's support for young musicians and encourages him to keep exploring new ideas, while Calvin acknowledges the importance of supportive people for artistic growth.",
+      "Having supportive people is key for Calvin to grow as an artist."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-50:q0057",
+    "question": "Which cities did Dave travel to in 2023?",
+    "category": 1,
+    "fact_id": "conv-50:fact:obs:0218",
+    "rank": 5,
+    "source_route_rank": 4,
+    "text": "Dave recently attended a conference in Detroit and learned a lot from it.",
+    "evidence_ids": [
+      "D26:2"
+    ],
+    "novel_raw_turns": [
+      "D26:2"
+    ],
+    "additional_gold": [
+      "D26:2"
+    ],
+    "ce_score": -1.195449709892273,
+    "lexical_query_coverage": 0.25,
+    "shares_hierarchy_ancestor_with_eu": false,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-50:fact:obs:0218"
+    ],
+    "path_labels": [
+      "Dave recently attended a conference in Detroit and learned a lot from it."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-43:q0054",
+    "question": "What other exercises can help John with his basketball performance?",
+    "category": 3,
+    "fact_id": "conv-43:fact:D8:5",
+    "rank": 2,
+    "source_route_rank": 2,
+    "text": "John said: Thanks! Took some trial and error but I figured out a schedule with both basketball stuff and strength training to balance it out. Listening to my body and giving it enough rest made it easier to push myself during practice but also look after me. Here's my workout plan. It helps a lot with staying on track.",
+    "evidence_ids": [
+      "D8:5"
+    ],
+    "novel_raw_turns": [
+      "D8:5"
+    ],
+    "additional_gold": [
+      "D8:5"
+    ],
+    "ce_score": 3.650003433227539,
+    "lexical_query_coverage": 0.2857142857142857,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-43:fact:D8:5"
+    ],
+    "path_labels": [
+      "John said: Thanks! Took some trial and error but I figured out a schedule with both basketball stuff and strength training to balance it out. Listening to my body and giving it enough rest made it easier to push myself during practice but also look after me. Here's my workout plan. It helps a lot with staying on track."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-44:q0089",
+    "question": "What advice did Audrey give to Andrew regarding grooming Toby?",
+    "category": 4,
+    "fact_id": "conv-44:fact:rule_sem:D16:8",
+    "rank": 20,
+    "source_route_rank": 19,
+    "text": "Audrey stated that grooming slowly and gently, paying attention to sensitive areas like ears and paws.",
+    "evidence_ids": [
+      "D16:8"
+    ],
+    "novel_raw_turns": [
+      "D16:8"
+    ],
+    "additional_gold": [
+      "D16:8"
+    ],
+    "ce_score": 0.47123509645462036,
+    "lexical_query_coverage": 0.2857142857142857,
+    "shares_hierarchy_ancestor_with_eu": false,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-44:fact:rule_sem:D16:8"
+    ],
+    "path_labels": [
+      "Audrey stated that grooming slowly and gently, paying attention to sensitive areas like ears and paws."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-49:q0021",
+    "question": "In light of the health and dietary changes discussed, what would be an appropriate gift for both Evan and Sam to encourage their healthy lifestyles?",
+    "category": 3,
+    "fact_id": "conv-49:fact:D5:9",
+    "rank": 17,
+    "source_route_rank": 15,
+    "text": "Evan said: Thanks Sam! My family motivates me to stay healthy. Well, it helps a lot with my health goals. It tracks my progress really well and serves as a constant reminder to keep going.",
+    "evidence_ids": [
+      "D5:9"
+    ],
+    "novel_raw_turns": [
+      "D5:9"
+    ],
+    "additional_gold": [
+      "D5:9"
+    ],
+    "ce_score": 0.6584966778755188,
+    "lexical_query_coverage": 0.2857142857142857,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-49:fact:D5:9"
+    ],
+    "path_labels": [
+      "Evan said: Thanks Sam! My family motivates me to stay healthy. Well, it helps a lot with my health goals. It tracks my progress really well and serves as a constant reminder to keep going."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-43:q0071",
+    "question": "Which Star Wars-related locations would Tim enjoy during his visit to Ireland?",
+    "category": 3,
+    "fact_id": "conv-43:fact:obs:0241",
+    "rank": 17,
+    "source_route_rank": 17,
+    "text": "Tim's favorite fantasy film is Star Wars as it never gets old.",
+    "evidence_ids": [
+      "D27:21"
+    ],
+    "novel_raw_turns": [
+      "D27:21"
+    ],
+    "additional_gold": [
+      "D27:21"
+    ],
+    "ce_score": -3.8314785957336426,
+    "lexical_query_coverage": 0.3,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-43:fact:obs:0233",
+      "conv-43:eventv3:0080",
+      "conv-43:fact:obs:0241"
+    ],
+    "path_labels": [
+      "Tim is planning his next adventure by reading stories from travelers around the world.",
+      "Tim's Fantasy Adventure Planning: Tim, a fan of fantasy books and films, is planning his next adventure by reading traveler stories and is excited to watch the new fantasy TV series \"The Wheel of Time.\"",
+      "Tim's favorite fantasy film is Star Wars as it never gets old."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-42:q0083",
+    "question": "What recipes has Nate made?",
+    "category": 1,
+    "fact_id": "conv-42:fact:rule_sem:D3:4",
+    "rank": 13,
+    "source_route_rank": 13,
+    "text": "Not much has changed for Nate, but Nate just discovered that Nate can make coconut milk icecream and gave it a try.",
+    "evidence_ids": [
+      "D3:4"
+    ],
+    "novel_raw_turns": [
+      "D3:4"
+    ],
+    "additional_gold": [
+      "D3:4"
+    ],
+    "ce_score": 5.601202011108398,
+    "lexical_query_coverage": 0.3333333333333333,
+    "shares_hierarchy_ancestor_with_eu": false,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-42:fact:rule_sem:D2:10",
+      "conv-42:eventv3:0005",
+      "conv-42:fact:rule_sem:D3:4"
+    ],
+    "path_labels": [
+      "Nate like having some of these little ones around to keep Nate calm when things are super important and Nate is nervous.",
+      "Nate Discusses Stress Relief and Turtles: Nate shared how his turtles have helped him stay calm during stressful times and recommended having similar companions for stress relief.",
+      "Not much has changed for Nate, but Nate just discovered that Nate can make coconut milk icecream and gave it a try."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-43:q0003",
+    "question": "What items does John collect?",
+    "category": 1,
+    "fact_id": "conv-43:fact:rule_sem:D1:15",
+    "rank": 1,
+    "source_route_rank": 1,
+    "text": "John love talking to people about John's sneaker collection.",
+    "evidence_ids": [
+      "D1:15"
+    ],
+    "novel_raw_turns": [
+      "D1:15"
+    ],
+    "additional_gold": [
+      "D1:15"
+    ],
+    "ce_score": 4.428732872009277,
+    "lexical_query_coverage": 0.3333333333333333,
+    "shares_hierarchy_ancestor_with_eu": false,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-43:fact:rule_sem:D1:15"
+    ],
+    "path_labels": [
+      "John love talking to people about John's sneaker collection."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-43:q0005",
+    "question": "What books has Tim read?",
+    "category": 1,
+    "fact_id": "conv-43:fact:obs:0186",
+    "rank": 19,
+    "source_route_rank": 19,
+    "text": "Tim recently finished reading 'A Dance with Dragons' and highly recommends it.",
+    "evidence_ids": [
+      "D22:13"
+    ],
+    "novel_raw_turns": [
+      "D22:13"
+    ],
+    "additional_gold": [
+      "D22:13"
+    ],
+    "ce_score": 5.611258506774902,
+    "lexical_query_coverage": 0.3333333333333333,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-43:fact:obs:0159",
+      "conv-43:eventv3:0058",
+      "conv-43:topicv3:0013",
+      "conv-43:eventv3:0067",
+      "conv-43:fact:obs:0186"
+    ],
+    "path_labels": [
+      "Tim enjoys fantasy books like Harry Potter and Game of Thrones.",
+      "Tim's Creative and Personal Growth: Tim faced challenges with writing and exams but stayed motivated through reading, resilience, and support from John.",
+      "Personal Growth and Shared Interests: Tim and John explore personal growth, shared passions, and mutual interests, including literature, sports, and creative pursuits, while reflecting on their experiences and aspirations.",
+      "Tim Discusses Recent Book Reads: Tim shared his enthusiasm for a series about friendship and loyalty and recommended 'A Dance with Dragons' after finishing it.",
+      "Tim recently finished reading 'A Dance with Dragons' and highly recommends it."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-43:q0008",
+    "question": "Which geographical locations has Tim been to?",
+    "category": 1,
+    "fact_id": "conv-43:fact:obs:0006",
+    "rank": 2,
+    "source_route_rank": 2,
+    "text": "Tim went to a Harry Potter-related place in London a few years ago and went on a tour.",
+    "evidence_ids": [
+      "D1:18"
+    ],
+    "novel_raw_turns": [
+      "D1:18"
+    ],
+    "additional_gold": [
+      "D1:18"
+    ],
+    "ce_score": 2.0938234329223633,
+    "lexical_query_coverage": 0.3333333333333333,
+    "shares_hierarchy_ancestor_with_eu": false,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-43:fact:rule_sem:D3:6",
+      "conv-43:eventv3:0003",
+      "conv-43:topicv3:0002",
+      "conv-43:eventv3:0002",
+      "conv-43:fact:obs:0006"
+    ],
+    "path_labels": [
+      "Tim had an incredible time meeting with that fellow fan.",
+      "Tim's Harry Potter Fan Interaction: Tim had an incredible time meeting a Harry Potter fan in California and enjoyed discussing related interests.",
+      "Tim's Passion for Fantasy Literature: Tim is deeply engaged in the world of fantasy literature, particularly Harry Potter, through creative projects, writing, fan interactions, and personal hobbies like piano and book recommendations.",
+      "Tim's Harry Potter Fan Project: Tim is working on a Harry Potter fan project, discussing ideas with a friend, and drawing inspiration from his book collection, memorabilia, and past experiences.",
+      "Tim went to a Harry Potter-related place in London a few years ago and went on a tour."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-43:q0008",
+    "question": "Which geographical locations has Tim been to?",
+    "category": 1,
+    "fact_id": "conv-43:fact:obs:0022",
+    "rank": 19,
+    "source_route_rank": 18,
+    "text": "Tim had a nice chat with a Harry Potter fan in California last week.",
+    "evidence_ids": [
+      "D3:2"
+    ],
+    "novel_raw_turns": [
+      "D3:2"
+    ],
+    "additional_gold": [
+      "D3:2"
+    ],
+    "ce_score": -3.158470630645752,
+    "lexical_query_coverage": 0.3333333333333333,
+    "shares_hierarchy_ancestor_with_eu": false,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-43:fact:rule_sem:D3:6",
+      "conv-43:eventv3:0003",
+      "conv-43:fact:obs:0022"
+    ],
+    "path_labels": [
+      "Tim had an incredible time meeting with that fellow fan.",
+      "Tim's Harry Potter Fan Interaction: Tim had an incredible time meeting a Harry Potter fan in California and enjoyed discussing related interests.",
+      "Tim had a nice chat with a Harry Potter fan in California last week."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-43:q0062",
+    "question": "What books has John read?",
+    "category": 1,
+    "fact_id": "conv-43:fact:obs:0143",
+    "rank": 15,
+    "source_route_rank": 14,
+    "text": "John recently finished an amazing fantasy series and loves getting lost in fantasy worlds.",
+    "evidence_ids": [
+      "D17:9"
+    ],
+    "novel_raw_turns": [
+      "D17:9"
+    ],
+    "additional_gold": [
+      "D17:9"
+    ],
+    "ce_score": -0.6169860363006592,
+    "lexical_query_coverage": 0.3333333333333333,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-43:fact:obs:0162",
+      "conv-43:eventv3:0059",
+      "conv-43:topicv3:0012",
+      "conv-43:eventv3:0052",
+      "conv-43:fact:obs:0143"
+    ],
+    "path_labels": [
+      "John values personal development and mindset books to know himself better.",
+      "John Reflects on Personal Growth and Challenges: John values personal development books, recently reread 'The Alchemist' for inspiration, and shared thoughts on handling life's difficulties and finding motivation.",
+      "John's Personal Growth Journey: John's experiences reflect his focus on self-improvement, resilience, and finding balance through travel, hobbies, fitness, and professional achievements.",
+      "John Enjoys Fantasy Worlds: John recently finished a fantasy series and enjoys escaping reality through the show 'That'.",
+      "John recently finished an amazing fantasy series and loves getting lost in fantasy worlds."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-43:q0062",
+    "question": "What books has John read?",
+    "category": 1,
+    "fact_id": "conv-43:fact:obs:0163",
+    "rank": 16,
+    "source_route_rank": 15,
+    "text": "John recently reread 'The Alchemist' and found it inspiring, motivating him to keep chasing his dreams and trust the process.",
+    "evidence_ids": [
+      "D19:20"
+    ],
+    "novel_raw_turns": [
+      "D19:20"
+    ],
+    "additional_gold": [
+      "D19:20"
+    ],
+    "ce_score": -0.6496089100837708,
+    "lexical_query_coverage": 0.3333333333333333,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-43:fact:obs:0162",
+      "conv-43:eventv3:0059",
+      "conv-43:fact:obs:0163"
+    ],
+    "path_labels": [
+      "John values personal development and mindset books to know himself better.",
+      "John Reflects on Personal Growth and Challenges: John values personal development books, recently reread 'The Alchemist' for inspiration, and shared thoughts on handling life's difficulties and finding motivation.",
+      "John recently reread 'The Alchemist' and found it inspiring, motivating him to keep chasing his dreams and trust the process."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-43:q0063",
+    "question": "What does John do to share his knowledge?",
+    "category": 1,
+    "fact_id": "conv-43:fact:obs:0228",
+    "rank": 9,
+    "source_route_rank": 7,
+    "text": "John started doing seminars to help people with sports and marketing.",
+    "evidence_ids": [
+      "D26:1"
+    ],
+    "novel_raw_turns": [
+      "D26:1"
+    ],
+    "additional_gold": [
+      "D26:1"
+    ],
+    "ce_score": -1.3769303560256958,
+    "lexical_query_coverage": 0.3333333333333333,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-43:fact:obs:0231",
+      "conv-43:eventv3:0079",
+      "conv-43:fact:obs:0228"
+    ],
+    "path_labels": [
+      "John uses his influence and resources to help causes he believes in, particularly in making the world a better place.",
+      "John's Efforts in Youth Sports and Community: John actively supports youth sports and underserved communities through seminars, basketball camps, and daily training, leveraging his influence for positive change.",
+      "John started doing seminars to help people with sports and marketing."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-48:q0069",
+    "question": "When did Deborah visit Brazil?",
+    "category": 2,
+    "fact_id": "conv-48:fact:obs:0218",
+    "rank": 1,
+    "source_route_rank": 1,
+    "text": "Deborah took a beautiful photo on one of her excursions in Rio de Janeiro three years ago.",
+    "evidence_ids": [
+      "D23:18"
+    ],
+    "novel_raw_turns": [
+      "D23:18"
+    ],
+    "additional_gold": [
+      "D23:18"
+    ],
+    "ce_score": 5.021017074584961,
+    "lexical_query_coverage": 0.3333333333333333,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-48:fact:obs:0218"
+    ],
+    "path_labels": [
+      "Deborah took a beautiful photo on one of her excursions in Rio de Janeiro three years ago."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-48:q0088",
+    "question": "Which countries has Deborah traveled to?",
+    "category": 1,
+    "fact_id": "conv-48:fact:obs:0218",
+    "rank": 2,
+    "source_route_rank": 2,
+    "text": "Deborah took a beautiful photo on one of her excursions in Rio de Janeiro three years ago.",
+    "evidence_ids": [
+      "D23:18"
+    ],
+    "novel_raw_turns": [
+      "D23:18"
+    ],
+    "additional_gold": [
+      "D23:18"
+    ],
+    "ce_score": 5.570500373840332,
+    "lexical_query_coverage": 0.3333333333333333,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-48:fact:obs:0218"
+    ],
+    "path_labels": [
+      "Deborah took a beautiful photo on one of her excursions in Rio de Janeiro three years ago."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-49:q0051",
+    "question": "What kind of hobbies does Evan pursue?",
+    "category": 1,
+    "fact_id": "conv-49:fact:obs:0006",
+    "rank": 3,
+    "source_route_rank": 3,
+    "text": "Evan enjoys watercolor painting as a hobby, which he started a few years back.",
+    "evidence_ids": [
+      "D1:14"
+    ],
+    "novel_raw_turns": [
+      "D1:14"
+    ],
+    "additional_gold": [
+      "D1:14"
+    ],
+    "ce_score": 3.1893997192382812,
+    "lexical_query_coverage": 0.3333333333333333,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-49:fact:obs:0006"
+    ],
+    "path_labels": [
+      "Evan enjoys watercolor painting as a hobby, which he started a few years back."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-41:q0013",
+    "question": "What test has John taken multiple times?",
+    "category": 1,
+    "fact_id": "conv-41:fact:D8:18",
+    "rank": 3,
+    "source_route_rank": 2,
+    "text": "John said: Wow, having symbols of travel memories in our homes is so cool! Last week I retook the aptitude test with some great results, and I feel drawn to serving my country in this way.",
+    "evidence_ids": [
+      "D8:18"
+    ],
+    "novel_raw_turns": [
+      "D8:18"
+    ],
+    "additional_gold": [
+      "D8:18"
+    ],
+    "ce_score": -4.944973945617676,
+    "lexical_query_coverage": 0.4,
+    "shares_hierarchy_ancestor_with_eu": false,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-41:fact:D8:18"
+    ],
+    "path_labels": [
+      "John said: Wow, having symbols of travel memories in our homes is so cool! Last week I retook the aptitude test with some great results, and I feel drawn to serving my country in this way."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-41:q0020",
+    "question": "What damages have happened to John's car?",
+    "category": 1,
+    "fact_id": "conv-41:fact:obs:0032",
+    "rank": 8,
+    "source_route_rank": 8,
+    "text": "John experienced an unexpected incident last week on his way home, which reminded him of life's unexpected troubles.",
+    "evidence_ids": [
+      "D4:2"
+    ],
+    "novel_raw_turns": [
+      "D4:2"
+    ],
+    "additional_gold": [
+      "D4:2"
+    ],
+    "ce_score": -5.922199249267578,
+    "lexical_query_coverage": 0.4,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-41:fact:obs:0032"
+    ],
+    "path_labels": [
+      "John experienced an unexpected incident last week on his way home, which reminded him of life's unexpected troubles."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-43:q0021",
+    "question": "Which city was John in before traveling to Chicago?",
+    "category": 2,
+    "fact_id": "conv-43:fact:obs:0020",
+    "rank": 7,
+    "source_route_rank": 4,
+    "text": "John's game next month is in Seattle, a city he loves for its energy, diversity, food, and fan support.",
+    "evidence_ids": [
+      "D3:19"
+    ],
+    "novel_raw_turns": [
+      "D3:19"
+    ],
+    "additional_gold": [
+      "D3:19"
+    ],
+    "ce_score": -6.072744846343994,
+    "lexical_query_coverage": 0.4,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-43:fact:obs:0038",
+      "conv-43:eventv3:0014",
+      "conv-43:topicv3:0001",
+      "conv-43:eventv3:0004",
+      "conv-43:fact:obs:0020"
+    ],
+    "path_labels": [
+      "John recently took a trip to Chicago and found the locals to be friendly.",
+      "John's Life and Basketball Journey: John, who enjoys connecting with people and experiencing cultures, has had a lifelong passion for basketball, starting from childhood NBA games with his dad to earning a scholarship and being drafted by a team, with his lucky basketball shoes symbolizing his journey.",
+      "John's Basketball and Personal Growth: The events highlight John's basketball career, personal achievements, and passions, including his professional milestones, endorsements, hobbies, and aspirations for personal and community impact.",
+      "John Secures Nike Deal and Explores Endorsements: John has signed a deal with Nike for basketball gear, is in talks with Gatorade, and is leveraging his basketball contacts and marketing skills to explore further endorsement opportunities.",
+      "John's game next month is in Seattle, a city he loves for its energy, diversity, food, and fan support."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-43:q0044",
+    "question": "What does John like about Lebron James?",
+    "category": 1,
+    "fact_id": "conv-43:fact:D16:12",
+    "rank": 2,
+    "source_route_rank": 2,
+    "text": "John said: LeBron's moments of determination and heart are incredible. It's why I enjoy playing and pushing myself. You never know when those special moments might occur, but it's always fun to be part of it.",
+    "evidence_ids": [
+      "D16:12"
+    ],
+    "novel_raw_turns": [
+      "D16:12"
+    ],
+    "additional_gold": [
+      "D16:12"
+    ],
+    "ce_score": 4.770657539367676,
+    "lexical_query_coverage": 0.4,
+    "shares_hierarchy_ancestor_with_eu": false,
+    "has_hierarchy_parent": false,
+    "path_node_ids": [
+      "conv-43:fact:D16:12"
+    ],
+    "path_labels": [
+      "John said: LeBron's moments of determination and heart are incredible. It's why I enjoy playing and pushing myself. You never know when those special moments might occur, but it's always fun to be part of it."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-43:q0044",
+    "question": "What does John like about Lebron James?",
+    "category": 1,
+    "fact_id": "conv-43:fact:D12:20",
+    "rank": 4,
+    "source_route_rank": 4,
+    "text": "John said: Thanks! The Wolves are my team for sure. And LeBron is the man - love his skills and leadership.",
+    "evidence_ids": [
+      "D12:20"
+    ],
+    "novel_raw_turns": [
+      "D12:20"
+    ],
+    "additional_gold": [
+      "D12:20"
+    ],
+    "ce_score": 3.694700002670288,
+    "lexical_query_coverage": 0.4,
+    "shares_hierarchy_ancestor_with_eu": false,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-43:fact:D12:20"
+    ],
+    "path_labels": [
+      "John said: Thanks! The Wolves are my team for sure. And LeBron is the man - love his skills and leadership."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-50:q0007",
+    "question": "Which types of cars does Dave like the most?",
+    "category": 1,
+    "fact_id": "conv-50:fact:obs:0007",
+    "rank": 6,
+    "source_route_rank": 6,
+    "text": "Dave attended an awesome car event recently where he saw many classic cars and spoke with the owners.",
+    "evidence_ids": [
+      "D1:2"
+    ],
+    "novel_raw_turns": [
+      "D1:2"
+    ],
+    "additional_gold": [
+      "D1:2"
+    ],
+    "ce_score": 2.1898117065429688,
+    "lexical_query_coverage": 0.4,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-50:fact:obs:0021",
+      "conv-50:eventv3:0005",
+      "conv-50:topicv3:0002",
+      "conv-50:eventv3:0002",
+      "conv-50:fact:obs:0007"
+    ],
+    "path_labels": [
+      "Dave is interested in classic cars and auto engineering, as he went to a car show last weekend and finds the restoration process amazing.",
+      "Dave Opens Car Maintenance Shop: Dave, passionate about classic cars and auto engineering, fulfilled his dream by opening a car maintenance shop that also specializes in restoring classic cars.",
+      "Dave's Passionate Pursuits: Dave is actively pursuing his passions, including music, classic cars, and nature, while finding fulfillment in his personal and professional endeavors.",
+      "Dave Attends Boston Music Festival: Dave attended a music festival in Boston last weekend, enjoyed performances by many bands, and found Aerosmith's performance incredible.",
+      "Dave attended an awesome car event recently where he saw many classic cars and spoke with the owners."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-50:q0111",
+    "question": "What plans do Calvin and Dave have for when Calvin visits Boston?",
+    "category": 4,
+    "fact_id": "conv-50:fact:rule_sem:D18:11",
+    "rank": 17,
+    "source_route_rank": 16,
+    "text": "Calvin will let you know when Calvin is in Boston.",
+    "evidence_ids": [
+      "D18:11"
+    ],
+    "novel_raw_turns": [
+      "D18:11"
+    ],
+    "additional_gold": [
+      "D18:11"
+    ],
+    "ce_score": 2.833716869354248,
+    "lexical_query_coverage": 0.4,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-50:fact:rule_sem:D18:11"
+    ],
+    "path_labels": [
+      "Calvin will let you know when Calvin is in Boston."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-30:q0037",
+    "question": "When did Jon and Gina decide to collaborate to create dance content?",
+    "category": 2,
+    "fact_id": "conv-30:fact:D18:18",
+    "rank": 5,
+    "source_route_rank": 5,
+    "text": "Jon said: Definitely, Gina! Let's make our collaboration awesome and bring some dance magic to the world. Can't wait to see what we can do together!",
+    "evidence_ids": [
+      "D18:18"
+    ],
+    "novel_raw_turns": [
+      "D18:18"
+    ],
+    "additional_gold": [
+      "D18:18"
+    ],
+    "ce_score": 2.0173141956329346,
+    "lexical_query_coverage": 0.42857142857142855,
+    "shares_hierarchy_ancestor_with_eu": false,
+    "has_hierarchy_parent": false,
+    "path_node_ids": [
+      "conv-30:fact:D18:18"
+    ],
+    "path_labels": [
+      "Jon said: Definitely, Gina! Let's make our collaboration awesome and bring some dance magic to the world. Can't wait to see what we can do together!"
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-26:q0072",
+    "question": "What book did Melanie read from Caroline's suggestion?",
+    "category": 1,
+    "fact_id": "conv-26:fact:D17:10",
+    "rank": 1,
+    "source_route_rank": 1,
+    "text": "Melanie said: Thanks, Caroline. It was tough, but I'm doing ok. Been reading that book you recommended a while ago and painting to keep busy.",
+    "evidence_ids": [
+      "D17:10"
+    ],
+    "novel_raw_turns": [
+      "D17:10"
+    ],
+    "additional_gold": [
+      "D17:10"
+    ],
+    "ce_score": 4.198018550872803,
+    "lexical_query_coverage": 0.5,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-26:fact:D17:10"
+    ],
+    "path_labels": [
+      "Melanie said: Thanks, Caroline. It was tough, but I'm doing ok. Been reading that book you recommended a while ago and painting to keep busy."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-26:q0105",
+    "question": "What book did Caroline recommend to Melanie?",
+    "category": 4,
+    "fact_id": "conv-26:fact:obs:0054",
+    "rank": 6,
+    "source_route_rank": 6,
+    "text": "Caroline's favorite guiding book is 'Becoming Nicole' by Amy Ellis Nutt, a true story about a trans girl and her family that gave her hope and connection.",
+    "evidence_ids": [
+      "D7:11"
+    ],
+    "novel_raw_turns": [
+      "D7:11"
+    ],
+    "additional_gold": [
+      "D7:11"
+    ],
+    "ce_score": 2.33566951751709,
+    "lexical_query_coverage": 0.5,
+    "shares_hierarchy_ancestor_with_eu": false,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-26:fact:obs:0031",
+      "conv-26:eventv3:0006",
+      "conv-26:topicv3:0001",
+      "conv-26:eventv3:0015",
+      "conv-26:fact:obs:0054"
+    ],
+    "path_labels": [
+      "Caroline is considering a career in counseling and mental health, particularly working with trans people to help them accept themselves and support their mental health.",
+      "Caroline's Support System and Career Aspirations: Caroline values her supportive friends, family, and mentors, treasures meaningful gifts, and is inspired by an LGBTQ+ counseling workshop to pursue a career in mental health counseling for trans individuals.",
+      "Caroline's LGBTQ Advocacy and Growth: Caroline's journey highlights her personal growth, advocacy for the LGBTQ community, and aspirations to support others through a career in mental health counseling. She is inspired by her experiences, supportive relationships, and a commitment to fostering understanding and compassion.",
+      "Caroline's Advocacy and Personal Growth: Caroline attended an LGBTQ conference, found inspiration in 'Becoming Nicole,' and is exploring mental health jobs to support others.",
+      "Caroline's favorite guiding book is 'Becoming Nicole' by Amy Ellis Nutt, a true story about a trans girl and her family that gave her hope and connection."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-30:q0024",
+    "question": "How did Gina promote her clothes store?",
+    "category": 1,
+    "fact_id": "conv-30:fact:obs:0038",
+    "rank": 19,
+    "source_route_rank": 19,
+    "text": "Gina has an online store and recently teamed up with a local artist for some cool designs.",
+    "evidence_ids": [
+      "D5:5"
+    ],
+    "novel_raw_turns": [
+      "D5:5"
+    ],
+    "additional_gold": [
+      "D5:5"
+    ],
+    "ce_score": 0.9723920226097107,
+    "lexical_query_coverage": 0.5,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-30:fact:obs:0052",
+      "conv-30:eventv3:0012",
+      "conv-30:fact:obs:0038"
+    ],
+    "path_labels": [
+      "Gina opened an online clothes store which she had been dreaming of for a while.",
+      "Gina Starts Online Fashion Store: Gina, passionate about fashion and dance, opened an online store featuring unique designs, including collaborations with a local artist, fulfilling her long-time dream despite the challenges of running a business.",
+      "Gina has an online store and recently teamed up with a local artist for some cool designs."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-41:q0029",
+    "question": "What causes does John feel passionate about supporting?",
+    "category": 1,
+    "fact_id": "conv-41:fact:D1:8",
+    "rank": 15,
+    "source_route_rank": 15,
+    "text": "John said: I'm passionate about improving education and infrastructure in our community. Those are my main focuses.",
+    "evidence_ids": [
+      "D1:8"
+    ],
+    "novel_raw_turns": [
+      "D1:8"
+    ],
+    "additional_gold": [
+      "D1:8"
+    ],
+    "ce_score": -0.26629889011383057,
+    "lexical_query_coverage": 0.5,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-41:fact:D1:8"
+    ],
+    "path_labels": [
+      "John said: I'm passionate about improving education and infrastructure in our community. Those are my main focuses."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-41:q0041",
+    "question": "What are the names of John's children?",
+    "category": 1,
+    "fact_id": "conv-41:fact:obs:0222",
+    "rank": 9,
+    "source_route_rank": 7,
+    "text": "John's family motivates him to strive for change.",
+    "evidence_ids": [
+      "D22:7"
+    ],
+    "novel_raw_turns": [
+      "D22:7"
+    ],
+    "additional_gold": [
+      "D22:7"
+    ],
+    "ce_score": -1.6914151906967163,
+    "lexical_query_coverage": 0.5,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-41:fact:obs:0223",
+      "conv-41:eventv3:0067",
+      "conv-41:fact:obs:0222"
+    ],
+    "path_labels": [
+      "John looks at a picture of his family when times get hard to remember why he is doing his work.",
+      "John Reflects on Community Impact: John reflects on the challenges of making a positive impact in communities, drawing motivation and inspiration from his family, exercise, and friends.",
+      "John's family motivates him to strive for change."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-42:q0056",
+    "question": "What is Joanna inspired by?",
+    "category": 1,
+    "fact_id": "conv-42:fact:obs:0223",
+    "rank": 6,
+    "source_route_rank": 6,
+    "text": "Joanna gets ideas for her characters from various sources like people she knows, things she sees, and her imagination.",
+    "evidence_ids": [
+      "D25:10"
+    ],
+    "novel_raw_turns": [
+      "D25:10"
+    ],
+    "additional_gold": [
+      "D25:10"
+    ],
+    "ce_score": 4.285655975341797,
+    "lexical_query_coverage": 0.5,
+    "shares_hierarchy_ancestor_with_eu": false,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-42:fact:obs:0223"
+    ],
+    "path_labels": [
+      "Joanna gets ideas for her characters from various sources like people she knows, things she sees, and her imagination."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-42:q0056",
+    "question": "What is Joanna inspired by?",
+    "category": 1,
+    "fact_id": "conv-42:fact:obs:0225",
+    "rank": 13,
+    "source_route_rank": 13,
+    "text": "Joanna finds it cool to see how an idea transforms into a person with unique traits.",
+    "evidence_ids": [
+      "D25:10"
+    ],
+    "novel_raw_turns": [
+      "D25:10"
+    ],
+    "additional_gold": [
+      "D25:10"
+    ],
+    "ce_score": 1.7570018768310547,
+    "lexical_query_coverage": 0.5,
+    "shares_hierarchy_ancestor_with_eu": false,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-42:fact:obs:0225"
+    ],
+    "path_labels": [
+      "Joanna finds it cool to see how an idea transforms into a person with unique traits."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-42:q0056",
+    "question": "What is Joanna inspired by?",
+    "category": 1,
+    "fact_id": "conv-42:fact:obs:0224",
+    "rank": 19,
+    "source_route_rank": 19,
+    "text": "Joanna's character visuals are used as a tool to visualize their wants, worries, and wishes.",
+    "evidence_ids": [
+      "D25:10"
+    ],
+    "novel_raw_turns": [
+      "D25:10"
+    ],
+    "additional_gold": [
+      "D25:10"
+    ],
+    "ce_score": 0.9835182428359985,
+    "lexical_query_coverage": 0.5,
+    "shares_hierarchy_ancestor_with_eu": false,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-42:fact:obs:0223",
+      "conv-42:eventv3:0064",
+      "conv-42:fact:obs:0224"
+    ],
+    "path_labels": [
+      "Joanna gets ideas for her characters from various sources like people she knows, things she sees, and her imagination.",
+      "Joanna's Script Debuts on Big Screen: Joanna experienced a mix of emotions and overall satisfaction as her movie script, inspired by her character creation process, was shown on the big screen for the first time.",
+      "Joanna's character visuals are used as a tool to visualize their wants, worries, and wishes."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-42:q0059",
+    "question": "What things has Nate reccomended to Joanna?",
+    "category": 1,
+    "fact_id": "conv-42:fact:obs:0072",
+    "rank": 2,
+    "source_route_rank": 2,
+    "text": "Nate recommended a series with adventures, magic, and great characters to Joanna.",
+    "evidence_ids": [
+      "D9:14"
+    ],
+    "novel_raw_turns": [
+      "D9:14"
+    ],
+    "additional_gold": [
+      "D9:14"
+    ],
+    "ce_score": 5.132027626037598,
+    "lexical_query_coverage": 0.5,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-42:fact:obs:0097",
+      "conv-42:eventv3:0028",
+      "conv-42:topicv3:0004",
+      "conv-42:eventv3:0024",
+      "conv-42:fact:obs:0072"
+    ],
+    "path_labels": [
+      "Nate is proud of Joanna for staying true to herself and exploring personal experiences in her writing.",
+      "Nate Discusses Hiking and Writing with Joanna: Nate expresses interest in Joanna's hiking experiences, supports her creative writing, and suggests hiking together for inspiration.",
+      "Creative Bond Between Nate and Joanna: Nate and Joanna share a supportive and inspiring relationship, exchanging ideas on creative projects, hobbies, and personal interests like dairy-free desserts, hiking, and writing. Their mutual encouragement strengthens their connection.",
+      "Joanna Watches Nate's Movie Recommendation: Nate recommended 'The Lord of the Rings' Trilogy to Joanna, who watched it and found it awesome, while Nate expressed it as the greatest trilogy of all time.",
+      "Nate recommended a series with adventures, magic, and great characters to Joanna."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-43:q0031",
+    "question": "Which cities has John been to?",
+    "category": 1,
+    "fact_id": "conv-43:fact:obs:0038",
+    "rank": 3,
+    "source_route_rank": 3,
+    "text": "John recently took a trip to Chicago and found the locals to be friendly.",
+    "evidence_ids": [
+      "D6:3"
+    ],
+    "novel_raw_turns": [
+      "D6:3"
+    ],
+    "additional_gold": [
+      "D6:3"
+    ],
+    "ce_score": 5.669111251831055,
+    "lexical_query_coverage": 0.5,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-43:fact:obs:0038"
+    ],
+    "path_labels": [
+      "John recently took a trip to Chicago and found the locals to be friendly."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-43:q0031",
+    "question": "Which cities has John been to?",
+    "category": 1,
+    "fact_id": "conv-43:fact:obs:0039",
+    "rank": 18,
+    "source_route_rank": 18,
+    "text": "John enjoys experiencing other cultures and connecting with new people.",
+    "evidence_ids": [
+      "D6:3"
+    ],
+    "novel_raw_turns": [
+      "D6:3"
+    ],
+    "additional_gold": [
+      "D6:3"
+    ],
+    "ce_score": -2.488241672515869,
+    "lexical_query_coverage": 0.5,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-43:fact:obs:0038",
+      "conv-43:eventv3:0014",
+      "conv-43:fact:obs:0039"
+    ],
+    "path_labels": [
+      "John recently took a trip to Chicago and found the locals to be friendly.",
+      "John's Life and Basketball Journey: John, who enjoys connecting with people and experiencing cultures, has had a lifelong passion for basketball, starting from childhood NBA games with his dad to earning a scholarship and being drafted by a team, with his lucky basketball shoes symbolizing his journey.",
+      "John enjoys experiencing other cultures and connecting with new people."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-43:q0043",
+    "question": "What has John cooked?",
+    "category": 1,
+    "fact_id": "conv-43:fact:obs:0134",
+    "rank": 2,
+    "source_route_rank": 2,
+    "text": "John enjoys cooking as a therapy to be creative, experiment with flavors, and take a break from his routine.",
+    "evidence_ids": [
+      "D15:30"
+    ],
+    "novel_raw_turns": [
+      "D15:30"
+    ],
+    "additional_gold": [
+      "D15:30"
+    ],
+    "ce_score": 3.532109498977661,
+    "lexical_query_coverage": 0.5,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-43:fact:obs:0134"
+    ],
+    "path_labels": [
+      "John enjoys cooking as a therapy to be creative, experiment with flavors, and take a break from his routine."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-48:q0012",
+    "question": "Is Deborah married?",
+    "category": 3,
+    "fact_id": "conv-48:fact:D23:4",
+    "rank": 6,
+    "source_route_rank": 6,
+    "text": "Deborah said: Yep, last month I visited my mom`s house which holds a special place in my heart. My mom had good and bad times there, but it's still a symbol of her strength and the love she shared with me. This is my husband in front of this house.",
+    "evidence_ids": [
+      "D23:4"
+    ],
+    "novel_raw_turns": [
+      "D23:4"
+    ],
+    "additional_gold": [
+      "D23:4"
+    ],
+    "ce_score": 3.676332950592041,
+    "lexical_query_coverage": 0.5,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-48:fact:D23:4"
+    ],
+    "path_labels": [
+      "Deborah said: Yep, last month I visited my mom`s house which holds a special place in my heart. My mom had good and bad times there, but it's still a symbol of her strength and the love she shared with me. This is my husband in front of this house."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-48:q0037",
+    "question": "How old is Jolene?",
+    "category": 3,
+    "fact_id": "conv-48:fact:obs:0199",
+    "rank": 17,
+    "source_route_rank": 16,
+    "text": "Jolene recently presented at a virtual conference and received positive feedback, confirming she is on the right track.",
+    "evidence_ids": [
+      "D21:6"
+    ],
+    "novel_raw_turns": [
+      "D21:6"
+    ],
+    "additional_gold": [
+      "D21:6"
+    ],
+    "ce_score": -1.6255074739456177,
+    "lexical_query_coverage": 0.5,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-48:fact:obs:0200",
+      "conv-48:eventv3:0056",
+      "conv-48:fact:obs:0199"
+    ],
+    "path_labels": [
+      "Jolene is focusing on studying, gaining more experience, and considering more internships to enhance her skills.",
+      "Jolene's Personal Growth and Relaxation Practices: Jolene balances her professional growth through studying, networking, and presenting at conferences while using yoga and meditation to manage stress and recharge.",
+      "Jolene recently presented at a virtual conference and received positive feedback, confirming she is on the right track."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-48:q0037",
+    "question": "How old is Jolene?",
+    "category": 3,
+    "fact_id": "conv-48:fact:obs:0224",
+    "rank": 18,
+    "source_route_rank": 17,
+    "text": "Jolene has been focusing on studying and her relationship with her partner.",
+    "evidence_ids": [
+      "D24:2"
+    ],
+    "novel_raw_turns": [
+      "D24:2"
+    ],
+    "additional_gold": [
+      "D24:2"
+    ],
+    "ce_score": -1.7208294868469238,
+    "lexical_query_coverage": 0.5,
+    "shares_hierarchy_ancestor_with_eu": false,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-48:fact:obs:0228",
+      "conv-48:eventv3:0064",
+      "conv-48:fact:obs:0224"
+    ],
+    "path_labels": [
+      "Jolene is studying hard for upcoming finals and plans to take a trip to relax and recharge afterward.",
+      "Jolene's Study and Relaxation Plans: Jolene is studying for finals, enjoys beach trips with her partner, and plans to relax with a meditation retreat afterward.",
+      "Jolene has been focusing on studying and her relationship with her partner."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-48:q0083",
+    "question": "Which locations does Deborah practice her yoga at?",
+    "category": 1,
+    "fact_id": "conv-48:fact:obs:0051",
+    "rank": 1,
+    "source_route_rank": 1,
+    "text": "Deborah traveled to Bali last year, one of her favorite places, for peace and yoga.",
+    "evidence_ids": [
+      "D6:10"
+    ],
+    "novel_raw_turns": [
+      "D6:10"
+    ],
+    "additional_gold": [
+      "D6:10"
+    ],
+    "ce_score": 5.859461784362793,
+    "lexical_query_coverage": 0.5,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-48:fact:obs:0035",
+      "conv-48:eventv3:0008",
+      "conv-48:topicv3:0002",
+      "conv-48:eventv3:0015",
+      "conv-48:fact:obs:0051"
+    ],
+    "path_labels": [
+      "Deborah spends a lot of time teaching yoga as a way to find balance and reconnect with herself.",
+      "Deborah Meets Anna at Yoga Session: Deborah met her new neighbor Anna during a yoga session in the park, discussed the benefits of yoga and community, and emphasized the importance of shared activities and supporting others.",
+      "Deborah's Journey of Reflection and Connection: Deborah navigates personal loss, cherishes family memories, and finds solace in meaningful activities like yoga, nature, and community engagement, while supporting others and embracing self-care.",
+      "Deborah Reflects on Loss and Self-Care: Deborah finds solace in her garden and memories of her friend Karlie while emphasizing the importance of self-care and enjoying life's journey.",
+      "Deborah traveled to Bali last year, one of her favorite places, for peace and yoga."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-50:q0054",
+    "question": "Who supports Calvin in tough times?",
+    "category": 1,
+    "fact_id": "conv-50:fact:D29:7",
+    "rank": 1,
+    "source_route_rank": 1,
+    "text": "Calvin said: Having supportive people is key for me to grow as an artist. They motivate me to get better and stay true to myself. Having support is vital, especially in this tough music industry. Take a look at this photo!",
+    "evidence_ids": [
+      "D29:7"
+    ],
+    "novel_raw_turns": [
+      "D29:7"
+    ],
+    "additional_gold": [
+      "D29:7"
+    ],
+    "ce_score": 3.7887892723083496,
+    "lexical_query_coverage": 0.5,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-50:fact:D29:7"
+    ],
+    "path_labels": [
+      "Calvin said: Having supportive people is key for me to grow as an artist. They motivate me to get better and stay true to myself. Having support is vital, especially in this tough music industry. Take a look at this photo!"
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-42:q0089",
+    "question": "What is one of Joanna's favorite movies?",
+    "category": 4,
+    "fact_id": "conv-42:fact:D1:20",
+    "rank": 3,
+    "source_route_rank": 3,
+    "text": "Joanna said: A few times. It's one of my favorites! I really like the idea and the acting.",
+    "evidence_ids": [
+      "D1:20"
+    ],
+    "novel_raw_turns": [
+      "D1:20"
+    ],
+    "additional_gold": [
+      "D1:20"
+    ],
+    "ce_score": 5.744148254394531,
+    "lexical_query_coverage": 0.6,
+    "shares_hierarchy_ancestor_with_eu": false,
+    "has_hierarchy_parent": false,
+    "path_node_ids": [
+      "conv-42:fact:D1:20"
+    ],
+    "path_labels": [
+      "Joanna said: A few times. It's one of my favorites! I really like the idea and the acting."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-50:q0119",
+    "question": "What do Calvin and Dave use to reach their goals?",
+    "category": 4,
+    "fact_id": "conv-50:fact:D21:15",
+    "rank": 6,
+    "source_route_rank": 6,
+    "text": "Calvin said: Agreed, Dave! Progress is what keeps us motivated and pushing for more. Let's never give up and keep striving for success. We know that hard work and determination matter, and it's what sets us apart. Onwards to our goals!",
+    "evidence_ids": [
+      "D21:15"
+    ],
+    "novel_raw_turns": [
+      "D21:15"
+    ],
+    "additional_gold": [
+      "D21:15"
+    ],
+    "ce_score": 4.601550102233887,
+    "lexical_query_coverage": 0.6,
+    "shares_hierarchy_ancestor_with_eu": false,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-50:fact:D21:15"
+    ],
+    "path_labels": [
+      "Calvin said: Agreed, Dave! Progress is what keeps us motivated and pushing for more. Let's never give up and keep striving for success. We know that hard work and determination matter, and it's what sets us apart. Onwards to our goals!"
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-43:q0011",
+    "question": "When was John in Seattle for a game?",
+    "category": 2,
+    "fact_id": "conv-43:fact:obs:0034",
+    "rank": 8,
+    "source_route_rank": 7,
+    "text": "John had a crazy intense game last week which his team won by a tight score, and scoring the last basket was an awesome experience for him.",
+    "evidence_ids": [
+      "D5:2"
+    ],
+    "novel_raw_turns": [
+      "D5:2"
+    ],
+    "additional_gold": [
+      "D5:2"
+    ],
+    "ce_score": -1.3279459476470947,
+    "lexical_query_coverage": 0.6666666666666666,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-43:fact:obs:0034"
+    ],
+    "path_labels": [
+      "John had a crazy intense game last week which his team won by a tight score, and scoring the last basket was an awesome experience for him."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-43:q0058",
+    "question": "What instruments does Tim play?",
+    "category": 1,
+    "fact_id": "conv-43:fact:D21:11",
+    "rank": 3,
+    "source_route_rank": 3,
+    "text": "Tim said: I'm learning how to play the violin now. I'm mostly into classical music but I'm keen to try out jazz and film scores too. It's a great way to chill and get creative.",
+    "evidence_ids": [
+      "D21:11"
+    ],
+    "novel_raw_turns": [
+      "D21:11"
+    ],
+    "additional_gold": [
+      "D21:11"
+    ],
+    "ce_score": 4.918919563293457,
+    "lexical_query_coverage": 0.6666666666666666,
+    "shares_hierarchy_ancestor_with_eu": false,
+    "has_hierarchy_parent": false,
+    "path_node_ids": [
+      "conv-43:fact:D21:11"
+    ],
+    "path_labels": [
+      "Tim said: I'm learning how to play the violin now. I'm mostly into classical music but I'm keen to try out jazz and film scores too. It's a great way to chill and get creative."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-49:q0002",
+    "question": "What kinds of things did Evan have broken?",
+    "category": 1,
+    "fact_id": "conv-49:fact:rule_sem:D18:3",
+    "rank": 3,
+    "source_route_rank": 3,
+    "text": "But, Evan guess it's just one of those things - even new cars can have problems.",
+    "evidence_ids": [
+      "D18:3"
+    ],
+    "novel_raw_turns": [
+      "D18:3"
+    ],
+    "additional_gold": [
+      "D18:3"
+    ],
+    "ce_score": -0.1712474524974823,
+    "lexical_query_coverage": 0.6666666666666666,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-49:fact:obs:0162",
+      "conv-49:eventv3:0048",
+      "conv-49:topicv3:0010",
+      "conv-49:eventv3:0049",
+      "conv-49:fact:rule_sem:D18:3"
+    ],
+    "path_labels": [
+      "Evan had a health scare recently, which turned out to be a misunderstanding, leading them to realize the importance of monitoring their health.",
+      "Evan Reflects on Health and Life Values: Evan recently experienced a health scare that turned out to be a misunderstanding, prompting them to value health monitoring, enjoy life's little moments, and stay active through gym workouts, driving, and exploring new activities, all while cherishing their serene childhood island home.",
+      "Evan's Life Reflections and Events: Evan's recent experiences highlight his reflections on health, family, relationships, and personal growth, alongside notable life events such as marriage, vehicle challenges, and meaningful interactions.",
+      "Evan's New Prius Breakdown: Evan's recently purchased Prius broke down shortly after purchase, but he considers it an unfortunate possibility with new cars.",
+      "But, Evan guess it's just one of those things - even new cars can have problems."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-49:q0082",
+    "question": "What is a stress reliever for Evan?",
+    "category": 1,
+    "fact_id": "conv-49:fact:D16:23",
+    "rank": 6,
+    "source_route_rank": 6,
+    "text": "Sam said: Absolutely, Evan! A trip there sounds like the perfect way to de-stress.",
+    "evidence_ids": [
+      "D16:23"
+    ],
+    "novel_raw_turns": [
+      "D16:23"
+    ],
+    "additional_gold": [
+      "D16:23"
+    ],
+    "ce_score": -0.24023790657520294,
+    "lexical_query_coverage": 0.6666666666666666,
+    "shares_hierarchy_ancestor_with_eu": false,
+    "has_hierarchy_parent": false,
+    "path_node_ids": [
+      "conv-49:fact:D16:23"
+    ],
+    "path_labels": [
+      "Sam said: Absolutely, Evan! A trip there sounds like the perfect way to de-stress."
+    ],
+    "candidate_type": "FACT"
+  },
+  {
+    "question_id": "conv-50:q0006",
+    "question": "What are Dave's dreams?",
+    "category": 1,
+    "fact_id": "conv-50:fact:obs:0036",
+    "rank": 9,
+    "source_route_rank": 8,
+    "text": "Dave aspires to learn more about auto engineering and dreams of building a custom car from scratch.",
+    "evidence_ids": [
+      "D5:5"
+    ],
+    "novel_raw_turns": [
+      "D5:5"
+    ],
+    "additional_gold": [
+      "D5:5"
+    ],
+    "ce_score": 2.3329238891601562,
+    "lexical_query_coverage": 0.6666666666666666,
+    "shares_hierarchy_ancestor_with_eu": true,
+    "has_hierarchy_parent": true,
+    "path_node_ids": [
+      "conv-50:fact:obs:0012",
+      "conv-50:eventv3:0002",
+      "conv-50:topicv3:0002",
+      "conv-50:eventv3:0009",
+      "conv-50:fact:obs:0036"
+    ],
+    "path_labels": [
+      "Dave attended a music festival in Boston last weekend and enjoyed listening to many cool bands.",
+      "Dave Attends Boston Music Festival: Dave attended a music festival in Boston last weekend, enjoyed performances by many bands, and found Aerosmith's performance incredible.",
+      "Dave's Passionate Pursuits: Dave is actively pursuing his passions, including music, classic cars, and nature, while finding fulfillment in his personal and professional endeavors.",
+      "Dave Opens Car Shop and Collaborates Locally: Dave recently opened his own car shop, celebrated with friends, and is collaborating with a local garage on a challenging car project.",
+      "Dave aspires to learn more about auto engineering and dreams of building a custom car from scratch."
+    ],
+    "candidate_type": "FACT"
+  }
+]

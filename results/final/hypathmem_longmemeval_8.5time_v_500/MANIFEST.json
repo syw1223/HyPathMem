@@ -1,0 +1,78 @@
+{
+  "created_at": "2026-08-04T08:41:05.897427+00:00",
+  "archive": "HyPathMem LongMemEval-S final500 8.5time_v",
+  "paper_table_result_claim": "412/500 = 82.40%",
+  "bundled_snapshot_result_claim": "408/500 = 81.60%",
+  "reporting_status": "post-hoc development result",
+  "files": {
+    "README.md": {
+      "sha256": "208a16263f4b038ffa29d4e0a7b8bab6177d8763196fb883c38168bf1f2187e3",
+      "bytes": 1608
+    },
+    "hypathmem_longmemeval_final500.json": {
+      "sha256": "196b70633ee5373fc0ebd07518334751c298ebe7fe2af292ee5fd59198922402",
+      "bytes": 1032941
+    },
+    "method_snapshot/archiver.py": {
+      "sha256": "267cd4e5042f2a4252f7684910243945dfd30754883ff849ea1541799823ed77",
+      "bytes": 9501
+    },
+    "method_snapshot/config.yaml": {
+      "sha256": "2556c49b54a3531f2a2790b77e045857b1d7a17335374d60aab94e11e47c9fc0",
+      "bytes": 820
+    },
+    "method_snapshot/documentation.md": {
+      "sha256": "9252743595fb40e7e2f7569dba944dfda98b877ab5ddee70386e7e6002c91d03",
+      "bytes": 3520
+    },
+    "method_snapshot/evaluator.py": {
+      "sha256": "d0f74b5a089986cf518afce27391474866df15985a57802c74e6e2e8fe28847a",
+      "bytes": 5358
+    },
+    "method_snapshot/method.py": {
+      "sha256": "d41ae5faca7d0a4a9fc629610465e31d840605c83437042be46040f40212d16a",
+      "bytes": 19607
+    },
+    "method_snapshot/runner.py": {
+      "sha256": "63dd80183501b883c5ed5416a5bd91e4c3f20d7f501fd92aaec8bb772d5ac059",
+      "bytes": 13297
+    },
+    "source_artifacts/d2_non_temporal367.json": {
+      "sha256": "90ea01d5864deb6814e27957d1ea28dbce3aa2bd00198985a864b984d75d323c",
+      "bytes": 709405
+    },
+    "source_artifacts/q4_temporal_holdout113.json": {
+      "sha256": "dd99bde61e839a8c56638270090444ecf91bd388059c12bcb104d0c792c77224",
+      "bytes": 141845
+    },
+    "source_artifacts/q4_temporal_paired20.json": {
+      "sha256": "cb346fccae8571f9b5cecd7bc544251b09d19ff8d861e1c500baecf92e198e3e",
+      "bytes": 27200
+    },
+    "source_artifacts/time_v8_4_safe2.json": {
+      "sha256": "bd1814addaa11980451cc46ecdf6f840b47dba63dd95f8c2f13b31ffafedd22c",
+      "bytes": 21603
+    },
+    "source_artifacts/time_v8_5_conversion.json": {
+      "sha256": "6c7a553051567e183aa57f199190c4600aeea9bd3e7cd017c765ee4d5ab4f22d",
+      "bytes": 109475
+    },
+    "source_artifacts/time_v8_5_safe3.json": {
+      "sha256": "70537543c62164be8193622ddf13ea13db0e91f59c2a092a3901ab38cdc941f9",
+      "bytes": 3975
+    },
+    "summary.json": {
+      "sha256": "fdac9bed5e3998c62ea337df19d3003baa24fabc44945ae41d3e45f9af843fc3",
+      "bytes": 2558
+    }
+  },
+  "original_sources": {
+    "d2_non_temporal367": "outputs/qa/hypathmem_r_v0_1_full_non_temporal367/d2_raw_grounded_gpt41mini_judge_gpt4omini.json",
+    "q4_temporal_paired20": "outputs/qa/hypathmem_temporal_v0_2_qwen_paired20/q4_verified_solver_formatfix_v2_gpt4omini.json",
+    "q4_temporal_holdout113": "outputs/qa/hypathmem_temporal_v0_2_qwen_holdout113/q4_verified_solver_gpt4omini.json",
+    "time_v8_4_safe2": "outputs/qa/hypathmem_8.4time_v/e1_new2_qwen_gpu2_verifier_solver_judge_gpt4omini.json",
+    "time_v8_5_safe3": "outputs/qa/hypathmem_8.5time_v/new_verified3_solver_judge_gpt4omini.json",
+    "time_v8_5_conversion": "outputs/reconstruction/hypathmem_8.5time_v/non_executable35_conversion_interval_v2_qwen_gpu2.json"
+  },
+  "distribution_note": "Identity-bearing paths sanitized; predictions, judgments and evidence IDs are unchanged. File hashes refer to this distributed snapshot."
+}

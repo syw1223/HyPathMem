@@ -1,0 +1,10 @@
+variant,hit_at_20,recall_at_20,full_cover_at_20,qa_accuracy
+BU-E only,81.64,74.24,67.45,83.68
+BU-H only,79.82,73.07,66.15,84.20
+TD-E only,76.43,68.95,61.65,82.45
+TD-H only,67.58,60.58,54.69,78.96
+Euclidean only: BU-E + TD-E,86.85,80.91,72.98,87.04
+Hyperbolic only: BU-H + TD-H,81.58,74.74,67.71,84.67
+Bottom-up only: BU-E + BU-H,87.04,80.55,73.76,85.83
+Top-down only: TD-E + TD-H,80.73,73.50,66.47,83.66
+Full: BU-E + BU-H + TD-E + TD-H,88.87,80.92,72.87,91.62

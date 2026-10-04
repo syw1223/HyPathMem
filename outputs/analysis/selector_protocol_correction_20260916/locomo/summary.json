@@ -1,0 +1,69 @@
+{
+  "status": "completed",
+  "seconds": 76.11384606361389,
+  "metrics": [
+    {
+      "protocol": "Original",
+      "k": 20,
+      "all_questions": {
+        "num_questions": 1540,
+        "hit": 0.9064935064935065,
+        "recall": 0.8414912301733802,
+        "full_cover": 0.775974025974026,
+        "avg_tokens": 622.3318181818182,
+        "avg_path_len": 2.059935064935066
+      },
+      "with_gold": {
+        "num_questions": 1536,
+        "hit": 0.9088541666666666,
+        "recall": 0.8436826135852901,
+        "full_cover": 0.7779947916666666,
+        "avg_tokens": 622.4075520833334,
+        "avg_path_len": 2.0606770833333345
+      },
+      "no_gold_questions": 4
+    },
+    {
+      "protocol": "Same_pool_CE",
+      "k": 20,
+      "all_questions": {
+        "num_questions": 1540,
+        "hit": 0.8928571428571429,
+        "recall": 0.8304247083783498,
+        "full_cover": 0.762987012987013,
+        "avg_tokens": 696.0422077922078,
+        "avg_path_len": 2.2611688311688307
+      },
+      "with_gold": {
+        "num_questions": 1536,
+        "hit": 0.8951822916666666,
+        "recall": 0.8325872727230851,
+        "full_cover": 0.7649739583333334,
+        "avg_tokens": 696.095703125,
+        "avg_path_len": 2.2619140624999994
+      },
+      "no_gold_questions": 4
+    },
+    {
+      "protocol": "Corrected",
+      "k": 20,
+      "all_questions": {
+        "num_questions": 1540,
+        "hit": 0.9077922077922078,
+        "recall": 0.8440223858863541,
+        "full_cover": 0.7792207792207793,
+        "avg_tokens": 653.2525974025974,
+        "avg_path_len": 2.117694805194805
+      },
+      "with_gold": {
+        "num_questions": 1536,
+        "hit": 0.91015625,
+        "recall": 0.8462203608495998,
+        "full_cover": 0.78125,
+        "avg_tokens": 653.380859375,
+        "avg_path_len": 2.1184244791666664
+      },
+      "no_gold_questions": 4
+    }
+  ]
+}

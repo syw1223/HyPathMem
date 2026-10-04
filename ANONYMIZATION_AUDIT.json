@@ -1,0 +1,24 @@
+{
+  "content_files_sanitized": [
+    "LICENSE",
+    "outputs/analysis/locomo_ancestor_random_control_20261004/REPORT.md",
+    "outputs/analysis/locomo_ancestor_random_control_20261004/manifest.json",
+    "outputs/analysis/locomo_geometry_overlap_20261004/REPORT.md",
+    "outputs/analysis/locomo_geometry_overlap_20261004/manifest.json",
+    "outputs/analysis/locomo_to_longmemeval_selector_transfer_20260922/manifest.json",
+    "outputs/analysis/selector_protocol_correction_20260916/history_overlap_audit.json",
+    "results/final/hypathmem_locomo_d0_time_v2_final1540/hypathmem_locomo_final1540.json",
+    "results/final/hypathmem_locomo_d0_time_v2_final1540/source_artifacts/d2_paired60_negative_control.json",
+    "results/final/hypathmem_locomo_d0_time_v2_final1540/source_artifacts/frozen_d0_full1540.json",
+    "results/final/hypathmem_longmemeval_8.5time_v_500/source_artifacts/d2_non_temporal367.json",
+    "results/final/hypathmem_longmemeval_8.5time_v_500/source_artifacts/q4_temporal_paired20.json",
+    "results/final/hypathmem_longmemeval_8.5time_v_500/source_artifacts/time_v8_4_safe2.json",
+    "results/final/hypathmem_longmemeval_8.5time_v_500/source_artifacts/time_v8_5_conversion.json",
+    "results/final/hypathmem_longmemeval_8.5time_v_500/source_artifacts/time_v8_5_safe3.json",
+    "scripts/analyze_locomo_ancestor_random_control.py",
+    "scripts/analyze_locomo_geometry_overlap.py"
+  ],
+  "git_history_included": false,
+  "citation_author_metadata_included": false,
+  "prediction_or_judgment_edits": false
+}

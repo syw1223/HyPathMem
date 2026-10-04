@@ -1,0 +1,71 @@
+{
+  "artifacts": [
+    {
+      "destination": "outputs/graphs/locomo_graph_v3_6b_qwen_all.json",
+      "sha256": "613c9878a700f46aea133cac8d74ec6b83a67a1768dfc5e3f6a6a26c5741167e",
+      "bytes": 68109708,
+      "encoding": "gzip-split",
+      "parts": [
+        {
+          "path": "results/external/locomo_graph_v3_6b_qwen_all.json/part-000.gz.bin",
+          "sha256": "0b0780f38b45f6484e11cd1af31328a0d163656f5211427440e830d121e51b07",
+          "bytes": 4318755
+        }
+      ]
+    },
+    {
+      "destination": "outputs/paths/full_v3_9_card_guided_expand120_light_quota_top20.json",
+      "sha256": "b2909f0cbcf7818b28e216dca683e20a96efffd2c3fb51d294813867a9b448f5",
+      "bytes": 74003112,
+      "encoding": "gzip-split",
+      "parts": [
+        {
+          "path": "results/external/full_v3_9_card_guided_expand120_light_quota_top20.json/part-000.gz.bin",
+          "sha256": "4dbe84497865f24d55ea9e632771540311bbd31a86b0fb9c78761a3047f53e36",
+          "bytes": 5399604
+        }
+      ]
+    },
+    {
+      "destination": "outputs/final/hypathmem_locomo_d0_time_v2_final1540/source_artifacts/hypathmem_locomo_pre_relation_card_four_route_union_pool.jsonl",
+      "sha256": "72ab282e7a5d6c4a8404cf6bfdd16e15663ddb1473c2659938cd6773f8030f1e",
+      "bytes": 247808203,
+      "encoding": "gzip-split",
+      "parts": [
+        {
+          "path": "results/external/hypathmem_locomo_pre_relation_card_four_route_union_pool.jsonl/part-000.gz.bin",
+          "sha256": "5320161115d7b88a9623d1e796b1f3474fc933989401650cfc862bc7469f28d4",
+          "bytes": 7000000
+        },
+        {
+          "path": "results/external/hypathmem_locomo_pre_relation_card_four_route_union_pool.jsonl/part-001.gz.bin",
+          "sha256": "6a24d28b22708261c3e5798888d96f0c2fdf2765f829b5ec328405f60c9168d8",
+          "bytes": 7000000
+        },
+        {
+          "path": "results/external/hypathmem_locomo_pre_relation_card_four_route_union_pool.jsonl/part-002.gz.bin",
+          "sha256": "6f8d3b012e9a55a9247caef2182fd3aa2c83bf8bea9025eb07783d2e37320449",
+          "bytes": 6101802
+        }
+      ]
+    },
+    {
+      "destination": "outputs/analysis/locomo_geometry_overlap_20261004/per_question.jsonl",
+      "sha256": "130a6d07702aea6aada8fd0df5ce55f2726c2408f7bdcc5ff79b3d6f36bf2348",
+      "bytes": 145396335,
+      "encoding": "gzip-split",
+      "parts": [
+        {
+          "path": "results/external/per_question.jsonl/part-000.gz.bin",
+          "sha256": "40903b18ea1cda7efc1702374072f9f4b9fe0fc30405af082ff0994377c7aca6",
+          "bytes": 7000000
+        },
+        {
+          "path": "results/external/per_question.jsonl/part-001.gz.bin",
+          "sha256": "fe805cd8c1b1ba009c6fb3da74df36cb5dc1f9a2cb3d9d81bb0471a8c4e18f7a",
+          "bytes": 5463998
+        }
+      ]
+    }
+  ]
+}

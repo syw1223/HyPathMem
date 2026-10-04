@@ -1,0 +1,38 @@
+{
+  "sha256": "b3ab5f34166e7f5f8e7d146dbbaa6ad0558b1528144f1d24b8a0c698f02e6454",
+  "features": [
+    "ce_score",
+    "base_score",
+    "bm25_norm",
+    "ce_rank",
+    "ce_reciprocal_rank",
+    "query_term_overlap",
+    "text_token_count",
+    "query_token_count",
+    "has_topdown_route",
+    "has_bottom_up_route",
+    "route_from_both",
+    "is_eu_route",
+    "is_hyp_route",
+    "route_source_count",
+    "route_overlap_score",
+    "eu_hyp_agreement",
+    "bottom_up_eu_agreement",
+    "bottom_up_hyp_agreement",
+    "route_consistency_entropy",
+    "is_nary_completion",
+    "nary_hyperedge_size",
+    "nary_hyperedge_confidence",
+    "nary_same_hyperedge_count_in_candidate_pool",
+    "nary_role_coverage_potential"
+  ],
+  "parameters": {
+    "n_estimators": 80,
+    "learning_rate": 0.05,
+    "num_leaves": 31,
+    "min_child_samples": 10,
+    "n_jobs": 8,
+    "random_state": 13
+  },
+  "frozen_at": 1790064183.1038065
+}

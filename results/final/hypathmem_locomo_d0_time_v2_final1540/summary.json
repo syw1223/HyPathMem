@@ -1,0 +1,85 @@
+{
+  "method": "HyPathMem",
+  "dataset": "LoCoMo",
+  "version": "D0+8.5time_locomo_v2",
+  "num_questions": 1540,
+  "num_correct": 1411,
+  "accuracy": 0.9162337662337663,
+  "accuracy_percent": 91.62337662337663,
+  "by_category": {
+    "1": {
+      "n": 282,
+      "correct": 254,
+      "accuracy": 0.900709219858156
+    },
+    "2": {
+      "n": 321,
+      "correct": 290,
+      "accuracy": 0.9034267912772586
+    },
+    "3": {
+      "n": 96,
+      "correct": 74,
+      "accuracy": 0.7708333333333334
+    },
+    "4": {
+      "n": 841,
+      "correct": 793,
+      "accuracy": 0.9429250891795482
+    }
+  },
+  "by_final_source": {
+    "frozen_D0": {
+      "n": 1504,
+      "correct": 1375
+    },
+    "8.5time_locomo_v2_safe_override": {
+      "n": 36,
+      "correct": 36
+    }
+  },
+  "temporal_v2": {
+    "num_questions": 321,
+    "num_correct": 290,
+    "accuracy": 0.9034267912772586,
+    "frozen_d0_correct": 290,
+    "frozen_d0_accuracy": 0.9034267912772586,
+    "temporal_branch_activated": 36,
+    "fallback_reused": 285,
+    "fix": 0,
+    "break": 0,
+    "unchanged_correct": 290,
+    "unchanged_wrong": 31
+  },
+  "d2_paired60_negative_control": {
+    "num_questions": 60,
+    "num_correct": 49,
+    "accuracy": 0.8166666666666667,
+    "baseline_num_correct": 51,
+    "baseline_accuracy": 0.85,
+    "fix": 1,
+    "break": 3,
+    "unchanged_correct": 48,
+    "unchanged_wrong": 8,
+    "by_category": {
+      "1": {
+        "n": 20,
+        "correct": 17,
+        "baseline_correct": 18
+      },
+      "3": {
+        "n": 20,
+        "correct": 13,
+        "baseline_correct": 14
+      },
+      "4": {
+        "n": 20,
+        "correct": 19,
+        "baseline_correct": 19
+      }
+    }
+  },
+  "d2_selected": false,
+  "delta_correct_vs_frozen_d0": 0,
+  "reporting_status": "final selected post-hoc development result"
+}

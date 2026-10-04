@@ -1,0 +1,72 @@
+{
+  "protocol": "LoCoMo Cat1-4 supervised training; frozen LongMemEval-S transfer",
+  "parameters": {
+    "n_estimators": 80,
+    "learning_rate": 0.05,
+    "num_leaves": 31,
+    "min_child_samples": 10,
+    "n_jobs": 8,
+    "random_state": 13
+  },
+  "features": [
+    "ce_score",
+    "base_score",
+    "bm25_norm",
+    "ce_rank",
+    "ce_reciprocal_rank",
+    "query_term_overlap",
+    "text_token_count",
+    "query_token_count",
+    "has_topdown_route",
+    "has_bottom_up_route",
+    "route_from_both",
+    "is_eu_route",
+    "is_hyp_route",
+    "route_source_count",
+    "route_overlap_score",
+    "eu_hyp_agreement",
+    "bottom_up_eu_agreement",
+    "bottom_up_hyp_agreement",
+    "route_consistency_entropy",
+    "is_nary_completion",
+    "nary_hyperedge_size",
+    "nary_hyperedge_confidence",
+    "nary_same_hyperedge_count_in_candidate_pool",
+    "nary_role_coverage_potential"
+  ],
+  "lightgbm_version": "4.6.0",
+  "script_sha256": "0b1ba1b55d760c63868664850828ac8322b17b429b2132cbd2cfb25ef1b31bea",
+  "cuda_visible_devices": "",
+  "training_sources": {
+    "graph": {
+      "path": "outputs/graphs/locomo_graph_v3_6b_qwen_all.json",
+      "sha256": "5352a47ec98869bfbbdcb2ccfaa647937acb708f7bef5f9f7ac516ee211ed7a6"
+    },
+    "candidates": {
+      "path": "outputs/v3_9_query_cards/qwen3_card_guided_expand120.json",
+      "sha256": "d5cff2df8189f9457a9e5bad83218a4c099b8ce6eff124173f6d2a449151a65c"
+    }
+  },
+  "limitations": "Post-hoc transfer test. Upstream artifacts were developed previously; not an untouched benchmark. No QA or judge is run.",
+  "test_sources": {
+    "graph": {
+      "path": "outputs/longmemeval_s/v3_10_fine/graph_sentence_semantic_episode_qwen_pathnodes_top50_v3_10.json",
+      "sha256": "48109f1acfe538a8521307641d44e9c86a878ad673b8c1f988d59c41af637b80"
+    },
+    "candidates": {
+      "path": "outputs/longmemeval_s/v3_10_fine/cards/qwen3_card_guided_expand_top50summary120.json",
+      "sha256": "93b838135cc5993b0edac1c8c68cd25c46d288cc18338f44f1ad66fe73a2d66a"
+    },
+    "cardce_paths": {
+      "path": "outputs/eval/longmemeval_v3_10_cardce_guided_ctx50_top50summary_top50_gpu6/cardce_guided_topk_paths.json",
+      "sha256": "44555fb3b1989deaa777d16be3a9e427e1c3bdeff488e7e357663fd3da85fe0a"
+    }
+  },
+  "candidate_topn": 120,
+  "card_quota": 5,
+  "evaluation_k": [
+    20,
+    50
+  ],
+  "model_sha256": "b3ab5f34166e7f5f8e7d146dbbaa6ad0558b1528144f1d24b8a0c698f02e6454"
+}

@@ -1,0 +1,10 @@
+{
+  "graph": "outputs/graphs/locomo_graph_v3_6b_qwen_all.json",
+  "overlap_audit": "outputs/analysis/locomo_geometry_overlap_20261004/per_question.jsonl",
+  "script": "scripts/analyze_locomo_ancestor_random_control.py",
+  "sha256": {
+    "graph": "5352a47ec98869bfbbdcb2ccfaa647937acb708f7bef5f9f7ac516ee211ed7a6",
+    "overlap_audit": "130a6d07702aea6aada8fd0df5ce55f2726c2408f7bdcc5ff79b3d6f36bf2348",
+    "script": "5d115ee162dc633c75baf24fafc5f6070e6e1b5160fd45d481dbfed0f880e0a0"
+  }
+}

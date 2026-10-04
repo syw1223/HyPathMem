@@ -1,0 +1,13 @@
+{
+  "input_pool": "outputs/final/hypathmem_locomo_d0_time_v2_final1540/source_artifacts/hypathmem_locomo_pre_relation_card_four_route_union_pool.jsonl",
+  "input_graph": "outputs/graphs/locomo_graph_v3_6b_qwen_all.json",
+  "script": "scripts/analyze_locomo_geometry_overlap.py",
+  "sha256": {
+    "pool": "72ab282e7a5d6c4a8404cf6bfdd16e15663ddb1473c2659938cd6773f8030f1e",
+    "graph": "5352a47ec98869bfbbdcb2ccfaa647937acb708f7bef5f9f7ac516ee211ed7a6",
+    "script": "56ea240a589ee22070a8244d0f705f4a95bb0f33afbce01d9f6e91151c8cd265"
+  },
+  "inference_calls": 0,
+  "gpu_required": false,
+  "retraining": false
+}

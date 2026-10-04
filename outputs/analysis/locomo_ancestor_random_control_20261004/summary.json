@@ -1,0 +1,171 @@
+{
+  "protocol": {
+    "comparison": "Geometry_union@20",
+    "num_locomo_questions": 1540,
+    "affected_queries": 80,
+    "fact_query_pairs": 95,
+    "conversation_clusters": 10,
+    "observed_shared_ancestor_pairs": 67,
+    "random_replicates": 10000,
+    "seed": 13,
+    "metric": "fraction of target Fact-query pairs sharing at least one Event/Topic ancestor with Euclidean Top20",
+    "weighting": "micro-average over 95 Fact-query pairs; per-query sample count exactly matches target count",
+    "random_pool": "same conversation FACT nodes, excluding Euclidean Top20 Fact IDs; actual Lorentz targets remain eligible",
+    "controls": [
+      "Random_same_conversation",
+      "Random_hierarchy_attached",
+      "Random_source_ancestor_degree_matched"
+    ],
+    "hierarchy": "same-conversation IS_SPECIFIC_OF edges to EVENT/TOPIC nodes, identical to preceding overlap analysis",
+    "event_type_scope": "EVENT includes episode-like nodes encoded as EVENT in this graph schema",
+    "random_generation": "hypergeometric draws: exact success-count law of uniform within-query/stratum sampling without replacement; explicit example draws and eligible IDs saved",
+    "intervals": "null interval quantifies random draws; delta CI uses paired conversation-cluster bootstrap against exact null expectations",
+    "inference_scope": "observational structural enrichment of gold-turn-selected Lorentz-only Facts; not causal proof of hierarchy contribution; controls are not conditioned on gold relevance",
+    "gpu_required": false,
+    "llm_calls": 0,
+    "retraining": false
+  },
+  "results": {
+    "Random_same_conversation": {
+      "Event_or_Topic": {
+        "observed_rate": 0.7052631578947368,
+        "random_expected_rate": 0.34147843512371817,
+        "random_mc_mean": 0.3417473684210526,
+        "random_null_interval95": [
+          0.25263157894736843,
+          0.4421052631578947
+        ],
+        "delta": 0.36378472277101864,
+        "delta_cluster_bootstrap_ci95": [
+          0.23260721381841823,
+          0.46004000926481486
+        ],
+        "one_sided_conditional_randomization_p": 9.999000099990002e-05
+      },
+      "Event_only": {
+        "observed_rate": 0.5578947368421052,
+        "random_expected_rate": 0.2527974734060523,
+        "random_mc_mean": 0.25276,
+        "random_null_interval95": [
+          0.16842105263157894,
+          0.3473684210526316
+        ],
+        "delta": 0.3050972634360529,
+        "delta_cluster_bootstrap_ci95": [
+          0.18688220488649945,
+          0.43265593600899993
+        ],
+        "one_sided_conditional_randomization_p": 9.999000099990002e-05
+      },
+      "Topic_only": {
+        "observed_rate": 0.7052631578947368,
+        "random_expected_rate": 0.34147843512371817,
+        "random_mc_mean": 0.34128,
+        "random_null_interval95": [
+          0.24210526315789474,
+          0.43157894736842106
+        ],
+        "delta": 0.36378472277101864,
+        "delta_cluster_bootstrap_ci95": [
+          0.23260721381841823,
+          0.46004000926481486
+        ],
+        "one_sided_conditional_randomization_p": 9.999000099990002e-05
+      }
+    },
+    "Random_hierarchy_attached": {
+      "Event_or_Topic": {
+        "observed_rate": 0.7052631578947368,
+        "random_expected_rate": 0.47005713192990684,
+        "random_mc_mean": 0.4699757894736842,
+        "random_null_interval95": [
+          0.3684210526315789,
+          0.5684210526315789
+        ],
+        "delta": 0.23520602596482998,
+        "delta_cluster_bootstrap_ci95": [
+          0.10663933965358373,
+          0.3281202435109686
+        ],
+        "one_sided_conditional_randomization_p": 9.999000099990002e-05
+      },
+      "Event_only": {
+        "observed_rate": 0.5578947368421052,
+        "random_expected_rate": 0.3480869236027739,
+        "random_mc_mean": 0.34900631578947366,
+        "random_null_interval95": [
+          0.25263157894736843,
+          0.4421052631578947
+        ],
+        "delta": 0.20980781323933134,
+        "delta_cluster_bootstrap_ci95": [
+          0.09414932711461087,
+          0.33063878748475317
+        ],
+        "one_sided_conditional_randomization_p": 0.00019998000199980003
+      },
+      "Topic_only": {
+        "observed_rate": 0.7052631578947368,
+        "random_expected_rate": 0.47005713192990684,
+        "random_mc_mean": 0.470061052631579,
+        "random_null_interval95": [
+          0.3684210526315789,
+          0.5684210526315789
+        ],
+        "delta": 0.23520602596482998,
+        "delta_cluster_bootstrap_ci95": [
+          0.10663933965358373,
+          0.3281202435109686
+        ],
+        "one_sided_conditional_randomization_p": 9.999000099990002e-05
+      }
+    },
+    "Random_source_ancestor_degree_matched": {
+      "Event_or_Topic": {
+        "observed_rate": 0.7052631578947368,
+        "random_expected_rate": 0.435616121491178,
+        "random_mc_mean": 0.4364621052631579,
+        "random_null_interval95": [
+          0.3473684210526316,
+          0.5263157894736842
+        ],
+        "delta": 0.2696470364035588,
+        "delta_cluster_bootstrap_ci95": [
+          0.15240824599966696,
+          0.35680150080364326
+        ],
+        "one_sided_conditional_randomization_p": 9.999000099990002e-05
+      },
+      "Event_only": {
+        "observed_rate": 0.5578947368421052,
+        "random_expected_rate": 0.3124042589161357,
+        "random_mc_mean": 0.3130726315789474,
+        "random_null_interval95": [
+          0.22105263157894736,
+          0.4
+        ],
+        "delta": 0.2454904779259695,
+        "delta_cluster_bootstrap_ci95": [
+          0.1345722565732414,
+          0.36284132395874846
+        ],
+        "one_sided_conditional_randomization_p": 9.999000099990002e-05
+      },
+      "Topic_only": {
+        "observed_rate": 0.7052631578947368,
+        "random_expected_rate": 0.435616121491178,
+        "random_mc_mean": 0.43674315789473683,
+        "random_null_interval95": [
+          0.3473684210526316,
+          0.5263157894736842
+        ],
+        "delta": 0.2696470364035588,
+        "delta_cluster_bootstrap_ci95": [
+          0.15240824599966696,
+          0.35680150080364326
+        ],
+        "one_sided_conditional_randomization_p": 9.999000099990002e-05
+      }
+    }
+  }
+}

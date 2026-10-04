@@ -1,0 +1,729 @@
+{
+  "protocol": {
+    "stage": "pre_relation_card_pre_selector",
+    "questions": 1540,
+    "categories": {
+      "2": 321,
+      "3": 96,
+      "1": 282,
+      "4": 841
+    },
+    "conversations": {
+      "conv-26": 152,
+      "conv-30": 81,
+      "conv-41": 152,
+      "conv-42": 199,
+      "conv-43": 178,
+      "conv-44": 123,
+      "conv-47": 150,
+      "conv-48": 191,
+      "conv-49": 156,
+      "conv-50": 158
+    },
+    "seed": 13,
+    "cluster_bootstrap_replicates": 2000,
+    "route_candidate_lengths": {
+      "BU_E": {
+        "100": 1481,
+        "87": 2,
+        "82": 3,
+        "96": 4,
+        "84": 1,
+        "80": 1,
+        "93": 3,
+        "73": 1,
+        "86": 4,
+        "78": 1,
+        "92": 6,
+        "97": 3,
+        "75": 2,
+        "91": 4,
+        "88": 4,
+        "95": 4,
+        "99": 6,
+        "90": 2,
+        "98": 3,
+        "94": 2,
+        "66": 2,
+        "89": 1
+      },
+      "BU_H": {
+        "100": 1462,
+        "84": 3,
+        "61": 1,
+        "98": 3,
+        "91": 4,
+        "86": 2,
+        "20": 4,
+        "80": 2,
+        "78": 5,
+        "77": 1,
+        "79": 2,
+        "70": 2,
+        "83": 4,
+        "62": 3,
+        "76": 4,
+        "81": 2,
+        "66": 1,
+        "99": 1,
+        "82": 2,
+        "57": 1,
+        "47": 1,
+        "97": 3,
+        "75": 2,
+        "42": 1,
+        "85": 2,
+        "53": 1,
+        "95": 4,
+        "72": 1,
+        "71": 1,
+        "89": 4,
+        "73": 1,
+        "94": 2,
+        "64": 1,
+        "59": 2,
+        "90": 1,
+        "22": 1,
+        "88": 2,
+        "93": 1
+      },
+      "TD_E": {
+        "97": 31,
+        "94": 32,
+        "100": 142,
+        "95": 28,
+        "98": 27,
+        "81": 44,
+        "86": 61,
+        "93": 30,
+        "85": 45,
+        "79": 44,
+        "99": 28,
+        "80": 50,
+        "88": 49,
+        "77": 37,
+        "84": 53,
+        "92": 37,
+        "74": 30,
+        "90": 39,
+        "91": 32,
+        "78": 51,
+        "83": 41,
+        "76": 31,
+        "82": 50,
+        "89": 43,
+        "87": 34,
+        "96": 29,
+        "58": 16,
+        "75": 31,
+        "70": 22,
+        "71": 27,
+        "62": 18,
+        "61": 15,
+        "72": 23,
+        "66": 20,
+        "64": 18,
+        "59": 15,
+        "67": 24,
+        "54": 6,
+        "73": 40,
+        "56": 7,
+        "65": 17,
+        "45": 4,
+        "60": 11,
+        "68": 31,
+        "51": 3,
+        "55": 9,
+        "69": 20,
+        "50": 1,
+        "52": 6,
+        "63": 16,
+        "42": 1,
+        "57": 7,
+        "53": 4,
+        "47": 3,
+        "46": 2,
+        "48": 2,
+        "49": 2,
+        "43": 1
+      },
+      "TD_H": {
+        "5": 1540
+      }
+    },
+    "ranking": "stored route order; geometry unions deduplicated by Fact ID and ranked by existing CE score; ID tie-break",
+    "scope": "Frozen deployed route complementarity; BU-E and BU-H also differ in seed policy and hierarchy version. Not a pure metric-only controlled ablation.",
+    "td_h_limitation": "All 1540 stored TD-H route lists contain 5 candidates; TD reported at K=5 only.",
+    "fact_overlap": "Jaccard of target Fact IDs, not all intermediate path nodes",
+    "raw_overlap": "Jaccard of source turn IDs associated with target Facts, within each question",
+    "uniqueness_denominator": "Eu-only/Lor-only/shared percentages divide by set union; query-macro averaged",
+    "gold_scope": "Source-turn annotation overlap; not independent verification of each Fact claim",
+    "semantic_scope": "CE relevance and lexical overlap are diagnostics, not embedding cosine similarity",
+    "union_budget": "Expanded union has up to 2K Facts; fixed union reranks the two Top-K lists to K using stored CE",
+    "candidate_type_counts": {
+      "FACT": 439113
+    }
+  },
+  "results": {
+    "BU@20": {
+      "jaccard": 0.21370924510879727,
+      "eu_only_union_share": 0.39314537744560135,
+      "lor_only_union_share": 0.39314537744560135,
+      "shared_union_share": 0.21370924510879727,
+      "eu_count": 20,
+      "lor_count": 20,
+      "shared_count": 6.488961038961039,
+      "lor_unique_within_lor": 0.6755519480519481,
+      "raw_jaccard": 0.24735471462248157,
+      "additional_gold_count": 0.21419270833333334,
+      "additional_gold_query": 0.16471354166666666,
+      "eu_hit": 0.81640625,
+      "lor_hit": 0.7981770833333334,
+      "fixed_union_hit": 0.8854166666666666,
+      "eu_recall": 0.7423875227859784,
+      "lor_recall": 0.7306622483065861,
+      "fixed_union_recall": 0.820482065714294,
+      "eu_full_cover": 0.6744791666666666,
+      "lor_full_cover": 0.6614583333333334,
+      "fixed_union_full_cover": 0.7526041666666666,
+      "fixed_union_recall_delta": 0.07809454292831566,
+      "expanded_union_recall_delta": 0.10806948562336285,
+      "rescued_eu_hit": 0.09244791666666667,
+      "eu_budget_short": 0.0,
+      "lor_budget_short": 0.0,
+      "num_questions": 1540,
+      "k": 20,
+      "num_gold_annotated": 1536,
+      "jaccard_ci95": [
+        0.1932122771483021,
+        0.2374616658804084
+      ],
+      "fixed_union_recall_delta_ci95": [
+        0.05973283230162659,
+        0.09515933789465307
+      ],
+      "additional_gold_queries": 253,
+      "rescued_eu_hit_queries": 142,
+      "by_category": {
+        "2": {
+          "jaccard": 0.23517379698627386,
+          "raw_jaccard": 0.26720672343842133,
+          "additional_gold_query": 0.09968847352024922,
+          "eu_recall": 0.8078920041536864,
+          "lor_recall": 0.8167185877466251,
+          "fixed_union_recall": 0.8707165109034268
+        },
+        "3": {
+          "jaccard": 0.14989238508147762,
+          "raw_jaccard": 0.17844638032604057,
+          "additional_gold_query": 0.32608695652173914,
+          "eu_recall": 0.3954622955901728,
+          "lor_recall": 0.4485613810741688,
+          "fixed_union_recall": 0.519575873827792
+        },
+        "1": {
+          "jaccard": 0.21102842117279003,
+          "raw_jaccard": 0.24690635299162428,
+          "additional_gold_query": 0.4716312056737589,
+          "eu_recall": 0.4382672711760058,
+          "lor_recall": 0.5946674929317707,
+          "fixed_union_recall": 0.6322439924763553
+        },
+        "4": {
+          "jaccard": 0.21370007716576128,
+          "raw_jaccard": 0.24779364832336553,
+          "additional_gold_query": 0.06896551724137931,
+          "eu_recall": 0.8573127229488704,
+          "lor_recall": 0.7742766547760602,
+          "fixed_union_recall": 0.8973444312326595
+        }
+      },
+      "lor_only_characterization": {
+        "all_lor_only": {
+          "fact_query_occurrences": 20807,
+          "ce_score_mean": -1.9674871432350431,
+          "lexical_query_coverage_mean": 0.26124769574209666,
+          "zero_lexical_overlap_fraction": 0.011774883452684192,
+          "hierarchy_parent_fraction": 0.9747681068871052,
+          "shared_ancestor_with_eu_fraction": 0.6456961599461719,
+          "novel_raw_turn_fraction": 0.9261786898639881,
+          "fact_types": {
+            "FACT": 20807
+          }
+        },
+        "other_lor_only": {
+          "fact_query_occurrences": 20435,
+          "ce_score_mean": -2.0274745871934785,
+          "lexical_query_coverage_mean": 0.260331989055992,
+          "zero_lexical_overlap_fraction": 0.011989234157083434,
+          "hierarchy_parent_fraction": 0.9746513334964522,
+          "shared_ancestor_with_eu_fraction": 0.6445803768045021,
+          "novel_raw_turn_fraction": 0.92483484218253,
+          "fact_types": {
+            "FACT": 20435
+          }
+        },
+        "gold_novel_lor_only": {
+          "fact_query_occurrences": 372,
+          "ce_score_mean": 1.3277908602343893,
+          "lexical_query_coverage_mean": 0.311550024050024,
+          "zero_lexical_overlap_fraction": 0.0,
+          "hierarchy_parent_fraction": 0.9811827956989247,
+          "shared_ancestor_with_eu_fraction": 0.706989247311828,
+          "novel_raw_turn_fraction": 1.0,
+          "fact_types": {
+            "FACT": 372
+          }
+        }
+      }
+    },
+    "BU@50": {
+      "jaccard": 0.12678512699309566,
+      "eu_only_union_share": 0.43735874299452937,
+      "lor_only_union_share": 0.435856130012375,
+      "shared_union_share": 0.12678512699309566,
+      "eu_count": 50,
+      "lor_count": 49.89675324675325,
+      "shared_count": 10.64935064935065,
+      "lor_unique_within_lor": 0.7867388027832902,
+      "raw_jaccard": 0.16183954484331448,
+      "additional_gold_count": 0.2662760416666667,
+      "additional_gold_query": 0.18880208333333334,
+      "eu_hit": 0.8424479166666666,
+      "lor_hit": 0.8326822916666666,
+      "fixed_union_hit": 0.9225260416666666,
+      "eu_recall": 0.7717195941561932,
+      "lor_recall": 0.7763492927906144,
+      "fixed_union_recall": 0.8718677265023168,
+      "eu_full_cover": 0.7063802083333334,
+      "lor_full_cover": 0.708984375,
+      "fixed_union_full_cover": 0.810546875,
+      "fixed_union_recall_delta": 0.10014813234612359,
+      "expanded_union_recall_delta": 0.12683417346412582,
+      "rescued_eu_hit": 0.10026041666666667,
+      "eu_budget_short": 0.0,
+      "lor_budget_short": 0.004545454545454545,
+      "num_questions": 1540,
+      "k": 50,
+      "num_gold_annotated": 1536,
+      "jaccard_ci95": [
+        0.11151426127514237,
+        0.14575071850437404
+      ],
+      "fixed_union_recall_delta_ci95": [
+        0.0822888348242868,
+        0.11845798864827033
+      ],
+      "additional_gold_queries": 290,
+      "rescued_eu_hit_queries": 154,
+      "by_category": {
+        "2": {
+          "jaccard": 0.13335540133148274,
+          "raw_jaccard": 0.1670165059291573,
+          "additional_gold_query": 0.1277258566978193,
+          "eu_recall": 0.839563862928349,
+          "lor_recall": 0.8590342679127726,
+          "fixed_union_recall": 0.9192627206645898
+        },
+        "3": {
+          "jaccard": 0.09470430945485629,
+          "raw_jaccard": 0.12766909095001905,
+          "additional_gold_query": 0.3804347826086957,
+          "eu_recall": 0.4314277687359529,
+          "lor_recall": 0.53658548399597,
+          "fixed_union_recall": 0.6257265752150662
+        },
+        "1": {
+          "jaccard": 0.13544609694433027,
+          "raw_jaccard": 0.17185558032232606,
+          "additional_gold_query": 0.5460992907801419,
+          "eu_recall": 0.4881912833340605,
+          "lor_recall": 0.6886169593336446,
+          "fixed_union_recall": 0.7264963935736612
+        },
+        "4": {
+          "jaccard": 0.12503519464446372,
+          "raw_jaccard": 0.16040558177568018,
+          "additional_gold_query": 0.0713436385255648,
+          "eu_recall": 0.8781212841854935,
+          "lor_recall": 0.8004359889021007,
+          "fixed_union_recall": 0.9294490685691637
+        }
+      },
+      "lor_only_characterization": {
+        "all_lor_only": {
+          "fact_query_occurrences": 60441,
+          "ce_score_mean": -3.8338759771941335,
+          "lexical_query_coverage_mean": 0.23670694375141688,
+          "zero_lexical_overlap_fraction": 0.010191757250872752,
+          "hierarchy_parent_fraction": 0.9735940834863751,
+          "shared_ancestor_with_eu_fraction": 0.7280984761999305,
+          "novel_raw_turn_fraction": 0.9226187521715392,
+          "fact_types": {
+            "FACT": 60441
+          }
+        },
+        "other_lor_only": {
+          "fact_query_occurrences": 59970,
+          "ce_score_mean": -3.866807199164536,
+          "lexical_query_coverage_mean": 0.23620981583587886,
+          "zero_lexical_overlap_fraction": 0.01025512756378189,
+          "hierarchy_parent_fraction": 0.9735200933800233,
+          "shared_ancestor_with_eu_fraction": 0.727863931965983,
+          "novel_raw_turn_fraction": 0.9220110055027514,
+          "fact_types": {
+            "FACT": 59970
+          }
+        },
+        "gold_novel_lor_only": {
+          "fact_query_occurrences": 471,
+          "ce_score_mean": 0.35908661636221373,
+          "lexical_query_coverage_mean": 0.30000367643679743,
+          "zero_lexical_overlap_fraction": 0.0021231422505307855,
+          "hierarchy_parent_fraction": 0.9830148619957537,
+          "shared_ancestor_with_eu_fraction": 0.7579617834394905,
+          "novel_raw_turn_fraction": 1.0,
+          "fact_types": {
+            "FACT": 471
+          }
+        }
+      }
+    },
+    "TD@5": {
+      "jaccard": 0.7038213770356627,
+      "eu_only_union_share": 0.1480893114821686,
+      "lor_only_union_share": 0.1480893114821686,
+      "shared_union_share": 0.7038213770356627,
+      "eu_count": 5,
+      "lor_count": 5,
+      "shared_count": 3.9753246753246754,
+      "lor_unique_within_lor": 0.20493506493506494,
+      "raw_jaccard": 0.7052623170480313,
+      "additional_gold_count": 0.07096354166666667,
+      "additional_gold_query": 0.06901041666666667,
+      "eu_hit": 0.6796875,
+      "lor_hit": 0.67578125,
+      "fixed_union_hit": 0.7194010416666666,
+      "eu_recall": 0.6032540923317093,
+      "lor_recall": 0.6058109201843782,
+      "fixed_union_recall": 0.6449094150905478,
+      "eu_full_cover": 0.5397135416666666,
+      "lor_full_cover": 0.546875,
+      "fixed_union_full_cover": 0.5826822916666666,
+      "fixed_union_recall_delta": 0.04165532275883838,
+      "expanded_union_recall_delta": 0.05166689683291246,
+      "rescued_eu_hit": 0.051432291666666664,
+      "eu_budget_short": 0.0,
+      "lor_budget_short": 0.0,
+      "num_questions": 1540,
+      "k": 5,
+      "num_gold_annotated": 1536,
+      "jaccard_ci95": [
+        0.6811463773823628,
+        0.7306073279982058
+      ],
+      "fixed_union_recall_delta_ci95": [
+        0.03087383820161272,
+        0.05173221712155717
+      ],
+      "additional_gold_queries": 106,
+      "rescued_eu_hit_queries": 79,
+      "by_category": {
+        "2": {
+          "jaccard": 0.7197621520051426,
+          "raw_jaccard": 0.7198054195717747,
+          "additional_gold_query": 0.06542056074766354,
+          "eu_recall": 0.7107995846313603,
+          "lor_recall": 0.7297507788161994,
+          "fixed_union_recall": 0.7515576323987538
+        },
+        "3": {
+          "jaccard": 0.6966765873015873,
+          "raw_jaccard": 0.6985697751322751,
+          "additional_gold_query": 0.06521739130434782,
+          "eu_recall": 0.31694373401534526,
+          "lor_recall": 0.26992753623188404,
+          "fixed_union_recall": 0.34031329923273657
+        },
+        "1": {
+          "jaccard": 0.7179162445119892,
+          "raw_jaccard": 0.720339412360689,
+          "additional_gold_query": 0.1276595744680851,
+          "eu_recall": 0.4034496298774014,
+          "lor_recall": 0.4217809931555732,
+          "fixed_union_recall": 0.4433405604598214
+        },
+        "4": {
+          "jaccard": 0.6938263216503406,
+          "raw_jaccard": 0.6954197572806372,
+          "additional_gold_query": 0.05112960760998811,
+          "eu_recall": 0.6605231866825209,
+          "lor_recall": 0.6569560047562426,
+          "fixed_union_recall": 0.7051129607609988
+        }
+      },
+      "lor_only_characterization": {
+        "all_lor_only": {
+          "fact_query_occurrences": 1578,
+          "ce_score_mean": -0.33767478292895287,
+          "lexical_query_coverage_mean": 0.3040737023151472,
+          "zero_lexical_overlap_fraction": 0.01394169835234474,
+          "hierarchy_parent_fraction": 1.0,
+          "shared_ancestor_with_eu_fraction": 0.5069708491761724,
+          "novel_raw_turn_fraction": 0.9923954372623575,
+          "fact_types": {
+            "FACT": 1578
+          }
+        },
+        "gold_novel_lor_only": {
+          "fact_query_occurrences": 111,
+          "ce_score_mean": 4.083747228070557,
+          "lexical_query_coverage_mean": 0.48970593970593973,
+          "zero_lexical_overlap_fraction": 0.0,
+          "hierarchy_parent_fraction": 1.0,
+          "shared_ancestor_with_eu_fraction": 0.5045045045045045,
+          "novel_raw_turn_fraction": 1.0,
+          "fact_types": {
+            "FACT": 111
+          }
+        },
+        "other_lor_only": {
+          "fact_query_occurrences": 1467,
+          "ce_score_mean": -0.6722200066651121,
+          "lexical_query_coverage_mean": 0.29002790930193795,
+          "zero_lexical_overlap_fraction": 0.014996591683708248,
+          "hierarchy_parent_fraction": 1.0,
+          "shared_ancestor_with_eu_fraction": 0.5071574642126789,
+          "novel_raw_turn_fraction": 0.9918200408997955,
+          "fact_types": {
+            "FACT": 1467
+          }
+        }
+      }
+    },
+    "Geometry_union@20": {
+      "jaccard": 0.5338944725120861,
+      "eu_only_union_share": 0.23305276374395695,
+      "lor_only_union_share": 0.23305276374395695,
+      "shared_union_share": 0.5338944725120861,
+      "eu_count": 20,
+      "lor_count": 20,
+      "shared_count": 13.540909090909091,
+      "lor_unique_within_lor": 0.32295454545454544,
+      "raw_jaccard": 0.5665073998876328,
+      "additional_gold_count": 0.056640625,
+      "additional_gold_query": 0.052083333333333336,
+      "eu_hit": 0.8834635416666666,
+      "lor_hit": 0.8157552083333334,
+      "fixed_union_hit": 0.890625,
+      "eu_recall": 0.8141207886164833,
+      "lor_recall": 0.7473882746546253,
+      "fixed_union_recall": 0.8253428949891859,
+      "eu_full_cover": 0.7447916666666666,
+      "lor_full_cover": 0.6770833333333334,
+      "fixed_union_full_cover": 0.7571614583333334,
+      "fixed_union_recall_delta": 0.01122210637270259,
+      "expanded_union_recall_delta": 0.027424602601623452,
+      "rescued_eu_hit": 0.020833333333333332,
+      "eu_budget_short": 0.0,
+      "lor_budget_short": 0.0,
+      "num_questions": 1540,
+      "k": 20,
+      "num_gold_annotated": 1536,
+      "jaccard_ci95": [
+        0.505015151977393,
+        0.56536892010638
+      ],
+      "fixed_union_recall_delta_ci95": [
+        0.0005771266216762472,
+        0.021576290578264594
+      ],
+      "additional_gold_queries": 80,
+      "rescued_eu_hit_queries": 32,
+      "by_category": {
+        "2": {
+          "jaccard": 0.5486094547218895,
+          "raw_jaccard": 0.5818327380123164,
+          "additional_gold_query": 0.028037383177570093,
+          "eu_recall": 0.868380062305296,
+          "lor_recall": 0.82398753894081,
+          "fixed_union_recall": 0.8764278296988577
+        },
+        "3": {
+          "jaccard": 0.4983656837015573,
+          "raw_jaccard": 0.5244669561263688,
+          "additional_gold_query": 0.10869565217391304,
+          "eu_recall": 0.5188512361466325,
+          "lor_recall": 0.45770460358056264,
+          "fixed_union_recall": 0.5349744245524297
+        },
+        "1": {
+          "jaccard": 0.576076718146102,
+          "raw_jaccard": 0.6064041719797362,
+          "additional_gold_query": 0.1595744680851064,
+          "eu_recall": 0.6123116462982084,
+          "lor_recall": 0.619549289622078,
+          "fixed_union_recall": 0.64187602710839
+        },
+        "4": {
+          "jaccard": 0.5181891944712672,
+          "raw_jaccard": 0.552078814076794,
+          "additional_gold_query": 0.019024970273483946,
+          "eu_recall": 0.893380895759017,
+          "lor_recall": 0.7927070947284979,
+          "fixed_union_recall": 0.8991280221957987
+        }
+      },
+      "lor_only_characterization": {
+        "all_lor_only": {
+          "fact_query_occurrences": 9947,
+          "ce_score_mean": -2.8387158321347035,
+          "lexical_query_coverage_mean": 0.2538073289154017,
+          "zero_lexical_overlap_fraction": 0.019101236553734795,
+          "hierarchy_parent_fraction": 0.9472202674173118,
+          "shared_ancestor_with_eu_fraction": 0.7954157032271036,
+          "novel_raw_turn_fraction": 0.9144465668040616,
+          "fact_types": {
+            "FACT": 9947
+          }
+        },
+        "other_lor_only": {
+          "fact_query_occurrences": 9852,
+          "ce_score_mean": -2.8664314799016237,
+          "lexical_query_coverage_mean": 0.25320574224350106,
+          "zero_lexical_overlap_fraction": 0.019183922046285017,
+          "hierarchy_parent_fraction": 0.9474218432805521,
+          "shared_ancestor_with_eu_fraction": 0.796285018270402,
+          "novel_raw_turn_fraction": 0.9136215996751929,
+          "fact_types": {
+            "FACT": 9852
+          }
+        },
+        "gold_novel_lor_only": {
+          "fact_query_occurrences": 95,
+          "ce_score_mean": 0.03554271312528535,
+          "lexical_query_coverage_mean": 0.3161950330371383,
+          "zero_lexical_overlap_fraction": 0.010526315789473684,
+          "hierarchy_parent_fraction": 0.9263157894736842,
+          "shared_ancestor_with_eu_fraction": 0.7052631578947368,
+          "novel_raw_turn_fraction": 1.0,
+          "fact_types": {
+            "FACT": 95
+          }
+        }
+      }
+    },
+    "Geometry_union@50": {
+      "jaccard": 0.4536215769096249,
+      "eu_only_union_share": 0.27381347837478526,
+      "lor_only_union_share": 0.27256494471558984,
+      "shared_union_share": 0.4536215769096249,
+      "eu_count": 50,
+      "lor_count": 49.913636363636364,
+      "shared_count": 30.433116883116885,
+      "lor_unique_within_lor": 0.39091911893686515,
+      "raw_jaccard": 0.48100858114881345,
+      "additional_gold_count": 0.06510416666666667,
+      "additional_gold_query": 0.057942708333333336,
+      "eu_hit": 0.9231770833333334,
+      "lor_hit": 0.849609375,
+      "fixed_union_hit": 0.9348958333333334,
+      "eu_recall": 0.8665313841179747,
+      "lor_recall": 0.7926904386239477,
+      "fixed_union_recall": 0.8829386910037972,
+      "eu_full_cover": 0.8001302083333334,
+      "lor_full_cover": 0.7239583333333334,
+      "fixed_union_full_cover": 0.8190104166666666,
+      "fixed_union_recall_delta": 0.01640730688582251,
+      "expanded_union_recall_delta": 0.030176215347582414,
+      "rescued_eu_hit": 0.018880208333333332,
+      "eu_budget_short": 0.0,
+      "lor_budget_short": 0.004545454545454545,
+      "num_questions": 1540,
+      "k": 50,
+      "num_gold_annotated": 1536,
+      "jaccard_ci95": [
+        0.4179413771277554,
+        0.49301501921555235
+      ],
+      "fixed_union_recall_delta_ci95": [
+        0.008263873246509018,
+        0.026153937861775087
+      ],
+      "additional_gold_queries": 89,
+      "rescued_eu_hit_queries": 29,
+      "by_category": {
+        "2": {
+          "jaccard": 0.4590417811477074,
+          "raw_jaccard": 0.4844723722636922,
+          "additional_gold_query": 0.04361370716510903,
+          "eu_recall": 0.9029075804776739,
+          "lor_recall": 0.8655244029075805,
+          "fixed_union_recall": 0.9299065420560748
+        },
+        "3": {
+          "jaccard": 0.4225291242188771,
+          "raw_jaccard": 0.4476470721320922,
+          "additional_gold_query": 0.11956521739130435,
+          "eu_recall": 0.6276340773463536,
+          "lor_recall": 0.5474550492133612,
+          "fixed_union_recall": 0.6290833527086724
+        },
+        "1": {
+          "jaccard": 0.49838508362844336,
+          "raw_jaccard": 0.5261296671844082,
+          "additional_gold_query": 0.1773049645390071,
+          "eu_recall": 0.7242903223026403,
+          "lor_recall": 0.7117257063785619,
+          "fixed_union_recall": 0.7505372137091062
+        },
+        "4": {
+          "jaccard": 0.4400920656173306,
+          "raw_jaccard": 0.4683649208107533,
+          "additional_gold_query": 0.016646848989298454,
+          "eu_recall": 0.9264764169639318,
+          "lor_recall": 0.8188664288545382,
+          "fixed_union_recall": 0.9371779627427665
+        }
+      },
+      "lor_only_characterization": {
+        "all_lor_only": {
+          "fact_query_occurrences": 30000,
+          "ce_score_mean": -4.718877905489132,
+          "lexical_query_coverage_mean": 0.22643570457320458,
+          "zero_lexical_overlap_fraction": 0.017,
+          "hierarchy_parent_fraction": 0.9462333333333334,
+          "shared_ancestor_with_eu_fraction": 0.8906,
+          "novel_raw_turn_fraction": 0.9222666666666667,
+          "fact_types": {
+            "FACT": 30000
+          }
+        },
+        "other_lor_only": {
+          "fact_query_occurrences": 29890,
+          "ce_score_mean": -4.730464719058856,
+          "lexical_query_coverage_mean": 0.22615480538197166,
+          "zero_lexical_overlap_fraction": 0.01706256273001004,
+          "hierarchy_parent_fraction": 0.9463031114084979,
+          "shared_ancestor_with_eu_fraction": 0.890665774506524,
+          "novel_raw_turn_fraction": 0.9219805955168953,
+          "fact_types": {
+            "FACT": 29890
+          }
+        },
+        "gold_novel_lor_only": {
+          "fact_query_occurrences": 110,
+          "ce_score_mean": -1.5704246545887806,
+          "lexical_query_coverage_mean": 0.30276367571822116,
+          "zero_lexical_overlap_fraction": 0.0,
+          "hierarchy_parent_fraction": 0.9272727272727272,
+          "shared_ancestor_with_eu_fraction": 0.8727272727272727,
+          "novel_raw_turn_fraction": 1.0,
+          "fact_types": {
+            "FACT": 110
+          }
+        }
+      }
+    }
+  }
+}

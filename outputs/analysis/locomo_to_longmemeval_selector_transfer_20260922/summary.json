@@ -1,0 +1,133 @@
+{
+  "status": "completed",
+  "seconds": 278.46201634407043,
+  "metrics": [
+    {
+      "protocol": "Original_inbenchmark_CV",
+      "k": 20,
+      "all_questions": {
+        "num_questions": 500,
+        "hit": 0.918,
+        "recall": 0.846166666666667,
+        "full_cover": 0.778,
+        "avg_tokens": 975.658,
+        "avg_path_len": 4.0
+      },
+      "with_gold": {
+        "num_questions": 479,
+        "hit": 0.9582463465553236,
+        "recall": 0.8832637439109259,
+        "full_cover": 0.8121085594989561,
+        "avg_tokens": 972.3883089770355,
+        "avg_path_len": 4.0
+      },
+      "no_gold_questions": 21
+    },
+    {
+      "protocol": "Same_pool_CE",
+      "k": 20,
+      "all_questions": {
+        "num_questions": 500,
+        "hit": 0.916,
+        "recall": 0.8660000000000002,
+        "full_cover": 0.812,
+        "avg_tokens": 1221.002,
+        "avg_path_len": 4.0
+      },
+      "with_gold": {
+        "num_questions": 479,
+        "hit": 0.9561586638830898,
+        "recall": 0.9039665970772445,
+        "full_cover": 0.8475991649269311,
+        "avg_tokens": 1219.528183716075,
+        "avg_path_len": 4.0
+      },
+      "no_gold_questions": 21
+    },
+    {
+      "protocol": "LoCoMo_frozen_transfer",
+      "k": 20,
+      "all_questions": {
+        "num_questions": 500,
+        "hit": 0.912,
+        "recall": 0.8622000000000002,
+        "full_cover": 0.802,
+        "avg_tokens": 1336.144,
+        "avg_path_len": 4.0
+      },
+      "with_gold": {
+        "num_questions": 479,
+        "hit": 0.9519832985386222,
+        "recall": 0.9000000000000001,
+        "full_cover": 0.837160751565762,
+        "avg_tokens": 1335.3152400835072,
+        "avg_path_len": 4.0
+      },
+      "no_gold_questions": 21
+    },
+    {
+      "protocol": "Original_inbenchmark_CV",
+      "k": 50,
+      "all_questions": {
+        "num_questions": 500,
+        "hit": 0.93,
+        "recall": 0.8879333333333334,
+        "full_cover": 0.836,
+        "avg_tokens": 1976.396,
+        "avg_path_len": 4.0
+      },
+      "with_gold": {
+        "num_questions": 479,
+        "hit": 0.9707724425887265,
+        "recall": 0.9268615170494086,
+        "full_cover": 0.872651356993737,
+        "avg_tokens": 1973.2421711899792,
+        "avg_path_len": 4.0
+      },
+      "no_gold_questions": 21
+    },
+    {
+      "protocol": "Same_pool_CE",
+      "k": 50,
+      "all_questions": {
+        "num_questions": 500,
+        "hit": 0.932,
+        "recall": 0.8967,
+        "full_cover": 0.85,
+        "avg_tokens": 2285.126,
+        "avg_path_len": 4.0
+      },
+      "with_gold": {
+        "num_questions": 479,
+        "hit": 0.9728601252609603,
+        "recall": 0.9360125260960335,
+        "full_cover": 0.8872651356993737,
+        "avg_tokens": 2283.837160751566,
+        "avg_path_len": 4.0
+      },
+      "no_gold_questions": 21
+    },
+    {
+      "protocol": "LoCoMo_frozen_transfer",
+      "k": 50,
+      "all_questions": {
+        "num_questions": 500,
+        "hit": 0.932,
+        "recall": 0.8957,
+        "full_cover": 0.846,
+        "avg_tokens": 2485.99,
+        "avg_path_len": 4.0
+      },
+      "with_gold": {
+        "num_questions": 479,
+        "hit": 0.9728601252609603,
+        "recall": 0.9349686847599166,
+        "full_cover": 0.8830897703549061,
+        "avg_tokens": 2485.3528183716076,
+        "avg_path_len": 4.0
+      },
+      "no_gold_questions": 21
+    }
+  ],
+  "model_sha256": "b3ab5f34166e7f5f8e7d146dbbaa6ad0558b1528144f1d24b8a0c698f02e6454"
+}

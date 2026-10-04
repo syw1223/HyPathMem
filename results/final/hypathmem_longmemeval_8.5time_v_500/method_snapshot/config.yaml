@@ -1,0 +1,31 @@
+version: 8.5time_v
+base_version: 8.4time_v
+semantic_graph_mutated: false
+packet_reader_enabled: false
+
+conversion:
+  require_structural_roles_complete: true
+  require_pairwise_operands_complete: true
+  require_trusted_identity_binding: true
+  require_exact_raw_quote: true
+  require_consistent_hypothesis: true
+  require_supported_solver: true
+  enrichment_confidence: 0.90
+  preserve_symbolic_constraints: true
+  interval_ordering_requires_disjoint_intervals: true
+
+verifier:
+  model: qwen3-30b-a3b-instruct-2507
+  query_time_alignment: true
+  reverse_verification: true
+  reject_unresolved_relative_terms: true
+  fail_closed: true
+
+routing:
+  verified_executable: deterministic_solver
+  otherwise: frozen_d0
+
+inactive_modules:
+  state_at_solver: shadow
+  h4_supplementary_retrieval: shadow
+  list_set_solver: disabled
